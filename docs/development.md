@@ -1,4 +1,3 @@
-
 # senzing-tools development
 
 ## Install Go

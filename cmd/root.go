@@ -8,6 +8,12 @@ import (
 	"github.com/spf13/cobra"
 )
 
+var (
+	configurationFile string
+	buildVersion      string = "0.0.0"
+	buildIteration    string = "0"
+)
+
 var RootCmd = &cobra.Command{
 	Use:   "senzing-tools",
 	Short: "Tools to help use the Senzing API",
