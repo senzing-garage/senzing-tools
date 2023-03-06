@@ -8,8 +8,7 @@ the recommendation is not to use it yet.
 
 ## Synopsis
 
-The Senzing `senzing-tools` is a suite of tools to help
-with common tasks when using the Senzing API.
+`senzing-tools` is a suite of tools to help use the Senzing API.
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/senzing/senzing-tools.svg)](https://pkg.go.dev/github.com/senzing/senzing-tools)
 [![Go Report Card](https://goreportcard.com/badge/github.com/senzing/senzing-tools)](https://goreportcard.com/report/github.com/senzing/senzing-tools)
