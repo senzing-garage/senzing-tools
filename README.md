@@ -48,17 +48,18 @@ senzing-tools [subcommand] --help
 
 Or visit the appropriate subcommand documentation.
 
-1. Subcommands
+1. Subcommands:
     1. [initdatabase](https://github.com/Senzing/initdatabase#https://github.com/Senzing/initdatabase#using-command-line-options)
     1. [servegrpc](https://github.com/Senzing/servegrpc#using-command-line-options)
 
-Remember to start the commands with `senzing-tools [subcommand] ...`.
+Remember to start the commands with `senzing-tools [subcommand] ...`
 
 1. :pencil2: A `senzing-tools initdatabase` example:
 
     ```console
     export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
-    senzing-tools initdatabase --database-url postgresql://username:password@postgres.example.com:5432/G2
+    senzing-tools initdatabase \
+        --database-url postgresql://username:password@postgres.example.com:5432/G2
     ```
 
 ### Using environment variables
@@ -233,8 +234,6 @@ Since the Senzing library is a prerequisite, it must be installed first.
     ```
 
 1. :pencil2: Identify database.
-   One option is to bring up PostgreSql as see in
-   [Test using Docker-compose stack with PostgreSql database](#test-using-docker-compose-stack-with-postgresql-database).
    Example:
 
     ```console
@@ -247,7 +246,7 @@ Since the Senzing library is a prerequisite, it must be installed first.
 
     ```console
     export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
-    senzing-tools
+    senzing-tools initdatabase
 
     ```
 
@@ -280,8 +279,6 @@ Since the Senzing library is a prerequisite, it must be installed first.
     ```
 
 1. :pencil2: Identify database.
-   One option is to bring up PostgreSql as see in
-   [Test using Docker-compose stack with PostgreSql database](#test-using-docker-compose-stack-with-postgresql-database).
    Example:
 
     ```console
@@ -294,7 +291,7 @@ Since the Senzing library is a prerequisite, it must be installed first.
 
     ```console
     export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
-    senzing-tools
+    senzing-tools initdatabase
 
     ```
 
