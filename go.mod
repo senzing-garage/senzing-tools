@@ -3,12 +3,9 @@ module github.com/senzing/senzing-tools
 go 1.20
 
 require (
-	github.com/senzing/go-common v0.1.2
-	github.com/senzing/go-logging v1.1.3
 	github.com/senzing/initdatabase v0.1.1
 	github.com/senzing/servegrpc v0.3.4
 	github.com/spf13/cobra v1.6.1
-	github.com/spf13/viper v1.15.0
 )
 
 require (
@@ -31,19 +28,22 @@ require (
 	github.com/senzing/g2-sdk-go-base v0.1.1 // indirect
 	github.com/senzing/g2-sdk-go-grpc v0.2.1 // indirect
 	github.com/senzing/g2-sdk-proto/go v0.0.0-20230126140313-273e96bc7dbd // indirect
+	github.com/senzing/go-common v0.1.2 // indirect
 	github.com/senzing/go-databasing v0.2.1 // indirect
-	github.com/senzing/go-observing v0.1.3 // indirect
+	github.com/senzing/go-logging v1.1.3 // indirect
+	github.com/senzing/go-observing v0.2.0 // indirect
 	github.com/senzing/go-sdk-abstract-factory v0.2.1 // indirect
-	github.com/spf13/afero v1.9.4 // indirect
+	github.com/spf13/afero v1.9.5 // indirect
 	github.com/spf13/cast v1.5.0 // indirect
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
+	github.com/spf13/viper v1.15.0 // indirect
 	github.com/subosito/gotenv v1.4.2 // indirect
-	golang.org/x/crypto v0.6.0 // indirect
-	golang.org/x/net v0.7.0 // indirect
-	golang.org/x/sys v0.5.0 // indirect
-	golang.org/x/text v0.7.0 // indirect
-	google.golang.org/genproto v0.0.0-20230301171018-9ab4bdc49ad5 // indirect
+	golang.org/x/crypto v0.7.0 // indirect
+	golang.org/x/net v0.8.0 // indirect
+	golang.org/x/sys v0.6.0 // indirect
+	golang.org/x/text v0.8.0 // indirect
+	google.golang.org/genproto v0.0.0-20230303212802-e74f57abe488 // indirect
 	google.golang.org/grpc v1.53.0 // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect

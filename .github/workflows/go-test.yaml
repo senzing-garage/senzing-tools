@@ -1,0 +1,22 @@
+# Based on
+# -https://github.com/marketplace/actions/setup-go-environment
+
+name: go-test.yaml
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        go: ["1.19", "1.20"]
+    name: Go ${{ matrix.go }} sample
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup go
+        uses: actions/setup-go@v3
+        with:
+          go-version: ${{ matrix.go }}
+      - run: pwd
+      - run: go test -v -p 1 ./...
