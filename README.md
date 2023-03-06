@@ -8,8 +8,8 @@ the recommendation is not to use it yet.
 
 ## Synopsis
 
-The Senzing `senzing-tools` is used
-to initialize databases with a Senzing schema and a default Senzing configuration.
+The Senzing `senzing-tools` is a suite of tools to help
+with common tasks when using the Senzing API.
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/senzing/senzing-tools.svg)](https://pkg.go.dev/github.com/senzing/senzing-tools)
 [![Go Report Card](https://goreportcard.com/badge/github.com/senzing/senzing-tools)](https://goreportcard.com/report/github.com/senzing/senzing-tools)
@@ -17,22 +17,19 @@ to initialize databases with a Senzing schema and a default Senzing configuratio
 
 ## Overview
 
-Senzing `senzing-tools` performs the following:
+Senzing's `senzing-tools` has the following tools:
 
-1. Creates a Senzing database schema from a file of SQL statements found in `/opt/senzing/g2/resources/schema`.
-   The file chosen depends on the database engine specified in the protocol section of `SENZING_TOOLS_DATABASE_URL`
-   or the database(s) specified in `SENZING_TOOLS_ENGINE_CONFIGURATION_JSON`.
-1. Creates a Senzing configuration in the database based on the contents of `/opt/senzing/g2/resources/templates/g2config.json`
-1. *Optionally:* Adds datasources to the Senzing configuration.
+1. [initdatabase](https://github.com/Senzing/initdatabase) - Used to create a Senzing schema and configuration in PostgreSQL, MySQL, MsSQL and SQLite databases.
+1. [servegrpc](https://github.com/Senzing/servegrpc) - A gRPC server of the Senzing API
 
 ## Use
 
 ```console
 export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
-senzing-tools [flags]
+senzing-tools [subcommand] [flags]
 ```
 
-For options and flags, see
+For subcommands and flags, see
 [hub.senzing.com/senzing-tools](https://hub.senzing.com/senzing-tools/) or run:
 
 ```console
@@ -42,66 +39,62 @@ senzing-tools --help
 
 ### Using command line options
 
-1. :pencil2: Specifying database.
-   Example:
+Each subcommand has it's own list of supported command line options.
+So see a specific list, run:
+
+```console
+export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
+senzing-tools [subcommand] --help
+```
+
+Or visit the appropriate subcommand documentation.
+
+1. Subcommands
+    1. [initdatabase](https://github.com/Senzing/initdatabase#https://github.com/Senzing/initdatabase#using-command-line-options)
+    1. [servegrpc](https://github.com/Senzing/servegrpc#using-command-line-options)
+
+Remember to start the commands with `senzing-tools [subcommand] ...`.
+
+1. :pencil2: A `senzing-tools initdatabase` example:
 
     ```console
     export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
-    senzing-tools --database-url postgresql://username:password@postgres.example.com:5432/G2
-    ```
-
-1. :pencil2: Specifying datasources to create.
-   Examples:
-
-    ```console
-    export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
-    senzing-tools \
-        --database-url postgresql://username:password@postgres.example.com:5432/G2 \
-        --datasources CUSTOMER,REFERENCE,WATCHLIST
-    ```
-
-    or
-
-    ```console
-    export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
-    senzing-tools \
-        --database-url postgresql://username:password@postgres.example.com:5432/G2 \
-        --datasources CUSTOMER \
-        --datasources REFERENCE \
-        --datasources WATCHLIST
+    senzing-tools initdatabase --database-url postgresql://username:password@postgres.example.com:5432/G2
     ```
 
 ### Using environment variables
 
-1. :pencil2: Specifying database.
-   Example:
+Environment variables may be used instead of command-line options.
+Each subcommand has it's own list of supported environment variables.
+So see a specific list, visit the appropriate subcommand.
 
-    ```console
-    export SENZING_TOOLS_DATABASE_URL=postgresql://username:password@postgres.example.com:5432/G2
-    export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
-    senzing-tools
-    ```
+1. Subcommands
+    1. [initdatabase](https://github.com/Senzing/initdatabase#using-environment-variables)
+    1. [servegrpc](https://github.com/Senzing/servegrpc#using-environment-variables)
 
-1. :pencil2: Specifying datasources to create.
-   Examples:
-
-    ```console
-    export SENZING_TOOLS_DATABASE_URL=postgresql://username:password@postgres.example.com:5432/G2
-    export SENZING_TOOLS_DATASOURCES="CUSTOMER REFERENCE WATCHLIST"
-    export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
-    senzing-tools
-    ```
+Remember to start the commands with `senzing-tools [subcommand] ...`
+or use the `SENZING_TOOLS_SUBCOMMAND` environment variable.
 
 ### Using Docker
 
+The `senzing-tools` can be run from the `senzing/senzing-tools` Docker container.
+Each subcommand has it's own list of supported environment variables and command line options.
+So see a specific list, visit the appropriate subcommand.
+
+1. Subcommands
+    1. [initdatabase](https://github.com/Senzing/initdatabase#using-docker)
+    1. [servegrpc](https://github.com/Senzing/servegrpc#using-docker)
+
+Remember to use the `senzing/senzing-tools` Docker image.
+
 This usage shows how to initialze a database with a Docker container.
 
-1. :pencil2: Run `senzing/senzing-tools`.
-   Example:
+1. :pencil2: A `senzing/senzing-tools initdatabase`example:
 
     ```console
     docker run \
         --env SENZING_TOOLS_DATABASE_URL=postgresql://username:password@postgres.example.com:5432/G2 \
+        --env SENZING_TOOLS_SUBCOMMAND=initdatabase \
         senzing/senzing-tools
     ```
 
@@ -128,27 +121,18 @@ This usage shows how to initialze a database with a Docker container.
        Example:
 
         ```console
-        docker run --env SENZING_TOOLS_ENGINE_CONFIGURATION_JSON senzing/senzing-tools
+        docker run \
+            --env SENZING_TOOLS_ENGINE_CONFIGURATION_JSON \
+            --env SENZING_TOOLS_SUBCOMMAND=initdatabase \
+            senzing/senzing-tools
         ```
-
-1. :pencil2: Run `senzing/senzing-tools` specifying datasources to add.
-   Example:
-
-    ```console
-    docker run \
-        --env SENZING_TOOLS_DATABASE_URL=postgresql://username:password@postgres.example.com:5432/G2 \
-        --env SENZING_TOOLS_DATASOURCES="CUSTOMER REFERENCE WATCHLIST" \
-        senzing/senzing-tools
-    ```
 
 ### Parameters
 
-- **[SENZING_TOOLS_DATABASE_URL](https://github.com/Senzing/knowledge-base/blob/main/lists/environment-variables.md#senzing_tools_database_url)**
-- **[SENZING_TOOLS_DATASOURCES](https://github.com/Senzing/knowledge-base/blob/main/lists/environment-variables.md#senzing_tools_datasources)**
-- **[SENZING_TOOLS_ENGINE_CONFIGURATION_JSON](https://github.com/Senzing/knowledge-base/blob/main/lists/environment-variables.md#senzing_tools_engine_configuration_json)**
-- **[SENZING_TOOLS_ENGINE_LOG_LEVEL](https://github.com/Senzing/knowledge-base/blob/main/lists/environment-variables.md#senzing_tools_engine_log_level)**
-- **[SENZING_TOOLS_ENGINE_MODULE_NAME](https://github.com/Senzing/knowledge-base/blob/main/lists/environment-variables.md#senzing_tools_engine_module_name)**
-- **[SENZING_TOOLS_LOG_LEVEL](https://github.com/Senzing/knowledge-base/blob/main/lists/environment-variables.md#senzing_tools_log_level)**
+See individual commands for parameters:
+
+1. [initdatabase](https://github.com/Senzing/initdatabase#parameters)
+1. [servegrpc](https://github.com/Senzing/servegrpc#parameters)
 
 ## Development
 
