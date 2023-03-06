@@ -11,7 +11,7 @@ ARG IMAGE_FINAL=alpine
 # -----------------------------------------------------------------------------
 
 FROM ${IMAGE_GO_BUILDER} as go_builder
-ENV REFRESHED_AT 2023-02-22
+ENV REFRESHED_AT 2023-03-03
 LABEL Name="senzing/senzing-tools-builder" \
       Maintainer="support@senzing.com" \
       Version="0.0.5"
@@ -22,6 +22,11 @@ ARG PROGRAM_NAME="unknown"
 ARG BUILD_VERSION=0.0.0
 ARG BUILD_ITERATION=0
 ARG GO_PACKAGE_NAME="unknown"
+
+# Copy remote files from DockerHub.
+
+COPY --from=senzing/senzingapi-runtime:3.4.2  "/opt/senzing/g2/lib/"   "/opt/senzing/g2/lib/"
+COPY --from=senzing/senzingapi-runtime:3.4.2  "/opt/senzing/g2/sdk/c/" "/opt/senzing/g2/sdk/c/"
 
 # Copy local files from the Git repository.
 
@@ -53,7 +58,7 @@ RUN mkdir -p /output \
 # -----------------------------------------------------------------------------
 
 FROM ${IMAGE_FPM_BUILDER} as fpm_builder
-ENV REFRESHED_AT 2023-02-22
+ENV REFRESHED_AT 2023-03-03
 LABEL Name="senzing/senzing-tools-fpm-builder" \
       Maintainer="support@senzing.com" \
       Version="0.0.5"
@@ -97,7 +102,7 @@ RUN fpm \
 # -----------------------------------------------------------------------------
 
 FROM ${IMAGE_FINAL} as final
-ENV REFRESHED_AT 2023-02-06
+ENV REFRESHED_AT 2023-03-03
 LABEL Name="senzing/senzing-tools" \
       Maintainer="support@senzing.com" \
       Version="0.0.5"
