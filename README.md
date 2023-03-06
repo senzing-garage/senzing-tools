@@ -67,12 +67,11 @@ Environment variables may be used instead of command-line options.
 Each subcommand has it's own list of supported environment variables.
 So see a specific list, visit the appropriate subcommand.
 
-1. Subcommands
+1. Subcommands:
     1. [initdatabase](https://github.com/Senzing/initdatabase#using-environment-variables)
     1. [servegrpc](https://github.com/Senzing/servegrpc#using-environment-variables)
 
-Remember to start the commands with `senzing-tools [subcommand] ...`
-or use the `SENZING_TOOLS_SUBCOMMAND` environment variable.
+Remember to start the commands with `senzing-tools [subcommand] ...`.
 
 ### Using Docker
 
@@ -80,7 +79,7 @@ The `senzing-tools` can be run from the `senzing/senzing-tools` Docker container
 Each subcommand has it's own list of supported environment variables and command line options.
 So see a specific list, visit the appropriate subcommand.
 
-1. Subcommands
+1. Subcommands:
     1. [initdatabase](https://github.com/Senzing/initdatabase#using-docker)
     1. [servegrpc](https://github.com/Senzing/servegrpc#using-docker)
 
@@ -93,8 +92,7 @@ This usage shows how to initialze a database with a Docker container.
     ```console
     docker run \
         --env SENZING_TOOLS_DATABASE_URL=postgresql://username:password@postgres.example.com:5432/G2 \
-        --env SENZING_TOOLS_SUBCOMMAND=initdatabase \
-        senzing/senzing-tools
+        senzing/senzing-tools initdatabase
     ```
 
 1. *Alternative:* Using `SENZING_TOOLS_ENGINE_CONFIGURATION_JSON` environment variable.
@@ -122,8 +120,7 @@ This usage shows how to initialze a database with a Docker container.
         ```console
         docker run \
             --env SENZING_TOOLS_ENGINE_CONFIGURATION_JSON \
-            --env SENZING_TOOLS_SUBCOMMAND=initdatabase \
-            senzing/senzing-tools
+            senzing/senzing-tools initdatabase
         ```
 
 ### Parameters
@@ -189,112 +186,6 @@ Since the Senzing library is a prerequisite, it must be installed first.
    Example:
 
     ```console
-    cd ${GIT_REPOSITORY_DIR}
-    make clean
-
-    ```
-
-### Test using SQLite database
-
-1. Run tests.
-
-    ```console
-    cd ${GIT_REPOSITORY_DIR}
-    make clean test
-
-    ```
-
-1. **Optional:** View the SQLite database.
-   Example:
-
-    ```console
-    docker run \
-        --env SQLITE_DATABASE=G2C.db \
-        --interactive \
-        --publish 9174:8080 \
-        --rm \
-        --tty \
-        --volume /tmp/sqlite:/data \
-        coleifer/sqlite-web
-
-    ```
-
-   Visit [localhost:9174](http://localhost:9174).
-
-### Test using Docker-compose stack with PostgreSql database
-
-The following instructions show how to bring up a test stack to be used
-in testing the `g2-sdk-go-base` packages.
-
-1. Identify a directory to place docker-compose artifacts.
-   The directory specified will be deleted and re-created.
-   Example:
-
-    ```console
-    export SENZING_DEMO_DIR=~/my-senzing-demo
-
-    ```
-
-1. Bring up the docker-compose stack.
-   Example:
-
-    ```console
-    export PGADMIN_DIR=${SENZING_DEMO_DIR}/pgadmin
-    export POSTGRES_DIR=${SENZING_DEMO_DIR}/postgres
-    export RABBITMQ_DIR=${SENZING_DEMO_DIR}/rabbitmq
-    export SENZING_VAR_DIR=${SENZING_DEMO_DIR}/var
-    export SENZING_UID=$(id -u)
-    export SENZING_GID=$(id -g)
-
-    rm -rf ${SENZING_DEMO_DIR:-/tmp/nowhere/for/safety}
-    mkdir ${SENZING_DEMO_DIR}
-    mkdir -p ${PGADMIN_DIR} ${POSTGRES_DIR} ${RABBITMQ_DIR} ${SENZING_VAR_DIR}
-    chmod -R 777 ${SENZING_DEMO_DIR}
-
-    curl -X GET \
-        --output ${SENZING_DEMO_DIR}/docker-versions-stable.sh \
-        https://raw.githubusercontent.com/Senzing/knowledge-base/main/lists/docker-versions-stable.sh
-    source ${SENZING_DEMO_DIR}/docker-versions-stable.sh
-    curl -X GET \
-        --output ${SENZING_DEMO_DIR}/docker-compose.yaml \
-        "https://raw.githubusercontent.com/Senzing/docker-compose-demo/main/resources/postgresql/docker-compose-postgresql-uninitialized.yaml"
-
-    cd ${SENZING_DEMO_DIR}
-    sudo --preserve-env docker-compose up
-
-    ```
-
-1. In a separate terminal window, set environment variables.
-   Identify Database URL of database in docker-compose stack.
-   Example:
-
-    ```console
-    export LOCAL_IP_ADDRESS=$(curl --silent https://raw.githubusercontent.com/Senzing/knowledge-base/main/gists/find-local-ip-address/find-local-ip-address.py | python3 -)
-    export SENZING_TOOLS_DATABASE_URL=postgresql://postgres:postgres@${LOCAL_IP_ADDRESS}:5432/G2/?sslmode=disable
-
-    ```
-
-1. Run tests.
-
-    ```console
-    cd ${GIT_REPOSITORY_DIR}
-    make clean test
-
-    ```
-
-1. **Optional:** View the PostgreSQL database.
-
-   Visit [localhost:9171](http://localhost:9171).
-   For the initial login, review the instructions at the top of the web page.
-   For server password information, see the `POSTGRESQL_POSTGRES_PASSWORD` value in `${SENZING_DEMO_DIR}/docker-compose.yaml`.
-   Usually, it's "postgres".
-
-1. Cleanup.
-
-    ```console
-    cd ${SENZING_DEMO_DIR}
-    sudo --preserve-env docker-compose down
-
     cd ${GIT_REPOSITORY_DIR}
     make clean
 
@@ -439,16 +330,3 @@ Make documents visible at
     senzing-tools docs --dir ${GIT_REPOSITORY_DIR}/docs
 
     ```
-
-## Error prefixes
-
-Error identifiers are in the format `senzing-PPPPnnnn` where:
-
-`P` is a prefix used to identify the package.
-`n` is a location within the package.
-
-Prefixes:
-
-1. `6501` - initializer
-1. `6502` - senzingconfig
-1. `6503` - senzingschema
