@@ -10,7 +10,7 @@ import (
 
 var (
 	configurationFile string
-	buildVersion      string = "0.0.0"
+	buildVersion      string = "0.1.0"
 	buildIteration    string = "0"
 )
 
