@@ -131,3 +131,12 @@
         senzing/senzing-tools servegrpc
 
     ```
+
+1. Cleanup.
+   Example:
+
+    ```console
+    cd ${SENZING_DEMO_DIR}
+    sudo --preserve-env docker-compose down
+
+    ```
