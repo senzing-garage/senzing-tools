@@ -18,8 +18,8 @@ var RootCmd = &cobra.Command{
 	Use:   "senzing-tools",
 	Short: "Tools to help use the Senzing API",
 	Long: `
-		Welcome to senzing-tools!
-		`,
+Welcome to senzing-tools!
+	`,
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.

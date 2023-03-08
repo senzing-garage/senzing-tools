@@ -56,9 +56,9 @@ build-linux:
 	GOARCH=amd64 \
 	go build \
 		-ldflags \
-			"-X 'main.buildIteration=${BUILD_ITERATION}' \
-			-X 'main.buildVersion=${BUILD_VERSION}' \
-			-X 'main.programName=${PROGRAM_NAME}' \
+			"-X 'github.com/senzing/senzing-tools/cmd.buildIteration=${BUILD_ITERATION}' \
+			-X 'github.com/senzing/senzing-tools/cmd.buildVersion=${BUILD_VERSION}' \
+			-X 'github.com/senzing/senzing-tools/cmd.programName=${PROGRAM_NAME}' \
 			" \
 		-o $(GO_PACKAGE_NAME)
 	@mkdir -p $(TARGET_DIRECTORY)/linux || true
@@ -75,9 +75,9 @@ build-scratch:
 		-ldflags \
 			"-s \
 			-w \
-			-X 'github.com/senzing/move/cmd.buildIteration=${BUILD_ITERATION}' \
-			-X 'github.com/senzing/move/cmd.buildVersion=${BUILD_VERSION}' \
-			-X 'github.com/senzing/move/cmd.programName=${PROGRAM_NAME}' \
+			-X 'github.com/senzing/senzing-tools/cmd.buildIteration=${BUILD_ITERATION}' \
+			-X 'github.com/senzing/senzing-tools/cmd.buildVersion=${BUILD_VERSION}' \
+			-X 'github.com/senzing/senzing-tools/cmd.programName=${PROGRAM_NAME}' \
 			" \
 		-o $(GO_PACKAGE_NAME)
 	@mkdir -p $(TARGET_DIRECTORY)/scratch || true
