@@ -133,4 +133,5 @@ See individual commands for parameters:
 
 ## References
 
+- [Examples](docs/examples.md)
 - [Development](docs/development.md)
