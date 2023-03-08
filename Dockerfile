@@ -62,6 +62,10 @@ LABEL Name="senzing/senzing-tools" \
       Maintainer="support@senzing.com" \
       Version="0.0.5"
 
+# Copy local files from the Git repository.
+
+COPY ./rootfs /
+
 # Copy files from prior step.
 
 COPY --from=go_builder "/output/linux/senzing-tools" "/app/senzing-tools"
