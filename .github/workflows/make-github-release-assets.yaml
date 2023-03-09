@@ -14,7 +14,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - run: make package
-      - run: find / -name "senzing-tools*"
       - name: Upload DEB file to release assets
         uses: svenstaro/upload-release-action@v2
         with:
