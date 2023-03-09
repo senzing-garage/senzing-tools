@@ -21,38 +21,57 @@ Senzing's `senzing-tools` has the following tools:
 1. [initdatabase](https://github.com/Senzing/initdatabase) - Used to create a Senzing schema and configuration in PostgreSQL, MySQL, MsSQL and SQLite databases.
 1. [servegrpc](https://github.com/Senzing/servegrpc) - A gRPC server of the Senzing API
 
+### Install
+
+1. Visit [Releases](https://github.com/Senzing/senzing-tools/releases) page.
+1. For the desired versioned release, in the "Assets" section,
+   download the appropriate installation package.
+    1. Use `.deb` file for Debian, Ubuntu and
+       [others](https://en.wikipedia.org/wiki/List_of_Linux_distributions#Debian-based)
+    1. Use `.rpm` file for Red Hat, CentOS, openSuse and
+       [others](https://en.wikipedia.org/wiki/List_of_Linux_distributions#RPM-based).
+
+1. :pencil2: Example installation for `.deb` file:
+
+    ```console
+    sudo apt install ./senzing-tools-0.0.0.deb
+    ```
+
+1. :pencil2: Example installation for `.rpm` file:
+
+    ```console
+    sudo yum install ./senzing-tools-0.0.0.rpm
+    ```
+
 ## Use
 
-```console
-export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
-senzing-tools [subcommand] [flags]
-```
+1. **Important:** Prior to using the `senzing-tools` command,
+   the `LD_LIBRARY_PATH` environment variable must be set
+   to the location of the Senzing binaries.
+   Example:
 
-For subcommands and flags, see
-[hub.senzing.com/senzing-tools](https://hub.senzing.com/senzing-tools/) or run:
-
-```console
-export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
-senzing-tools --help
-```
+    ```console
+    export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
+    ```
 
 ### Using command line options
 
 Each subcommand has it's own list of supported command line options.
-So see a specific list, run:
+Documentation for the command line options:
 
-```console
-export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
-senzing-tools [subcommand] --help
-```
+1. Online documentation, see
+   [hub.senzing.com/senzing-tools](https://hub.senzing.com/senzing-tools)
 
-Or visit the appropriate subcommand documentation.
+1. Runtime documentation, run:
 
-1. Subcommands:
-    1. [initdatabase](https://github.com/Senzing/initdatabase#https://github.com/Senzing/initdatabase#using-command-line-options)
+    ```console
+    export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
+    senzing-tools [subcommand] --help
+    ```
+
+1. Detailed documentation, visit:
+    1. [initdatabase](https://github.com/Senzing/initdatabase#using-command-line-options)
     1. [servegrpc](https://github.com/Senzing/servegrpc#using-command-line-options)
-
-Remember to start the commands with `senzing-tools [subcommand] ...`
 
 1. :pencil2: A `senzing-tools initdatabase` example:
 
@@ -72,8 +91,6 @@ So see a specific list, visit the appropriate subcommand.
     1. [initdatabase](https://github.com/Senzing/initdatabase#using-environment-variables)
     1. [servegrpc](https://github.com/Senzing/servegrpc#using-environment-variables)
 
-Remember to start the commands with `senzing-tools [subcommand] ...`.
-
 ### Using Docker
 
 The `senzing-tools` can be run from the `senzing/senzing-tools` Docker container.
@@ -83,8 +100,6 @@ So see a specific list, visit the appropriate subcommand.
 1. Subcommands:
     1. [initdatabase](https://github.com/Senzing/initdatabase#using-docker)
     1. [servegrpc](https://github.com/Senzing/servegrpc#using-docker)
-
-Remember to use the `senzing/senzing-tools` Docker image.
 
 This usage shows how to initialze a database with a Docker container.
 
