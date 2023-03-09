@@ -73,6 +73,8 @@ Documentation for the command line options:
     1. [initdatabase](https://github.com/Senzing/initdatabase#using-command-line-options)
     1. [servegrpc](https://github.com/Senzing/servegrpc#using-command-line-options)
 
+Simple examples.
+
 1. :pencil2: A `senzing-tools initdatabase` example:
 
     ```console
