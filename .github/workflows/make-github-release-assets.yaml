@@ -13,18 +13,19 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - run: pwd
       - run: make package
-      - run: pwd
-      - run: ls -la
-      - run: echo "${{ github.ref }}"
-      - run: find / -name "senzing-tools"
-      - name: Upload binaries to release
+      - run: find / -name "senzing-tools*"
+      - name: Upload DEB file to release assets
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: /tmp/bob.txt
-          asset_name: bob2.txt
+          file: home/runner/work/senzing-tools/senzing-tools/target/senzing-tools-$tag.deb
           tag: ${{ github.ref }}
           overwrite: true
-          body: "This is my release text"
+      - name: Upload RPM file to release assets
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: home/runner/work/senzing-tools/senzing-tools/target/senzing-tools-$tag.rpm
+          tag: ${{ github.ref }}
+          overwrite: true
