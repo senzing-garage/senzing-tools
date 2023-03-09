@@ -1,5 +1,5 @@
-# template-repository
+# senzing-tools
 
-Placeholder for [GitHub pages](https://pages.github.com/).
+## Commands
 
-See [https://senzing.github.io/template-repository](https://senzing.github.io/template-repository).
+1. [senzing-tools](senzing-tools.md) - Collection of tools for working with the Senzing API.
