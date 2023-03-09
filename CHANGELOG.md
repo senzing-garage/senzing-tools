@@ -10,6 +10,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -
 
+## [0.1.2] - 2023-03-10
+
+### Added to 0.1.2
+
+- Updated documentation.
+
+## [0.1.1] - 2023-03-09
+
+### Added to 0.1.1
+
+- Worked on GitHub actions.  No change to `senzing-tools` functionality.
+
 ## [0.1.0] - 2023-03-09
 
 ### Added to 0.1.0
