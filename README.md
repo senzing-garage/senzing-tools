@@ -56,6 +56,16 @@ Senzing's `senzing-tools` has the following tools:
 
 ### Using command line options
 
+Simple examples.
+
+1. :pencil2: A `senzing-tools initdatabase` example:
+
+    ```console
+    export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
+    senzing-tools initdatabase \
+        --database-url postgresql://username:password@postgres.example.com:5432/G2
+    ```
+
 Each subcommand has it's own list of supported command line options.
 Documentation for the command line options:
 
@@ -72,16 +82,6 @@ Documentation for the command line options:
 1. Detailed documentation, visit:
     1. [initdatabase](https://github.com/Senzing/initdatabase#using-command-line-options)
     1. [servegrpc](https://github.com/Senzing/servegrpc#using-command-line-options)
-
-Simple examples.
-
-1. :pencil2: A `senzing-tools initdatabase` example:
-
-    ```console
-    export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
-    senzing-tools initdatabase \
-        --database-url postgresql://username:password@postgres.example.com:5432/G2
-    ```
 
 ### Using environment variables
 
