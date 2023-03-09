@@ -27,7 +27,7 @@ require (
 	github.com/senzing/g2-sdk-go v0.4.1 // indirect
 	github.com/senzing/g2-sdk-go-base v0.1.1 // indirect
 	github.com/senzing/g2-sdk-go-grpc v0.2.1 // indirect
-	github.com/senzing/g2-sdk-proto/go v0.0.0-20230126140313-273e96bc7dbd // indirect
+	github.com/senzing/g2-sdk-proto/go v0.0.0-20230309192011-3d05f8ee0fd2 // indirect
 	github.com/senzing/go-common v0.1.2 // indirect
 	github.com/senzing/go-databasing v0.2.1 // indirect
 	github.com/senzing/go-logging v1.1.3 // indirect
