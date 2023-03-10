@@ -1,1 +1,1 @@
-## Errors
+# senzing-tools errors

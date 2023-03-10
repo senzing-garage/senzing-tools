@@ -151,5 +151,6 @@ See individual commands for parameters:
 ## References
 
 - [Command reference](docs/senzing-tools.md)
+- [Errors](docs/errors.md)
 - [Examples](docs/examples.md)
 - [Development](docs/development.md)
