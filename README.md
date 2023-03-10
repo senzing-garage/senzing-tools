@@ -16,7 +16,7 @@ the recommendation is not to use it yet.
 
 ## Overview
 
-Senzing's `senzing-tools` has the following tools:
+Senzing's `senzing-tools` has the following tools/commands:
 
 1. [initdatabase](https://github.com/Senzing/initdatabase) - Used to create a Senzing schema and configuration in PostgreSQL, MySQL, MsSQL and SQLite databases.
 1. [servegrpc](https://github.com/Senzing/servegrpc) - A gRPC server of the Senzing API
@@ -66,7 +66,7 @@ Simple examples.
         --database-url postgresql://username:password@postgres.example.com:5432/G2
     ```
 
-Each subcommand has it's own list of supported command line options.
+Each command has it's own list of supported command line options.
 Documentation for the command line options:
 
 1. Online documentation, see
@@ -76,7 +76,7 @@ Documentation for the command line options:
 
     ```console
     export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
-    senzing-tools [subcommand] --help
+    senzing-tools [command] --help
     ```
 
 1. Detailed documentation, visit:
@@ -86,20 +86,20 @@ Documentation for the command line options:
 ### Using environment variables
 
 Environment variables may be used instead of command-line options.
-Each subcommand has it's own list of supported environment variables.
-So see a specific list, visit the appropriate subcommand.
+Each command has it's own list of supported environment variables.
+So see a specific list, visit the appropriate command.
 
-1. Subcommands:
+1. Commands:
     1. [initdatabase](https://github.com/Senzing/initdatabase#using-environment-variables)
     1. [servegrpc](https://github.com/Senzing/servegrpc#using-environment-variables)
 
 ### Using Docker
 
 The `senzing-tools` can be run from the `senzing/senzing-tools` Docker container.
-Each subcommand has it's own list of supported environment variables and command line options.
-So see a specific list, visit the appropriate subcommand.
+Each command has it's own list of supported environment variables and command line options.
+So see a specific list, visit the appropriate command.
 
-1. Subcommands:
+1. Commands:
     1. [initdatabase](https://github.com/Senzing/initdatabase#using-docker)
     1. [servegrpc](https://github.com/Senzing/servegrpc#using-docker)
 
