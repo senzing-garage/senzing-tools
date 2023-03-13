@@ -201,8 +201,8 @@ github.com/senzing/g2-sdk-go-base v0.1.1 h1:or8MelMRn3iXhE1YGSQE70GGEjFl6HA/2JCX
 github.com/senzing/g2-sdk-go-base v0.1.1/go.mod h1:sy+Qeol8MNYB52SjgGiRzpHD3b5Va6FlXaDq4eQPjCw=
 github.com/senzing/g2-sdk-go-grpc v0.2.1 h1:flqxH7LQbdg8EqQtfxxPOTIKR/CKWNOCUwldRuCB2hg=
 github.com/senzing/g2-sdk-go-grpc v0.2.1/go.mod h1:v3TSAS9woVwCVWGn5kmlX/vp5ymJNmHu5dg8pkANuNI=
-github.com/senzing/g2-sdk-proto/go v0.0.0-20230309192011-3d05f8ee0fd2 h1:gmwHEcrSWd/aPrLhe93HhktX7EJxyjm8o0v3yJzT3Gs=
-github.com/senzing/g2-sdk-proto/go v0.0.0-20230309192011-3d05f8ee0fd2/go.mod h1:MJDH/VHktx3vOOmFLKmi84HZuv3kcgiO544XzcqhVV4=
+github.com/senzing/g2-sdk-proto/go v0.0.0-20230310202231-e2f8d3edf4b8 h1:JliRWMBMR45nJbt/wsWyeqDTZL4BnibZzQvU4j5CapE=
+github.com/senzing/g2-sdk-proto/go v0.0.0-20230310202231-e2f8d3edf4b8/go.mod h1:c8P58slWygCjkg2apMDZfoYXRD97AYuXPx9+gKqm7Ik=
 github.com/senzing/go-common v0.1.2 h1:d4E4cyKAqBvHvexLvj51WwoU78jTbLlBXmE67o41CM8=
 github.com/senzing/go-common v0.1.2/go.mod h1:rDosNB5AHPIQvtwxvKvWKlF+dkzI+2WjeOfPWE7Bh2I=
 github.com/senzing/go-databasing v0.2.1 h1:cXM/ocMHmmhcxz7tSuz8qwCMghYPGWOrT3cxxJnwtZc=
@@ -213,10 +213,10 @@ github.com/senzing/go-observing v0.2.0 h1:QTFFTaZJ/1S2u96N17w2aCh/AHGHSOZCwX+VNU
 github.com/senzing/go-observing v0.2.0/go.mod h1:M5zrUXIYC4dL1fevBezB+aXIaU6uut/wynlQ93OcZhg=
 github.com/senzing/go-sdk-abstract-factory v0.2.1 h1:1tw+10JT/shCzF2oyzWdtye87hl231VXtwmWfWGhOdU=
 github.com/senzing/go-sdk-abstract-factory v0.2.1/go.mod h1:Vbdfk6hQOA9SJmMAZxPyfOsPvA3Q5f1osXpKg8lu1YA=
-github.com/senzing/initdatabase v0.1.4 h1:U85BNZY6HhdgD3gJWzFo8hJeufObfCouLVElHvK2SAY=
-github.com/senzing/initdatabase v0.1.4/go.mod h1:I1hC+scqS34tEzZDqX/7tEMBYZnIVjInyLrET6OHC0I=
-github.com/senzing/servegrpc v0.3.6 h1:F5bqWZD5Ykh8eo315pSqxCVJ3Av3GFcBcuoPVeVj50s=
-github.com/senzing/servegrpc v0.3.6/go.mod h1:UZP2KR96hVNb5nrl78eUAnRN+X/4e1/YMjMbkKYqPwk=
+github.com/senzing/initdatabase v0.1.5 h1:H1dqSC8+Rx7pS1JVtaqyo2kDhpn34KKih60SWz3ttyE=
+github.com/senzing/initdatabase v0.1.5/go.mod h1:Z2x7Gkmbwoo5cSmNSs6tp7huKw5YdMbDtSSz3Ipzkf8=
+github.com/senzing/servegrpc v0.3.7 h1:IlRujE7B2D+CpxjvrG2L2J3cDN/NoHwJxA1EcRYoEYQ=
+github.com/senzing/servegrpc v0.3.7/go.mod h1:UZP2KR96hVNb5nrl78eUAnRN+X/4e1/YMjMbkKYqPwk=
 github.com/spf13/afero v1.9.5 h1:stMpOSZFs//0Lv29HduCmli3GUfpFoF3Y1Q/aXj/wVM=
 github.com/spf13/afero v1.9.5/go.mod h1:UBogFpq8E9Hx+xc5CNTTEpTnuHVmXDwZcZcE1eb/UhQ=
 github.com/spf13/cast v1.5.0 h1:rj3WzYc11XZaIZMPKmwP96zkFEnnAmV8s6XbB2aY32w=

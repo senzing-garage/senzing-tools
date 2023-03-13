@@ -3,8 +3,8 @@ module github.com/senzing/senzing-tools
 go 1.20
 
 require (
-	github.com/senzing/initdatabase v0.1.4
-	github.com/senzing/servegrpc v0.3.6
+	github.com/senzing/initdatabase v0.1.5
+	github.com/senzing/servegrpc v0.3.7
 	github.com/spf13/cobra v1.6.1
 )
 
@@ -27,7 +27,7 @@ require (
 	github.com/senzing/g2-sdk-go v0.4.1 // indirect
 	github.com/senzing/g2-sdk-go-base v0.1.1 // indirect
 	github.com/senzing/g2-sdk-go-grpc v0.2.1 // indirect
-	github.com/senzing/g2-sdk-proto/go v0.0.0-20230309192011-3d05f8ee0fd2 // indirect
+	github.com/senzing/g2-sdk-proto/go v0.0.0-20230310202231-e2f8d3edf4b8 // indirect
 	github.com/senzing/go-common v0.1.2 // indirect
 	github.com/senzing/go-databasing v0.2.1 // indirect
 	github.com/senzing/go-logging v1.1.3 // indirect
