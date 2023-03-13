@@ -11,9 +11,9 @@ import (
 )
 
 var (
-	configurationFile string
-	buildVersion      string = "0.1.0"
-	buildIteration    string = "0"
+	buildVersion         string = "0.1.0"
+	buildIteration       string = "0"
+	defaultConfiguration string = ""
 )
 
 func makeVersion(version string, iteration string) string {
@@ -50,13 +50,17 @@ func Execute() {
 
 func init() {
 	cobra.OnInitialize(initConfig)
+	RootCmd.PersistentFlags().String("configuration", defaultConfiguration, "Path to configuration file [SENZING_TOOLS_CONFIGURATION]")
 }
 
 // initConfig reads in config file and ENV variables if set.
 func initConfig() {
-	if configurationFile != "" {
-		// Use config file from the flag.
-		viper.SetConfigFile(configurationFile)
+	viper.AutomaticEnv()
+	viper.SetDefault("configuration", defaultConfiguration)
+	viper.BindPFlag("configuration", RootCmd.Flags().Lookup("configuration"))
+
+	if viper.GetString("configuration") != "" {
+		viper.SetConfigFile(viper.GetString("configuration"))
 	} else {
 
 		// Find home directory.
@@ -64,18 +68,18 @@ func initConfig() {
 		home, err := os.UserHomeDir()
 		cobra.CheckErr(err)
 
-		// Search config in home directory with name ".senzing-tools" (without extension).
+		// Configuration file: senzing-tools.yaml
+
+		viper.SetConfigName("senzing-tools")
+		viper.SetConfigType("yaml")
+
+		// Search path order.
 
 		viper.AddConfigPath(home + "/.senzing-tools")
 		viper.AddConfigPath(home)
 		viper.AddConfigPath("/etc/senzing-tools")
-		viper.SetConfigType("yaml")
-		viper.SetConfigName("senzing-tools")
+
 	}
-
-	// Read in environment variables that match "SENZING_TOOLS_*" pattern.
-
-	viper.AutomaticEnv()
 
 	// If a config file is found, read it in.
 
