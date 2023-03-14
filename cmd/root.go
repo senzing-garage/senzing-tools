@@ -30,7 +30,6 @@ var RootCmd = &cobra.Command{
 Welcome to senzing-tools!
 	`,
 	PreRun: func(cobraCommand *cobra.Command, args []string) {
-		fmt.Println(">>>>> senzing-tools.PreRun")
 		cobraCommand.SetVersionTemplate(constant.VersionTemplate)
 	},
 	Version: helper.MakeVersion(buildVersion, buildIteration),
@@ -48,14 +47,12 @@ func Execute() {
 // Since init() is always invoked, define persistent command line parameters
 // that apply to all senzing-tool subcommands.
 func init() {
-	fmt.Println(">>>>> senzing-tools.init()")
 	cobra.OnInitialize(initConfig)
 	RootCmd.PersistentFlags().String(option.Configuration, defaultConfiguration, fmt.Sprintf("Path to configuration file [%s]", envar.Configuration))
 }
 
 // initConfig reads in config file and ENV variables if set.
 func initConfig() {
-	fmt.Println(">>>>> senzing-tools.initConfig()")
 	viper.AutomaticEnv()
 
 	configuration := RootCmd.Flags().Lookup(option.Configuration).Value.String()
@@ -83,6 +80,6 @@ func initConfig() {
 	// If a config file is found, read it in.
 
 	if err := viper.ReadInConfig(); err == nil {
-		fmt.Fprintln(os.Stderr, "Using config file:", viper.ConfigFileUsed())
+		fmt.Fprintln(os.Stderr, "Applying configuration file:", viper.ConfigFileUsed())
 	}
 }
