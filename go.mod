@@ -49,8 +49,3 @@ require (
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
-
-replace (
-	github.com/senzing/initdatabase v0.1.5 => /home/senzing/senzing.git/initdatabase
-	github.com/senzing/servegrpc v0.3.7 => /home/senzing/senzing.git/servegrpc
-)
