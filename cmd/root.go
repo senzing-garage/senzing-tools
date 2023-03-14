@@ -44,6 +44,8 @@ func Execute() {
 	}
 }
 
+// Since init() is always invoked, define persistent command line parameters
+// that apply to all senzing-tool subcommands.
 func init() {
 	fmt.Println(">>>>> senzing-tools.init()")
 	cobra.OnInitialize(initConfig)
