@@ -10,10 +10,13 @@ import (
 	"github.com/spf13/viper"
 )
 
-var (
-	buildVersion         string = "0.1.0"
-	buildIteration       string = "0"
+const (
 	defaultConfiguration string = ""
+)
+
+var (
+	buildVersion   string = "0.1.0"
+	buildIteration string = "0"
 )
 
 func makeVersion(version string, iteration string) string {
@@ -81,7 +84,6 @@ func initConfig() {
 		viper.AddConfigPath(home + "/.senzing-tools")
 		viper.AddConfigPath(home)
 		viper.AddConfigPath("/etc/senzing-tools")
-
 	}
 
 	// If a config file is found, read it in.
