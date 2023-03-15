@@ -3,7 +3,7 @@ module github.com/senzing/senzing-tools
 go 1.20
 
 require (
-	github.com/senzing/initdatabase v0.1.5
+	github.com/senzing/initdatabase v0.1.6
 	github.com/senzing/servegrpc v0.3.7
 	github.com/spf13/cobra v1.6.1
 	github.com/spf13/viper v1.15.0
