@@ -17,5 +17,8 @@ const (
 	EngineLogLevel          = "engine-log-level"
 	EngineModuleName        = "engine-module-name"
 	GrpcPort                = "grpc-port"
+	InputFileType           = "input-file-type"
+	InputURL                = "input-url"
 	LogLevel                = "log-level"
+	OutputURL               = "output-url"
 )
