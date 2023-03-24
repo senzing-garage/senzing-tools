@@ -8,6 +8,7 @@ const (
 	Configuration           = "configuration"
 	DatabaseUrl             = "database-url"
 	Datasources             = "datasources"
+	DelayInSeconds          = "delay-in-seconds"
 	EnableG2config          = "enable-g2config"
 	EnableG2configmgr       = "enable-g2configmgr"
 	EnableG2diagnostic      = "enable-g2diagnostic"
@@ -28,5 +29,9 @@ const (
 // ----------------------------------------------------------------------------
 
 const (
-	LogLevelHelp = "Log level of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, or PANIC [%s]"
+	DelayInSecondsHelp = "Number of seconds to wait before starting process"
+	InputFileTypeHelp  = "Input file type to override auto-detect based on file name"
+	InputURLHelp       = "Input URL used for processing"
+	LogLevelHelp       = "Log level of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, or PANIC [%s]"
+	OutputURLHelp      = "Output URL used for processing"
 )
