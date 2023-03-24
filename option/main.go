@@ -22,3 +22,11 @@ const (
 	LogLevel                = "log-level"
 	OutputURL               = "output-url"
 )
+
+// ----------------------------------------------------------------------------
+// Constant help text for parameters
+// ----------------------------------------------------------------------------
+
+const (
+	LogLevelHelp = "Log level of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, or PANIC [%s]"
+)
