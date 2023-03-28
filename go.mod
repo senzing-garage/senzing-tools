@@ -27,7 +27,7 @@ require (
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/senzing/g2-sdk-go v0.5.1 // indirect
 	github.com/senzing/g2-sdk-go-base v0.1.4 // indirect
-	github.com/senzing/g2-sdk-go-grpc v0.2.1 // indirect
+	github.com/senzing/g2-sdk-go-grpc v0.2.2 // indirect
 	github.com/senzing/g2-sdk-proto/go v0.0.0-20230315125947-e4aea8f381eb // indirect
 	github.com/senzing/go-common v0.1.2 // indirect
 	github.com/senzing/go-databasing v0.2.1 // indirect
