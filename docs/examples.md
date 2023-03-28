@@ -16,7 +16,7 @@ See [init-database examples](https://github.com/Senzing/init-database/blob/main/
         --env SENZING_TOOLS_DATABASE_URL=sqlite3://na:na@/tmp/sqlite/G2C.db \
         --rm \
         --volume /tmp/sqlite:/tmp/sqlite \
-        senzing/senzing-tools servegrpc
+        senzing/senzing-tools serve-grpc
 
     ```
 
@@ -97,7 +97,7 @@ See [init-database examples](https://github.com/Senzing/init-database/blob/main/
     docker run \
         --env SENZING_TOOLS_DATABASE_URL \
         --rm \
-        senzing/senzing-tools servegrpc
+        senzing/senzing-tools serve-grpc
 
     ```
 

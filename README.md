@@ -19,7 +19,7 @@ the recommendation is not to use it yet.
 Senzing's `senzing-tools` has the following tools/commands:
 
 1. [init-database](https://github.com/Senzing/init-database) - Used to create a Senzing schema and configuration in PostgreSQL, MySQL, MsSQL and SQLite databases.
-1. [servegrpc](https://github.com/Senzing/servegrpc) - A gRPC server of the Senzing API
+1. [serve-grpc](https://github.com/Senzing/serve-grpc) - A gRPC server of the Senzing API
 
 ### Install
 
@@ -81,7 +81,7 @@ Documentation for the command line options:
 
 1. Detailed documentation, visit:
     1. [init-database](https://github.com/Senzing/init-database#using-command-line-options)
-    1. [servegrpc](https://github.com/Senzing/servegrpc#using-command-line-options)
+    1. [serve-grpc](https://github.com/Senzing/serve-grpc#using-command-line-options)
 
 ### Using environment variables
 
@@ -91,7 +91,7 @@ So see a specific list, visit the appropriate command.
 
 1. Commands:
     1. [init-database](https://github.com/Senzing/init-database#using-environment-variables)
-    1. [servegrpc](https://github.com/Senzing/servegrpc#using-environment-variables)
+    1. [serve-grpc](https://github.com/Senzing/serve-grpc#using-environment-variables)
 
 ### Using Docker
 
@@ -101,7 +101,7 @@ So see a specific list, visit the appropriate command.
 
 1. Commands:
     1. [init-database](https://github.com/Senzing/init-database#using-docker)
-    1. [servegrpc](https://github.com/Senzing/servegrpc#using-docker)
+    1. [serve-grpc](https://github.com/Senzing/serve-grpc#using-docker)
 
 This usage shows how to initialze a database with a Docker container.
 
@@ -146,7 +146,7 @@ This usage shows how to initialze a database with a Docker container.
 See individual commands for parameters:
 
 1. [init-database](https://github.com/Senzing/init-database#parameters)
-1. [servegrpc](https://github.com/Senzing/servegrpc#parameters)
+1. [serve-grpc](https://github.com/Senzing/serve-grpc#parameters)
 
 ## References
 

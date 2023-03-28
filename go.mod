@@ -50,6 +50,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace (
-	github.com/senzing/serve-grpc v0.3.9 => /home/senzing/senzing.git/servegrpc
-)
+replace github.com/senzing/serve-grpc v0.3.9 => /home/senzing/senzing.git/servegrpc
