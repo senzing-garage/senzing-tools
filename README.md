@@ -18,7 +18,7 @@ the recommendation is not to use it yet.
 
 Senzing's `senzing-tools` has the following tools/commands:
 
-1. [initdatabase](https://github.com/Senzing/initdatabase) - Used to create a Senzing schema and configuration in PostgreSQL, MySQL, MsSQL and SQLite databases.
+1. [init-database](https://github.com/Senzing/init-database) - Used to create a Senzing schema and configuration in PostgreSQL, MySQL, MsSQL and SQLite databases.
 1. [servegrpc](https://github.com/Senzing/servegrpc) - A gRPC server of the Senzing API
 
 ### Install
@@ -58,11 +58,11 @@ Senzing's `senzing-tools` has the following tools/commands:
 
 Simple examples.
 
-1. :pencil2: A `senzing-tools initdatabase` example:
+1. :pencil2: A `senzing-tools init-database` example:
 
     ```console
     export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
-    senzing-tools initdatabase \
+    senzing-tools init-database \
         --database-url postgresql://username:password@postgres.example.com:5432/G2
     ```
 
@@ -80,7 +80,7 @@ Documentation for the command line options:
     ```
 
 1. Detailed documentation, visit:
-    1. [initdatabase](https://github.com/Senzing/initdatabase#using-command-line-options)
+    1. [init-database](https://github.com/Senzing/init-database#using-command-line-options)
     1. [servegrpc](https://github.com/Senzing/servegrpc#using-command-line-options)
 
 ### Using environment variables
@@ -90,7 +90,7 @@ Each command has it's own list of supported environment variables.
 So see a specific list, visit the appropriate command.
 
 1. Commands:
-    1. [initdatabase](https://github.com/Senzing/initdatabase#using-environment-variables)
+    1. [init-database](https://github.com/Senzing/init-database#using-environment-variables)
     1. [servegrpc](https://github.com/Senzing/servegrpc#using-environment-variables)
 
 ### Using Docker
@@ -100,17 +100,17 @@ Each command has it's own list of supported environment variables and command li
 So see a specific list, visit the appropriate command.
 
 1. Commands:
-    1. [initdatabase](https://github.com/Senzing/initdatabase#using-docker)
+    1. [init-database](https://github.com/Senzing/init-database#using-docker)
     1. [servegrpc](https://github.com/Senzing/servegrpc#using-docker)
 
 This usage shows how to initialze a database with a Docker container.
 
-1. :pencil2: A `senzing/senzing-tools initdatabase`example:
+1. :pencil2: A `senzing/senzing-tools init-database`example:
 
     ```console
     docker run \
         --env SENZING_TOOLS_DATABASE_URL=postgresql://username:password@postgres.example.com:5432/G2 \
-        senzing/senzing-tools initdatabase
+        senzing/senzing-tools init-database
     ```
 
 1. *Alternative:* Using `SENZING_TOOLS_ENGINE_CONFIGURATION_JSON` environment variable.
@@ -138,14 +138,14 @@ This usage shows how to initialze a database with a Docker container.
         ```console
         docker run \
             --env SENZING_TOOLS_ENGINE_CONFIGURATION_JSON \
-            senzing/senzing-tools initdatabase
+            senzing/senzing-tools init-database
         ```
 
 ### Parameters
 
 See individual commands for parameters:
 
-1. [initdatabase](https://github.com/Senzing/initdatabase#parameters)
+1. [init-database](https://github.com/Senzing/init-database#parameters)
 1. [servegrpc](https://github.com/Senzing/servegrpc#parameters)
 
 ## References

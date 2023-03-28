@@ -2,16 +2,6 @@
 
 ## SQLite initialization an gRPC server
 
-1. Make an empty file for the SQLite database.
-   Example:
-
-    ```console
-    rm -rf /tmp/sqlite
-    mkdir  /tmp/sqlite
-    touch  /tmp/sqlite/G2C.db
-
-    ```
-
 1. In SQLite database, create Senzing schema and initial Senzing config.
    Example:
 
@@ -20,7 +10,7 @@
         --env SENZING_TOOLS_DATABASE_URL=sqlite3://na:na@/tmp/sqlite/G2C.db \
         --rm \
         --volume /tmp/sqlite:/tmp/sqlite \
-        senzing/senzing-tools initdatabase
+        senzing/senzing-tools init-database
 
     ```
 
@@ -110,7 +100,7 @@
     docker run \
         --env SENZING_TOOLS_DATABASE_URL \
         --rm \
-        senzing/senzing-tools initdatabase
+        senzing/senzing-tools init-database
 
     ```
 

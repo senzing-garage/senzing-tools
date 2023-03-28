@@ -45,4 +45,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added to 0.1.0
 
 - Initial functionality
-- Commands: `initdatabase`, `servegrpc`
+- Commands: `init-database`, `servegrpc`

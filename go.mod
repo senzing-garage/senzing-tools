@@ -3,7 +3,7 @@ module github.com/senzing/senzing-tools
 go 1.20
 
 require (
-	github.com/senzing/initdatabase v0.1.8
+	github.com/senzing/init-database v0.1.8
 	github.com/senzing/servegrpc v0.3.8
 	github.com/spf13/cobra v1.6.1
 	github.com/spf13/viper v1.15.0
@@ -48,4 +48,8 @@ require (
 	google.golang.org/protobuf v1.30.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
+)
+
+replace (
+	github.com/senzing/init-database v0.1.8 => /home/senzing/senzing.git/initdatabase
 )
