@@ -25,8 +25,8 @@ require (
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/pelletier/go-toml/v2 v2.0.7 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
-	github.com/senzing/g2-sdk-go v0.5.0 // indirect
-	github.com/senzing/g2-sdk-go-base v0.1.3 // indirect
+	github.com/senzing/g2-sdk-go v0.5.1 // indirect
+	github.com/senzing/g2-sdk-go-base v0.1.4 // indirect
 	github.com/senzing/g2-sdk-go-grpc v0.2.1 // indirect
 	github.com/senzing/g2-sdk-proto/go v0.0.0-20230315125947-e4aea8f381eb // indirect
 	github.com/senzing/go-common v0.1.2 // indirect
@@ -43,7 +43,7 @@ require (
 	golang.org/x/net v0.8.0 // indirect
 	golang.org/x/sys v0.6.0 // indirect
 	golang.org/x/text v0.8.0 // indirect
-	google.golang.org/genproto v0.0.0-20230322174352-cde4c949918d // indirect
+	google.golang.org/genproto v0.0.0-20230327215041-6ac7f18bb9d5 // indirect
 	google.golang.org/grpc v1.54.0 // indirect
 	google.golang.org/protobuf v1.30.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
