@@ -1,8 +1,58 @@
 # senzing-tools examples
 
-## SQLite initialization an gRPC server
+## Initialize database
 
-1. In SQLite database, create Senzing schema and initial Senzing config.
+### Initialize database using command line option
+
+1. :pencil2: SQLite database.
+   Example:
+
+    ```console
+    senzing-tools init-database --database-url sqlite3://na:na@/tmp/sqlite/G2C.db
+
+    ```
+
+1. :pencil2: PostgreSql database.
+   Example:
+
+    ```console
+    senzing-tools init-database --database-url postgresql://postgres:postgres@postgres.example.com:5432/G2
+
+    ```
+
+### Initialize database using environment variable
+
+1. :pencil2: SQLite database.
+   Example:
+
+    ```console
+    export SENZING_TOOLS_DATABASE_URL=sqlite3://na:na@/tmp/sqlite/G2C.db
+    senzing-tools init-database --database-url sqlite3://na:na@/tmp/sqlite/G2C.db
+
+    ```
+
+1. :pencil2: PostgreSql database.
+   Example:
+
+    ```console
+    export SENZING_TOOLS_DATABASE_URL=postgresql://postgres:postgres@postgres.example.com:5432/G2
+    senzing-tools init-database
+
+    ```
+
+### Initialize database using Docker
+
+#### Initialize SQLite database
+
+1. Make an empty directory for Docker volume.
+   Example:
+
+    ```console
+    mkdir  /tmp/sqlite
+
+    ```
+
+1. Run `senzing/senzing-tools` Docker image with `init-database` command.
    Example:
 
     ```console
@@ -14,24 +64,45 @@
 
     ```
 
-1. **Optional:** View the database.
+#### Initialize PostgreSql database
+
+1. **Optional:** If an existing PostgreSql database doesn't exist,
+   [bring up a new PostgreSql database in a docker-compose formation](#docker-compose-stack-with-postgresql-database).
+
+1. :pencil2: Identify database URL, if using existing PostgreSql.
+   Example:
+
+    ```console
+    export SENZING_TOOLS_DATABASE_URL=postgresql://postgres:postgres@postgres.example.com:5432/G2
+
+    ```
+
+1. Identify database URL, if using docker-compose stack.
+   *Note:*  Assignment of `LOCAL_IP_ADDRESS` may not work in all cases.
+   Examples:
+
+    ```console
+    export LOCAL_IP_ADDRESS=$(curl --silent https://raw.githubusercontent.com/Senzing/knowledge-base/main/gists/find-local-ip-address/find-local-ip-address.py | python3 -)
+    export SENZING_TOOLS_DATABASE_URL=postgresql://postgres:postgres@${LOCAL_IP_ADDRESS}:5432/G2/?sslmode=disable
+
+    ```
+
+1. Run `senzing/senzing-tools` Docker image with `init-database` command.
    Example:
 
     ```console
     docker run \
-        --env SQLITE_DATABASE=G2C.db \
-        --interactive \
-        --publish 9174:8080 \
+        --env SENZING_TOOLS_DATABASE_URL \
         --rm \
-        --tty \
-        --volume /tmp/sqlite:/data \
-        coleifer/sqlite-web
+        senzing/senzing-tools init-database
 
     ```
 
-   Visit <http://localhost:9174>
+## Serve gRPC
 
-1. Start a gRPC server using that database.
+### Serve gRPC using Docker
+
+1. Start a gRPC server using an existing SQLite database.
    Example:
 
     ```console
@@ -43,7 +114,9 @@
 
     ```
 
-## Docker-compose stack with PostgreSql database
+## Miscellaneous
+
+### Docker-compose stack with PostgreSql database
 
 1. Identify a directory to place docker-compose artifacts.
    The directory specified will be deleted and re-created.
@@ -130,3 +203,22 @@
     sudo --preserve-env docker-compose down
 
     ```
+
+### View SQLite database
+
+1. **Optional:** View the database.
+   Example:
+
+    ```console
+    docker run \
+        --env SQLITE_DATABASE=G2C.db \
+        --interactive \
+        --publish 9174:8080 \
+        --rm \
+        --tty \
+        --volume /tmp/sqlite:/data \
+        coleifer/sqlite-web
+
+    ```
+
+   Visit <http://localhost:9174>
