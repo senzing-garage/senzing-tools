@@ -3,8 +3,8 @@ module github.com/senzing/senzing-tools
 go 1.20
 
 require (
-	github.com/senzing/init-database v0.1.8
-	github.com/senzing/serve-grpc v0.3.8
+	github.com/senzing/init-database v0.2.0
+	github.com/senzing/serve-grpc v0.3.9
 	github.com/spf13/cobra v1.6.1
 	github.com/spf13/viper v1.15.0
 )
@@ -21,7 +21,7 @@ require (
 	github.com/lib/pq v1.10.7 // indirect
 	github.com/magiconair/properties v1.8.7 // indirect
 	github.com/mattn/go-sqlite3 v1.14.16 // indirect
-	github.com/microsoft/go-mssqldb v0.20.0 // indirect
+	github.com/microsoft/go-mssqldb v0.21.0 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/pelletier/go-toml/v2 v2.0.7 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
@@ -51,6 +51,5 @@ require (
 )
 
 replace (
-	github.com/senzing/init-database v0.1.8 => /home/senzing/senzing.git/init-database
-	github.com/senzing/serve-grpc v0.3.8 => /home/senzing/senzing.git/servegrpc
+	github.com/senzing/serve-grpc v0.3.9 => /home/senzing/senzing.git/servegrpc
 )
