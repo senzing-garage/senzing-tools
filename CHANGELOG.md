@@ -10,6 +10,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -
 
+## [0.2.0] - 2023-03-28
+
+### Changed in 0.2.0
+
+- Migrated from `initdatabase` to `init-database` command
+- Migrated from `servegrpc` to `serve-grpc` command
+- Updated dependencies
+
 ## [0.1.5] - 2023-03-23
 
 ### Changed in 0.1.5
