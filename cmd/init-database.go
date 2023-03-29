@@ -1,6 +1,6 @@
 package cmd
 
-import "github.com/senzing/servegrpc/cmd"
+import "github.com/senzing/init-database/cmd"
 
 func init() {
 	RootCmd.AddCommand(cmd.RootCmd)

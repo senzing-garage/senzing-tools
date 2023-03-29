@@ -1,18 +1,14 @@
 # senzing-tools examples
 
-## SQLite initialization an gRPC server
+## Initialize database
 
-1. Make an empty file for the SQLite database.
-   Example:
+See [init-database examples](https://github.com/Senzing/init-database/blob/main/docs/examples.md)
 
-    ```console
-    rm -rf /tmp/sqlite
-    mkdir  /tmp/sqlite
-    touch  /tmp/sqlite/G2C.db
+## Serve gRPC
 
-    ```
+### Serve gRPC using Docker
 
-1. In SQLite database, create Senzing schema and initial Senzing config.
+1. Start a gRPC server using an existing SQLite database.
    Example:
 
     ```console
@@ -20,40 +16,13 @@
         --env SENZING_TOOLS_DATABASE_URL=sqlite3://na:na@/tmp/sqlite/G2C.db \
         --rm \
         --volume /tmp/sqlite:/tmp/sqlite \
-        senzing/senzing-tools initdatabase
+        senzing/senzing-tools serve-grpc
 
     ```
 
-1. **Optional:** View the database.
-   Example:
+## Miscellaneous
 
-    ```console
-    docker run \
-        --env SQLITE_DATABASE=G2C.db \
-        --interactive \
-        --publish 9174:8080 \
-        --rm \
-        --tty \
-        --volume /tmp/sqlite:/data \
-        coleifer/sqlite-web
-
-    ```
-
-   Visit <http://localhost:9174>
-
-1. Start a gRPC server using that database.
-   Example:
-
-    ```console
-    docker run \
-        --env SENZING_TOOLS_DATABASE_URL=sqlite3://na:na@/tmp/sqlite/G2C.db \
-        --rm \
-        --volume /tmp/sqlite:/tmp/sqlite \
-        senzing/senzing-tools servegrpc
-
-    ```
-
-## Docker-compose stack with PostgreSql database
+### Docker-compose stack with PostgreSql database
 
 1. Identify a directory to place docker-compose artifacts.
    The directory specified will be deleted and re-created.
@@ -110,7 +79,7 @@
     docker run \
         --env SENZING_TOOLS_DATABASE_URL \
         --rm \
-        senzing/senzing-tools initdatabase
+        senzing/senzing-tools init-database
 
     ```
 
@@ -128,7 +97,7 @@
     docker run \
         --env SENZING_TOOLS_DATABASE_URL \
         --rm \
-        senzing/senzing-tools servegrpc
+        senzing/senzing-tools serve-grpc
 
     ```
 
@@ -140,3 +109,22 @@
     sudo --preserve-env docker-compose down
 
     ```
+
+### View SQLite database
+
+1. **Optional:** View the database.
+   Example:
+
+    ```console
+    docker run \
+        --env SQLITE_DATABASE=G2C.db \
+        --interactive \
+        --publish 9174:8080 \
+        --rm \
+        --tty \
+        --volume /tmp/sqlite:/data \
+        coleifer/sqlite-web
+
+    ```
+
+   Visit <http://localhost:9174>

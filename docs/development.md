@@ -113,7 +113,7 @@ Since the Senzing library is a prerequisite, it must be installed first.
 
     ```console
     export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
-    senzing-tools initdatabase
+    senzing-tools init-database
 
     ```
 
@@ -158,7 +158,7 @@ Since the Senzing library is a prerequisite, it must be installed first.
 
     ```console
     export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
-    senzing-tools initdatabase
+    senzing-tools init-database
 
     ```
 
