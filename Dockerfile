@@ -12,7 +12,7 @@ ARG IMAGE_FINAL=senzing/senzingapi-runtime:3.4.2
 # define where we need to copy senzing files from
 FROM ${IMAGE_FINAL} as senzing-runtime
 FROM ${IMAGE_GO_BUILDER} as go_builder
-ENV REFRESHED_AT 2023-02-22
+ENV REFRESHED_AT=2023-02-22
 LABEL Name="senzing/senzing-tools-builder" \
       Maintainer="support@senzing.com" \
       Version="0.0.5"
@@ -57,7 +57,7 @@ RUN mkdir -p /output \
 # -----------------------------------------------------------------------------
 
 FROM ${IMAGE_FINAL} as final
-ENV REFRESHED_AT 2023-02-22
+ENV REFRESHED_AT=2023-02-22
 LABEL Name="senzing/senzing-tools" \
       Maintainer="support@senzing.com" \
       Version="0.0.5"
