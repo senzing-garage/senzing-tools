@@ -11,7 +11,7 @@ ARG IMAGE_FINAL=alpine
 # -----------------------------------------------------------------------------
 
 FROM ${IMAGE_GO_BUILDER} as go_builder
-ENV REFRESHED_AT 2023-03-03
+ENV REFRESHED_AT=2023-03-03
 LABEL Name="senzing/senzing-tools-builder" \
       Maintainer="support@senzing.com" \
       Version="0.0.5"
@@ -58,7 +58,7 @@ RUN mkdir -p /output \
 # -----------------------------------------------------------------------------
 
 FROM ${IMAGE_FPM_BUILDER} as fpm_builder
-ENV REFRESHED_AT 2023-03-03
+ENV REFRESHED_AT=2023-03-03
 LABEL Name="senzing/senzing-tools-fpm-builder" \
       Maintainer="support@senzing.com" \
       Version="0.0.5"
@@ -102,7 +102,7 @@ RUN fpm \
 # -----------------------------------------------------------------------------
 
 FROM ${IMAGE_FINAL} as final
-ENV REFRESHED_AT 2023-03-03
+ENV REFRESHED_AT=2023-03-03
 LABEL Name="senzing/senzing-tools" \
       Maintainer="support@senzing.com" \
       Version="0.0.5"
