@@ -15,7 +15,7 @@ FROM ${IMAGE_GO_BUILDER} as go_builder
 ENV REFRESHED_AT=2023-04-03
 LABEL Name="senzing/senzing-tools-builder" \
       Maintainer="support@senzing.com" \
-      Version="0.0.5"
+      Version="0.2.1"
 
 # Build arguments.
 
@@ -60,7 +60,7 @@ FROM ${IMAGE_FINAL} as final
 ENV REFRESHED_AT=2023-04-03
 LABEL Name="senzing/senzing-tools" \
       Maintainer="support@senzing.com" \
-      Version="0.0.5"
+      Version="0.2.1"
 
 # Copy local files from the Git repository.
 
