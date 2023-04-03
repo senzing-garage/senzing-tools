@@ -2,8 +2,8 @@
 # Stages
 # -----------------------------------------------------------------------------
 
-ARG IMAGE_GO_BUILDER=golang:1.20.0
-ARG IMAGE_FINAL=senzing/senzingapi-runtime:3.4.2
+ARG IMAGE_GO_BUILDER=golang:1.20.2@sha256:f7099345b8e4a93c62dc5102e7eb19a9cdbad12e7e322644eeaba355d70e616d
+ARG IMAGE_FINAL=senzing/senzingapi-runtime:3.5.0
 
 # -----------------------------------------------------------------------------
 # Stage: go_builder
@@ -12,10 +12,10 @@ ARG IMAGE_FINAL=senzing/senzingapi-runtime:3.4.2
 # define where we need to copy senzing files from
 FROM ${IMAGE_FINAL} as senzing-runtime
 FROM ${IMAGE_GO_BUILDER} as go_builder
-ENV REFRESHED_AT=2023-02-22
+ENV REFRESHED_AT=2023-04-03
 LABEL Name="senzing/senzing-tools-builder" \
       Maintainer="support@senzing.com" \
-      Version="0.0.5"
+      Version="0.2.1"
 
 # Build arguments.
 
@@ -57,10 +57,10 @@ RUN mkdir -p /output \
 # -----------------------------------------------------------------------------
 
 FROM ${IMAGE_FINAL} as final
-ENV REFRESHED_AT=2023-02-22
+ENV REFRESHED_AT=2023-04-03
 LABEL Name="senzing/senzing-tools" \
       Maintainer="support@senzing.com" \
-      Version="0.0.5"
+      Version="0.2.1"
 
 # Copy local files from the Git repository.
 
