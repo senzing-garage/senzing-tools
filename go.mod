@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/senzing/init-database v0.2.0
 	github.com/senzing/serve-grpc v0.4.0
-	github.com/spf13/cobra v1.6.1
+	github.com/spf13/cobra v1.7.0
 	github.com/spf13/viper v1.15.0
 )
 
