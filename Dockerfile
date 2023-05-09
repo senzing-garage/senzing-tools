@@ -15,7 +15,7 @@ FROM ${IMAGE_GO_BUILDER} as go_builder
 ENV REFRESHED_AT=2023-05-09
 LABEL Name="senzing/senzing-tools-builder" \
       Maintainer="support@senzing.com" \
-      Version="0.2.1"
+      Version="0.2.4"
 
 # Build arguments.
 
@@ -26,8 +26,8 @@ ARG GO_PACKAGE_NAME="unknown"
 
 # Copy remote files from DockerHub.
 
-COPY --from=senzing/senzingapi-runtime:3.4.2  "/opt/senzing/g2/lib/"   "/opt/senzing/g2/lib/"
-COPY --from=senzing/senzingapi-runtime:3.4.2  "/opt/senzing/g2/sdk/c/" "/opt/senzing/g2/sdk/c/"
+COPY --from=senzing/senzingapi-runtime:3.5.2  "/opt/senzing/g2/lib/"   "/opt/senzing/g2/lib/"
+COPY --from=senzing/senzingapi-runtime:3.5.2  "/opt/senzing/g2/sdk/c/" "/opt/senzing/g2/sdk/c/"
 
 # Copy local files from the Git repository.
 
@@ -60,7 +60,7 @@ FROM ${IMAGE_FINAL} as final
 ENV REFRESHED_AT=2023-05-09
 LABEL Name="senzing/senzing-tools" \
       Maintainer="support@senzing.com" \
-      Version="0.2.1"
+      Version="0.2.4"
 
 # Copy local files from the Git repository.
 
