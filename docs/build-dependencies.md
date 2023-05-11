@@ -74,3 +74,10 @@
 1. Requires: go-common
 1. Requires: g2-sdk-go
     1. [ ] [g2-sdk-go-base](https://github.com/senzing/g2-sdk-go-base)
+    1. [ ] [g2-sdk-go-grpc](https://github.com/senzing/g2-sdk-go-grpc)
+
+1. Requires: g2-sdk-go-base
+    1. [ ] [serve-grpc](https://github.com/Senzing/serve-grpc)
+
+1. Requires: go-sdk-abstract-factory
+    1. [ ] [init-database](https://github.com/Senzing/init-database)
