@@ -1,5 +1,7 @@
 # Build dependencies
 
+## Tree
+
 1. [ ] [senzing-tools](https://github.com/Senzing/senzing-tools)
     1. [ ] [init-database](https://github.com/Senzing/init-database)
         1. [ ] [g2-sdk-go](https://github.com/senzing/g2-sdk-go)
@@ -55,3 +57,10 @@
         1. [ ] [go-logging](https://github.com/senzing/go-logging)
             1. [ ] [go-messaging](https://github.com/senzing/go-messaging)
         1. [ ] [go-observing](https://github.com/senzing/go-observing)
+
+## Serial
+
+1. [ ] [go-messaging](https://github.com/senzing/go-messaging)
+1. [ ] [go-logging](https://github.com/senzing/go-logging)
+1. [ ] [go-observing](https://github.com/senzing/go-observing)
+1. [ ] [go-common](https://github.com/senzing/go-common)
