@@ -1,6 +1,6 @@
 # Build dependencies
 
-## Tree
+## Dependency tree
 
 1. [ ] [senzing-tools](https://github.com/Senzing/senzing-tools)
     1. [ ] [init-database](https://github.com/Senzing/init-database)
@@ -58,9 +58,19 @@
             1. [ ] [go-messaging](https://github.com/senzing/go-messaging)
         1. [ ] [go-observing](https://github.com/senzing/go-observing)
 
-## Serial
+## Serial approach
 
-1. [ ] [go-messaging](https://github.com/senzing/go-messaging)
-1. [ ] [go-logging](https://github.com/senzing/go-logging)
-1. [ ] [go-observing](https://github.com/senzing/go-observing)
-1. [ ] [go-common](https://github.com/senzing/go-common)
+1. No dependencies
+    1. [ ] [go-messaging](https://github.com/senzing/go-messaging)
+    1. [ ] [go-observing](https://github.com/senzing/go-observing)
+    1. [ ] [g2-sdk-proto/go](https://github.com/senzing/g2-sdk-proto/go)
+1. Requires: go-messaging
+    1. [ ] [go-logging](https://github.com/senzing/go-logging)
+1. Requires: go-observing
+    1. [ ] [g2-sdk-go](https://github.com/senzing/g2-sdk-go)
+1. Requires: go-logging
+    1. [ ] [go-common](https://github.com/senzing/go-common)
+    1. [ ] [go-databasing](https://github.com/senzing/go-databasing)
+1. Requires: go-common
+1. Requires: g2-sdk-go
+    1. [ ] [g2-sdk-go-base](https://github.com/senzing/g2-sdk-go-base)
