@@ -10,6 +10,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -
 
+## [0.2.5] - 2023-05-17
+
+### Added in 0.2.5
+
+- `observe` command
+- Added `gosec` GitHub Action
+
+### Changed in 0.2.5
+
+- Update dependencies
+  - github.com/senzing/init-database v0.2.4
+  - github.com/senzing/observe v0.1.0
+  - github.com/senzing/serve-grpc v0.4.5
+
 ## [0.2.4] - 2023-05-09
 
 ### Changed in 0.2.4
