@@ -21,5 +21,8 @@ const (
 	InputFileType           = "SENZING_TOOLS_INPUT_FILE_TYPE"
 	InputURL                = "SENZING_TOOLS_INPUT_URL"
 	LogLevel                = "SENZING_TOOLS_LOG_LEVEL"
+	ObserverGrpcPort        = "SENZING_TOOLS_OBSERVER_GRPC_PORT"
+	ObserverOrigin          = "SENZING_TOOLS_OBSERVER_ORIGIN"
+	ObserverUrl             = "SENZING_TOOLS_OBSERVER_URL"
 	OutputURL               = "SENZING_TOOLS_OUTPUT_URL"
 )

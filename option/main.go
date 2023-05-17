@@ -21,6 +21,9 @@ const (
 	InputFileType           = "input-file-type"
 	InputURL                = "input-url"
 	LogLevel                = "log-level"
+	ObserverGrpcPort        = "observer-grpc-port"
+	ObserverOrigin          = "observer-origin"
+	ObserverUrl             = "observer-url"
 	OutputURL               = "output-url"
 )
 
