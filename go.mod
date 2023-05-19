@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/senzing/init-database v0.2.4
 	github.com/senzing/observe v0.1.0
-	github.com/senzing/serve-grpc v0.4.5
+	github.com/senzing/serve-grpc v0.4.6
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/viper v1.15.0
 )
@@ -26,8 +26,8 @@ require (
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/pelletier/go-toml/v2 v2.0.7 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
-	github.com/senzing/g2-sdk-go v0.6.2 // indirect
-	github.com/senzing/g2-sdk-go-base v0.1.10 // indirect
+	github.com/senzing/g2-sdk-go v0.6.3 // indirect
+	github.com/senzing/g2-sdk-go-base v0.1.11 // indirect
 	github.com/senzing/g2-sdk-go-grpc v0.2.6 // indirect
 	github.com/senzing/g2-sdk-proto/go v0.0.0-20230315125947-e4aea8f381eb // indirect
 	github.com/senzing/go-common v0.1.3 // indirect
@@ -42,7 +42,7 @@ require (
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/subosito/gotenv v1.4.2 // indirect
 	golang.org/x/crypto v0.9.0 // indirect
-	golang.org/x/exp v0.0.0-20230515195305-f3d0a9c9a5cc // indirect
+	golang.org/x/exp v0.0.0-20230519143937-03e91628a987 // indirect
 	golang.org/x/net v0.10.0 // indirect
 	golang.org/x/sys v0.8.0 // indirect
 	golang.org/x/text v0.9.0 // indirect
