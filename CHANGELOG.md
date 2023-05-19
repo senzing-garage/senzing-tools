@@ -15,7 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed in 0.2.6
 
 - Update dependencies
-  - github.com/senzing/serve-grpc v0.4.5
+  - github.com/senzing/serve-grpc v0.4.6
 
 ## [0.2.5] - 2023-05-17
 
