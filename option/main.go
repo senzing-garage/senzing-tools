@@ -36,9 +36,13 @@ const (
 // ----------------------------------------------------------------------------
 
 const (
-	DelayInSecondsHelp = "Number of seconds to wait before starting process"
-	InputFileTypeHelp  = "Input file type to override auto-detect based on file name"
-	InputURLHelp       = "Input URL used for processing"
-	LogLevelHelp       = "Log level of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, or PANIC [%s]"
-	OutputURLHelp      = "Output URL used for processing"
+	DelayInSecondsHelp            = "Number of seconds to wait before starting process"
+	InputFileTypeHelp             = "Input file type to override auto-detect based on file name"
+	InputURLHelp                  = "Input URL used for processing"
+	LogLevelHelp                  = "Log level of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, or PANIC [%s]"
+	MonitoringPeriodInSecondsHelp = "Print monitoring log messages with the period given in seconds"
+	OutputURLHelp                 = "Output URL used for processing"
+	RecordMaxHelp                 = "Process a maximum number of records equal to this number"
+	RecordMinHelp                 = "Process records starting at this record number, discarding all before"
+	RecordMonitorHelp             = "Log a monitor message after this number of records have been processed"
 )
