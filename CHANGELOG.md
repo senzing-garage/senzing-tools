@@ -10,6 +10,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -
 
+## [0.2.8] - 2023-05-26
+
+### Changed in 0.2.8
+
+- Added additional env vars and options
+- Update dependencies
+  - github.com/senzing/init-database v0.2.5
+  - github.com/senzing/serve-grpc v0.4.7
+
 ## [0.2.7] - 2023-05-25
 
 ### Changed in 0.2.7
