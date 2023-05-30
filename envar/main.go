@@ -25,6 +25,7 @@ const (
 	InputURL                  = "SENZING_TOOLS_INPUT_URL"
 	LogLevel                  = "SENZING_TOOLS_LOG_LEVEL"
 	MonitoringPeriodInSeconds = "SENZING_TOOLS_MONITORING_PERIOD_IN_SECONDS"
+	NumberOfWorkers           = "SENZING_TOOLS_NUMBER_OF_WORKERS"
 	ObserverGrpcPort          = "SENZING_TOOLS_OBSERVER_GRPC_PORT"
 	ObserverOrigin            = "SENZING_TOOLS_OBSERVER_ORIGIN"
 	ObserverUrl               = "SENZING_TOOLS_OBSERVER_URL"
