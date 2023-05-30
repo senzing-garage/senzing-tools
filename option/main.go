@@ -45,7 +45,7 @@ const (
 	InputURLHelp                  = "Input URL used for processing"
 	LogLevelHelp                  = "Log level of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, or PANIC [%s]"
 	MonitoringPeriodInSecondsHelp = "Print monitoring log messages with the period given in seconds"
-	NumberOfWorkersHelp           = "Override the default number of worker routines."
+	NumberOfWorkersHelp           = "Override the default number of worker routines. Default is GOMAXPROCS."
 	OutputURLHelp                 = "Output URL used for processing"
 	RecordMaxHelp                 = "Process a maximum number of records equal to this number"
 	RecordMinHelp                 = "Process records starting at this record number, discarding all before"
