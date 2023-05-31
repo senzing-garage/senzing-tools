@@ -7,7 +7,7 @@ require (
 	github.com/senzing/observe v0.1.0
 	github.com/senzing/serve-grpc v0.4.7
 	github.com/spf13/cobra v1.7.0
-	github.com/spf13/viper v1.15.0
+	github.com/spf13/viper v1.16.0
 )
 
 require (
