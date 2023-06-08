@@ -1,0 +1,47 @@
+package help
+
+// ----------------------------------------------------------------------------
+// Constants
+// ----------------------------------------------------------------------------
+
+const (
+	Configuration             = "Path to configuration file [%s]"
+	DatabaseUrl               = "URL of database to initialize [%s]"
+	Datasources               = "Datasources to be added to initial Senzing configuration [%s]"
+	DelayInSeconds            = "Number of seconds to wait before starting process [%s]"
+	EnableAll                 = "Enable all services [%s]"
+	EnableG2config            = "Enable G2Config service [%s]"
+	EnableG2configmgr         = "Enable G2ConfigMgr service [%s]"
+	EnableG2diagnostic        = "Enable G2Diagnostic service [%s]"
+	EnableG2engine            = "Enable G2Config service [%s]"
+	EnableG2product           = "Enable G2Config service [%s]"
+	EnableSenzingChatApi      = "Enable the Senzing REST Chat service [%s]"
+	EnableSenzingRestApi      = "Enable the Senzing REST API service [%s]"
+	EnableSwaggerUi           = "Enable the Swagger UI service [%s]"
+	EnableXterm               = "Enable the XTerm service [%s]"
+	EngineConfigurationJson   = "JSON string sent to Senzing's init() function [%s]"
+	EngineLogLevel            = "Log level for Senzing Engine [%s]"
+	EngineModuleName          = "Identifier given to the Senzing engine [%s]"
+	GrpcPort                  = "Port used to serve gRPC [%s]"
+	GrpcUrl                   = "URL of Senzing gRPC service [%s]"
+	HttpPort                  = "Port to serve HTTP [%s]"
+	InputFileType             = "Input file type to override auto-detect based on file name [%s]"
+	InputURL                  = "Input URL used for processing [%s]"
+	LogLevel                  = "Log level of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, or PANIC [%s]"
+	MonitoringPeriodInSeconds = "Print monitoring log messages with the period given in seconds [%s]"
+	NumberOfWorkers           = "Override the default number of worker routines. Default is GOMAXPROCS [%s]"
+	ObserverOrigin            = "Identify this instance to the Observer [%s]"
+	ObserverUrl               = "URL of Observer [%s]"
+	OutputURL                 = "Output URL used for processing [%s]"
+	RecordMax                 = "Process a maximum number of records equal to this number [%s]"
+	RecordMin                 = "Process records starting at this record number, discarding all before [%s]"
+	RecordMonitor             = "Log a monitor message after this number of records have been processed [%s]"
+	ServerAddress             = "IP interface server listens on [%s]"
+	VisibilityPeriodInSeconds = "Number of seconds a record held for processing.  This is renewed if processing takes longer [%s]"
+	XtermAllowedHostnames     = "Comma-delimited list of hostnames permitted to connect to the websocket [%s]"
+	XtermArguments            = "Comma-delimited list of arguments passed to the terminal command prompt [%s]"
+	XtermCommand              = "Path of shell command [%s]"
+	XtermConnectionErrorLimit = "Connection re-attempts before terminating [%s]"
+	XtermKeepalivePingTimeout = "Maximum allowable seconds between a ping message and its response [%s]"
+	XtermMaxBufferSizeBytes   = "Maximum length of terminal input [%s]"
+)
