@@ -33,4 +33,5 @@ const (
 	RecordMax                 = "SENZING_TOOLS_RECORD_MAX"
 	RecordMin                 = "SENZING_TOOLS_RECORD_MIN"
 	RecordMonitor             = "SENZING_TOOLS_RECORD_MONITOR"
+	VisibilityPeriodInSeconds = "SENZING_TOOLS_VISIBILITY_PERIOD_IN_SECONDS"
 )
