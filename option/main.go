@@ -33,6 +33,7 @@ const (
 	RecordMax                 = "record-max"
 	RecordMin                 = "record-min"
 	RecordMonitor             = "record-monitor"
+	VisibilityPeriodInSeconds = "visibility-period-in-seconds"
 )
 
 // ----------------------------------------------------------------------------
@@ -50,4 +51,5 @@ const (
 	RecordMaxHelp                 = "Process a maximum number of records equal to this number"
 	RecordMinHelp                 = "Process records starting at this record number, discarding all before"
 	RecordMonitorHelp             = "Log a monitor message after this number of records have been processed"
+	VisibilityPeriodInSecondsHelp = "Number of seconds a record held for processing.  This is renewed if processing takes longer."
 )
