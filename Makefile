@@ -89,7 +89,14 @@ build-scratch:
 
 .PHONY: test
 test:
-	@go test -v -p 1 ./...
+#	@go test -v -p 1 ./...
+#	@go test -v ./.
+#	@go test -v ./cmd
+	@go test -v ./cmdhelper
+#	@go test -v ./constant
+#	@go test -v ./envar
+#	@go test -v ./helper
+#	@go test -v ./option
 
 # -----------------------------------------------------------------------------
 # docker-build
