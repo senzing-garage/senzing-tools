@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/senzing/senzing-tools/cmdhelper"
 	"github.com/senzing/senzing-tools/constant"
 	"github.com/senzing/senzing-tools/envar"
-	"github.com/senzing/senzing-tools/helper"
 	"github.com/senzing/senzing-tools/option"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
@@ -32,7 +32,7 @@ Welcome to senzing-tools!
 	PreRun: func(cobraCommand *cobra.Command, args []string) {
 		cobraCommand.SetVersionTemplate(constant.VersionTemplate)
 	},
-	Version: helper.MakeVersion(buildVersion, buildIteration),
+	Version: cmdhelper.Version(buildVersion, buildIteration),
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
