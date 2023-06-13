@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/magiconair/properties/assert"
 	"github.com/senzing/senzing-tools/envar"
 	"github.com/senzing/senzing-tools/help"
 	"github.com/senzing/senzing-tools/option"
 	"github.com/spf13/cobra"
+	"github.com/stretchr/testify/assert"
 )
 
 var contextVariables = ContextVariables{
@@ -59,6 +59,18 @@ func TestInit(test *testing.T) {
 	Init(cobraCommand, contextVariables)
 }
 
+func TestOsLookupEnvBool(test *testing.T) {
+	assert.True(test, OsLookupEnvBool("NOT_AN_ENVIRONMENT_VARIABLE", true))
+}
+
+func TestOsLookupEnvInt(test *testing.T) {
+	assert.Equal(test, 10, OsLookupEnvInt("NOT_AN_ENVIRONMENT_VARIABLE", 10))
+}
+
+func TestOsLookupEnvString(test *testing.T) {
+	assert.Equal(test, "default", OsLookupEnvString("NOT_AN_ENVIRONMENT_VARIABLE", "default"))
+}
+
 func TestPreRun(test *testing.T) {
 	cobraCommand := &cobra.Command{
 		Use:   "test-use",
@@ -95,6 +107,21 @@ func ExampleInit() {
 	}
 	Init(cobraCommand, contextVariables)
 	// Output:
+}
+
+func ExampleOsLookupEnvBool() {
+	fmt.Println(OsLookupEnvBool("NOT_AN_ENVIRONMENT_VARIABLE", true))
+	// Output: true
+}
+
+func ExampleOsLookupEnvInt() {
+	fmt.Println(OsLookupEnvInt("NOT_AN_ENVIRONMENT_VARIABLE", 10))
+	// Output: 10
+}
+
+func ExampleOsLookupEnvString() {
+	fmt.Println(OsLookupEnvString("NOT_AN_ENVIRONMENT_VARIABLE", "default"))
+	// Output: default
 }
 
 func ExamplePreRun() {
