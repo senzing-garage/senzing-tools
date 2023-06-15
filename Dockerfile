@@ -2,8 +2,9 @@
 # Stages
 # -----------------------------------------------------------------------------
 
+# ARG IMAGE_GO_BUILDER=golang:1.20.5@sha256:6b3fa4b908676231b50acbbc00e84d8cee9c6ce072b1175c0ff352c57d8a612f - Bad
 ARG IMAGE_GO_BUILDER=golang:1.20.4@sha256:31a8f92b17829b3ccddf0add184f18203acfd79ccc1bcb5c43803ab1c4836cca
-ARG IMAGE_FINAL=senzing/senzingapi-runtime:3.5.2
+ARG IMAGE_FINAL=senzing/senzingapi-runtime:3.5.3
 
 # -----------------------------------------------------------------------------
 # Stage: go_builder
@@ -12,7 +13,7 @@ ARG IMAGE_FINAL=senzing/senzingapi-runtime:3.5.2
 # define where we need to copy senzing files from
 FROM ${IMAGE_FINAL} as senzing-runtime
 FROM ${IMAGE_GO_BUILDER} as go_builder
-ENV REFRESHED_AT=2023-05-26
+ENV REFRESHED_AT=2023-06-15
 LABEL Name="senzing/senzing-tools-builder" \
       Maintainer="support@senzing.com" \
       Version="0.2.6"
@@ -26,8 +27,8 @@ ARG GO_PACKAGE_NAME="unknown"
 
 # Copy remote files from DockerHub.
 
-COPY --from=senzing/senzingapi-runtime:3.5.2  "/opt/senzing/g2/lib/"   "/opt/senzing/g2/lib/"
-COPY --from=senzing/senzingapi-runtime:3.5.2  "/opt/senzing/g2/sdk/c/" "/opt/senzing/g2/sdk/c/"
+COPY --from=senzing/senzingapi-runtime:3.5.3  "/opt/senzing/g2/lib/"   "/opt/senzing/g2/lib/"
+COPY --from=senzing/senzingapi-runtime:3.5.3  "/opt/senzing/g2/sdk/c/" "/opt/senzing/g2/sdk/c/"
 
 # Copy local files from the Git repository.
 
@@ -57,7 +58,7 @@ RUN mkdir -p /output \
 # -----------------------------------------------------------------------------
 
 FROM ${IMAGE_FINAL} as final
-ENV REFRESHED_AT=2023-05-26
+ENV REFRESHED_AT=2023-06-15
 LABEL Name="senzing/senzing-tools" \
       Maintainer="support@senzing.com" \
       Version="0.2.6"
