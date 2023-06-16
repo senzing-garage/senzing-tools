@@ -53,7 +53,7 @@
                     1. [ ] [go-messaging](https://github.com/senzing/go-messaging)
             1. [ ] [go-logging](https://github.com/senzing/go-logging)
             1. [ ] [go-observing](https://github.com/senzing/go-observing)
-        1. [ ] [go-sdk-abstract-factory)](https://github.com/senzing/go-sdk-abstract-factory)
+        1. [ ] [go-sdk-abstract-factory](https://github.com/senzing/go-sdk-abstract-factory)
             1. [ ] [g2-sdk-go](https://github.com/senzing/g2-sdk-go)
             1. [ ] [g2-sdk-go-base](https://github.com/senzing/g2-sdk-go-base)
                 1. [ ] [g2-sdk-go](https://github.com/senzing/g2-sdk-go)
