@@ -13,6 +13,7 @@ the recommendation is not to use it yet.
 [![Go Reference](https://pkg.go.dev/badge/github.com/senzing/senzing-tools.svg)](https://pkg.go.dev/github.com/senzing/senzing-tools)
 [![Go Report Card](https://goreportcard.com/badge/github.com/senzing/senzing-tools)](https://goreportcard.com/report/github.com/senzing/senzing-tools)
 [![go-test.yaml](https://github.com/Senzing/senzing-tools/actions/workflows/go-test.yaml/badge.svg)](https://github.com/Senzing/senzing-tools/actions/workflows/go-test.yaml)
+[![License](https://img.shields.io/badge/License-Apache2-brightgreen.svg)](https://github.com/Senzing/senzing-tools/blob/main/LICENSE)
 
 ## Overview
 
