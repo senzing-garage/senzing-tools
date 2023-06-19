@@ -25,7 +25,7 @@ senzing-tools serve-grpc [flags]
       --enable-g2product                   Enable G2Config service [SENZING_TOOLS_ENABLE_G2PRODUCT]
       --engine-configuration-json string   JSON string sent to Senzing's init() function [SENZING_TOOLS_ENGINE_CONFIGURATION_JSON]
       --engine-log-level int               Log level for Senzing Engine [SENZING_TOOLS_ENGINE_LOG_LEVEL]
-      --engine-module-name string          Identifier given to the Senzing engine [SENZING_TOOLS_ENGINE_MODULE_NAME] (default "serve-grpc-1687185901")
+      --engine-module-name string          Identifier given to the Senzing engine [SENZING_TOOLS_ENGINE_MODULE_NAME] (default "serve-grpc-1687186185")
       --grpc-port int                      Port used to serve gRPC [SENZING_TOOLS_GRPC_PORT] (default 8258)
   -h, --help                               help for serve-grpc
       --log-level string                   Log level of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, or PANIC [SENZING_TOOLS_LOG_LEVEL] (default "INFO")
