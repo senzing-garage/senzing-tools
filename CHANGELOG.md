@@ -19,7 +19,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed in 0.3.0
 
 - Added additional env vars and options
+- In `Dockerfile`, updated to `senzing/senzingapi-runtime:3.5.3`
 - Update dependencies
+  - github.com/senzing/init-database v0.2.6
+  - github.com/senzing/observe v0.1.1
+  - github.com/senzing/serve-grpc v0.4.8
+  - github.com/spf13/viper v1.16.0
+  - github.com/stretchr/testify v1.8.4
 
 ## [0.2.8] - 2023-05-26
 
