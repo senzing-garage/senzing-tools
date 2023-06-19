@@ -23,6 +23,7 @@
 1. Requires: g2-sdk-go-grpc
     1. [ ] [go-sdk-abstract-factory](https://github.com/senzing/go-sdk-abstract-factory)
 1. Requires: go-sdk-abstract-factory
+1. Requires: go-rest-api-service
     1. [ ] [serve-http](https://github.com/senzing/serve-http)
 1. Requires: go-databasing
     1. [ ] [init-database](https://github.com/Senzing/init-database)

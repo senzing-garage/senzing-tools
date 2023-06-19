@@ -8,7 +8,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Added VisibilityPeriodInSeconds to env vars and options
+-
+
+## [0.3.0] - 2023-06-19
+
+### Added in 0.3.0
+
+- `serve-http` command, although not fully implemented.
+
+### Changed in 0.3.0
+
+- Added additional env vars and options
+- Update dependencies
 
 ## [0.2.8] - 2023-05-26
 
