@@ -20,7 +20,9 @@ the recommendation is not to use it yet.
 Senzing's `senzing-tools` has the following tools/commands:
 
 1. [init-database](https://github.com/Senzing/init-database) - Used to create a Senzing schema and configuration in PostgreSQL, MySQL, MsSQL and SQLite databases.
+1. [observer](https://github.com/Senzing/observe) - Aggregates Observer messages
 1. [serve-grpc](https://github.com/Senzing/serve-grpc) - A gRPC server of the Senzing API
+1. [serve-http](https://github.com/Senzing/serve-http) - An HTTP server for Senzing Tools
 
 ### Install
 
