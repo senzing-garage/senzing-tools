@@ -13,13 +13,16 @@ the recommendation is not to use it yet.
 [![Go Reference](https://pkg.go.dev/badge/github.com/senzing/senzing-tools.svg)](https://pkg.go.dev/github.com/senzing/senzing-tools)
 [![Go Report Card](https://goreportcard.com/badge/github.com/senzing/senzing-tools)](https://goreportcard.com/report/github.com/senzing/senzing-tools)
 [![go-test.yaml](https://github.com/Senzing/senzing-tools/actions/workflows/go-test.yaml/badge.svg)](https://github.com/Senzing/senzing-tools/actions/workflows/go-test.yaml)
+[![License](https://img.shields.io/badge/License-Apache2-brightgreen.svg)](https://github.com/Senzing/senzing-tools/blob/main/LICENSE)
 
 ## Overview
 
 Senzing's `senzing-tools` has the following tools/commands:
 
 1. [init-database](https://github.com/Senzing/init-database) - Used to create a Senzing schema and configuration in PostgreSQL, MySQL, MsSQL and SQLite databases.
+1. [observer](https://github.com/Senzing/observe) - Aggregates Observer messages
 1. [serve-grpc](https://github.com/Senzing/serve-grpc) - A gRPC server of the Senzing API
+1. [serve-http](https://github.com/Senzing/serve-http) - An HTTP server for Senzing Tools
 
 ### Install
 
