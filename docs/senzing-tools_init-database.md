@@ -7,7 +7,7 @@ Initialize a database with the Senzing schema and configuration
 
 Initialize a database with the Senzing schema and configuration.
 For more information, visit https://github.com/Senzing/init-database
-	
+    
 
 ```
 senzing-tools init-database [flags]
@@ -21,7 +21,7 @@ senzing-tools init-database [flags]
       --datasources strings                Datasources to be added to initial Senzing configuration [SENZING_TOOLS_DATASOURCES]
       --engine-configuration-json string   JSON string sent to Senzing's init() function [SENZING_TOOLS_ENGINE_CONFIGURATION_JSON]
       --engine-log-level int               Log level for Senzing Engine [SENZING_TOOLS_ENGINE_LOG_LEVEL]
-      --engine-module-name string          Identifier given to the Senzing engine [SENZING_TOOLS_ENGINE_MODULE_NAME] (default "init-database-1687186185")
+      --engine-module-name string          Identifier given to the Senzing engine [SENZING_TOOLS_ENGINE_MODULE_NAME] (default "init-database-1687186397")
   -h, --help                               help for init-database
       --log-level string                   Log level of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, or PANIC [SENZING_TOOLS_LOG_LEVEL] (default "INFO")
       --observer-origin string             Identify this instance to the Observer [SENZING_TOOLS_OBSERVER_ORIGIN]

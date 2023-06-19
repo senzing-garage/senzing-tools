@@ -6,7 +6,7 @@ Aggregate observations
 
 
 Listen for Observer messages over gRPC and print them to STDOUT.
-	
+    
 
 ```
 senzing-tools observe [flags]
@@ -15,9 +15,9 @@ senzing-tools observe [flags]
 ### Options
 
 ```
-  -h, --help                     help for observe
-      --log-level string         Log level of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, or PANIC [SENZING_TOOLS_LOG_LEVEL] (default "INFO")
-      --observer-grpc-port int   Port used to listen to Observer messages over gRPC [SENZING_TOOLS_OBSERVER_GRPC_PORT] (default 8260)
+      --grpc-port int      Port used to serve gRPC [SENZING_TOOLS_GRPC_PORT] (default 8260)
+  -h, --help               help for observe
+      --log-level string   Log level of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, or PANIC [SENZING_TOOLS_LOG_LEVEL] (default "INFO")
 ```
 
 ### Options inherited from parent commands
