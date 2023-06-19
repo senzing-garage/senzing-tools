@@ -24,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - github.com/senzing/init-database v0.2.6
   - github.com/senzing/observe v0.1.1
   - github.com/senzing/serve-grpc v0.4.8
+  - github.com/senzing/serve-http v0.0.1
   - github.com/spf13/viper v1.16.0
   - github.com/stretchr/testify v1.8.4
 
