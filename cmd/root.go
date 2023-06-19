@@ -28,6 +28,7 @@ var RootCmd = &cobra.Command{
 	Short: "Tools to help use the Senzing API",
 	Long: `
 Welcome to senzing-tools!
+For more information, visit https://github.com/Senzing/senzing-tools
 	`,
 	PreRun: func(cobraCommand *cobra.Command, args []string) {
 		cobraCommand.SetVersionTemplate(constant.VersionTemplate)
