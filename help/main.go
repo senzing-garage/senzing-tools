@@ -44,4 +44,9 @@ const (
 	XtermConnectionErrorLimit = "Connection re-attempts before terminating [%s]"
 	XtermKeepalivePingTimeout = "Maximum allowable seconds between a ping message and its response [%s]"
 	XtermMaxBufferSizeBytes   = "Maximum length of terminal input [%s]"
+	LicenseStringBase64       = "Base64 representation of a Senzing license [%s]"
+	SenzingDirectory          = "Path to the SenzingAPI installation directory [%s]"
+	ConfigPath                = "Path to SenzingAPI's configuration directory [%s]"
+	ResourcePath              = "Path to SenzingAPI's config, schema, and templates directory [%s]"
+	SupportPath               = "Path to SenzingAPI's data directory [%s]"
 )
