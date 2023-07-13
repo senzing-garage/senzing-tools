@@ -5,6 +5,7 @@ package option
 // ----------------------------------------------------------------------------
 
 const (
+	ConfigPath                = "config-path"
 	Configuration             = "configuration"
 	DatabaseUrl               = "database-url"
 	Datasources               = "datasources"
@@ -27,6 +28,7 @@ const (
 	HttpPort                  = "http-port"
 	InputFileType             = "input-file-type"
 	InputURL                  = "input-url"
+	LicenseStringBase64       = "license-string-base64"
 	LogLevel                  = "log-level"
 	MonitoringPeriodInSeconds = "monitoring-period-in-seconds"
 	NumberOfWorkers           = "number-of-workers"
@@ -36,7 +38,10 @@ const (
 	RecordMax                 = "record-max"
 	RecordMin                 = "record-min"
 	RecordMonitor             = "record-monitor"
+	ResourcePath              = "resource-path"
+	SenzingDirectory          = "senzing-directory"
 	ServerAddress             = "server-address"
+	SupportPath               = "support-path"
 	VisibilityPeriodInSeconds = "visibility-period-in-seconds"
 	XtermAllowedHostnames     = "xterm-allowed-hostnames"
 	XtermArguments            = "xterm-arguments"

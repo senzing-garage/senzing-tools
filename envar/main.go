@@ -5,6 +5,7 @@ package envar
 // ----------------------------------------------------------------------------
 
 const (
+	ConfigPath                = "SENZING_TOOLS_CONFIG_PATH"
 	Configuration             = "SENZING_TOOLS_CONFIGURATION"
 	DatabaseUrl               = "SENZING_TOOLS_DATABASE_URL"
 	Datasources               = "SENZING_TOOLS_DATASOURCES"
@@ -27,6 +28,7 @@ const (
 	HttpPort                  = "SENZING_TOOLS_HTTP_PORT"
 	InputFileType             = "SENZING_TOOLS_INPUT_FILE_TYPE"
 	InputURL                  = "SENZING_TOOLS_INPUT_URL"
+	LicenseStringBase64       = "SENZING_TOOLS_LICENSE_STRING_BASE64"
 	LogLevel                  = "SENZING_TOOLS_LOG_LEVEL"
 	MonitoringPeriodInSeconds = "SENZING_TOOLS_MONITORING_PERIOD_IN_SECONDS"
 	NumberOfWorkers           = "SENZING_TOOLS_NUMBER_OF_WORKERS"
@@ -36,7 +38,10 @@ const (
 	RecordMax                 = "SENZING_TOOLS_RECORD_MAX"
 	RecordMin                 = "SENZING_TOOLS_RECORD_MIN"
 	RecordMonitor             = "SENZING_TOOLS_RECORD_MONITOR"
+	ResourcePath              = "SENZING_TOOLS_RESOURCE_PATH"
+	SenzingDirectory          = "SENZING_TOOLS_SENZING_DIRECTORY"
 	ServerAddress             = "SENZING_TOOLS_SERVER_ADDRESS"
+	SupportPath               = "SENZING_TOOLS_SUPPORT_PATH"
 	VisibilityPeriodInSeconds = "SENZING_TOOLS_VISIBILITY_PERIOD_IN_SECONDS"
 	XtermAllowedHostnames     = "SENZING_TOOLS_XTERM_ALLOWED_HOSTNAMES"
 	XtermArguments            = "SENZING_TOOLS_XTERM_ARGUMENTS"
