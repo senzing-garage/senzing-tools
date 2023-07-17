@@ -83,7 +83,7 @@ func Execute() {
 
 	command, isSet := os.LookupEnv("SENZING_TOOLS_COMMAND")
 	if isSet {
-		if (len(os.Args) == 1) || (strings.HasPrefix(os.Args[1], "--")) {
+		if (len(os.Args) == 1) || (strings.HasPrefix(os.Args[1], "-")) {
 			newArgs := []string{
 				command,
 			}
