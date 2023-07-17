@@ -5,6 +5,7 @@ package cmd
 import (
 	"fmt"
 	"os"
+	"strings"
 
 	"github.com/senzing/senzing-tools/cmdhelper"
 	"github.com/senzing/senzing-tools/constant"
@@ -15,35 +16,20 @@ import (
 )
 
 const (
+	Short string = "Tools to help use the Senzing API"
+	Use   string = "senzing-tools"
+	Long  string = `
+Welcome to senzing-tools!
+The value of [command] may also be specified by the
+SENZING_TOOLS_COMMAND environment variable.
+For more information, visit https://github.com/Senzing/senzing-tools
+    `
 	defaultConfiguration string = ""
 )
 
-var (
-	buildVersion   string = "0.1.0"
-	buildIteration string = "0"
-)
-
-var RootCmd = &cobra.Command{
-	Use:   "senzing-tools",
-	Short: "Tools to help use the Senzing API",
-	Long: `
-Welcome to senzing-tools!
-For more information, visit https://github.com/Senzing/senzing-tools
-	`,
-	PreRun: func(cobraCommand *cobra.Command, args []string) {
-		cobraCommand.SetVersionTemplate(constant.VersionTemplate)
-	},
-	Version: cmdhelper.Version(buildVersion, buildIteration),
-}
-
-// Execute adds all child commands to the root command and sets flags appropriately.
-// This is called by main.main(). It only needs to happen once to the rootCmd.
-func Execute() {
-	err := RootCmd.Execute()
-	if err != nil {
-		os.Exit(1)
-	}
-}
+// ----------------------------------------------------------------------------
+// Private functions
+// ----------------------------------------------------------------------------
 
 // Since init() is always invoked, define persistent command line parameters
 // that apply to all senzing-tool subcommands.
@@ -81,6 +67,61 @@ func initConfig() {
 	// If a config file is found, read it in.
 
 	if err := viper.ReadInConfig(); err == nil {
-		fmt.Fprintln(os.Stderr, "Applying configuration file:", viper.ConfigFileUsed())
+		fmt.Fprintf(os.Stderr, "Applying configuration file: %s\n", viper.ConfigFileUsed())
 	}
+}
+
+// ----------------------------------------------------------------------------
+// Public functions
+// ----------------------------------------------------------------------------
+
+// Execute adds all child commands to the root command and sets flags appropriately.
+// This is called by main.main(). It only needs to happen once to the rootCmd.
+func Execute() {
+
+	// Handle choice of command set by environment variable.
+
+	command, isSet := os.LookupEnv("SENZING_TOOLS_COMMAND")
+	if isSet {
+		newArgs := []string{
+			command,
+		}
+		for index, arg := range os.Args {
+			if index > 0 {
+				newArgs = append(newArgs, arg)
+			}
+		}
+		fmt.Fprintf(os.Stderr, "Using SENZING_TOOLS_COMMAND value of '%s' resulting in command: `senzing-tools %s'\n", command, strings.Join(newArgs, " "))
+		RootCmd.SetArgs(newArgs)
+	}
+
+	// Execute command.
+
+	err := RootCmd.Execute()
+	if err != nil {
+		os.Exit(1)
+	}
+}
+
+// Used in construction of cobra.Command
+func PreRun(cobraCommand *cobra.Command, args []string) {
+	cobraCommand.SetVersionTemplate(constant.VersionTemplate)
+}
+
+// Used in construction of cobra.Command
+func Version() string {
+	return cmdhelper.Version(githubVersion, githubIteration)
+}
+
+// ----------------------------------------------------------------------------
+// Command
+// ----------------------------------------------------------------------------
+
+// RootCmd represents the command.
+var RootCmd = &cobra.Command{
+	Use:     Use,
+	Short:   Short,
+	Long:    Long,
+	PreRun:  PreRun,
+	Version: Version(),
 }
