@@ -83,16 +83,18 @@ func Execute() {
 
 	command, isSet := os.LookupEnv("SENZING_TOOLS_COMMAND")
 	if isSet {
-		newArgs := []string{
-			command,
-		}
-		for index, arg := range os.Args {
-			if index > 0 {
-				newArgs = append(newArgs, arg)
+		if (len(os.Args) == 1) || (strings.HasPrefix(os.Args[1], "--")) {
+			newArgs := []string{
+				command,
 			}
+			for index, arg := range os.Args {
+				if index > 0 {
+					newArgs = append(newArgs, arg)
+				}
+			}
+			fmt.Fprintf(os.Stderr, "Using SENZING_TOOLS_COMMAND value of '%s' resulting in command: `senzing-tools %s'\n", command, strings.Join(newArgs, " "))
+			RootCmd.SetArgs(newArgs)
 		}
-		fmt.Fprintf(os.Stderr, "Using SENZING_TOOLS_COMMAND value of '%s' resulting in command: `senzing-tools %s'\n", command, strings.Join(newArgs, " "))
-		RootCmd.SetArgs(newArgs)
 	}
 
 	// Execute command.
