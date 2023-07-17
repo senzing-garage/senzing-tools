@@ -84,9 +84,7 @@ func Execute() {
 	command, isSet := os.LookupEnv("SENZING_TOOLS_COMMAND")
 	if isSet {
 		if (len(os.Args) == 1) || (strings.HasPrefix(os.Args[1], "-")) {
-			newArgs := []string{
-				command,
-			}
+			newArgs := strings.Split(command, " ")
 			for index, arg := range os.Args {
 				if index > 0 {
 					newArgs = append(newArgs, arg)
