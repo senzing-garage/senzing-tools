@@ -4,46 +4,16 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/senzing/senzing-tools/envar"
-	"github.com/senzing/senzing-tools/help"
-	"github.com/senzing/senzing-tools/option"
+	"github.com/senzing/senzing-tools/cmdhelper/optiontype"
 	"github.com/spf13/cobra"
 	"github.com/stretchr/testify/assert"
 )
 
-var contextVariables = ContextVariables{
-	Bools: []ContextBool{
-		{
-			Default: false,
-			Envar:   envar.EnableSwaggerUi,
-			Help:    help.EnableSwaggerUi,
-			Option:  option.EnableSwaggerUi,
-		},
-	},
-	Ints: []ContextInt{
-		{
-			Default: 0,
-			Envar:   envar.EngineLogLevel,
-			Help:    help.EngineLogLevel,
-			Option:  option.EngineLogLevel,
-		},
-	},
-	Strings: []ContextString{
-		{
-			Default: "",
-			Envar:   envar.Configuration,
-			Help:    help.Configuration,
-			Option:  option.Configuration,
-		},
-	},
-	StringSlices: []ContextStringSlice{
-		{
-			Default: []string{},
-			Envar:   envar.XtermArguments,
-			Help:    help.XtermArguments,
-			Option:  option.XtermArguments,
-		},
-	},
+var contextVariables = []ContextVariable{
+	OptionConfiguration,
+	OptionEngineLogLevel,
+	OptionEnableSwaggerUi,
+	OptionXtermArguments,
 }
 
 // ----------------------------------------------------------------------------
@@ -95,14 +65,13 @@ func ExampleInit() {
 		Short: "example-short",
 		Long:  `example-long`,
 	}
-	var contextVariables = ContextVariables{
-		Strings: []ContextString{
-			{
-				Default: "",
-				Envar:   "MY_VARIABLE",
-				Help:    "Description of my variable [%s]",
-				Option:  "my-variable",
-			},
+	var contextVariables = []ContextVariable{
+		{
+			Default: "",
+			Envar:   "MY_VARIABLE",
+			Help:    "Description of my variable [%s]",
+			Option:  "my-variable",
+			Type:    optiontype.String,
 		},
 	}
 	Init(cobraCommand, contextVariables)
@@ -130,14 +99,13 @@ func ExamplePreRun() {
 		Short: "example-short",
 		Long:  `example-long`,
 	}
-	var contextVariables = ContextVariables{
-		Strings: []ContextString{
-			{
-				Default: "",
-				Envar:   "MY_VARIABLE",
-				Help:    "Description of my variable [%s]",
-				Option:  "my-variable",
-			},
+	var contextVariables = []ContextVariable{
+		{
+			Default: "",
+			Envar:   "MY_VARIABLE",
+			Help:    "Description of my variable [%s]",
+			Option:  "my-variable",
+			Type:    optiontype.String,
 		},
 	}
 	Init(cobraCommand, contextVariables)
