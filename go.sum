@@ -220,6 +220,7 @@ github.com/ogen-go/ogen v0.71.1 h1:X/TYjyi5XkXpuvLCRQYbPF/T4VJ/bjBNjdcW8ZW+NK0=
 github.com/ogen-go/ogen v0.71.1/go.mod h1:DN3Tv8Zqla1f0JYUANyR7aEb9sRHwIwrxguv0pzVH6o=
 github.com/pelletier/go-toml/v2 v2.0.9 h1:uH2qQXheeefCCkuBBSLi7jCiSmj3VRh2+Goq2N7Xxu0=
 github.com/pelletier/go-toml/v2 v2.0.9/go.mod h1:tJU2Z3ZkXwnxa4DPO899bsyIoywizdUvyaeZurnPPDc=
+github.com/pkg/browser v0.0.0-20210911075715-681adbf594b8 h1:KoWmjvw+nsYOo29YJK9vDA65RGE3NrOnUtO7a+RF9HU=
 github.com/pkg/browser v0.0.0-20210911075715-681adbf594b8/go.mod h1:HKlIX3XHQyzLZPlr7++PzdhaXEj94dEiJgZDTsxEqUI=
 github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
 github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
@@ -241,6 +242,8 @@ github.com/russross/blackfriday/v2 v2.1.0 h1:JIOH55/0cWyOuilr9/qlrm0BSXldqnqwMsf
 github.com/russross/blackfriday/v2 v2.1.0/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
 github.com/segmentio/asm v1.2.0 h1:9BQrFxC+YOHJlTlHGkTrFWf59nbL3XnCoFLTwDCI7ys=
 github.com/segmentio/asm v1.2.0/go.mod h1:BqMnlJP91P8d+4ibuonYZw9mfnzI9HfxselHZr5aAcs=
+github.com/senzing/explain v0.1.0 h1:047Bu1iEmYdBAMKzZhRUQGy/A0grPhzDZhHr1MxmQGQ=
+github.com/senzing/explain v0.1.0/go.mod h1:xm5iMDgnBYSNS1z1pcXxqGylZ/fb1W0K6cSEyE9zj+U=
 github.com/senzing/g2-sdk-go v0.6.7 h1:AF+4svTLA6YIEjnsSVNJMnQegRX9IwOe1O4phzsog7w=
 github.com/senzing/g2-sdk-go v0.6.7/go.mod h1:9DtqQYSTuooNTP+HLqC6aaGegQbw5IkejEDqs2GBcUo=
 github.com/senzing/g2-sdk-go-base v0.2.2 h1:zPrD5d5GNXhegbKMqwSFAB75tKyZVYVPT6cMzyvysRU=
