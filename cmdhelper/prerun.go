@@ -6,7 +6,6 @@ import (
 	"strings"
 
 	"github.com/senzing/senzing-tools/constant"
-	"github.com/senzing/senzing-tools/option"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )
@@ -14,7 +13,7 @@ import (
 // If a configuration file is present, load it.
 func loadConfigurationFile(cobraCommand *cobra.Command, configName string) {
 	configuration := ""
-	configFlag := cobraCommand.Flags().Lookup(option.Configuration)
+	configFlag := cobraCommand.Flags().Lookup(OptionConfiguration.Arg)
 	if configFlag != nil {
 		configuration = configFlag.Value.String()
 	}
