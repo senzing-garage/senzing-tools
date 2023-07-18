@@ -10,6 +10,11 @@ import (
 	"github.com/senzing/senzing-tools/option"
 )
 
+func (v ContextVariable) UpdateDefault(newDefault any) ContextVariable {
+	v.Default = newDefault
+	return v
+}
+
 var OptionConfigPath = ContextVariable{
 	Default: OsLookupEnvString(envar.ConfigPath, ""),
 	Envar:   envar.ConfigPath,
