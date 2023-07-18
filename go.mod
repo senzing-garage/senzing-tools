@@ -3,6 +3,7 @@ module github.com/senzing/senzing-tools
 go 1.20
 
 require (
+	github.com/senzing/explain v0.1.0
 	github.com/senzing/init-database v0.2.6
 	github.com/senzing/observe v0.1.1
 	github.com/senzing/serve-grpc v0.4.9
@@ -47,6 +48,7 @@ require (
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/ogen-go/ogen v0.71.1 // indirect
 	github.com/pelletier/go-toml/v2 v2.0.9 // indirect
+	github.com/pkg/browser v0.0.0-20210911075715-681adbf594b8 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/prometheus/client_golang v1.16.0 // indirect
 	github.com/prometheus/client_model v0.4.0 // indirect
