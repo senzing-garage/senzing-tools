@@ -1,5 +1,7 @@
 package cmdhelper
 
+import "github.com/senzing/senzing-tools/cmdhelper/optiontype"
+
 type ContextBool struct {
 	Default bool   `json:"default"`
 	Envar   string `json:"envar"`
@@ -26,6 +28,14 @@ type ContextStringSlice struct {
 	Envar   string   `json:"envar"`
 	Help    string   `json:"help"`
 	Option  string   `json:"option"`
+}
+
+type ContextVariable struct {
+	Default any                   `json:"default"`
+	Envar   string                `json:"envar"`
+	Help    string                `json:"help"`
+	Option  string                `json:"option"`
+	Type    optiontype.OptionType `json:"optiontype"`
 }
 
 type ContextVariables struct {
