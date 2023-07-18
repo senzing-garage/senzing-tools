@@ -70,7 +70,7 @@ func ExampleInit() {
 			Default: "",
 			Envar:   "MY_VARIABLE",
 			Help:    "Description of my variable [%s]",
-			Option:  "my-variable",
+			Arg:     "my-variable",
 			Type:    optiontype.String,
 		},
 	}
@@ -104,7 +104,7 @@ func ExamplePreRun() {
 			Default: "",
 			Envar:   "MY_VARIABLE",
 			Help:    "Description of my variable [%s]",
-			Option:  "my-variable",
+			Arg:     "my-variable",
 			Type:    optiontype.String,
 		},
 	}

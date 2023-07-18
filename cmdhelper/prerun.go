@@ -56,61 +56,14 @@ func loadOptions(cobraCommand *cobra.Command, contextVariables []ContextVariable
 
 	if contextVariables != nil {
 		for _, contextVar := range contextVariables {
-			viper.SetDefault(contextVar.Option, contextVar.Default)
-			err = viper.BindPFlag(contextVar.Option, cobraCommand.Flags().Lookup(contextVar.Option))
+			viper.SetDefault(contextVar.Arg, contextVar.Default)
+			err = viper.BindPFlag(contextVar.Arg, cobraCommand.Flags().Lookup(contextVar.Arg))
 			if err != nil {
 				panic(err)
 			}
 		}
 	}
 
-	// // Bools
-
-	// if contextVariables.Bools != nil {
-	// 	for _, contextVar := range contextVariables.Bools {
-	// 		viper.SetDefault(contextVar.Option, contextVar.Default)
-	// 		err = viper.BindPFlag(contextVar.Option, cobraCommand.Flags().Lookup(contextVar.Option))
-	// 		if err != nil {
-	// 			panic(err)
-	// 		}
-	// 	}
-	// }
-
-	// // Ints
-
-	// if contextVariables.Ints != nil {
-	// 	for _, contextVar := range contextVariables.Ints {
-	// 		viper.SetDefault(contextVar.Option, contextVar.Default)
-	// 		err = viper.BindPFlag(contextVar.Option, cobraCommand.Flags().Lookup(contextVar.Option))
-	// 		if err != nil {
-	// 			panic(err)
-	// 		}
-	// 	}
-	// }
-
-	// // Strings
-
-	// if contextVariables.Strings != nil {
-	// 	for _, contextVar := range contextVariables.Strings {
-	// 		viper.SetDefault(contextVar.Option, contextVar.Default)
-	// 		err = viper.BindPFlag(contextVar.Option, cobraCommand.Flags().Lookup(contextVar.Option))
-	// 		if err != nil {
-	// 			panic(err)
-	// 		}
-	// 	}
-	// }
-
-	// // StringSlice
-
-	// if contextVariables.StringSlices != nil {
-	// 	for _, contextVar := range contextVariables.StringSlices {
-	// 		viper.SetDefault(contextVar.Option, contextVar.Default)
-	// 		err = viper.BindPFlag(contextVar.Option, cobraCommand.Flags().Lookup(contextVar.Option))
-	// 		if err != nil {
-	// 			panic(err)
-	// 		}
-	// 	}
-	// }
 }
 
 func PreRun(cobraCommand *cobra.Command, args []string, configName string, contextVariables []ContextVariable) {
