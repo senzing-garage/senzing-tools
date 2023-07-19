@@ -10,6 +10,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -
 
+## [0.4.0] - 2023-07-19
+
+### Changed in 0.3.0
+
+- consolidated envar, help and option into the option package
+- moved option package to go-common
+
 ## [0.3.0] - 2023-06-19
 
 ### Added in 0.3.0
