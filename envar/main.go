@@ -1,3 +1,5 @@
+// Deprecated: moved to go-common/option
+
 package envar
 
 // ----------------------------------------------------------------------------
