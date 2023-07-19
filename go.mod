@@ -61,7 +61,7 @@ require (
 	github.com/senzing/g2-sdk-go-grpc v0.3.1 // indirect
 	github.com/senzing/g2-sdk-json-type-definition v0.1.1 // indirect
 	github.com/senzing/g2-sdk-proto/go v0.0.0-20230608182106-25c8cdc02e3c // indirect
-	github.com/senzing/go-common v0.2.3 // indirect
+	github.com/senzing/go-common v0.2.4-0.20230719150601-5fd851342727 // indirect
 	github.com/senzing/go-databasing v0.2.6 // indirect
 	github.com/senzing/go-grpcing v0.1.1 // indirect
 	github.com/senzing/go-logging v1.3.1 // indirect

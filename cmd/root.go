@@ -7,6 +7,7 @@ import (
 	"os"
 	"strings"
 
+	"github.com/senzing/go-common/option"
 	"github.com/senzing/senzing-tools/cmdhelper"
 	"github.com/senzing/senzing-tools/constant"
 	"github.com/spf13/cobra"
@@ -33,14 +34,14 @@ For more information, visit https://github.com/Senzing/senzing-tools
 // that apply to all senzing-tool subcommands.
 func init() {
 	cobra.OnInitialize(initConfig)
-	RootCmd.PersistentFlags().String(cmdhelper.OptionConfiguration.Arg, cmdhelper.OptionConfiguration.Default.(string), fmt.Sprintf(cmdhelper.OptionConfiguration.Help, cmdhelper.OptionConfiguration.Envar))
+	RootCmd.PersistentFlags().String(option.Configuration.Arg, option.Configuration.Default.(string), fmt.Sprintf(option.Configuration.Help, option.Configuration.Envar))
 }
 
 // initConfig reads in config file and ENV variables if set.
 func initConfig() {
 	viper.AutomaticEnv()
 
-	configuration := RootCmd.Flags().Lookup(cmdhelper.OptionConfiguration.Arg).Value.String()
+	configuration := RootCmd.Flags().Lookup(option.Configuration.Arg).Value.String()
 	if configuration != "" { // Use configuration file specified as a command line option.
 		viper.SetConfigFile(configuration)
 	} else { // Search for a configuration file.

@@ -5,6 +5,7 @@ import (
 	"os"
 	"strings"
 
+	"github.com/senzing/go-common/option"
 	"github.com/senzing/senzing-tools/constant"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
@@ -13,7 +14,7 @@ import (
 // If a configuration file is present, load it.
 func loadConfigurationFile(cobraCommand *cobra.Command, configName string) {
 	configuration := ""
-	configFlag := cobraCommand.Flags().Lookup(OptionConfiguration.Arg)
+	configFlag := cobraCommand.Flags().Lookup(option.Configuration.Arg)
 	if configFlag != nil {
 		configuration = configFlag.Value.String()
 	}
@@ -46,7 +47,7 @@ func loadConfigurationFile(cobraCommand *cobra.Command, configName string) {
 }
 
 // Configure Viper with user-specified options.
-func loadOptions(cobraCommand *cobra.Command, contextVariables []ContextVariable) {
+func loadOptions(cobraCommand *cobra.Command, contextVariables []option.ContextVariable) {
 	var err error = nil
 	viper.AutomaticEnv()
 	replacer := strings.NewReplacer("-", "_")
@@ -65,7 +66,7 @@ func loadOptions(cobraCommand *cobra.Command, contextVariables []ContextVariable
 
 }
 
-func PreRun(cobraCommand *cobra.Command, args []string, configName string, contextVariables []ContextVariable) {
+func PreRun(cobraCommand *cobra.Command, args []string, configName string, contextVariables []option.ContextVariable) {
 	loadConfigurationFile(cobraCommand, configName)
 	loadOptions(cobraCommand, contextVariables)
 	cobraCommand.SetVersionTemplate(constant.VersionTemplate)

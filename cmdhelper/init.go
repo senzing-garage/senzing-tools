@@ -3,11 +3,12 @@ package cmdhelper
 import (
 	"fmt"
 
-	"github.com/senzing/senzing-tools/cmdhelper/optiontype"
+	"github.com/senzing/go-common/option"
+	"github.com/senzing/go-common/option/optiontype"
 	"github.com/spf13/cobra"
 )
 
-func Init(cobraCommand *cobra.Command, contextVariables []ContextVariable) {
+func Init(cobraCommand *cobra.Command, contextVariables []option.ContextVariable) {
 
 	for _, contextVariable := range contextVariables {
 		switch contextVariable.Type {

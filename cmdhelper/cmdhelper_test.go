@@ -4,16 +4,17 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/senzing/senzing-tools/cmdhelper/optiontype"
+	"github.com/senzing/go-common/option"
+	"github.com/senzing/go-common/option/optiontype"
 	"github.com/spf13/cobra"
 	"github.com/stretchr/testify/assert"
 )
 
-var contextVariables = []ContextVariable{
-	OptionConfiguration,
-	OptionEngineLogLevel,
-	OptionEnableSwaggerUi,
-	OptionXtermArguments,
+var contextVariables = []option.ContextVariable{
+	option.Configuration,
+	option.EngineLogLevel,
+	option.EnableSwaggerUi,
+	option.XtermArguments,
 }
 
 // ----------------------------------------------------------------------------
@@ -65,7 +66,7 @@ func ExampleInit() {
 		Short: "example-short",
 		Long:  `example-long`,
 	}
-	var contextVariables = []ContextVariable{
+	var contextVariables = []option.ContextVariable{
 		{
 			Default: "",
 			Envar:   "MY_VARIABLE",
@@ -99,7 +100,7 @@ func ExamplePreRun() {
 		Short: "example-short",
 		Long:  `example-long`,
 	}
-	var contextVariables = []ContextVariable{
+	var contextVariables = []option.ContextVariable{
 		{
 			Default: "",
 			Envar:   "MY_VARIABLE",
