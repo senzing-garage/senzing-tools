@@ -210,8 +210,8 @@ github.com/mattn/go-sqlite3 v1.14.17 h1:mCRHCLDUBXgpKAqIKsaAaAsrAlbkeomtRFKXh2L6
 github.com/mattn/go-sqlite3 v1.14.17/go.mod h1:2eHXhiwb8IkHr+BDWZGa96P6+rkvnG63S2DGjv9HUNg=
 github.com/matttproud/golang_protobuf_extensions v1.0.4 h1:mmDVorXM7PCGKw94cs5zkfA9PSy5pEvNWRP0ET0TIVo=
 github.com/matttproud/golang_protobuf_extensions v1.0.4/go.mod h1:BSXmuO+STAnVfrANrmjBb36TMTDstsz7MSK+HVaYKv4=
-github.com/microsoft/go-mssqldb v1.3.0 h1:JcPVl+acL8Z/cQcJc9zP0OkjQ+l20bco/cCDpMbmGJk=
-github.com/microsoft/go-mssqldb v1.3.0/go.mod h1:lmWsjHD8XX/Txr0f8ZqgbEZSC+BZjmEQy/Ms+rLrvho=
+github.com/microsoft/go-mssqldb v1.4.0 h1:fhRa6Ftf78dtv1Kj4i1YQoK3VUoce4phkBLoaE0NIaQ=
+github.com/microsoft/go-mssqldb v1.4.0/go.mod h1:lmWsjHD8XX/Txr0f8ZqgbEZSC+BZjmEQy/Ms+rLrvho=
 github.com/mitchellh/mapstructure v1.5.0 h1:jeMsZIYE/09sWLaz43PL7Gy6RuMjD2eJVyuac5Z2hdY=
 github.com/mitchellh/mapstructure v1.5.0/go.mod h1:bFUtVrKA4DC2yAKiSyO/QUcy7e+RRV2QTWOzhPopBRo=
 github.com/modocache/gover v0.0.0-20171022184752-b58185e213c5/go.mod h1:caMODM3PzxT8aQXRPkAt8xlV/e7d7w8GM5g0fa5F0D8=
@@ -272,8 +272,8 @@ github.com/senzing/go-rest-api-service v0.0.4-0.20230718003730-3ac956096cbc h1:l
 github.com/senzing/go-rest-api-service v0.0.4-0.20230718003730-3ac956096cbc/go.mod h1:YOBPY9P/ZnYn881tbDFPSvdGKlavVCXNjLbzUcXTIQ0=
 github.com/senzing/go-sdk-abstract-factory v0.3.1 h1:aA+BxY6Q+zLAW3MMJ++W9qJ6D7dfQrYQQbLa42SPgFc=
 github.com/senzing/go-sdk-abstract-factory v0.3.1/go.mod h1:Xm+UU4JGVHvWvmXylrj04YwQG6tc1nHj2L+f3rGyARk=
-github.com/senzing/init-database v0.2.6 h1:+5M7eQMaVaTN2pUCkKqSDRSJgZRSz3uC2p6aFwjZJ2c=
-github.com/senzing/init-database v0.2.6/go.mod h1:Q0dXNNuv9IGLaJw2D8/x5SJ3HhmGdgHikC/rV5Egpqw=
+github.com/senzing/init-database v0.3.0 h1:2SjgaIc+0fp9Jqfw9lE7N4Y4NyOEkU1meQbdz51r1t8=
+github.com/senzing/init-database v0.3.0/go.mod h1:ycfJRo/w5qU61J7PjUdnTq7elDLReTSIk7LjAD6pOcs=
 github.com/senzing/observe v0.1.1 h1:OCxMD14po5VWsKOaNy+4cSHe9Wp0hV4ZD3UlBubfX9w=
 github.com/senzing/observe v0.1.1/go.mod h1:qrW3kR35VqB38jKESOPNdGxYft4ZP3T9vfZ1jtIaS78=
 github.com/senzing/serve-grpc v0.4.9 h1:cx8RrYw5fNPdhj5Dwr5gZBV0JtBlsgfF9ZmUeAigikA=
