@@ -7,9 +7,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/senzing/go-common/option"
-	"github.com/senzing/senzing-tools/cmdhelper"
-	"github.com/senzing/senzing-tools/constant"
+	"github.com/senzing/go-cmdhelping/cmdhelper"
+	"github.com/senzing/go-cmdhelping/option"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )
@@ -104,7 +103,7 @@ func Execute() {
 
 // Used in construction of cobra.Command
 func PreRun(cobraCommand *cobra.Command, args []string) {
-	cobraCommand.SetVersionTemplate(constant.VersionTemplate)
+	cobraCommand.SetVersionTemplate(`{{printf "%s: %s - version %s\n" .Name .Short .Version}}`)
 }
 
 // Used in construction of cobra.Command

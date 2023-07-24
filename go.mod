@@ -3,14 +3,14 @@ module github.com/senzing/senzing-tools
 go 1.20
 
 require (
-	github.com/senzing/explain v0.1.0
-	github.com/senzing/init-database v0.2.6
-	github.com/senzing/observe v0.1.1
-	github.com/senzing/serve-grpc v0.4.9
-	github.com/senzing/serve-http v0.0.1
+	github.com/senzing/explain v0.1.1
+	github.com/senzing/go-cmdhelping v0.1.1
+	github.com/senzing/init-database v0.3.0
+	github.com/senzing/observe v0.1.2-0.20230724155455-abd90536c9d9
+	github.com/senzing/serve-grpc v0.4.10-0.20230724155108-0e18054ed934
+	github.com/senzing/serve-http v0.0.2
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/viper v1.16.0
-	github.com/stretchr/testify v1.8.4
 )
 
 require (
@@ -18,7 +18,6 @@ require (
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
 	github.com/creack/pty v1.1.18 // indirect
-	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/dlclark/regexp2 v1.10.0 // indirect
 	github.com/docktermj/cloudshell v0.2.0 // indirect
 	github.com/fatih/color v1.15.0 // indirect
@@ -26,7 +25,7 @@ require (
 	github.com/fsnotify/fsnotify v1.6.0 // indirect
 	github.com/ghodss/yaml v1.0.0 // indirect
 	github.com/go-faster/errors v0.6.1 // indirect
-	github.com/go-faster/jx v1.0.0 // indirect
+	github.com/go-faster/jx v1.0.1 // indirect
 	github.com/go-faster/yaml v0.4.6 // indirect
 	github.com/go-logr/logr v1.2.4 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
@@ -44,12 +43,11 @@ require (
 	github.com/mattn/go-isatty v0.0.19 // indirect
 	github.com/mattn/go-sqlite3 v1.14.17 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.4 // indirect
-	github.com/microsoft/go-mssqldb v1.3.0 // indirect
+	github.com/microsoft/go-mssqldb v1.4.0 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/ogen-go/ogen v0.71.1 // indirect
 	github.com/pelletier/go-toml/v2 v2.0.9 // indirect
 	github.com/pkg/browser v0.0.0-20210911075715-681adbf594b8 // indirect
-	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/prometheus/client_golang v1.16.0 // indirect
 	github.com/prometheus/client_model v0.4.0 // indirect
 	github.com/prometheus/common v0.44.0 // indirect
@@ -61,7 +59,7 @@ require (
 	github.com/senzing/g2-sdk-go-grpc v0.3.1 // indirect
 	github.com/senzing/g2-sdk-json-type-definition v0.1.1 // indirect
 	github.com/senzing/g2-sdk-proto/go v0.0.0-20230608182106-25c8cdc02e3c // indirect
-	github.com/senzing/go-common v0.2.4 // indirect
+	github.com/senzing/go-common v0.2.5 // indirect
 	github.com/senzing/go-databasing v0.2.6 // indirect
 	github.com/senzing/go-grpcing v0.1.1 // indirect
 	github.com/senzing/go-logging v1.3.1 // indirect
@@ -87,7 +85,7 @@ require (
 	golang.org/x/sync v0.3.0 // indirect
 	golang.org/x/sys v0.10.0 // indirect
 	golang.org/x/text v0.11.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20230717213848-3f92550aa753 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20230720185612-659f7aaaa771 // indirect
 	google.golang.org/grpc v1.56.2 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
