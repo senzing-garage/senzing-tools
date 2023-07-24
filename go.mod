@@ -7,7 +7,7 @@ require (
 	github.com/senzing/init-database v0.2.6
 	github.com/senzing/observe v0.1.1
 	github.com/senzing/serve-grpc v0.4.9
-	github.com/senzing/serve-http v0.0.1
+	github.com/senzing/serve-http v0.0.2
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/viper v1.16.0
 	github.com/stretchr/testify v1.8.4
@@ -26,7 +26,7 @@ require (
 	github.com/fsnotify/fsnotify v1.6.0 // indirect
 	github.com/ghodss/yaml v1.0.0 // indirect
 	github.com/go-faster/errors v0.6.1 // indirect
-	github.com/go-faster/jx v1.0.0 // indirect
+	github.com/go-faster/jx v1.0.1 // indirect
 	github.com/go-faster/yaml v0.4.6 // indirect
 	github.com/go-logr/logr v1.2.4 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
@@ -61,7 +61,8 @@ require (
 	github.com/senzing/g2-sdk-go-grpc v0.3.1 // indirect
 	github.com/senzing/g2-sdk-json-type-definition v0.1.1 // indirect
 	github.com/senzing/g2-sdk-proto/go v0.0.0-20230608182106-25c8cdc02e3c // indirect
-	github.com/senzing/go-common v0.2.3 // indirect
+	github.com/senzing/go-cmdhelping v0.1.1 // indirect
+	github.com/senzing/go-common v0.2.4 // indirect
 	github.com/senzing/go-databasing v0.2.6 // indirect
 	github.com/senzing/go-grpcing v0.1.1 // indirect
 	github.com/senzing/go-logging v1.3.1 // indirect
@@ -87,7 +88,7 @@ require (
 	golang.org/x/sync v0.3.0 // indirect
 	golang.org/x/sys v0.10.0 // indirect
 	golang.org/x/text v0.11.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20230717213848-3f92550aa753 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20230720185612-659f7aaaa771 // indirect
 	google.golang.org/grpc v1.56.2 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
