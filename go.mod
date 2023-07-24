@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/senzing/explain v0.1.1
-	github.com/senzing/init-database v0.2.6
+	github.com/senzing/init-database v0.3.0
 	github.com/senzing/observe v0.1.1
 	github.com/senzing/serve-grpc v0.4.9
 	github.com/senzing/serve-http v0.0.2
@@ -44,7 +44,7 @@ require (
 	github.com/mattn/go-isatty v0.0.19 // indirect
 	github.com/mattn/go-sqlite3 v1.14.17 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.4 // indirect
-	github.com/microsoft/go-mssqldb v1.3.0 // indirect
+	github.com/microsoft/go-mssqldb v1.4.0 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/ogen-go/ogen v0.71.1 // indirect
 	github.com/pelletier/go-toml/v2 v2.0.9 // indirect
