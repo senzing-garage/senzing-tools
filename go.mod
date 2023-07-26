@@ -7,7 +7,7 @@ require (
 	github.com/senzing/go-cmdhelping v0.1.1
 	github.com/senzing/init-database v0.3.0
 	github.com/senzing/observe v0.1.2-0.20230724155455-abd90536c9d9
-	github.com/senzing/serve-grpc v0.4.10-0.20230724155108-0e18054ed934
+	github.com/senzing/serve-grpc v0.4.10
 	github.com/senzing/serve-http v0.0.2
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/viper v1.16.0
@@ -80,12 +80,12 @@ require (
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.24.0 // indirect
 	golang.org/x/crypto v0.11.0 // indirect
-	golang.org/x/exp v0.0.0-20230713183714-613f0c0eb8a1 // indirect
+	golang.org/x/exp v0.0.0-20230725093048-515e97ebf090 // indirect
 	golang.org/x/net v0.12.0 // indirect
 	golang.org/x/sync v0.3.0 // indirect
 	golang.org/x/sys v0.10.0 // indirect
 	golang.org/x/text v0.11.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20230720185612-659f7aaaa771 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20230725213213-b022f6e96895 // indirect
 	google.golang.org/grpc v1.56.2 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect

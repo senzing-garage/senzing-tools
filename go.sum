@@ -276,8 +276,8 @@ github.com/senzing/init-database v0.3.0 h1:2SjgaIc+0fp9Jqfw9lE7N4Y4NyOEkU1meQbdz
 github.com/senzing/init-database v0.3.0/go.mod h1:ycfJRo/w5qU61J7PjUdnTq7elDLReTSIk7LjAD6pOcs=
 github.com/senzing/observe v0.1.2-0.20230724155455-abd90536c9d9 h1:AIy+Mo7N+IVWof1eaGz86Fny5w7t5gHsOtdgGjOAK/8=
 github.com/senzing/observe v0.1.2-0.20230724155455-abd90536c9d9/go.mod h1:HkiSTb3xnnxlNG8QbV+UwPuyXNSWKzo5pUixTW2gOms=
-github.com/senzing/serve-grpc v0.4.10-0.20230724155108-0e18054ed934 h1:oJZJeXZ5BJloNNOR8cD0qO5PQmG3TUulYhqAgm0F67A=
-github.com/senzing/serve-grpc v0.4.10-0.20230724155108-0e18054ed934/go.mod h1:CdrHQqBalVMKhnohVln/qFv1flb185f01stANIFo9OU=
+github.com/senzing/serve-grpc v0.4.10 h1:Dz+ZXo0fwLenMURvMjOoKmpKc1F0jxtO5a448bQMUSA=
+github.com/senzing/serve-grpc v0.4.10/go.mod h1:CdrHQqBalVMKhnohVln/qFv1flb185f01stANIFo9OU=
 github.com/senzing/serve-http v0.0.2 h1:s4euChoEbFSW3I7B9EwDxcLG7hdhLd+msz2YCFf7jjM=
 github.com/senzing/serve-http v0.0.2/go.mod h1:cQtRrf6n1Ugs8U8daZfeoEYbfqRHv/KHLhPNkRh+Wl4=
 github.com/sirupsen/logrus v1.9.3 h1:dueUQJ1C2q9oE3F7wvmSGAaVtTmUizReu6fjN8uqzbQ=
@@ -355,8 +355,8 @@ golang.org/x/exp v0.0.0-20191227195350-da58074b4299/go.mod h1:2RIsYlXP63K8oxa1u0
 golang.org/x/exp v0.0.0-20200119233911-0405dc783f0a/go.mod h1:2RIsYlXP63K8oxa1u096TMicItID8zy7Y6sNkU49FU4=
 golang.org/x/exp v0.0.0-20200207192155-f17229e696bd/go.mod h1:J/WKrq2StrnmMY6+EHIKF9dgMWnmCNThgcyBT1FY9mM=
 golang.org/x/exp v0.0.0-20200224162631-6cc2880d07d6/go.mod h1:3jZMyOhIsHpP37uCMkUooju7aAi5cS1Q23tOzKc+0MU=
-golang.org/x/exp v0.0.0-20230713183714-613f0c0eb8a1 h1:MGwJjxBy0HJshjDNfLsYO8xppfqWlA5ZT9OhtUUhTNw=
-golang.org/x/exp v0.0.0-20230713183714-613f0c0eb8a1/go.mod h1:FXUEEKJgO7OQYeo8N01OfiKP8RXMtf6e8aTskBGqWdc=
+golang.org/x/exp v0.0.0-20230725093048-515e97ebf090 h1:Di6/M8l0O2lCLc6VVRWhgCiApHV8MnQurBnFSHsQtNY=
+golang.org/x/exp v0.0.0-20230725093048-515e97ebf090/go.mod h1:FXUEEKJgO7OQYeo8N01OfiKP8RXMtf6e8aTskBGqWdc=
 golang.org/x/image v0.0.0-20190227222117-0694c2d4d067/go.mod h1:kZ7UVZpmo3dzQBMxlp+ypCbDeSB+sBbTgSJuh5dn5js=
 golang.org/x/image v0.0.0-20190802002840-cff245a6509b/go.mod h1:FeLwcggjj3mMvU+oOTbSwawSJRM1uh48EjtB4UJZlP0=
 golang.org/x/lint v0.0.0-20181026193005-c67002cb31c3/go.mod h1:UVdnD1Gm6xHRNCYTkRU2/jEulfH38KcIWyp/GAMgvoE=
@@ -626,8 +626,8 @@ google.golang.org/genproto v0.0.0-20201210142538-e3217bee35cc/go.mod h1:FWY/as6D
 google.golang.org/genproto v0.0.0-20201214200347-8c77b98c765d/go.mod h1:FWY/as6DDZQgahTzZj3fqbO1CbirC29ZNUFHwi0/+no=
 google.golang.org/genproto v0.0.0-20210108203827-ffc7fda8c3d7/go.mod h1:FWY/as6DDZQgahTzZj3fqbO1CbirC29ZNUFHwi0/+no=
 google.golang.org/genproto v0.0.0-20210226172003-ab064af71705/go.mod h1:FWY/as6DDZQgahTzZj3fqbO1CbirC29ZNUFHwi0/+no=
-google.golang.org/genproto/googleapis/rpc v0.0.0-20230720185612-659f7aaaa771 h1:Z8qdAF9GFsmcUuWQ5KVYIpP3PCKydn/YKORnghIalu4=
-google.golang.org/genproto/googleapis/rpc v0.0.0-20230720185612-659f7aaaa771/go.mod h1:TUfxEVdsvPg18p6AslUXFoLdpED4oBnGwyqk3dV1XzM=
+google.golang.org/genproto/googleapis/rpc v0.0.0-20230725213213-b022f6e96895 h1:co8AMhI481nhd3WBfW2mq5msyQHNBcGn7G9GCEqz45k=
+google.golang.org/genproto/googleapis/rpc v0.0.0-20230725213213-b022f6e96895/go.mod h1:TUfxEVdsvPg18p6AslUXFoLdpED4oBnGwyqk3dV1XzM=
 google.golang.org/grpc v1.19.0/go.mod h1:mqu4LbDTu4XGKhr4mRzUsmM4RtVoemTSY81AxZiDr8c=
 google.golang.org/grpc v1.20.1/go.mod h1:10oTOabMzJvdu6/UiuZezV6QK5dSlG84ov/aaiqXj38=
 google.golang.org/grpc v1.21.1/go.mod h1:oYelfM1adQP15Ek0mdvEgi9Df8B9CZIaU1084ijfRaM=
