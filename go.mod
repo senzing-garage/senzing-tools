@@ -3,7 +3,7 @@ module github.com/senzing/senzing-tools
 go 1.20
 
 require (
-	github.com/senzing/explain v0.1.1
+	github.com/senzing/explain v0.1.3
 	github.com/senzing/init-database v0.3.0
 	github.com/senzing/observe v0.1.1
 	github.com/senzing/serve-grpc v0.4.10
