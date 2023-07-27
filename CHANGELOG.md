@@ -14,8 +14,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed in 0.4.0
 
-- consolidated envar, help and option into the option package
-- moved option package to go-common
+- Consolidated `envar`, `help`, and `option` packages and moved them into `go-cmdhelping` repository.
+- Moved `constant`, `option`, and `cmdhelper` packages to `go-cmdhelping` repository.
+- Updated documentation.
+- Updated dependencies
+  - github.com/senzing/go-cmdhelping v0.1.3
+  - github.com/senzing/observe v0.1.2
+  - github.com/senzing/serve-grpc v0.4.11
 
 ## [0.3.0] - 2023-06-19
 
