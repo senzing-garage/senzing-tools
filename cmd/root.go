@@ -7,10 +7,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/senzing/senzing-tools/cmdhelper"
-	"github.com/senzing/senzing-tools/constant"
-	"github.com/senzing/senzing-tools/envar"
-	"github.com/senzing/senzing-tools/option"
+	"github.com/senzing/go-cmdhelping/cmdhelper"
+	"github.com/senzing/go-cmdhelping/option"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )
@@ -35,14 +33,14 @@ For more information, visit https://github.com/Senzing/senzing-tools
 // that apply to all senzing-tool subcommands.
 func init() {
 	cobra.OnInitialize(initConfig)
-	RootCmd.PersistentFlags().String(option.Configuration, defaultConfiguration, fmt.Sprintf("Path to configuration file [%s]", envar.Configuration))
+	RootCmd.PersistentFlags().String(option.Configuration.Arg, option.Configuration.Default.(string), fmt.Sprintf(option.Configuration.Help, option.Configuration.Envar))
 }
 
 // initConfig reads in config file and ENV variables if set.
 func initConfig() {
 	viper.AutomaticEnv()
 
-	configuration := RootCmd.Flags().Lookup(option.Configuration).Value.String()
+	configuration := RootCmd.Flags().Lookup(option.Configuration.Arg).Value.String()
 	if configuration != "" { // Use configuration file specified as a command line option.
 		viper.SetConfigFile(configuration)
 	} else { // Search for a configuration file.
@@ -105,7 +103,7 @@ func Execute() {
 
 // Used in construction of cobra.Command
 func PreRun(cobraCommand *cobra.Command, args []string) {
-	cobraCommand.SetVersionTemplate(constant.VersionTemplate)
+	cobraCommand.SetVersionTemplate(`{{printf "%s: %s - version %s\n" .Name .Short .Version}}`)
 }
 
 // Used in construction of cobra.Command
