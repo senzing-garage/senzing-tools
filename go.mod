@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/senzing/explain v0.1.3
 	github.com/senzing/init-database v0.3.0
-	github.com/senzing/observe v0.1.1
+	github.com/senzing/observe v0.1.2
 	github.com/senzing/serve-grpc v0.4.10
 	github.com/senzing/serve-http v0.0.3
 	github.com/spf13/cobra v1.7.0
@@ -61,7 +61,7 @@ require (
 	github.com/senzing/g2-sdk-go-grpc v0.3.1 // indirect
 	github.com/senzing/g2-sdk-json-type-definition v0.1.1 // indirect
 	github.com/senzing/g2-sdk-proto/go v0.0.0-20230608182106-25c8cdc02e3c // indirect
-	github.com/senzing/go-cmdhelping v0.1.2 // indirect
+	github.com/senzing/go-cmdhelping v0.1.3 // indirect
 	github.com/senzing/go-common v0.2.6 // indirect
 	github.com/senzing/go-databasing v0.2.6 // indirect
 	github.com/senzing/go-grpcing v0.1.1 // indirect
