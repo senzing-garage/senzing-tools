@@ -6,7 +6,7 @@ require (
 	github.com/senzing/explain v0.1.3
 	github.com/senzing/init-database v0.3.0
 	github.com/senzing/observe v0.1.2
-	github.com/senzing/serve-grpc v0.4.10
+	github.com/senzing/serve-grpc v0.4.11
 	github.com/senzing/serve-http v0.0.3
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/viper v1.16.0

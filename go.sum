@@ -276,8 +276,8 @@ github.com/senzing/init-database v0.3.0 h1:2SjgaIc+0fp9Jqfw9lE7N4Y4NyOEkU1meQbdz
 github.com/senzing/init-database v0.3.0/go.mod h1:ycfJRo/w5qU61J7PjUdnTq7elDLReTSIk7LjAD6pOcs=
 github.com/senzing/observe v0.1.2 h1:UvE/szndnZPJPKNjtUKVBcaTG7KOcEQp+IOSAQbNoPU=
 github.com/senzing/observe v0.1.2/go.mod h1:qOJCfozTPwHTePZ6hBb8df3KzoLii2+IeeyuTtJgwOY=
-github.com/senzing/serve-grpc v0.4.10 h1:Dz+ZXo0fwLenMURvMjOoKmpKc1F0jxtO5a448bQMUSA=
-github.com/senzing/serve-grpc v0.4.10/go.mod h1:CdrHQqBalVMKhnohVln/qFv1flb185f01stANIFo9OU=
+github.com/senzing/serve-grpc v0.4.11 h1:rlGkqPkSWpIsCwjCVPds3gGhc00dckCc+zTGriQeLCw=
+github.com/senzing/serve-grpc v0.4.11/go.mod h1:9YifLB69AVi4tCshv7ShyhDOa8TWU+8Gzk2TotfqntM=
 github.com/senzing/serve-http v0.0.3 h1:XxeTmNy8BGwrsckgyHjspKLid7mBJCw1xRWw8vqWqKQ=
 github.com/senzing/serve-http v0.0.3/go.mod h1:z3M6AX4gQePkt9YhQ1jix2KINXbOko1PLRGV7uwY5+o=
 github.com/sirupsen/logrus v1.9.3 h1:dueUQJ1C2q9oE3F7wvmSGAaVtTmUizReu6fjN8uqzbQ=
