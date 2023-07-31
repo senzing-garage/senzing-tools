@@ -9,12 +9,14 @@ jobs:
   build:
     name: Publish binaries
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - run: make package
-      - name: Upload files to release assets
+        with:
+          fetch-depth: 0
+      - name: Make versioned release files
+        run: make package
+      - name: Upload versioned packages to release assets
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
