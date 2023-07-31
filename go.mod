@@ -9,6 +9,7 @@ require (
 	github.com/senzing/observe v0.1.2
 	github.com/senzing/serve-grpc v0.4.11
 	github.com/senzing/serve-http v0.0.3
+	github.com/senzing/validate v0.0.1
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/viper v1.16.0
 )
@@ -59,7 +60,7 @@ require (
 	github.com/senzing/g2-sdk-go-grpc v0.3.1 // indirect
 	github.com/senzing/g2-sdk-json-type-definition v0.1.1 // indirect
 	github.com/senzing/g2-sdk-proto/go v0.0.0-20230608182106-25c8cdc02e3c // indirect
-	github.com/senzing/go-common v0.2.6 // indirect
+	github.com/senzing/go-common v0.2.7 // indirect
 	github.com/senzing/go-databasing v0.2.6 // indirect
 	github.com/senzing/go-grpcing v0.1.1 // indirect
 	github.com/senzing/go-logging v1.3.1 // indirect
