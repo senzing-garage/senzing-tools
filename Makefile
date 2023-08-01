@@ -19,9 +19,9 @@ BUILD_TAG := $(shell git describe --always --tags --abbrev=0  | sed 's/v//')
 BUILD_ITERATION := $(shell git log $(BUILD_TAG)..HEAD --oneline | wc -l | sed 's/^ *//')
 GIT_REMOTE_URL := $(shell git config --get remote.origin.url)
 GO_PACKAGE_NAME := $(shell echo $(GIT_REMOTE_URL) | sed -e 's|^git@github.com:|github.com/|' -e 's|\.git$$||' -e 's|Senzing|senzing|')
-GOOSARCH = $(subst /, ,$@)
-GOOS = $(word 1, $(GOOSARCH))
-GOARCH = $(word 2, $(GOOSARCH))
+GO_OSARCH = $(subst /, ,$@)
+GO_OS = $(word 1, $(GO_OSARCH))
+GO_ARCH = $(word 2, $(GO_OSARCH))
 
 # Optionally include platform-specific settings
 
@@ -62,21 +62,22 @@ dependencies:
 
 PLATFORMS := darwin/amd64 linux/amd64 windows/amd64
 $(PLATFORMS):
-	@echo Building $(TARGET_DIRECTORY)/$(GOOS)-$(GOARCH)/$(PROGRAM_NAME)
-	@mkdir -p $(TARGET_DIRECTORY)/$(GOOS)-$(GOARCH) || true
-	@GOOS=$(GOOS) \
-	GOARCH=$(GOARCH) \
+	@echo Building $(TARGET_DIRECTORY)/$(GO_OS)-$(GO_ARCH)/$(PROGRAM_NAME)
+	@mkdir -p $(TARGET_DIRECTORY)/$(GO_OS)-$(GO_ARCH) || true
+	@GOOS=$(GO_OS) \
+	GOARCH=$(GO_ARCH) \
 	go build \
 		-ldflags \
 			"-X 'main.buildIteration=${BUILD_ITERATION}' \
 			-X 'main.buildVersion=${BUILD_VERSION}' \
 			-X 'main.programName=${PROGRAM_NAME}' \
 			" \
-		-o $(TARGET_DIRECTORY)/$(GOOS)-$(GOARCH)/$(PROGRAM_NAME)
+		-o $(TARGET_DIRECTORY)/$(GO_OS)-$(GO_ARCH)/$(PROGRAM_NAME)
 
 
 .PHONY: build $(PLATFORMS)
 build: $(PLATFORMS)
+	@mv $(TARGET_DIRECTORY)/windows-amd64/$(PROGRAM_NAME) $(TARGET_DIRECTORY)/windows-amd64/$(PROGRAM_NAME).exe
 
 
 .PHONY: build-scratch
@@ -204,4 +205,4 @@ print-make-variables:
 help:
 	@echo "Build $(PROGRAM_NAME) version $(BUILD_VERSION)-$(BUILD_ITERATION)".
 	@echo "All targets:"
-	@$(MAKE) -pRrq -f $(lastword $(MAKEFILE_LIST)) : 2>/dev/null | awk -v RS= -F: '/^# File/,/^# Finished Make data base/ {if ($$1 !~ "^[#.]") {print $$1}}' | sort | egrep -v -e '^[^[:alnum:]]' -e '^$@$$' | xargs
+	@$(MAKE) -pRrq -f $(firstword $(MAKEFILE_LIST)) : 2>/dev/null | awk -v RS= -F: '/^# File/,/^# Finished Make data base/ {if ($$1 !~ "^[#.]") {print $$1}}' | sort | egrep -v -e '^[^[:alnum:]]' -e '^$@$$' | xargs
