@@ -2,14 +2,15 @@
 # Stages
 # -----------------------------------------------------------------------------
 
+ARG IMAGE_SENZINGAPI_RUNTIME=senzing/senzingapi-runtime:3.6.0
 ARG IMAGE_GO_BUILDER=golang:1.20.4
 ARG IMAGE_FINAL=senzing/senzingapi-runtime:3.6.0
 
 # -----------------------------------------------------------------------------
-# Stage: senzing_runtime
+# Stage: senzingapi_runtime
 # -----------------------------------------------------------------------------
 
-FROM ${IMAGE_FINAL} as senzing_runtime
+FROM ${IMAGE_SENZINGAPI_RUNTIME} as senzingapi_runtime
 
 # -----------------------------------------------------------------------------
 # Stage: go_builder
@@ -35,8 +36,8 @@ COPY . ${GOPATH}/src/${GO_PACKAGE_NAME}
 
 # Copy files from prior stage.
 
-COPY --from=senzing_runtime  "/opt/senzing/g2/lib/"   "/opt/senzing/g2/lib/"
-COPY --from=senzing_runtime  "/opt/senzing/g2/sdk/c/" "/opt/senzing/g2/sdk/c/"
+COPY --from=senzingapi_runtime  "/opt/senzing/g2/lib/"   "/opt/senzing/g2/lib/"
+COPY --from=senzingapi_runtime  "/opt/senzing/g2/sdk/c/" "/opt/senzing/g2/sdk/c/"
 
 # Set path to Senzing libs.
 
