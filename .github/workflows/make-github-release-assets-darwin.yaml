@@ -21,7 +21,7 @@ jobs:
       - name: Download SenzingApi
         run: curl --output /tmp/senzingapi.dmg https://public-read-access.s3.amazonaws.com/staging/senzingapi_3.7.0.23207.dmg
       - name: Attach .dmg
-        run: hdiutil attach /tmp/senzingapi_3.7.0.23207.dmg
+        run: hdiutil attach /tmp/senzingapi.dmg
       - name: Copy files
         run: mkdir -p /opt/senzing/ && sudo cp /Volumes/SenzingAPI/senzing/g2 /opt/senzing
       - name: Make executable file
