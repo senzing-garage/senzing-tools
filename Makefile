@@ -13,8 +13,8 @@ include Makefile.osdetect
 # PROGRAM_NAME is the name of the GIT repository.
 PROGRAM_NAME := $(shell basename `git rev-parse --show-toplevel`)
 MAKEFILE_PATH := $(abspath $(lastword $(MAKEFILE_LIST)))
-MAKEFILE_DIRECTORY := $(dir $(MAKEFILE_PATH))
-TARGET_DIRECTORY := $(MAKEFILE_DIRECTORY)target
+MAKEFILE_DIRECTORY := $(shell dirname $(MAKEFILE_PATH))
+TARGET_DIRECTORY := $(MAKEFILE_DIRECTORY)/target
 DOCKER_CONTAINER_NAME := $(PROGRAM_NAME)
 DOCKER_IMAGE_NAME := senzing/$(PROGRAM_NAME)
 DOCKER_BUILD_IMAGE_NAME := $(DOCKER_IMAGE_NAME)-build
@@ -23,6 +23,7 @@ BUILD_TAG := $(shell git describe --always --tags --abbrev=0  | sed 's/v//')
 BUILD_ITERATION := $(shell git log $(BUILD_TAG)..HEAD --oneline | wc -l | sed 's/^ *//')
 GIT_REMOTE_URL := $(shell git config --get remote.origin.url)
 GO_PACKAGE_NAME := $(shell echo $(GIT_REMOTE_URL) | sed -e 's|^git@github.com:|github.com/|' -e 's|\.git$$||' -e 's|Senzing|senzing|')
+PATH := $(MAKEFILE_DIRECTORY)/bin:$(PATH)
 GO_OSARCH = $(subst /, ,$@)
 GO_OS = $(word 1, $(GO_OSARCH))
 GO_ARCH = $(word 2, $(GO_OSARCH))
@@ -40,6 +41,9 @@ LD_LIBRARY_PATH ?= /opt/senzing/g2/lib
 # Export environment variables.
 
 .EXPORT_ALL_VARIABLES:
+
+-include Makefile.$(OSTYPE)
+-include Makefile.$(OSTYPE)_$(OSARCH)
 
 # -----------------------------------------------------------------------------
 # The first "make" target runs as default.
@@ -87,17 +91,8 @@ build-scratch:
 
 # -----------------------------------------------------------------------------
 # Test
+#  - The "test" target is implemented in Makefile.OS.ARCH files.
 # -----------------------------------------------------------------------------
-
-.PHONY: test
-test:
-	@go test -v -p 1 ./...
-#	@go test -v ./.
-#	@go test -v ./cmd
-#	@go test -v ./cmdhelper
-#	@go test -v ./constant
-#	@go test -v ./envar
-#	@go test -v ./option
 
 # -----------------------------------------------------------------------------
 # docker-build
@@ -131,14 +126,8 @@ docker-build-package:
 
 # -----------------------------------------------------------------------------
 # Package
+#  - The "package" target is implemented in Makefile.OS.ARCH files.
 # -----------------------------------------------------------------------------
-
-.PHONY: package
-package: docker-build-package
-	@mkdir -p $(TARGET_DIRECTORY) || true
-	@CONTAINER_ID=$$(docker create $(DOCKER_BUILD_IMAGE_NAME)); \
-	docker cp $$CONTAINER_ID:/output/. $(TARGET_DIRECTORY)/; \
-	docker rm -v $$CONTAINER_ID
 
 # -----------------------------------------------------------------------------
 # Run
@@ -198,5 +187,5 @@ help:
 #  - Note: This is last because the "last one wins" when over-writing targets.
 # -----------------------------------------------------------------------------
 
--include Makefile.$(OSTYPE)
--include Makefile.$(OSTYPE)_$(OSARCH)
+# -include Makefile.$(OSTYPE)
+# -include Makefile.$(OSTYPE)_$(OSARCH)

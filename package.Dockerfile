@@ -43,12 +43,12 @@ COPY --from=senzingapi_runtime  "/opt/senzing/g2/sdk/c/" "/opt/senzing/g2/sdk/c/
 # Build go program.
 
 WORKDIR ${GOPATH}/src/${GO_PACKAGE_NAME}
-RUN make build
+RUN make linux/amd64
 
 # Copy binaries to /output.
 
 RUN mkdir -p /output \
-      && cp -R ${GOPATH}/src/${GO_PACKAGE_NAME}/target/*  /output/
+ && cp -R ${GOPATH}/src/${GO_PACKAGE_NAME}/target/*  /output/
 
 # -----------------------------------------------------------------------------
 # Stage: fpm_builder
