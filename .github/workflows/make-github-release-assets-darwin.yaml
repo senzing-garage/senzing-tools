@@ -23,7 +23,7 @@ jobs:
       - name: Attach .dmg
         run: hdiutil attach /tmp/senzingapi.dmg
       - name: Copy files
-        run: sudo mkdir -p /opt/senzing/ && sudo cp /Volumes/SenzingAPI/senzing/g2 /opt/senzing
+        run: sudo mkdir -p /opt/senzing/ && sudo cp -R /Volumes/SenzingAPI/senzing/g2 /opt/senzing
       - name: Make executable file
         run: make darwin/amd64
       - name: Adjust create-dmg
