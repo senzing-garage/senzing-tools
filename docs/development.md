@@ -56,6 +56,7 @@ Since the Senzing library is a prerequisite, it must be installed first.
     1. linux
 
         ```console
+        export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
         ${GIT_REPOSITORY_DIR}/target/linux-amd64/senzing-tools
 
         ```
@@ -63,6 +64,7 @@ Since the Senzing library is a prerequisite, it must be installed first.
     1. macOS
 
         ```console
+        export DYLD_LIBRARY_PATH=/opt/senzing/g2/lib/:/opt/senzing/g2/lib/macos
         ${GIT_REPOSITORY_DIR}/target/darwin-amd64/senzing-tools
 
         ```
