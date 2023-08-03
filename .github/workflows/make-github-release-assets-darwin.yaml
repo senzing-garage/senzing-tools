@@ -35,7 +35,7 @@ jobs:
       - name: Make a .dmg file
         run: |
           export BUILD_VERSION=$(git describe --always --tags --abbrev=0 --dirty  | sed 's/v//')
-          create-dmg --app-drop-link 0 40 "explain-$BUILD_VERSION.dmg"  "target/darwin-amd64/"
+          create-dmg --app-drop-link 0 40 "senzing-tools-$BUILD_VERSION.dmg"  "target/darwin-amd64/"
       - name: Upload versioned package to release assets
         uses: svenstaro/upload-release-action@v2
         with:
