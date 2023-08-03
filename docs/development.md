@@ -107,11 +107,11 @@ Since the Senzing library is a prerequisite, it must be installed first.
 
 1. Visit [localhost:6060](http://localhost:6060)
 1. Senzing documentation will be in the "Third party" section.
-   `github.com` > `senzing` > `template-go`
+   `github.com` > `senzing` > `senzing-tools`
 
 1. When a versioned release is published with a `v0.0.0` format tag,
 the reference can be found by clicking on the following badge at the top of the README.md page:
-[![Go Reference](https://pkg.go.dev/badge/github.com/senzing/template-go.svg)](https://pkg.go.dev/github.com/senzing/template-go)
+[![Go Reference](https://pkg.go.dev/badge/github.com/senzing/senzing-tools.svg)](https://pkg.go.dev/github.com/senzing/senzing-tools)
 
 ## Docker
 
@@ -130,7 +130,7 @@ the reference can be found by clicking on the following badge at the top of the 
     ```console
     docker run \
       --rm \
-      senzing/template-go
+      senzing/senzing-tools
 
     ```
 
