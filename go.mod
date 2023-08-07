@@ -6,7 +6,7 @@ require (
 	github.com/senzing/explain v0.1.3
 	github.com/senzing/go-cmdhelping v0.1.5
 	github.com/senzing/init-database v0.3.0
-	github.com/senzing/observe v0.1.2
+	github.com/senzing/observe v0.1.3
 	github.com/senzing/serve-grpc v0.4.12
 	github.com/senzing/serve-http v0.0.3
 	github.com/senzing/validate v0.0.1
@@ -65,7 +65,7 @@ require (
 	github.com/senzing/go-grpcing v0.1.1 // indirect
 	github.com/senzing/go-logging v1.3.1 // indirect
 	github.com/senzing/go-messaging v1.3.1 // indirect
-	github.com/senzing/go-observing v0.2.6 // indirect
+	github.com/senzing/go-observing v0.2.7 // indirect
 	github.com/senzing/go-rest-api-service v0.0.4 // indirect
 	github.com/senzing/go-sdk-abstract-factory v0.3.1 // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
@@ -86,7 +86,7 @@ require (
 	golang.org/x/sync v0.3.0 // indirect
 	golang.org/x/sys v0.11.0 // indirect
 	golang.org/x/text v0.12.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20230731193218-e0aa005b6bdf // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20230803162519-f966b187b2e5 // indirect
 	google.golang.org/grpc v1.57.0 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
