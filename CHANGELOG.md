@@ -8,8 +8,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Added validate
 -
+
+## [0.4.1] - 2023-08-14
+
+### Changed in 0.4.1
+
+- Added validate
+- Refactor to `template-go`
+- Update dependencies
+  - github.com/senzing/explain v0.1.4
+  - github.com/senzing/go-cmdhelping v0.1.5
+  - github.com/senzing/init-database v0.3.1
+  - github.com/senzing/observe v0.1.3
+  - github.com/senzing/serve-grpc v0.4.13
+  - github.com/senzing/serve-http v0.0.4
+  - github.com/senzing/validate v0.0.2
 
 ## [0.4.0] - 2023-07-28
 
