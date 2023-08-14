@@ -276,8 +276,8 @@ github.com/senzing/init-database v0.3.1 h1:48PSZLts6zDP8VF51ZdD+a4T/PQY/to+pFuCD
 github.com/senzing/init-database v0.3.1/go.mod h1:RXeKVGnBCKTSMTuKjA9uH6Gy/OEi1Mnw4N5bfyrO5ow=
 github.com/senzing/observe v0.1.3 h1:4nFveIeGSv8kRfPJqgmdTMDiMU9dOOWO2At25j432UQ=
 github.com/senzing/observe v0.1.3/go.mod h1:eqH4fInm/BwYew/+BQDTfA2MDzpNU7NbeOFZGD6JjY4=
-github.com/senzing/serve-grpc v0.4.12 h1:NWSoOtYY8983hkis1gggcx1ksXXiMsuSitGNh7y/XVo=
-github.com/senzing/serve-grpc v0.4.12/go.mod h1:XV+xU2jSAJ/nJv4qMmziXh9w62FOphtEtHQZ9a5jQWE=
+github.com/senzing/serve-grpc v0.4.13 h1:cJW+AOQsLYzCmD0nyixuINy09q03xyFNM40iob9owkw=
+github.com/senzing/serve-grpc v0.4.13/go.mod h1:EIKgTNY3oB8uzFFhZwMsYCbePnsqCvGG45vblaML5Ng=
 github.com/senzing/serve-http v0.0.3 h1:XxeTmNy8BGwrsckgyHjspKLid7mBJCw1xRWw8vqWqKQ=
 github.com/senzing/serve-http v0.0.3/go.mod h1:z3M6AX4gQePkt9YhQ1jix2KINXbOko1PLRGV7uwY5+o=
 github.com/senzing/validate v0.0.2 h1:LFCZlx9Iwku+SvwPDjafx9D6MAkW5RxAbvoZhaI0gsA=
