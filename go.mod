@@ -8,7 +8,7 @@ require (
 	github.com/senzing/init-database v0.3.1
 	github.com/senzing/observe v0.1.3
 	github.com/senzing/serve-grpc v0.4.13
-	github.com/senzing/serve-http v0.0.3
+	github.com/senzing/serve-http v0.0.4
 	github.com/senzing/validate v0.0.2
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/viper v1.16.0
@@ -26,7 +26,7 @@ require (
 	github.com/fsnotify/fsnotify v1.6.0 // indirect
 	github.com/ghodss/yaml v1.0.0 // indirect
 	github.com/go-faster/errors v0.6.1 // indirect
-	github.com/go-faster/jx v1.0.1 // indirect
+	github.com/go-faster/jx v1.1.0 // indirect
 	github.com/go-faster/yaml v0.4.6 // indirect
 	github.com/go-logr/logr v1.2.4 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
@@ -46,7 +46,7 @@ require (
 	github.com/matttproud/golang_protobuf_extensions v1.0.4 // indirect
 	github.com/microsoft/go-mssqldb v1.5.0 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
-	github.com/ogen-go/ogen v0.72.0 // indirect
+	github.com/ogen-go/ogen v0.73.0 // indirect
 	github.com/pelletier/go-toml/v2 v2.0.9 // indirect
 	github.com/pkg/browser v0.0.0-20210911075715-681adbf594b8 // indirect
 	github.com/prometheus/client_golang v1.16.0 // indirect
@@ -60,13 +60,13 @@ require (
 	github.com/senzing/g2-sdk-go-grpc v0.3.2 // indirect
 	github.com/senzing/g2-sdk-json-type-definition v0.1.1 // indirect
 	github.com/senzing/g2-sdk-proto/go v0.0.0-20230608182106-25c8cdc02e3c // indirect
-	github.com/senzing/go-common v0.2.11 // indirect
+	github.com/senzing/go-common v0.2.13 // indirect
 	github.com/senzing/go-databasing v0.2.7 // indirect
-	github.com/senzing/go-grpcing v0.1.1 // indirect
+	github.com/senzing/go-grpcing v0.1.2 // indirect
 	github.com/senzing/go-logging v1.3.2 // indirect
 	github.com/senzing/go-messaging v1.3.2 // indirect
 	github.com/senzing/go-observing v0.2.7 // indirect
-	github.com/senzing/go-rest-api-service v0.0.4 // indirect
+	github.com/senzing/go-rest-api-service v0.0.5 // indirect
 	github.com/senzing/go-sdk-abstract-factory v0.3.2 // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/spf13/afero v1.9.5 // indirect
@@ -77,11 +77,10 @@ require (
 	go.opentelemetry.io/otel v1.16.0 // indirect
 	go.opentelemetry.io/otel/metric v1.16.0 // indirect
 	go.opentelemetry.io/otel/trace v1.16.0 // indirect
-	go.uber.org/atomic v1.11.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
-	go.uber.org/zap v1.24.0 // indirect
+	go.uber.org/zap v1.25.0 // indirect
 	golang.org/x/crypto v0.12.0 // indirect
-	golang.org/x/exp v0.0.0-20230809094429-853ea248256d // indirect
+	golang.org/x/exp v0.0.0-20230811145659-89c5cff77bcb // indirect
 	golang.org/x/net v0.14.0 // indirect
 	golang.org/x/sync v0.3.0 // indirect
 	golang.org/x/sys v0.11.0 // indirect
