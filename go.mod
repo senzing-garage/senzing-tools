@@ -7,7 +7,7 @@ require (
 	github.com/senzing/go-cmdhelping v0.1.5
 	github.com/senzing/init-database v0.3.1
 	github.com/senzing/observe v0.1.3
-	github.com/senzing/serve-grpc v0.4.12
+	github.com/senzing/serve-grpc v0.4.13
 	github.com/senzing/serve-http v0.0.3
 	github.com/senzing/validate v0.0.2
 	github.com/spf13/cobra v1.7.0
