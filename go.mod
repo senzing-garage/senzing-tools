@@ -9,7 +9,7 @@ require (
 	github.com/senzing/observe v0.1.3
 	github.com/senzing/serve-grpc v0.4.12
 	github.com/senzing/serve-http v0.0.3
-	github.com/senzing/validate v0.0.1
+	github.com/senzing/validate v0.0.2
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/viper v1.16.0
 )
@@ -63,8 +63,8 @@ require (
 	github.com/senzing/go-common v0.2.11 // indirect
 	github.com/senzing/go-databasing v0.2.6 // indirect
 	github.com/senzing/go-grpcing v0.1.1 // indirect
-	github.com/senzing/go-logging v1.3.1 // indirect
-	github.com/senzing/go-messaging v1.3.1 // indirect
+	github.com/senzing/go-logging v1.3.2 // indirect
+	github.com/senzing/go-messaging v1.3.2 // indirect
 	github.com/senzing/go-observing v0.2.7 // indirect
 	github.com/senzing/go-rest-api-service v0.0.4 // indirect
 	github.com/senzing/go-sdk-abstract-factory v0.3.1 // indirect
@@ -81,7 +81,7 @@ require (
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.24.0 // indirect
 	golang.org/x/crypto v0.11.0 // indirect
-	golang.org/x/exp v0.0.0-20230801115018-d63ba01acd4b // indirect
+	golang.org/x/exp v0.0.0-20230807204917-050eac23e9de // indirect
 	golang.org/x/net v0.13.0 // indirect
 	golang.org/x/sync v0.3.0 // indirect
 	golang.org/x/sys v0.11.0 // indirect
