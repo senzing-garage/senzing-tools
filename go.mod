@@ -6,6 +6,7 @@ require (
 	github.com/senzing/explain v0.1.4
 	github.com/senzing/go-cmdhelping v0.1.6
 	github.com/senzing/init-database v0.3.1
+	github.com/senzing/move v0.0.4
 	github.com/senzing/observe v0.1.3
 	github.com/senzing/serve-grpc v0.4.13
 	github.com/senzing/serve-http v0.0.4
@@ -84,7 +85,6 @@ require (
 	github.com/senzing/go-queueing v0.1.3 // indirect
 	github.com/senzing/go-rest-api-service v0.0.5 // indirect
 	github.com/senzing/go-sdk-abstract-factory v0.3.2 // indirect
-	github.com/senzing/move v0.0.4 // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/sourcegraph/conc v0.3.0 // indirect
 	github.com/spf13/afero v1.9.5 // indirect
