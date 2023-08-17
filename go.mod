@@ -4,17 +4,31 @@ go 1.20
 
 require (
 	github.com/senzing/explain v0.1.4
-	github.com/senzing/go-cmdhelping v0.1.5
+	github.com/senzing/go-cmdhelping v0.1.6
 	github.com/senzing/init-database v0.3.1
+	github.com/senzing/move v0.0.4
 	github.com/senzing/observe v0.1.3
 	github.com/senzing/serve-grpc v0.4.13
 	github.com/senzing/serve-http v0.0.4
-	github.com/senzing/validate v0.0.2
+	github.com/senzing/validate v0.0.3
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/viper v1.16.0
 )
 
 require (
+	github.com/aws/aws-sdk-go-v2 v1.20.1 // indirect
+	github.com/aws/aws-sdk-go-v2/config v1.18.33 // indirect
+	github.com/aws/aws-sdk-go-v2/credentials v1.13.32 // indirect
+	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.13.8 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/configsources v1.1.38 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.4.32 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/ini v1.3.39 // indirect
+	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.9.32 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sqs v1.24.2 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sso v1.13.2 // indirect
+	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.15.2 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sts v1.21.2 // indirect
+	github.com/aws/smithy-go v1.14.1 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
@@ -53,6 +67,8 @@ require (
 	github.com/prometheus/client_model v0.4.0 // indirect
 	github.com/prometheus/common v0.44.0 // indirect
 	github.com/prometheus/procfs v0.11.1 // indirect
+	github.com/rabbitmq/amqp091-go v1.8.1 // indirect
+	github.com/roncewind/go-util v0.0.5 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/segmentio/asm v1.2.0 // indirect
 	github.com/senzing/g2-sdk-go v0.6.8 // indirect
@@ -66,14 +82,16 @@ require (
 	github.com/senzing/go-logging v1.3.2 // indirect
 	github.com/senzing/go-messaging v1.3.2 // indirect
 	github.com/senzing/go-observing v0.2.7 // indirect
+	github.com/senzing/go-queueing v0.1.3 // indirect
 	github.com/senzing/go-rest-api-service v0.0.5 // indirect
 	github.com/senzing/go-sdk-abstract-factory v0.3.2 // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
+	github.com/sourcegraph/conc v0.3.0 // indirect
 	github.com/spf13/afero v1.9.5 // indirect
 	github.com/spf13/cast v1.5.1 // indirect
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
-	github.com/subosito/gotenv v1.4.2 // indirect
+	github.com/subosito/gotenv v1.6.0 // indirect
 	go.opentelemetry.io/otel v1.16.0 // indirect
 	go.opentelemetry.io/otel/metric v1.16.0 // indirect
 	go.opentelemetry.io/otel/trace v1.16.0 // indirect

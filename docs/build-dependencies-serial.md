@@ -38,6 +38,6 @@
 <https://github.com/search?q=topic%3Agolang+org%3ASenzing&type=Repositories>
 
 1. [ ] [g2-sdk-go-mock](https://github.com/Senzing/g2-sdk-go-mock)
-1. [ ] [go-queuing](https://github.com/Senzing/go-queuing)
+1. [ ] [go-queueing](https://github.com/Senzing/go-queueing)
 1. [ ] [serve-chat](https://github.com/Senzing/serve-chat)
 1. [ ] [template-go](https://github.com/Senzing/template-go)
