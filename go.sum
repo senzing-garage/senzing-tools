@@ -297,6 +297,8 @@ github.com/senzing/go-cmdhelping v0.1.5 h1:U07/+3vIeomn2qES2IAQI3Tg95Wqr4q9Pd2n7
 github.com/senzing/go-cmdhelping v0.1.5/go.mod h1:nOoJc3KtgaMp9Qodf9dws09tWML76BP46TB1EPgKqV8=
 github.com/senzing/go-cmdhelping v0.1.6-0.20230814160426-afd54992d035 h1:WPIshDEnr5fR22o/LsF9CXCU+5iynQ0gF56qsUgxY/I=
 github.com/senzing/go-cmdhelping v0.1.6-0.20230814160426-afd54992d035/go.mod h1:fBKUdm1Wnn3W3HUtMICYt3lPCrzYfPsoTmkwcx/Wulg=
+github.com/senzing/go-cmdhelping v0.1.6 h1:/ITQwip7Pec5ZMKhSkIEvk5E+7UryMIQ+d1E/KplGj4=
+github.com/senzing/go-cmdhelping v0.1.6/go.mod h1:xF4aN1TiBGlQIJ98nfa7O/0RMu7TEAP9OnPf9MAlJLU=
 github.com/senzing/go-common v0.2.13 h1:dvKmO2by+wA8kK9gcpQRp/9r6zyAyT0idcm6OOf08iU=
 github.com/senzing/go-common v0.2.13/go.mod h1:Dqvq3hZc8KNT7SJKkjJhJ5ZZYbsmZEDIMFT6eFZ+Kt0=
 github.com/senzing/go-databasing v0.2.7 h1:G9wFURcI4G0cRpzDfdK5K6K3PETNsqB/bS7s2zzL2ZQ=
@@ -357,6 +359,8 @@ github.com/stretchr/testify v1.8.4 h1:CcVxjf3Q8PM0mHUKJCdn+eZZtm5yQwehR5yeSVQQcU
 github.com/stretchr/testify v1.8.4/go.mod h1:sz/lmYIOXD/1dqDmKjjqLyZ2RngseejIcXlSw2iwfAo=
 github.com/subosito/gotenv v1.4.2 h1:X1TuBLAMDFbaTAChgCBLu3DU3UPyELpnF2jjJ2cz/S8=
 github.com/subosito/gotenv v1.4.2/go.mod h1:ayKnFf/c6rvx/2iiLrJUk1e6plDbT3edrFNGqEflhK0=
+github.com/subosito/gotenv v1.6.0 h1:9NlTDc1FTs4qu0DDq7AEtTPNw6SVm7uBMsUCUjABIf8=
+github.com/subosito/gotenv v1.6.0/go.mod h1:Dk4QP5c2W3ibzajGcXpNraDfq2IrhjMIvMSWPKKo0FU=
 github.com/yuin/goldmark v1.1.25/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.27/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.32/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=

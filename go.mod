@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/senzing/explain v0.1.4
-	github.com/senzing/go-cmdhelping v0.1.6-0.20230814160426-afd54992d035
+	github.com/senzing/go-cmdhelping v0.1.6
 	github.com/senzing/init-database v0.3.1
 	github.com/senzing/observe v0.1.3
 	github.com/senzing/serve-grpc v0.4.13
@@ -91,7 +91,7 @@ require (
 	github.com/spf13/cast v1.5.1 // indirect
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
-	github.com/subosito/gotenv v1.4.2 // indirect
+	github.com/subosito/gotenv v1.6.0 // indirect
 	go.opentelemetry.io/otel v1.16.0 // indirect
 	go.opentelemetry.io/otel/metric v1.16.0 // indirect
 	go.opentelemetry.io/otel/trace v1.16.0 // indirect
