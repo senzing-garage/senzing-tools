@@ -88,7 +88,7 @@ func Execute() {
 					newArgs = append(newArgs, arg)
 				}
 			}
-			fmt.Fprintf(os.Stderr, "Using SENZING_TOOLS_COMMAND value of '%s' resulting in command: `senzing-tools %s'\n", command, strings.Join(newArgs, " "))
+			fmt.Fprintf(os.Stderr, "Using SENZING_TOOLS_COMMAND value of '%s' resulting in command: 'senzing-tools %s'\n", command, strings.Join(newArgs, " "))
 			RootCmd.SetArgs(newArgs)
 		}
 	}
