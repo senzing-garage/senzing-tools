@@ -79,20 +79,6 @@ $(PLATFORMS):
 	@GOOS=$(GO_OS) GOARCH=$(GO_ARCH) go build -o $(TARGET_DIRECTORY)/$(GO_OS)-$(GO_ARCH)/$(PROGRAM_NAME)
 
 
-.PHONY: build-scratch
-build-scratch:
-	@GOOS=linux \
-	GOARCH=amd64 \
-	CGO_ENABLED=0 \
-	go build \
-		-a \
-		-installsuffix cgo \
-		-ldflags "-s -w" \
-		-o $(GO_PACKAGE_NAME)
-	@mkdir -p $(TARGET_DIRECTORY)/scratch || true
-	@mv $(GO_PACKAGE_NAME) $(TARGET_DIRECTORY)/scratch
-
-
 .PHONY: docker-build
 docker-build:
 	@docker build \
