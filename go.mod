@@ -1,14 +1,15 @@
 module github.com/senzing/senzing-tools
 
 go 1.20
+toolchain go1.21.0
 
 require (
 	github.com/senzing/explain v0.1.4
-	github.com/senzing/go-cmdhelping v0.1.6
+	github.com/senzing/go-cmdhelping v0.1.7
 	github.com/senzing/init-database v0.3.1
 	github.com/senzing/move v0.0.4
 	github.com/senzing/observe v0.1.3
-	github.com/senzing/serve-grpc v0.4.13
+	github.com/senzing/serve-grpc v0.4.14
 	github.com/senzing/serve-http v0.0.4
 	github.com/senzing/validate v0.0.3
 	github.com/spf13/cobra v1.7.0
@@ -98,12 +99,12 @@ require (
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.25.0 // indirect
 	golang.org/x/crypto v0.12.0 // indirect
-	golang.org/x/exp v0.0.0-20230811145659-89c5cff77bcb // indirect
+	golang.org/x/exp v0.0.0-20230817173708-d852ddb80c63 // indirect
 	golang.org/x/net v0.14.0 // indirect
 	golang.org/x/sync v0.3.0 // indirect
 	golang.org/x/sys v0.11.0 // indirect
 	golang.org/x/text v0.12.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20230807174057-1744710a1577 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20230815205213-6bfd019c3878 // indirect
 	google.golang.org/grpc v1.57.0 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
