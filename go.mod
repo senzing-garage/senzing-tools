@@ -1,10 +1,11 @@
 module github.com/senzing/senzing-tools
 
 go 1.20
+toolchain go1.21.0
 
 require (
 	github.com/senzing/explain v0.1.4
-	github.com/senzing/go-cmdhelping v0.1.6
+	github.com/senzing/go-cmdhelping v0.1.7
 	github.com/senzing/init-database v0.3.1
 	github.com/senzing/move v0.0.4
 	github.com/senzing/observe v0.1.3
