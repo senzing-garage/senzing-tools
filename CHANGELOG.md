@@ -10,6 +10,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -
 
+## [0.4.4] - 2023-09-01
+
+### Changed in 0.4.4
+
+- Last version before SenzingAPI 3.8.0
+
 ## [0.4.3] - 2023-08-29
 
 ### Changed in 0.4.3
@@ -17,7 +23,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update dependencies
   - downloading github.com/senzing/go-cmdhelping v0.1.8
   - downloading github.com/senzing/move v0.0.5
-
 
 ## [0.4.2] - 2023-08-17
 
