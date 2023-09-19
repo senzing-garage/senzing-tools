@@ -5,7 +5,7 @@ go 1.21
 require (
 	github.com/senzing/explain v0.1.4
 	github.com/senzing/go-cmdhelping v0.1.8
-	github.com/senzing/init-database v0.3.1
+	github.com/senzing/init-database v0.3.2
 	github.com/senzing/move v0.0.5
 	github.com/senzing/observe v0.1.3
 	github.com/senzing/serve-grpc v0.4.15
