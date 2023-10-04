@@ -11,12 +11,13 @@ env:
   SENZING_TOOLS_DATABASE_URL: "sqlite3://na:na@/tmp/sqlite/G2C.db"
 
 jobs:
-  build:
+  go-test-linux:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         go: ["1.21"]
-    name: Go ${{ matrix.go }} - linux
+        senzingapi-version: ["staging"]
+    name: Go ${{ matrix.go }} using Senzing API ${{ matrix.senzingapi-version }} on linux
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -26,18 +27,10 @@ jobs:
         uses: actions/setup-go@v4
         with:
           go-version: ${{ matrix.go }}
-      - run: wget -qO /tmp/senzingrepo_1.0.1-1_amd64.deb https://senzing-production-apt.s3.amazonaws.com/senzingrepo_1.0.1-1_amd64.deb
-      - run: sudo apt-get -y install /tmp/senzingrepo_1.0.1-1_amd64.deb
-      - run: sudo apt-get update
-      - run: sudo --preserve-env apt-get -y install senzingapi
-      - run: sudo mv /opt/senzing/data/4.0.0/* /opt/senzing/data/
-      - run: sudo mkdir /etc/opt/senzing
-      - run: sudo cp /opt/senzing/g2/resources/templates/cfgVariant.json     /etc/opt/senzing
-      - run: sudo cp /opt/senzing/g2/resources/templates/customGn.txt        /etc/opt/senzing
-      - run: sudo cp /opt/senzing/g2/resources/templates/customOn.txt        /etc/opt/senzing
-      - run: sudo cp /opt/senzing/g2/resources/templates/customSn.txt        /etc/opt/senzing
-      - run: sudo cp /opt/senzing/g2/resources/templates/defaultGNRCP.config /etc/opt/senzing
-      - run: sudo cp /opt/senzing/g2/resources/templates/stb.config          /etc/opt/senzing
+      - name: Install Senzing API
+        uses: Senzing/github-action-install-senzing-api@latest
+        with:
+          senzingapi-version: ${{ matrix.senzingapi-version }}
       - run: mkdir /tmp/sqlite
       - run: touch /tmp/sqlite/G2C.db
       - name: Run go test
