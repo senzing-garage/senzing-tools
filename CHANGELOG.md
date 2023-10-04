@@ -10,6 +10,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -
 
+## [0.5.0] - 2023-10-03
+
+### Changed in 0.5.0
+
+- Supports SenzingAPI 3.8.0
+- Deprecated functions have been removed
+- Update dependencies
+  - github.com/senzing/init-database v0.3.2
+
 ## [0.4.4] - 2023-09-01
 
 ### Changed in 0.4.4

@@ -11,12 +11,13 @@ env:
   SENZING_TOOLS_DATABASE_URL: "sqlite3://na:na@/tmp/sqlite/G2C.db"
 
 jobs:
-  build:
+  go-test-darwin:
     runs-on: macos-latest
     strategy:
       matrix:
         go: ["1.21"]
-    name: Go ${{ matrix.go }} - darwin
+        senzingapi-version: ["staging"]
+    name: Go ${{ matrix.go }} using Senzing API ${{ matrix.senzingapi-version }} on darwin
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -26,12 +27,10 @@ jobs:
         uses: actions/setup-go@v4
         with:
           go-version: ${{ matrix.go }}
-      - name: Download SenzingApi
-        run: curl --output /tmp/senzingapi.dmg https://public-read-access.s3.amazonaws.com/staging/senzingapi.dmg
-      - name: Attach .dmg
-        run: hdiutil attach /tmp/senzingapi.dmg
-      - name: Copy SenzingApi files
-        run: sudo mkdir -p /opt/senzing/    && sudo cp -R /Volumes/SenzingAPI/senzing/g2 /opt/senzing
+      - name: Install Senzing API
+        uses: Senzing/github-action-install-senzing-api@latest
+        with:
+          senzingapi-version: ${{ matrix.senzingapi-version }}
       - run: mkdir /tmp/sqlite
       - run: touch /tmp/sqlite/G2C.db
       - name: Run go test
