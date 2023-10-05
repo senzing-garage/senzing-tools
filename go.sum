@@ -316,8 +316,8 @@ github.com/senzing/serve-grpc v0.5.1 h1:dBJu7koVO9VFp9diGDWFVCKGAml+ZpGqZFe13bsR
 github.com/senzing/serve-grpc v0.5.1/go.mod h1:bwIgdQd13fePGfvTaDYUbkSDhGoNscxfcNC5ld/4duo=
 github.com/senzing/serve-http v0.1.0 h1:9FJuL/qs8Bip7ANAWi7Dw9iYhykHL9MlDfUHrZzvFIk=
 github.com/senzing/serve-http v0.1.0/go.mod h1:5DJvD//Dp50fYmf9+ZOCS1VHC3LVkmIFjacOH3TZfqc=
-github.com/senzing/validate v0.0.3 h1:0S8vp2lNdioMSSKxpaj64CTv+DiJdhOv11gd7H12W/Y=
-github.com/senzing/validate v0.0.3/go.mod h1:muxirYTA7b59mLoAkQb3tiy8C+Khjf4hQ1wWzLhq0as=
+github.com/senzing/validate v0.0.4 h1:xl8aaOcGxpetozcBi8eWurNo3nQTm5vYED5vHf0gwB4=
+github.com/senzing/validate v0.0.4/go.mod h1:LVm7QFiXgXTz1ffFVzt80eXMmeGEzBHzTHQLFsAn2rI=
 github.com/sirupsen/logrus v1.9.3 h1:dueUQJ1C2q9oE3F7wvmSGAaVtTmUizReu6fjN8uqzbQ=
 github.com/sirupsen/logrus v1.9.3/go.mod h1:naHLuLoDiP4jHNo9R0sCBMtWGeIprob74mVsIT4qYEQ=
 github.com/sourcegraph/conc v0.3.0 h1:OQTbbt6P72L20UqAkXXuLOj79LfEanQ+YQFNpLA9ySo=

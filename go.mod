@@ -10,7 +10,7 @@ require (
 	github.com/senzing/observe v0.1.3
 	github.com/senzing/serve-grpc v0.5.1
 	github.com/senzing/serve-http v0.1.0
-	github.com/senzing/validate v0.0.3
+	github.com/senzing/validate v0.0.4
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/viper v1.16.0
 )
