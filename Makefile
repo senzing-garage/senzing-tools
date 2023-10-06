@@ -27,7 +27,6 @@ PATH := $(MAKEFILE_DIRECTORY)/bin:$(PATH)
 
 # Recursive assignment ('=')
 
-CC = gcc
 GO_OSARCH = $(subst /, ,$@)
 GO_OS = $(word 1, $(GO_OSARCH))
 GO_ARCH = $(word 2, $(GO_OSARCH))
@@ -56,6 +55,10 @@ default: help
 -include Makefile.$(OSTYPE)
 -include Makefile.$(OSTYPE)_$(OSARCH)
 
+
+.PHONY: hello-world
+hello-world: hello-world-osarch-specific
+
 # -----------------------------------------------------------------------------
 # Dependency management
 # -----------------------------------------------------------------------------
@@ -68,15 +71,17 @@ dependencies:
 
 # -----------------------------------------------------------------------------
 # Build
-#  - The "build" target is implemented in Makefile.OS.ARCH files.
 #  - docker-build: https://docs.docker.com/engine/reference/commandline/build/
 # -----------------------------------------------------------------------------
 
 PLATFORMS := darwin/amd64 linux/amd64 windows/amd64
 $(PLATFORMS):
 	@echo Building $(TARGET_DIRECTORY)/$(GO_OS)-$(GO_ARCH)/$(PROGRAM_NAME)
-	@mkdir -p $(TARGET_DIRECTORY)/$(GO_OS)-$(GO_ARCH) || true
 	@GOOS=$(GO_OS) GOARCH=$(GO_ARCH) go build -o $(TARGET_DIRECTORY)/$(GO_OS)-$(GO_ARCH)/$(PROGRAM_NAME)
+
+
+.PHONY: build
+build: build-osarch-specific
 
 
 .PHONY: docker-build
@@ -93,9 +98,10 @@ docker-build:
 
 # -----------------------------------------------------------------------------
 # Test
-#  - The "test" target is implemented in Makefile.OS.ARCH files.
 # -----------------------------------------------------------------------------
 
+.PHONY: test
+test: test-osarch-specific
 
 # -----------------------------------------------------------------------------
 # Run
@@ -105,13 +111,17 @@ docker-build:
 docker-run:
 	@docker run \
 		--interactive \
+		--rm \
 		--tty \
 		--name $(DOCKER_CONTAINER_NAME) \
 		$(DOCKER_IMAGE_NAME)
 
+
+.PHONY: run
+run: run-osarch-specific
+
 # -----------------------------------------------------------------------------
 # Package
-#  - The "package" target is implemented in Makefile.OS.ARCH files.
 # -----------------------------------------------------------------------------
 
 .PHONY: docker-build-package
@@ -126,18 +136,18 @@ docker-build-package:
 		--tag $(DOCKER_BUILD_IMAGE_NAME) \
 		.
 
+
+.PHONY: package
+package: package-osarch-specific
+
 # -----------------------------------------------------------------------------
 # Utility targets
 # -----------------------------------------------------------------------------
 
 .PHONY: clean
-clean:
+clean: clean-osarch-specific
 	@go clean -cache
 	@go clean -testcache
-	@docker rm --force $(DOCKER_CONTAINER_NAME) 2> /dev/null || true
-	@docker rmi --force $(DOCKER_IMAGE_NAME) $(DOCKER_BUILD_IMAGE_NAME) 2> /dev/null || true
-	@rm -rf $(TARGET_DIRECTORY) || true
-	@rm -f $(GOPATH)/bin/$(PROGRAM_NAME) || true
 
 
 .PHONY: help
@@ -155,8 +165,7 @@ print-make-variables:
 
 
 .PHONY: setup
-setup:
-	@echo "No setup required."
+setup: setup-osarch-specific
 
 
 .PHONY: update-pkg-cache

@@ -1,0 +1,26 @@
+name: make-github-release-assets-windows.yaml
+
+on:
+  push:
+    tags:
+      - "[0-9]+.[0-9]+.[0-9]+"
+
+jobs:
+  build:
+    name: Publish binaries - windows
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Make executable file
+        run: make build
+      - name: Upload versioned packages to release assets
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: target/senzing-tools-*
+          file_glob: true
+          tag: ${{ github.ref }}
+          overwrite: true
