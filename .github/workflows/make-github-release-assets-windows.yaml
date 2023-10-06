@@ -11,11 +11,18 @@ jobs:
   build:
     name: Publish binaries - windows
     runs-on: windows-latest
+    strategy:
+      matrix:
+        senzingapi-version: ["staging"]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Install Senzing API
+        uses: Senzing/github-action-install-senzing-api@latest
+        with:
+          senzingapi-version: ${{ matrix.senzingapi-version }}
       - name: Make executable file
         run: go build -o senzing-tools.exe
       - name: Upload versioned packages to release assets

@@ -9,6 +9,9 @@ jobs:
   build:
     name: Publish binaries - darwin
     runs-on: macos-latest
+    strategy:
+      matrix:
+        senzingapi-version: ["staging"]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -16,12 +19,10 @@ jobs:
           fetch-depth: 0
       - name: Install create-dmg
         run: brew install create-dmg
-      - name: Download SenzingApi
-        run: curl --output /tmp/senzingapi.dmg https://public-read-access.s3.amazonaws.com/staging/senzingapi_3.7.0.23207.dmg
-      - name: Attach .dmg
-        run: hdiutil attach /tmp/senzingapi.dmg
-      - name: Copy files
-        run: sudo mkdir -p /opt/senzing/ && sudo cp -R /Volumes/SenzingAPI/senzing/g2 /opt/senzing
+      - name: Install Senzing API
+        uses: Senzing/github-action-install-senzing-api@latest
+        with:
+          senzingapi-version: ${{ matrix.senzingapi-version }}
       - name: Make executable file
         run: make darwin/amd64
       - name: Adjust create-dmg
