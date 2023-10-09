@@ -7,6 +7,7 @@ require (
 	github.com/senzing/explain v0.1.4
 	github.com/senzing/go-cmdhelping v0.1.8
 	github.com/senzing/init-database v0.4.0
+	github.com/senzing/load v0.0.2
 	github.com/senzing/move v0.0.6
 	github.com/senzing/observe v0.1.3
 	github.com/senzing/serve-grpc v0.5.1
