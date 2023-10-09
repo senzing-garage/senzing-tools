@@ -16,10 +16,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Supports SenzingAPI 3.8.0
 - Deprecated functions have been removed
+- Add `check-self` and `load` commands
 - Update dependencies
   - github.com/senzing/init-database v0.4.0
+  - github.com/senzing/move v0.0.6
   - github.com/senzing/serve-grpc v0.5.1
   - github.com/senzing/serve-http v0.1.0
+  - github.com/senzing/validate v0.0.4
+  - github.com/spf13/viper v1.17.0
 
 ## [0.4.4] - 2023-09-01
 

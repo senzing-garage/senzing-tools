@@ -316,6 +316,8 @@ github.com/senzing/go-sdk-abstract-factory v0.4.0 h1:GluqwcuxNVVizxC87VsuTA/wsVA
 github.com/senzing/go-sdk-abstract-factory v0.4.0/go.mod h1:o3lyONHzT/FgVR3HCwdl+npvof8ALO1jvRPZS9LDteE=
 github.com/senzing/init-database v0.4.0 h1:0y2rs3JvESWRyBAbyNTQz+0FYnoGRBk1p7PnlDzLfCE=
 github.com/senzing/init-database v0.4.0/go.mod h1:Rc9CrpPVcOQpIm/gcU/5VJQmTvK58rDjaxiAnu+puqI=
+github.com/senzing/load v0.0.2 h1:brk1bY+z2oTa5u0bT9/kVgo8qBWWlRvUkyI3UfuQp2A=
+github.com/senzing/load v0.0.2/go.mod h1:/Y847sPFPxjfZvheayoAo81AdtCcjhP24kQOIMuP8EI=
 github.com/senzing/move v0.0.6 h1:UaWep6WJf81ZbkafqkAWKLd/PXt+V+bm74n9oXqsrO4=
 github.com/senzing/move v0.0.6/go.mod h1:krhgRz3Ff9K/Oahi8E4A94Ub3Ilosywbh+rpFXpvjgg=
 github.com/senzing/observe v0.1.3 h1:4nFveIeGSv8kRfPJqgmdTMDiMU9dOOWO2At25j432UQ=
