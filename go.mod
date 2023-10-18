@@ -6,7 +6,7 @@ require (
 	github.com/senzing/check-self v0.0.1
 	github.com/senzing/demo-entity-search v0.0.1
 	github.com/senzing/explain v0.1.4
-	github.com/senzing/go-cmdhelping v0.1.8
+	github.com/senzing/go-cmdhelping v0.1.9
 	github.com/senzing/init-database v0.4.0
 	github.com/senzing/load v0.0.2
 	github.com/senzing/move v0.0.6
@@ -81,11 +81,11 @@ require (
 	github.com/senzing/g2-sdk-go-grpc v0.4.1 // indirect
 	github.com/senzing/g2-sdk-json-type-definition v0.1.1 // indirect
 	github.com/senzing/g2-sdk-proto/go v0.0.0-20230925212041-8259762ae97e // indirect
-	github.com/senzing/go-common v0.3.0 // indirect
+	github.com/senzing/go-common v0.3.1 // indirect
 	github.com/senzing/go-databasing v0.3.0 // indirect
 	github.com/senzing/go-grpcing v0.1.2 // indirect
-	github.com/senzing/go-logging v1.3.2 // indirect
-	github.com/senzing/go-messaging v1.3.2 // indirect
+	github.com/senzing/go-logging v1.3.3 // indirect
+	github.com/senzing/go-messaging v1.3.3 // indirect
 	github.com/senzing/go-observing v0.2.7 // indirect
 	github.com/senzing/go-queueing v0.1.3 // indirect
 	github.com/senzing/go-rest-api-service v0.0.6 // indirect
