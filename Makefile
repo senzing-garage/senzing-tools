@@ -35,8 +35,6 @@ GO_ARCH = $(word 2, $(GO_OSARCH))
 # Can be overridden with "export"
 # Example: "export LD_LIBRARY_PATH=/path/to/my/senzing/g2/lib"
 
-LD_LIBRARY_PATH ?= /opt/senzing/g2/lib
-
 # Export environment variables.
 
 .EXPORT_ALL_VARIABLES:
@@ -71,7 +69,6 @@ dependencies:
 
 # -----------------------------------------------------------------------------
 # Build
-#  - docker-build: https://docs.docker.com/engine/reference/commandline/build/
 # -----------------------------------------------------------------------------
 
 PLATFORMS := darwin/amd64 linux/amd64 windows/amd64
@@ -87,11 +84,6 @@ build: build-osarch-specific
 .PHONY: docker-build
 docker-build:
 	@docker build \
-		--build-arg BUILD_ITERATION=$(BUILD_ITERATION) \
-		--build-arg BUILD_VERSION=$(BUILD_VERSION) \
-		--build-arg GO_PACKAGE_NAME=$(GO_PACKAGE_NAME) \
-		--build-arg PROGRAM_NAME=$(PROGRAM_NAME) \
-		--file Dockerfile \
 		--tag $(DOCKER_IMAGE_NAME) \
 		--tag $(DOCKER_IMAGE_NAME):$(BUILD_VERSION) \
 		.

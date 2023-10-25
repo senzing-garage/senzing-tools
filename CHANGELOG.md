@@ -10,6 +10,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -
 
+## [0.5.1] - 2023-10-25
+
+### Changed in 0.5.1
+
+- Refactor to [template-go](https://github.com/Senzing/template-go)
+- Update dependencies
+  - github.com/senzing/check-self v0.0.2
+  - github.com/senzing/demo-entity-search v0.0.2
+  - github.com/senzing/explain v0.1.5
+  - github.com/senzing/go-cmdhelping v0.1.9
+  - github.com/senzing/init-database v0.4.1
+  - github.com/senzing/load v0.0.3
+  - github.com/senzing/move v0.0.7
+  - github.com/senzing/observe v0.1.4
+  - github.com/senzing/serve-grpc v0.5.3
+  - github.com/senzing/serve-http v0.1.1
+  - github.com/senzing/validate v0.0.5
+
 ## [0.5.0] - 2023-10-03
 
 ### Changed in 0.5.0
