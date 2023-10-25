@@ -7,17 +7,17 @@ on: [push]
 
 env:
   LD_LIBRARY_PATH: /opt/senzing/g2/lib
-  SENZING_ACCEPT_EULA: I_ACCEPT_THE_SENZING_EULA
   SENZING_TOOLS_DATABASE_URL: "sqlite3://na:na@/tmp/sqlite/G2C.db"
 
 jobs:
   go-test-linux:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         go: ["1.21"]
-        senzingapi-version: ["staging"]
-    name: Go ${{ matrix.go }} using Senzing API ${{ matrix.senzingapi-version }} on linux
+        os: [ubuntu-latest]
+        senzingapi-version: [staging]
+    name: "go test with Senzing: ${{ matrix.senzingapi-version }}; OS: ${{ matrix.os }}; Go: ${{ matrix.go }}"
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
