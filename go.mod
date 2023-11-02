@@ -11,7 +11,7 @@ require (
 	github.com/senzing/load v0.0.3
 	github.com/senzing/move v0.0.7
 	github.com/senzing/observe v0.1.4
-	github.com/senzing/serve-grpc v0.5.3
+	github.com/senzing/serve-grpc v0.5.4
 	github.com/senzing/serve-http v0.1.1
 	github.com/senzing/validate v0.0.5
 	github.com/spf13/cobra v1.7.0
@@ -77,11 +77,11 @@ require (
 	github.com/sagikazarmark/slog-shim v0.1.0 // indirect
 	github.com/segmentio/asm v1.2.0 // indirect
 	github.com/senzing/g2-sdk-go v0.7.4 // indirect
-	github.com/senzing/g2-sdk-go-base v0.3.2 // indirect
+	github.com/senzing/g2-sdk-go-base v0.3.3 // indirect
 	github.com/senzing/g2-sdk-go-grpc v0.4.3 // indirect
 	github.com/senzing/g2-sdk-json-type-definition v0.1.1 // indirect
 	github.com/senzing/g2-sdk-proto/go v0.0.0-20231016131354-0d0fba649357 // indirect
-	github.com/senzing/go-common v0.3.1 // indirect
+	github.com/senzing/go-common v0.3.2-0.20231018174900-c1895fb44c30 // indirect
 	github.com/senzing/go-databasing v0.3.1 // indirect
 	github.com/senzing/go-grpcing v0.1.3 // indirect
 	github.com/senzing/go-logging v1.3.3 // indirect
@@ -107,7 +107,7 @@ require (
 	golang.org/x/sync v0.4.0 // indirect
 	golang.org/x/sys v0.13.0 // indirect
 	golang.org/x/text v0.13.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20231016165738-49dd2c1f3d0b // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20231030173426-d783a09b4405 // indirect
 	google.golang.org/grpc v1.59.0 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
