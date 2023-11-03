@@ -3,7 +3,7 @@ module github.com/senzing/senzing-tools
 go 1.21
 
 require (
-	github.com/senzing/check-self v0.0.2
+	github.com/senzing/check-self v0.0.3
 	github.com/senzing/demo-entity-search v0.0.3
 	github.com/senzing/explain v0.1.5
 	github.com/senzing/go-cmdhelping v0.1.9

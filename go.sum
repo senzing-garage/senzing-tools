@@ -281,8 +281,8 @@ github.com/sagikazarmark/slog-shim v0.1.0 h1:diDBnUNK9N/354PgrxMywXnAwEr1QZcOr6g
 github.com/sagikazarmark/slog-shim v0.1.0/go.mod h1:SrcSrq8aKtyuqEI1uvTDTK1arOWRIczQRv+GVI1AkeQ=
 github.com/segmentio/asm v1.2.0 h1:9BQrFxC+YOHJlTlHGkTrFWf59nbL3XnCoFLTwDCI7ys=
 github.com/segmentio/asm v1.2.0/go.mod h1:BqMnlJP91P8d+4ibuonYZw9mfnzI9HfxselHZr5aAcs=
-github.com/senzing/check-self v0.0.2 h1:N5F3Xj7jf3QCmAcJsSQYl/+Z2hCAq5XDKCYQ723ZbWM=
-github.com/senzing/check-self v0.0.2/go.mod h1:cLRgCnuwRr1ALYCAgmy+dgar5Bl3yuOsSRyOYBF4ke0=
+github.com/senzing/check-self v0.0.3 h1:OqtKYZp+M1MzflnNwEGqz32tEkeTn2LrkPjp862kctM=
+github.com/senzing/check-self v0.0.3/go.mod h1:HwXqKloJWFrJStPISlW2Pn5JAGEzXSnauACDklWhxG0=
 github.com/senzing/demo-entity-search v0.0.3 h1:K6YUBplYQuZf2WzxuqqdclOicCK7X90V5dSJidFxKao=
 github.com/senzing/demo-entity-search v0.0.3/go.mod h1:snA60Ov3sOXTgZ0isVghj+RPb6ywf60JxJZPtKvsFh4=
 github.com/senzing/explain v0.1.5 h1:zDnYd9sg1aZxpLAagFQ9JJnN5GR6eP+SEZ06Q8yG0k0=
