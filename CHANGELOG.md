@@ -10,6 +10,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -
 
+## [0.5.2] - 2023-11-03
+
+### Changed in 0.5.2
+
+- Update dependencies
+  - github.com/senzing/check-self v0.0.3
+  - github.com/senzing/demo-entity-search v0.0.3
+  - github.com/senzing/init-database v0.4.2
+  - github.com/senzing/load v0.0.4
+  - github.com/senzing/serve-grpc v0.5.4
+  - github.com/senzing/serve-http v0.1.2
+
 ## [0.5.1] - 2023-10-25
 
 ### Changed in 0.5.1
