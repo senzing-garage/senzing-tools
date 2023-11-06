@@ -14,7 +14,7 @@ require (
 	github.com/senzing/serve-grpc v0.5.4
 	github.com/senzing/serve-http v0.1.2
 	github.com/senzing/validate v0.0.5
-	github.com/spf13/cobra v1.7.0
+	github.com/spf13/cobra v1.8.0
 	github.com/spf13/viper v1.17.0
 )
 
