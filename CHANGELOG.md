@@ -10,6 +10,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -
 
+## [0.5.3] - 2023-11-29
+
+### Changed in 0.5.3
+
+- In `Dockerfile`
+  - `senzingapi-runtime:3.8.0`
+  - `golang:1.21.4-bullseye`
+- In `package.Dockerfile`
+  - `senzingapi-runtime:3.8.0`
+  - `golang:1.21.4-bullseye`
+- Update dependencies
+  - github.com/spf13/cobra v1.8.0
+
 ## [0.5.2] - 2023-11-03
 
 ### Changed in 0.5.2
