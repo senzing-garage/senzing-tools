@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - In `Dockerfile`
   - `senzingapi-runtime:3.8.0`
+  - `golang:1.21.4-bullseye`
 - In `package.Dockerfile`
   - `senzingapi-runtime:3.8.0`
   - `golang:1.21.4-bullseye`
