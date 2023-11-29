@@ -1,4 +1,4 @@
-name: make-github-release-assets.yaml
+name: make-github-release-assets-linux.yaml
 
 on:
   push:
