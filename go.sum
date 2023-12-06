@@ -192,8 +192,8 @@ github.com/senzing/go-rest-api-service v0.1.1 h1:5pLcyYgzQsJ9p7n/+m7iwOkskv2p0CD
 github.com/senzing/go-rest-api-service v0.1.1/go.mod h1:IV3wMuWM0MoB8HNFSq4KRbs5rSe2q3SjyzvD5yrdwwA=
 github.com/senzing/go-sdk-abstract-factory v0.4.3 h1:NyRBuV/3iRmLoqVPtmSupDYebONQQOsrZygh56WGcfM=
 github.com/senzing/go-sdk-abstract-factory v0.4.3/go.mod h1:+N04uzw1kbh4aVPf6N/JhicedGmO+g6q9xYrVXj4QUI=
-github.com/senzing/init-database v0.4.2 h1:nfgJ2xvHV5AAr4dVnKalcA/25/dDD+Md//yzeH2ne3s=
-github.com/senzing/init-database v0.4.2/go.mod h1:SbnmPuamDd43mPSZfIcBuA6X8LCLnk37gWmSPdnFUx0=
+github.com/senzing/init-database v0.4.3 h1:H8R80U0VsLWhcsI7Ygat8kldiHSpRIwpVlBX8BjxLc0=
+github.com/senzing/init-database v0.4.3/go.mod h1:Js2hz9ZXdqlTqFMKQGZYfAa64hZvnZYmxmCix2nDKJE=
 github.com/senzing/load v0.0.4 h1:tebuPiljj5sM4Fjwg1MpiuPFll9LdG8d1pC0WO6GjC8=
 github.com/senzing/load v0.0.4/go.mod h1:X/Oij+au/mZirFZtIyZirjkidGhEk99uOcWM4bq6tVw=
 github.com/senzing/move v0.0.7 h1:uyNPBAN6JGMKch2xg5LyRnhYduqaLOC+mJSW9kc7K6g=

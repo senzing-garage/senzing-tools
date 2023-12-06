@@ -7,7 +7,7 @@ require (
 	github.com/senzing/demo-entity-search v0.0.3
 	github.com/senzing/explain v0.1.5
 	github.com/senzing/go-cmdhelping v0.1.9
-	github.com/senzing/init-database v0.4.2
+	github.com/senzing/init-database v0.4.3
 	github.com/senzing/load v0.0.4
 	github.com/senzing/move v0.0.7
 	github.com/senzing/observe v0.1.4
