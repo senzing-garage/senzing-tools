@@ -11,11 +11,11 @@ require (
 	github.com/senzing/load v0.0.4
 	github.com/senzing/move v0.0.7
 	github.com/senzing/observe v0.1.4
-	github.com/senzing/serve-grpc v0.5.4
+	github.com/senzing/serve-grpc v0.5.5
 	github.com/senzing/serve-http v0.1.2
 	github.com/senzing/validate v0.0.5
 	github.com/spf13/cobra v1.8.0
-	github.com/spf13/viper v1.18.0
+	github.com/spf13/viper v1.18.1
 )
 
 require (
@@ -103,7 +103,7 @@ require (
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.26.0 // indirect
 	golang.org/x/crypto v0.16.0 // indirect
-	golang.org/x/exp v0.0.0-20231127185646-65229373498e // indirect
+	golang.org/x/exp v0.0.0-20231206192017-f3f8817b8deb // indirect
 	golang.org/x/net v0.19.0 // indirect
 	golang.org/x/sync v0.5.0 // indirect
 	golang.org/x/sys v0.15.0 // indirect
