@@ -15,7 +15,7 @@ require (
 	github.com/senzing/serve-http v0.1.2
 	github.com/senzing/validate v0.0.5
 	github.com/spf13/cobra v1.8.0
-	github.com/spf13/viper v1.18.0
+	github.com/spf13/viper v1.18.1
 )
 
 require (
