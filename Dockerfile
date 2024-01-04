@@ -61,7 +61,7 @@ COPY ./rootfs /
 
 # Copy files from prior stage.
 
-COPY --from=go_builder "/output/linux-amd64/senzing-tools" "/app/senzing-tools"
+COPY --from=go_builder "/output/linux/senzing-tools" "/app/senzing-tools"
 
 # Runtime environment variables.
 
