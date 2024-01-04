@@ -10,6 +10,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -
 
+## [0.6.0] - 2024-01-04
+
+### Changed in 0.6.0
+
+- Renamed module to `github.com/senzing-garage/senzing-tools`
+- Refactor to [template-go](https://github.com/senzing-garage/template-go)
+- Update dependencies
+  - github.com/senzing-garage/check-self v0.1.0
+  - github.com/senzing-garage/demo-entity-search v0.1.0
+  - github.com/senzing-garage/explain v0.2.0
+  - github.com/senzing-garage/go-cmdhelping v0.2.0
+  - github.com/senzing-garage/init-database v0.5.0
+  - github.com/senzing-garage/load v0.1.0
+  - github.com/senzing-garage/move v0.1.0
+  - github.com/senzing-garage/observe v0.2.0
+  - github.com/senzing-garage/serve-grpc v0.6.0
+  - github.com/senzing-garage/serve-http v0.2.0
+  - github.com/senzing-garage/validate v0.1.0
+  - github.com/senzing/init-database v0.4.3
+  - github.com/senzing/serve-grpc v0.5.5
+  - github.com/spf13/viper v1.18.2
+
+
 ## [0.5.3] - 2023-11-29
 
 ### Changed in 0.5.3
