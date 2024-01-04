@@ -28,30 +28,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed in 0.5.2
 
 - Update dependencies
-  - github.com/senzing/check-self v0.0.3
-  - github.com/senzing/demo-entity-search v0.0.3
-  - github.com/senzing/init-database v0.4.2
-  - github.com/senzing/load v0.0.4
-  - github.com/senzing/serve-grpc v0.5.4
-  - github.com/senzing/serve-http v0.1.2
+  - github.com/senzing-garage/check-self v0.0.3
+  - github.com/senzing-garage/demo-entity-search v0.0.3
+  - github.com/senzing-garage/init-database v0.4.2
+  - github.com/senzing-garage/load v0.0.4
+  - github.com/senzing-garage/serve-grpc v0.5.4
+  - github.com/senzing-garage/serve-http v0.1.2
 
 ## [0.5.1] - 2023-10-25
 
 ### Changed in 0.5.1
 
-- Refactor to [template-go](https://github.com/Senzing/template-go)
+- Refactor to [template-go](https://github.com/senzing-garage/template-go)
 - Update dependencies
-  - github.com/senzing/check-self v0.0.2
-  - github.com/senzing/demo-entity-search v0.0.2
-  - github.com/senzing/explain v0.1.5
-  - github.com/senzing/go-cmdhelping v0.1.9
-  - github.com/senzing/init-database v0.4.1
-  - github.com/senzing/load v0.0.3
-  - github.com/senzing/move v0.0.7
-  - github.com/senzing/observe v0.1.4
-  - github.com/senzing/serve-grpc v0.5.3
-  - github.com/senzing/serve-http v0.1.1
-  - github.com/senzing/validate v0.0.5
+  - github.com/senzing-garage/check-self v0.0.2
+  - github.com/senzing-garage/demo-entity-search v0.0.2
+  - github.com/senzing-garage/explain v0.1.5
+  - github.com/senzing-garage/go-cmdhelping v0.1.9
+  - github.com/senzing-garage/init-database v0.4.1
+  - github.com/senzing-garage/load v0.0.3
+  - github.com/senzing-garage/move v0.0.7
+  - github.com/senzing-garage/observe v0.1.4
+  - github.com/senzing-garage/serve-grpc v0.5.3
+  - github.com/senzing-garage/serve-http v0.1.1
+  - github.com/senzing-garage/validate v0.0.5
 
 ## [0.5.0] - 2023-10-03
 
@@ -61,11 +61,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Deprecated functions have been removed
 - Add `check-self` and `load` commands
 - Update dependencies
-  - github.com/senzing/init-database v0.4.0
-  - github.com/senzing/move v0.0.6
-  - github.com/senzing/serve-grpc v0.5.1
-  - github.com/senzing/serve-http v0.1.0
-  - github.com/senzing/validate v0.0.4
+  - github.com/senzing-garage/init-database v0.4.0
+  - github.com/senzing-garage/move v0.0.6
+  - github.com/senzing-garage/serve-grpc v0.5.1
+  - github.com/senzing-garage/serve-http v0.1.0
+  - github.com/senzing-garage/validate v0.0.4
   - github.com/spf13/viper v1.17.0
 
 ## [0.4.4] - 2023-09-01
@@ -79,8 +79,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed in 0.4.3
 
 - Update dependencies
-  - downloading github.com/senzing/go-cmdhelping v0.1.8
-  - downloading github.com/senzing/move v0.0.5
+  - downloading github.com/senzing-garage/go-cmdhelping v0.1.8
+  - downloading github.com/senzing-garage/move v0.0.5
 
 ## [0.4.2] - 2023-08-17
 
@@ -88,8 +88,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Added move
 - Update dependencies
-  - github.com/senzing/go-cmdhelping v0.1.6
-  - github.com/senzing/validate v0.0.3
+  - github.com/senzing-garage/go-cmdhelping v0.1.6
+  - github.com/senzing-garage/validate v0.0.3
 
 ## [0.4.1] - 2023-08-14
 
@@ -98,13 +98,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added validate
 - Refactor to `template-go`
 - Update dependencies
-  - github.com/senzing/explain v0.1.4
-  - github.com/senzing/go-cmdhelping v0.1.5
-  - github.com/senzing/init-database v0.3.1
-  - github.com/senzing/observe v0.1.3
-  - github.com/senzing/serve-grpc v0.4.13
-  - github.com/senzing/serve-http v0.0.4
-  - github.com/senzing/validate v0.0.2
+  - github.com/senzing-garage/explain v0.1.4
+  - github.com/senzing-garage/go-cmdhelping v0.1.5
+  - github.com/senzing-garage/init-database v0.3.1
+  - github.com/senzing-garage/observe v0.1.3
+  - github.com/senzing-garage/serve-grpc v0.4.13
+  - github.com/senzing-garage/serve-http v0.0.4
+  - github.com/senzing-garage/validate v0.0.2
 
 ## [0.4.0] - 2023-07-28
 
@@ -114,9 +114,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Moved `constant`, `option`, and `cmdhelper` packages to `go-cmdhelping` repository.
 - Updated documentation.
 - Updated dependencies
-  - github.com/senzing/go-cmdhelping v0.1.3
-  - github.com/senzing/observe v0.1.2
-  - github.com/senzing/serve-grpc v0.4.11
+  - github.com/senzing-garage/go-cmdhelping v0.1.3
+  - github.com/senzing-garage/observe v0.1.2
+  - github.com/senzing-garage/serve-grpc v0.4.11
 
 ## [0.3.0] - 2023-06-19
 
@@ -129,10 +129,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added additional env vars and options
 - In `Dockerfile`, updated to `senzing/senzingapi-runtime:3.5.3`
 - Update dependencies
-  - github.com/senzing/init-database v0.2.6
-  - github.com/senzing/observe v0.1.1
-  - github.com/senzing/serve-grpc v0.4.8
-  - github.com/senzing/serve-http v0.0.1
+  - github.com/senzing-garage/init-database v0.2.6
+  - github.com/senzing-garage/observe v0.1.1
+  - github.com/senzing-garage/serve-grpc v0.4.8
+  - github.com/senzing-garage/serve-http v0.0.1
   - github.com/spf13/viper v1.16.0
   - github.com/stretchr/testify v1.8.4
 
@@ -142,8 +142,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Added additional env vars and options
 - Update dependencies
-  - github.com/senzing/init-database v0.2.5
-  - github.com/senzing/serve-grpc v0.4.7
+  - github.com/senzing-garage/init-database v0.2.5
+  - github.com/senzing-garage/serve-grpc v0.4.7
 
 ## [0.2.7] - 2023-05-25
 
@@ -156,7 +156,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed in 0.2.6
 
 - Update dependencies
-  - github.com/senzing/serve-grpc v0.4.6
+  - github.com/senzing-garage/serve-grpc v0.4.6
 
 ## [0.2.5] - 2023-05-17
 
@@ -168,9 +168,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed in 0.2.5
 
 - Update dependencies
-  - github.com/senzing/init-database v0.2.4
-  - github.com/senzing/observe v0.1.0
-  - github.com/senzing/serve-grpc v0.4.5
+  - github.com/senzing-garage/init-database v0.2.4
+  - github.com/senzing-garage/observe v0.1.0
+  - github.com/senzing-garage/serve-grpc v0.4.5
 
 ## [0.2.4] - 2023-05-09
 
@@ -185,8 +185,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed in 0.2.3
 
 - Update dependencies
-  - github.com/senzing/init-database v0.2.2
-  - github.com/senzing/serve-grpc v0.4.2
+  - github.com/senzing-garage/init-database v0.2.2
+  - github.com/senzing-garage/serve-grpc v0.4.2
 
 ## [0.2.2] - 2023-04-18
 

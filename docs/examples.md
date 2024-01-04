@@ -2,7 +2,7 @@
 
 ## Initialize database
 
-See [init-database examples](https://github.com/Senzing/init-database/blob/main/docs/examples.md)
+See [init-database examples](https://github.com/senzing-garage/init-database/blob/main/docs/examples.md)
 
 ## Serve gRPC
 

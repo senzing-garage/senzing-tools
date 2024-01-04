@@ -1,6 +1,6 @@
 package cmd
 
-import "github.com/senzing/explain/cmd"
+import "github.com/senzing-garage/explain/cmd"
 
 func init() {
 	RootCmd.AddCommand(cmd.RootCmd)
