@@ -7,8 +7,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/senzing/go-cmdhelping/cmdhelper"
-	"github.com/senzing/go-cmdhelping/option"
+	"github.com/senzing-garage/go-cmdhelping/cmdhelper"
+	"github.com/senzing-garage/go-cmdhelping/option"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )
@@ -20,7 +20,7 @@ const (
 Welcome to senzing-tools!
 The value of [command] may also be specified by the
 SENZING_TOOLS_COMMAND environment variable.
-For more information, visit https://github.com/Senzing/senzing-tools
+For more information, visit https://github.com/senzing-garage/senzing-tools
     `
 	defaultConfiguration string = ""
 )

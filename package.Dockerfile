@@ -21,7 +21,7 @@ FROM ${IMAGE_GO_BUILDER} as go_builder
 ENV REFRESHED_AT=2023-08-01
 LABEL Name="senzing/senzing-tools-builder" \
       Maintainer="support@senzing.com" \
-      Version="0.4.0"
+      Version="0.6.0"
 
 # Build arguments.
 
@@ -48,7 +48,7 @@ RUN make linux/amd64
 # Copy binaries to /output.
 
 RUN mkdir -p /output \
-      && cp -R ${GOPATH}/src/${GO_PACKAGE_NAME}/target/*  /output/
+ && cp -R ${GOPATH}/src/${GO_PACKAGE_NAME}/target/*  /output/
 
 # -----------------------------------------------------------------------------
 # Stage: fpm_builder
@@ -60,7 +60,7 @@ FROM ${IMAGE_FPM_BUILDER} as fpm_builder
 ENV REFRESHED_AT=2023-08-01
 LABEL Name="senzing/senzing-tools-fpm-builder" \
       Maintainer="support@senzing.com" \
-      Version="0.4.0"
+      Version="0.6.0"
 
 # Use arguments from prior stage.
 
@@ -104,7 +104,7 @@ FROM ${IMAGE_FINAL} as final
 ENV REFRESHED_AT=2023-08-01
 LABEL Name="senzing/senzing-tools" \
       Maintainer="support@senzing.com" \
-      Version="0.4.0"
+      Version="0.6.0"
 
 # Use arguments from prior stage.
 

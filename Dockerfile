@@ -2,19 +2,14 @@
 # Stages
 # -----------------------------------------------------------------------------
 
-# FIXME: ARG IMAGE_SENZINGAPI_RUNTIME=senzing/senzingapi-runtime:3.7.1
-ARG IMAGE_SENZINGAPI_RUNTIME=senzing/senzingapi-runtime:3.8.0
-
-ARG IMAGE_GO_BUILDER=golang:1.21.4-bullseye@sha256:31848c4f02b08469e159ea1ee664a3f29602418b13e7d67dfd4560d169e14d55
-
-# FIXME: ARG IMAGE_FINAL=senzing/senzingapi-runtime:3.7.1
+ARG IMAGE_GO_BUILDER=golang:1.21.4-bullseye
 ARG IMAGE_FINAL=senzing/senzingapi-runtime:3.8.0
 
 # -----------------------------------------------------------------------------
 # Stage: senzingapi_runtime
 # -----------------------------------------------------------------------------
 
-FROM ${IMAGE_SENZINGAPI_RUNTIME} as senzingapi_runtime
+FROM ${IMAGE_FINAL} as senzingapi_runtime
 
 # -----------------------------------------------------------------------------
 # Stage: go_builder
@@ -24,7 +19,7 @@ FROM ${IMAGE_GO_BUILDER} as go_builder
 ENV REFRESHED_AT=2023-11-14
 LABEL Name="senzing/senzing-tools-builder" \
       Maintainer="support@senzing.com" \
-      Version="0.5.0"
+      Version="0.6.0"
 
 # Copy local files from the Git repository.
 
@@ -58,7 +53,7 @@ FROM ${IMAGE_FINAL} as final
 ENV REFRESHED_AT=2023-11-14
 LABEL Name="senzing/senzing-tools" \
       Maintainer="support@senzing.com" \
-      Version="0.5.0"
+      Version="0.6.0"
 
 # Copy local files from the Git repository.
 

@@ -1,5 +1,17 @@
 # senzing-tools
 
+If you are beginning your journey with
+[Senzing](https://senzing.com/),
+please start with
+[Senzing Quick Start guides](https://docs.senzing.com/quickstart/).
+
+You are in the
+[Senzing Garage](https://github.com/senzing-garage)
+where projects are "tinkered" on.
+Although this GitHub repository may help you understand an approach to using Senzing,
+it's not considered to be "production ready" and is not considered to be part of the Senzing product.
+Heck, it may not even be appropriate for your application of Senzing!
+
 ## :warning: WARNING: senzing-tools is still in development :warning: _
 
 At the moment, this is "work-in-progress" with Semantic Versions of `0.n.x`.
@@ -10,23 +22,27 @@ the recommendation is not to use it yet.
 
 `senzing-tools` is a suite of tools to help use the Senzing API.
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/senzing/senzing-tools.svg)](https://pkg.go.dev/github.com/senzing/senzing-tools)
-[![Go Report Card](https://goreportcard.com/badge/github.com/senzing/senzing-tools)](https://goreportcard.com/report/github.com/senzing/senzing-tools)
-[![go-test.yaml](https://github.com/Senzing/senzing-tools/actions/workflows/go-test.yaml/badge.svg)](https://github.com/Senzing/senzing-tools/actions/workflows/go-test.yaml)
-[![License](https://img.shields.io/badge/License-Apache2-brightgreen.svg)](https://github.com/Senzing/senzing-tools/blob/main/LICENSE)
+[![Go Reference](https://pkg.go.dev/badge/github.com/senzing-garage/senzing-tools.svg)](https://pkg.go.dev/github.com/senzing-garage/senzing-tools)
+[![Go Report Card](https://goreportcard.com/badge/github.com/senzing-garage/senzing-tools)](https://goreportcard.com/report/github.com/senzing-garage/senzing-tools)
+[![License](https://img.shields.io/badge/License-Apache2-brightgreen.svg)](https://github.com/senzing-garage/senzing-tools/blob/main/LICENSE)
+
+[![gosec.yaml](https://github.com/senzing-garage/senzing-tools/actions/workflows/gosec.yaml/badge.svg)](https://github.com/senzing-garage/senzing-tools/actions/workflows/gosec.yaml)
+[![go-test-linux.yaml](https://github.com/senzing-garage/senzing-tools/actions/workflows/go-test-linux.yaml/badge.svg)](https://github.com/senzing-garage/senzing-tools/actions/workflows/go-test-linux.yaml)
+[![go-test-darwin.yaml](https://github.com/senzing-garage/senzing-tools/actions/workflows/go-test-darwin.yaml/badge.svg)](https://github.com/senzing-garage/senzing-tools/actions/workflows/go-test-darwin.yaml)
+[![go-test-windows.yaml](https://github.com/senzing-garage/senzing-tools/actions/workflows/go-test-windows.yaml/badge.svg)](https://github.com/senzing-garage/senzing-tools/actions/workflows/go-test-windows.yaml)
 
 ## Overview
 
 Senzing's `senzing-tools` has the following tools/commands:
 
-1. [init-database](https://github.com/Senzing/init-database) - Used to create a Senzing schema and configuration in PostgreSQL, MySQL, MsSQL and SQLite databases.
-1. [observer](https://github.com/Senzing/observe) - Aggregates Observer messages
-1. [serve-grpc](https://github.com/Senzing/serve-grpc) - A gRPC server of the Senzing API
-1. [serve-http](https://github.com/Senzing/serve-http) - An HTTP server for Senzing Tools
+1. [init-database](https://github.com/senzing-garage/init-database) - Used to create a Senzing schema and configuration in PostgreSQL, MySQL, MsSQL and SQLite databases.
+1. [observer](https://github.com/senzing-garage/observe) - Aggregates Observer messages
+1. [serve-grpc](https://github.com/senzing-garage/serve-grpc) - A gRPC server of the Senzing API
+1. [serve-http](https://github.com/senzing-garage/serve-http) - An HTTP server for Senzing Tools
 
 ### Install
 
-1. Visit [Releases](https://github.com/Senzing/senzing-tools/releases) page.
+1. Visit [Releases](https://github.com/senzing-garage/senzing-tools/releases) page.
 1. For the desired versioned release, in the "Assets" section,
    download the appropriate installation package.
     1. Use `.deb` file for Debian, Ubuntu and
@@ -83,8 +99,8 @@ Documentation for the command line options:
     ```
 
 1. Detailed documentation, visit:
-    1. [init-database](https://github.com/Senzing/init-database#using-command-line-options)
-    1. [serve-grpc](https://github.com/Senzing/serve-grpc#using-command-line-options)
+    1. [init-database](https://github.com/senzing-garage/init-database#using-command-line-options)
+    1. [serve-grpc](https://github.com/senzing-garage/serve-grpc#using-command-line-options)
 
 ### Using environment variables
 
@@ -93,8 +109,8 @@ Each command has it's own list of supported environment variables.
 So see a specific list, visit the appropriate command.
 
 1. Commands:
-    1. [init-database](https://github.com/Senzing/init-database#using-environment-variables)
-    1. [serve-grpc](https://github.com/Senzing/serve-grpc#using-environment-variables)
+    1. [init-database](https://github.com/senzing-garage/init-database#using-environment-variables)
+    1. [serve-grpc](https://github.com/senzing-garage/serve-grpc#using-environment-variables)
 
 ### Using Docker
 
@@ -103,8 +119,8 @@ Each command has it's own list of supported environment variables and command li
 So see a specific list, visit the appropriate command.
 
 1. Commands:
-    1. [init-database](https://github.com/Senzing/init-database#using-docker)
-    1. [serve-grpc](https://github.com/Senzing/serve-grpc#using-docker)
+    1. [init-database](https://github.com/senzing-garage/init-database#using-docker)
+    1. [serve-grpc](https://github.com/senzing-garage/serve-grpc#using-docker)
 
 This usage shows how to initialze a database with a Docker container.
 
@@ -148,8 +164,8 @@ This usage shows how to initialze a database with a Docker container.
 
 See individual commands for parameters:
 
-1. [init-database](https://github.com/Senzing/init-database#parameters)
-1. [serve-grpc](https://github.com/Senzing/serve-grpc#parameters)
+1. [init-database](https://github.com/senzing-garage/init-database#parameters)
+1. [serve-grpc](https://github.com/senzing-garage/serve-grpc#parameters)
 
 ## References
 

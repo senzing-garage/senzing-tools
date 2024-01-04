@@ -14,14 +14,14 @@ Since the Senzing library is a prerequisite, it must be installed first.
     1. `/etc/opt/senzing`
 
 1. If not installed, see
-   [How to Install Senzing for Go Development](https://github.com/Senzing/knowledge-base/blob/main/HOWTO/install-senzing-for-go-development.md).
+   [How to Install Senzing for Go Development](https://github.com/senzing-garage/knowledge-base/blob/main/HOWTO/install-senzing-for-go-development.md).
 
 ## Install Git repository
 
 1. Identify git repository.
 
     ```console
-    export GIT_ACCOUNT=senzing
+    export GIT_ACCOUNT=senzing-garage
     export GIT_REPOSITORY=senzing-tools
     export GIT_ACCOUNT_DIR=~/${GIT_ACCOUNT}.git
     export GIT_REPOSITORY_DIR="${GIT_ACCOUNT_DIR}/${GIT_REPOSITORY}"
@@ -29,7 +29,7 @@ Since the Senzing library is a prerequisite, it must be installed first.
     ```
 
 1. Using the environment variables values just set, follow steps in
-   [clone-repository](https://github.com/Senzing/knowledge-base/blob/main/HOWTO/clone-repository.md) to install the Git repository.
+   [clone-repository](https://github.com/senzing-garage/knowledge-base/blob/main/HOWTO/clone-repository.md) to install the Git repository.
 
 ## Build
 
@@ -113,7 +113,7 @@ Since the Senzing library is a prerequisite, it must be installed first.
 
 1. When a versioned release is published with a `v0.0.0` format tag,
 the reference can be found by clicking on the following badge at the top of the README.md page:
-[![Go Reference](https://pkg.go.dev/badge/github.com/senzing/senzing-tools.svg)](https://pkg.go.dev/github.com/senzing/senzing-tools)
+[![Go Reference](https://pkg.go.dev/badge/github.com/senzing-garage/senzing-tools.svg)](https://pkg.go.dev/github.com/senzing-garage/senzing-tools)
 
 ## Docker
 
@@ -256,7 +256,7 @@ Make documents visible at
    Example:
 
     ```console
-    export GIT_ACCOUNT=senzing
+    export GIT_ACCOUNT=senzing-garage
     export GIT_REPOSITORY=senzing-tools
     export GIT_ACCOUNT_DIR=~/${GIT_ACCOUNT}.git
     export GIT_REPOSITORY_DIR="${GIT_ACCOUNT_DIR}/${GIT_REPOSITORY}"
