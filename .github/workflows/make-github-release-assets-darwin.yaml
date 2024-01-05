@@ -3,6 +3,7 @@ on:
   push:
     tags:
       - "[0-9]+.[0-9]+.[0-9]+"
+permissions: write-all
 jobs:
   build:
     name: Publish binaries - darwin
