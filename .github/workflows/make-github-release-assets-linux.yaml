@@ -1,8 +1,9 @@
 name: make-github-release-assets-linux.yaml
 on:
-  push:
-    tags:
-      - "[0-9]+.[0-9]+.[0-9]+"
+  push
+  # push:
+  #   tags:
+  #     - "[0-9]+.[0-9]+.[0-9]+"
 jobs:
   build:
     name: Publish binaries - linux
@@ -14,6 +15,11 @@ jobs:
           fetch-depth: 0
       - name: Make RPM/DEB files
         run: make package
+      - name: List directories
+        run: |
+          pwd
+          ls -la
+          ls -la target/
       - name: Upload versioned packages to release assets
         uses: svenstaro/upload-release-action@v2
         with:
