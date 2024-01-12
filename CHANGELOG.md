@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Update dependencies
   - github.com/senzing-garage/demo-entity-search v0.1.0
+  - github.com/senzing-garage/demo-quickstart v0.0.1
   - github.com/senzing-garage/serve-grpc v0.6.0
 
 ## [0.6.0] - 2024-01-04
