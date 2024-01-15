@@ -10,6 +10,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -
 
+## [0.6.2] - 2024-01-15
+
+### Changed in 0.6.2
+
+- In `Dockerfile`
+  - `senzingapi-tools:3.8.0`
+
 ## [0.6.1] - 2024-01-12
 
 ### Added in 0.6.1
