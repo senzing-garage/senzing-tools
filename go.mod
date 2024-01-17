@@ -5,7 +5,7 @@ go 1.21
 require (
 	github.com/senzing-garage/check-self v0.1.0
 	github.com/senzing-garage/demo-entity-search v0.1.0
-	github.com/senzing-garage/demo-quickstart v0.0.1
+	github.com/senzing-garage/demo-quickstart v0.0.2
 	github.com/senzing-garage/explain v0.2.0
 	github.com/senzing-garage/go-cmdhelping v0.2.0
 	github.com/senzing-garage/init-database v0.5.0
@@ -62,7 +62,6 @@ require (
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mattn/go-sqlite3 v1.14.19 // indirect
-	github.com/matttproud/golang_protobuf_extensions/v2 v2.0.0 // indirect
 	github.com/microsoft/go-mssqldb v1.6.0 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/ogen-go/ogen v0.81.1 // indirect
@@ -70,7 +69,7 @@ require (
 	github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c // indirect
 	github.com/prometheus/client_golang v1.18.0 // indirect
 	github.com/prometheus/client_model v0.5.0 // indirect
-	github.com/prometheus/common v0.45.0 // indirect
+	github.com/prometheus/common v0.46.0 // indirect
 	github.com/prometheus/procfs v0.12.0 // indirect
 	github.com/rabbitmq/amqp091-go v1.9.0 // indirect
 	github.com/roncewind/go-util v0.0.5 // indirect
@@ -90,7 +89,7 @@ require (
 	github.com/senzing/g2-sdk-go v0.8.0 // indirect
 	github.com/senzing/g2-sdk-go-base v0.4.0 // indirect
 	github.com/senzing/g2-sdk-go-grpc v0.5.0 // indirect
-	github.com/senzing/g2-sdk-proto/go v0.0.0-20240110172410-a7cefad0f33e // indirect
+	github.com/senzing/g2-sdk-proto/go v0.0.0-20240115134958-8e806054968d // indirect
 	github.com/senzing/go-sdk-abstract-factory v0.5.0 // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/sourcegraph/conc v0.3.0 // indirect

@@ -119,8 +119,6 @@ github.com/mattn/go-isatty v0.0.20 h1:xfD0iDuEKnDkl03q4limB+vH+GxLEtL/jb4xVJSWWE
 github.com/mattn/go-isatty v0.0.20/go.mod h1:W+V8PltTTMOvKvAeJH7IuucS94S2C6jfK/D7dTCTo3Y=
 github.com/mattn/go-sqlite3 v1.14.19 h1:fhGleo2h1p8tVChob4I9HpmVFIAkKGpiukdrgQbWfGI=
 github.com/mattn/go-sqlite3 v1.14.19/go.mod h1:2eHXhiwb8IkHr+BDWZGa96P6+rkvnG63S2DGjv9HUNg=
-github.com/matttproud/golang_protobuf_extensions/v2 v2.0.0 h1:jWpvCLoY8Z/e3VKvlsiIGKtc+UG6U5vzxaoagmhXfyg=
-github.com/matttproud/golang_protobuf_extensions/v2 v2.0.0/go.mod h1:QUyp042oQthUoa9bqDv0ER0wrtXnBruoNd7aNjkbP+k=
 github.com/microsoft/go-mssqldb v1.6.0 h1:mM3gYdVwEPFrlg/Dvr2DNVEgYFG7L42l+dGc67NNNpc=
 github.com/microsoft/go-mssqldb v1.6.0/go.mod h1:00mDtPbeQCRGC1HwOOR5K/gr30P1NcEG0vx6Kbv2aJU=
 github.com/mitchellh/mapstructure v1.5.0 h1:jeMsZIYE/09sWLaz43PL7Gy6RuMjD2eJVyuac5Z2hdY=
@@ -138,8 +136,8 @@ github.com/prometheus/client_golang v1.18.0 h1:HzFfmkOzH5Q8L8G+kSJKUx5dtG87sewO+
 github.com/prometheus/client_golang v1.18.0/go.mod h1:T+GXkCk5wSJyOqMIzVgvvjFDlkOQntgjkJWKrN5txjA=
 github.com/prometheus/client_model v0.5.0 h1:VQw1hfvPvk3Uv6Qf29VrPF32JB6rtbgI6cYPYQjL0Qw=
 github.com/prometheus/client_model v0.5.0/go.mod h1:dTiFglRmd66nLR9Pv9f0mZi7B7fk5Pm3gvsjB5tr+kI=
-github.com/prometheus/common v0.45.0 h1:2BGz0eBc2hdMDLnO/8n0jeB3oPrt2D08CekT0lneoxM=
-github.com/prometheus/common v0.45.0/go.mod h1:YJmSTw9BoKxJplESWWxlbyttQR4uaEcGyv9MZjVOJsY=
+github.com/prometheus/common v0.46.0 h1:doXzt5ybi1HBKpsZOL0sSkaNHJJqkyfEWZGGqqScV0Y=
+github.com/prometheus/common v0.46.0/go.mod h1:Tp0qkxpb9Jsg54QMe+EAmqXkSV7Evdy1BTn+g2pa/hQ=
 github.com/prometheus/procfs v0.12.0 h1:jluTpSng7V9hY0O2R9DzzJHYb2xULk9VTR1V1R/k6Bo=
 github.com/prometheus/procfs v0.12.0/go.mod h1:pcuDEFsWDnvcgNzo4EEweacyhjeA9Zk3cnaOZAZEfOo=
 github.com/rabbitmq/amqp091-go v1.9.0 h1:qrQtyzB4H8BQgEuJwhmVQqVHB9O4+MNDJCCAcpc3Aoo=
@@ -160,8 +158,8 @@ github.com/senzing-garage/check-self v0.1.0 h1:KLsEXXT7cXMTa4JgCe5znhpZqMAuQde5O
 github.com/senzing-garage/check-self v0.1.0/go.mod h1:SGZVprUwxqwM8TQm8ZmvcVDibW5z2/1HPZ6e3opFCM4=
 github.com/senzing-garage/demo-entity-search v0.1.0 h1:OX6l1UUl31OwXjb/Hyp4KNtPufqPB6Hj0q+T/XovqY4=
 github.com/senzing-garage/demo-entity-search v0.1.0/go.mod h1:sY4b8MrPulCWH3PuKLRRc70FJxI+N5CyE8+89PVGacE=
-github.com/senzing-garage/demo-quickstart v0.0.1 h1:9oqXzEhjAfZBNDx6p5M4lLfoLOm07GvE2m5lWVuhM9o=
-github.com/senzing-garage/demo-quickstart v0.0.1/go.mod h1:mxjAL90HQPku7yGGhEYt5KJrKsCfhgGqEOh5Pf5hq88=
+github.com/senzing-garage/demo-quickstart v0.0.2 h1:h1iqvEbd+EGh5gyK+hPo11cyHkJlYM/gdIFau1y0NP4=
+github.com/senzing-garage/demo-quickstart v0.0.2/go.mod h1:Jq7baLRML4jME84mnJPSVz45SW9/nMp9ZQp15//qkTI=
 github.com/senzing-garage/explain v0.2.0 h1:zJYCWWo2XuWNiS4I3LQRc07fLU3crw66LL3SlwC48mU=
 github.com/senzing-garage/explain v0.2.0/go.mod h1:4o+tNmsXkmedRPPCmclaSH8ryH6GYRmUEqoUVDBpJ90=
 github.com/senzing-garage/g2-sdk-json-type-definition v0.2.0 h1:3lTvJshOrT3hk3c9YlMHu0h0eZg3nY4he3Ial2oeB5A=
@@ -204,8 +202,8 @@ github.com/senzing/g2-sdk-go-base v0.4.0 h1:UdSpwY+wY8thKmRJ1t8KsnRWyEQQEu8SgAOl
 github.com/senzing/g2-sdk-go-base v0.4.0/go.mod h1:+odv+iRUY5h113T0c4SzKgy0dEbnYGPy+f2Z2U0iTeU=
 github.com/senzing/g2-sdk-go-grpc v0.5.0 h1:l1EB2yQFFUhi5pJUYfP2ROQyG3Hp8rVGsRFyehooG04=
 github.com/senzing/g2-sdk-go-grpc v0.5.0/go.mod h1:rDnRBJA/FgZjIrRQea9uGRZOSHQ4uObDZt+iRidFeyE=
-github.com/senzing/g2-sdk-proto/go v0.0.0-20240110172410-a7cefad0f33e h1:1NkcjlZ/Z/bw2oA86PHSdSiPcJ0JE4VI7LpnSF1yAyg=
-github.com/senzing/g2-sdk-proto/go v0.0.0-20240110172410-a7cefad0f33e/go.mod h1:Ux8LjqUsKd/Xie4i+2PHMulY2vlSubmmVatjQta3JqA=
+github.com/senzing/g2-sdk-proto/go v0.0.0-20240115134958-8e806054968d h1:urvVlkRwML7e2qgLt0z6RrjHVhqfXmvEu+ajvF80FJU=
+github.com/senzing/g2-sdk-proto/go v0.0.0-20240115134958-8e806054968d/go.mod h1:Ux8LjqUsKd/Xie4i+2PHMulY2vlSubmmVatjQta3JqA=
 github.com/senzing/go-sdk-abstract-factory v0.5.0 h1:heWbXpxm0oeKR0G8RDA69OLZEnsr7UP4javU42oYEhs=
 github.com/senzing/go-sdk-abstract-factory v0.5.0/go.mod h1:Kzt8To9fBTD8/MDoi+0q8p6h/cQ2iAF8P1dh0b5Ghxw=
 github.com/sirupsen/logrus v1.9.3 h1:dueUQJ1C2q9oE3F7wvmSGAaVtTmUizReu6fjN8uqzbQ=
