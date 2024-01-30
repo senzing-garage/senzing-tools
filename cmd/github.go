@@ -1,15 +1,15 @@
-// 0.6.3
-// Created by make-go-github-file.yaml on Mon Jan 15 19:35:05 UTC 2024
+// 0.6.4
+// Created by make-go-github-file.yaml on Tue Jan 30 22:51:39 UTC 2024
 //
 //lint:file-ignore U1000 Ignore all unused code, it's generated
 package cmd
 
 var (
-	githubDate           string = "2024-01-15"
+	githubDate           string = "2024-01-30"
 	githubIteration      string = "0"
-	githubRef            string = "refs/tags/0.6.3"
-	githubRefName        string = "0.6.3"
+	githubRef            string = "refs/tags/0.6.4"
+	githubRefName        string = "0.6.4"
 	githubRepository     string = "senzing-garage/senzing-tools"
 	githubRepositoryName string = "senzing-tools"
-	githubVersion        string = "0.6.3"
+	githubVersion        string = "0.6.4"
 )
