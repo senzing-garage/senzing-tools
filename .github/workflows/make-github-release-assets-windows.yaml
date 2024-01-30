@@ -1,9 +1,12 @@
-name: make-github-release-assets-windows.yaml
+name: "make github release assets windows"
+
 on:
   push:
     tags:
       - "[0-9]+.[0-9]+.[0-9]+"
+
 permissions: write-all
+
 jobs:
   build:
     name: Publish binaries - windows
@@ -16,12 +19,15 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
       - name: Install Senzing API
         uses: Senzing/github-action-install-senzing-api@latest
         with:
           senzingapi-version: ${{ matrix.senzingapi-version }}
+
       - name: Make executable file
         run: go build -o senzing-tools.exe
+
       - name: Upload versioned packages to release assets
         uses: svenstaro/upload-release-action@v2
         with:
