@@ -1,7 +1,4 @@
-# Based on
-# - https://github.com/marketplace/actions/setup-go-environment
-
-name: go-test-linux.yaml
+name: 'go test linux'
 
 on: [push]
 
