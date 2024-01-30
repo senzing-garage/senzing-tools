@@ -12,7 +12,7 @@ require (
 	github.com/senzing-garage/load v0.1.0
 	github.com/senzing-garage/move v0.1.0
 	github.com/senzing-garage/observe v0.2.0
-	github.com/senzing-garage/serve-grpc v0.6.0
+	github.com/senzing-garage/serve-grpc v0.6.1
 	github.com/senzing-garage/serve-http v0.2.0
 	github.com/senzing-garage/validate v0.1.0
 	github.com/spf13/cobra v1.8.0
@@ -77,7 +77,10 @@ require (
 	github.com/sagikazarmark/locafero v0.4.0 // indirect
 	github.com/sagikazarmark/slog-shim v0.1.0 // indirect
 	github.com/segmentio/asm v1.2.0 // indirect
+	github.com/senzing-garage/g2-sdk-go v0.9.0 // indirect
+	github.com/senzing-garage/g2-sdk-go-base v0.5.0 // indirect
 	github.com/senzing-garage/g2-sdk-json-type-definition v0.2.0 // indirect
+	github.com/senzing-garage/g2-sdk-proto/go v0.0.0-20240126210601-d02d3beb81d4 // indirect
 	github.com/senzing-garage/go-common v0.4.0 // indirect
 	github.com/senzing-garage/go-databasing v0.4.0 // indirect
 	github.com/senzing-garage/go-grpcing v0.2.0 // indirect
@@ -103,13 +106,13 @@ require (
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.26.0 // indirect
 	golang.org/x/crypto v0.18.0 // indirect
-	golang.org/x/exp v0.0.0-20240112132812-db7319d0e0e3 // indirect
+	golang.org/x/exp v0.0.0-20240119083558-1b970713d09a // indirect
 	golang.org/x/net v0.20.0 // indirect
 	golang.org/x/sync v0.6.0 // indirect
 	golang.org/x/sys v0.16.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20240108191215-35c7eff3a6b1 // indirect
-	google.golang.org/grpc v1.60.1 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20240125205218-1f4bbc51befe // indirect
+	google.golang.org/grpc v1.61.0 // indirect
 	google.golang.org/protobuf v1.32.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
