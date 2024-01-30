@@ -10,6 +10,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -
 
+## [0.6.3] - 2024-01-30
+
+### Changed in 0.6.3
+
+- Update dependencies
+  - github.com/senzing-garage/demo-quickstart v0.0.2
+
 ## [0.6.2] - 2024-01-15
 
 ### Changed in 0.6.2
