@@ -63,15 +63,22 @@ COPY ./rootfs /
 
 COPY --from=go_builder "/output/linux/senzing-tools" "/app/senzing-tools"
 
+# Copy files from other docker images.
+
+COPY --from=senzing/senzing-poc-server:3.5.1     "/app/senzing-poc-server.jar" "/app/senzing-poc-server.jar"
+
 # Install packages via apt.
 
-RUN apt update \
+RUN export STAT_TMP=$(stat --format=%a /tmp) \
+ && chmod 777 /tmp \
+ && apt update \
  && apt -y install \
       gnupg2 \
       jq \
       libodbc1 \
       postgresql-client \
       unixodbc \
+ && chmod ${STAT_TMP} /tmp \
  && rm -rf /var/lib/apt/lists/*
 
 # Install Java-11.
