@@ -5,7 +5,7 @@ go 1.21
 require (
 	github.com/senzing-garage/check-self v0.1.1
 	github.com/senzing-garage/demo-entity-search v0.1.1
-	github.com/senzing-garage/demo-quickstart v0.0.2
+	github.com/senzing-garage/demo-quickstart v0.0.3
 	github.com/senzing-garage/explain v0.2.0
 	github.com/senzing-garage/go-cmdhelping v0.2.0
 	github.com/senzing-garage/init-database v0.5.1
@@ -61,7 +61,7 @@ require (
 	github.com/magiconair/properties v1.8.7 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
-	github.com/mattn/go-sqlite3 v1.14.20 // indirect
+	github.com/mattn/go-sqlite3 v1.14.21 // indirect
 	github.com/microsoft/go-mssqldb v1.6.0 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/ogen-go/ogen v0.81.2 // indirect
@@ -90,6 +90,7 @@ require (
 	github.com/senzing-garage/go-observing v0.3.0 // indirect
 	github.com/senzing-garage/go-queueing v0.2.1 // indirect
 	github.com/senzing-garage/go-rest-api-service v0.9.1 // indirect
+	github.com/senzing-garage/go-rest-api-service-legacy v0.1.0 // indirect
 	github.com/senzing-garage/go-sdk-abstract-factory v0.6.0 // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/sourcegraph/conc v0.3.0 // indirect

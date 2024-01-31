@@ -117,8 +117,8 @@ github.com/mattn/go-colorable v0.1.13/go.mod h1:7S9/ev0klgBDR4GtXTXX8a3vIGJpMovk
 github.com/mattn/go-isatty v0.0.16/go.mod h1:kYGgaQfpe5nmfYZH+SKPsOc2e4SrIfOl2e/yFXSvRLM=
 github.com/mattn/go-isatty v0.0.20 h1:xfD0iDuEKnDkl03q4limB+vH+GxLEtL/jb4xVJSWWEY=
 github.com/mattn/go-isatty v0.0.20/go.mod h1:W+V8PltTTMOvKvAeJH7IuucS94S2C6jfK/D7dTCTo3Y=
-github.com/mattn/go-sqlite3 v1.14.20 h1:BAZ50Ns0OFBNxdAqFhbZqdPcht1Xlb16pDCqkq1spr0=
-github.com/mattn/go-sqlite3 v1.14.20/go.mod h1:Uh1q+B4BYcTPb+yiD3kU8Ct7aC0hY9fxUwlHK0RXw+Y=
+github.com/mattn/go-sqlite3 v1.14.21 h1:IXocQLOykluc3xPE0Lvy8FtggMz1G+U3mEjg+0zGizc=
+github.com/mattn/go-sqlite3 v1.14.21/go.mod h1:Uh1q+B4BYcTPb+yiD3kU8Ct7aC0hY9fxUwlHK0RXw+Y=
 github.com/microsoft/go-mssqldb v1.6.0 h1:mM3gYdVwEPFrlg/Dvr2DNVEgYFG7L42l+dGc67NNNpc=
 github.com/microsoft/go-mssqldb v1.6.0/go.mod h1:00mDtPbeQCRGC1HwOOR5K/gr30P1NcEG0vx6Kbv2aJU=
 github.com/mitchellh/mapstructure v1.5.0 h1:jeMsZIYE/09sWLaz43PL7Gy6RuMjD2eJVyuac5Z2hdY=
@@ -158,8 +158,8 @@ github.com/senzing-garage/check-self v0.1.1 h1:KhkEpgglYx4wn4W+wMQYgd/W1jFDRRhEU
 github.com/senzing-garage/check-self v0.1.1/go.mod h1:7wFMvvLEWzbOFQxWMrxEqe8CHhSq/ycangJfEht0B24=
 github.com/senzing-garage/demo-entity-search v0.1.1 h1:W1xVGJnJ1ttRwdQ3FxZqOz8CvFV1NuwLzkp88SIToT4=
 github.com/senzing-garage/demo-entity-search v0.1.1/go.mod h1:bryMu/zGq3Fgsr3knqRkUmNLZR2jao/ZdNTT6msWNyg=
-github.com/senzing-garage/demo-quickstart v0.0.2 h1:h1iqvEbd+EGh5gyK+hPo11cyHkJlYM/gdIFau1y0NP4=
-github.com/senzing-garage/demo-quickstart v0.0.2/go.mod h1:Jq7baLRML4jME84mnJPSVz45SW9/nMp9ZQp15//qkTI=
+github.com/senzing-garage/demo-quickstart v0.0.3 h1:SrERuz7n0bG/x8njCFXhycyABNxuILVYKYWjyNk9/vg=
+github.com/senzing-garage/demo-quickstart v0.0.3/go.mod h1:Qgx/Tj0LLZknM+OUhD6qwP3nQ1H5H9XZf67kGp3UIdw=
 github.com/senzing-garage/explain v0.2.0 h1:zJYCWWo2XuWNiS4I3LQRc07fLU3crw66LL3SlwC48mU=
 github.com/senzing-garage/explain v0.2.0/go.mod h1:4o+tNmsXkmedRPPCmclaSH8ryH6GYRmUEqoUVDBpJ90=
 github.com/senzing-garage/g2-sdk-go v0.9.0 h1:Noa62gKeY5opeUwIi7/VHKjDR/VX21BZiooqt1ewJBI=
@@ -190,6 +190,8 @@ github.com/senzing-garage/go-queueing v0.2.1 h1:pI92Pwd8Z6iOpnNAJMIhgGxm9GXqsGTY
 github.com/senzing-garage/go-queueing v0.2.1/go.mod h1:alM+G5see/8T9Lbix1FXU6TMVCulztLVD6MNMjr27EQ=
 github.com/senzing-garage/go-rest-api-service v0.9.1 h1:u1tzi7+EzT9QSripNUyHBGe9aPXPaUJwbw4jlJrEV9s=
 github.com/senzing-garage/go-rest-api-service v0.9.1/go.mod h1:8/SyoqCZz6xmt9d/EZ0j5qImgTOeMzukc7qdh97jOtQ=
+github.com/senzing-garage/go-rest-api-service-legacy v0.1.0 h1:AQgpbFo/5GZHjbiV8VUP+VYLeXVOs2nT7IsrTNTL7JY=
+github.com/senzing-garage/go-rest-api-service-legacy v0.1.0/go.mod h1:s+lMso2zTmKgNYnayo9lVdUle1EMMax2BcVJnvFoRpI=
 github.com/senzing-garage/go-sdk-abstract-factory v0.6.0 h1:icVGWsHVzS9RuLTL8mSXo0PShPtrL6LvlqRv6jAbVC8=
 github.com/senzing-garage/go-sdk-abstract-factory v0.6.0/go.mod h1:3AnQZoiQ7W8XkjDUDZ/RkreN0XMVAZad+m+/ld1hGjw=
 github.com/senzing-garage/init-database v0.5.1 h1:C+vZAIuUaH+5WkcN2pIGR8OhBhFm7A6SBs74UH7sjUM=
