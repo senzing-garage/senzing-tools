@@ -1,4 +1,4 @@
-name: "make github release assets linux"
+name: make github release assets linux
 
 on:
   push:
@@ -9,19 +9,20 @@ permissions:
   contents: write
 
 jobs:
-  build:
-    name: Publish binaries - linux
+  make-github-release-assets-linux:
+    name: publish binaries - linux
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
+      - name: checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Make RPM/DEB files
+      - name: make RPM/DEB files
         run: make package
 
-      - name: Upload versioned packages to release assets
+      - name: upload versioned packages to release assets
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}

@@ -1,4 +1,4 @@
-name: "make github release assets darwin"
+name: make github release assets darwin
 
 on:
   push:
@@ -9,42 +9,43 @@ permissions:
   contents: write
 
 jobs:
-  build:
-    name: Publish binaries - darwin
+  make-github-release-assets-darwin:
+    name: publish binaries - darwin
     runs-on: macos-latest
     strategy:
       matrix:
         senzingapi-version: ["staging"]
+
     steps:
-      - name: Checkout repository
+      - name: checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Install create-dmg
+      - name: install create-dmg
         run: brew install create-dmg
 
-      - name: Install Senzing API
-        uses: Senzing/github-action-install-senzing-api@latest
+      - name: install Senzing API
+        uses: senzing-factory/github-action-install-senzing-api@v1
         with:
           senzingapi-version: ${{ matrix.senzingapi-version }}
 
-      - name: Make executable file
+      - name: make executable file
         run: make darwin/amd64
 
-      - name: Adjust create-dmg
+      - name: adjust create-dmg
         run: |
           sed -e "s|ln -s /Applications|ln -s /usr/local/bin|" /usr/local/bin/create-dmg > /usr/local/bin/create-dmg-new
           mv /usr/local/bin/create-dmg /usr/local/bin/create-dmg-backup
           mv /usr/local/bin/create-dmg-new /usr/local/bin/create-dmg
           chmod +x /usr/local/bin/create-dmg
 
-      - name: Make a .dmg file
+      - name: make a .dmg file
         run: |
           export BUILD_VERSION=$(git describe --always --tags --abbrev=0 --dirty  | sed 's/v//')
           create-dmg --app-drop-link 0 40 "senzing-tools-$BUILD_VERSION.dmg"  "target/darwin-amd64/"
 
-      - name: Upload versioned package to release assets
+      - name: upload versioned package to release assets
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
