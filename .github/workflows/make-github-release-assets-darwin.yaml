@@ -42,7 +42,7 @@ jobs:
 
       - name: make a .dmg file
         run: |
-          export BUILD_VERSION=$(git describe --always --tags --abbrev=0 --dirty  | sed 's/v//')
+          BUILD_VERSION=$(git describe --always --tags --abbrev=0 --dirty  | sed 's/v//')
           create-dmg --app-drop-link 0 40 "senzing-tools-$BUILD_VERSION.dmg"  "target/darwin-amd64/"
 
       - name: upload versioned package to release assets
