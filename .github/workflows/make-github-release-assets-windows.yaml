@@ -1,4 +1,4 @@
-name: "make github release assets windows"
+name: make github release assets windows
 
 on:
   push:
@@ -9,27 +9,28 @@ permissions:
   contents: write
 
 jobs:
-  build:
-    name: Publish binaries - windows
+  make-github-release-assets-windows:
+    name: publish binaries - windows
     runs-on: windows-latest
     strategy:
       matrix:
         senzingapi-version: ["staging"]
+
     steps:
-      - name: Checkout repository
+      - name: checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Install Senzing API
-        uses: Senzing/github-action-install-senzing-api@latest
+      - name: install Senzing API
+        uses: senzing-factory/github-action-install-senzing-api@v1
         with:
           senzingapi-version: ${{ matrix.senzingapi-version }}
 
-      - name: Make executable file
+      - name: make executable file
         run: go build -o senzing-tools.exe
 
-      - name: Upload versioned packages to release assets
+      - name: upload versioned packages to release assets
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
