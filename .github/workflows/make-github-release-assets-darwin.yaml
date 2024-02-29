@@ -26,7 +26,7 @@ jobs:
         run: brew install create-dmg
 
       - name: install Senzing API
-        uses: senzing-factory/github-action-install-senzing-api@v1
+        uses: senzing-factory/github-action-install-senzing-api@v2
         with:
           senzingapi-version: ${{ matrix.senzingapi-version }}
 
