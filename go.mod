@@ -92,7 +92,7 @@ require (
 	github.com/senzing-garage/go-messaging v1.4.0 // indirect
 	github.com/senzing-garage/go-observing v0.3.0 // indirect
 	github.com/senzing-garage/go-queueing v0.2.1 // indirect
-	github.com/senzing-garage/go-rest-api-service v0.9.1 // indirect
+	github.com/senzing-garage/go-rest-api-service v0.9.2 // indirect
 	github.com/senzing-garage/go-rest-api-service-legacy v0.1.1 // indirect
 	github.com/senzing-garage/go-sdk-abstract-factory v0.7.0 // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
