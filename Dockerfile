@@ -18,8 +18,8 @@ FROM ${IMAGE_FINAL} as senzingapi_runtime
 FROM ${IMAGE_GO_BUILDER} as go_builder
 ENV REFRESHED_AT=2024-03-18
 LABEL Name="senzing/senzing-tools-builder" \
-      Maintainer="support@senzing.com" \
-      Version="0.6.3"
+  Maintainer="support@senzing.com" \
+  Version="0.6.3"
 
 # Copy local files from the Git repository.
 
@@ -43,7 +43,7 @@ RUN make build
 # Copy binaries to /output.
 
 RUN mkdir -p /output \
- && cp -R ${GOPATH}/src/senzing-tools/target/*  /output/
+  && cp -R ${GOPATH}/src/senzing-tools/target/*  /output/
 
 # -----------------------------------------------------------------------------
 # Stage: final
@@ -52,12 +52,14 @@ RUN mkdir -p /output \
 FROM ${IMAGE_FINAL} as final
 ENV REFRESHED_AT=2024-03-18
 LABEL Name="senzing/senzing-tools" \
-      Maintainer="support@senzing.com" \
-      Version="0.6.3"
+  Maintainer="support@senzing.com" \
+  Version="0.6.3"
 
 # Copy local files from the Git repository.
 
 COPY ./rootfs /
+
+HEALTHCHECK CMD ["/healthcheck.sh"]
 
 # Copy files from prior stage.
 
@@ -67,33 +69,35 @@ COPY --from=go_builder "/output/linux/senzing-tools" "/app/senzing-tools"
 
 COPY --from=senzing/senzing-poc-server:3.5.1     "/app/senzing-poc-server.jar" "/app/senzing-poc-server.jar"
 
-# Install packages via apt.
+# Install packages via apt-get.
 
 RUN export STAT_TMP=$(stat --format=%a /tmp) \
- && chmod 777 /tmp \
- && apt update \
- && apt -y install \
-      gnupg2 \
-      jq \
-      libodbc1 \
-      postgresql-client \
-      unixodbc \
- && chmod ${STAT_TMP} /tmp \
- && rm -rf /var/lib/apt/lists/*
+  && chmod 777 /tmp \
+  && apt-get update \
+  && apt-get -y install \
+  gnupg2 \
+  jq \
+  libodbc1 \
+  postgresql-client \
+  unixodbc \
+  && chmod ${STAT_TMP} /tmp \
+  && rm -rf /var/lib/apt/lists/*
 
 # Install Java-11.
 
 RUN mkdir -p /etc/apt/keyrings \
- && wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public > /etc/apt/keyrings/adoptium.asc
+  && wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public > /etc/apt/keyrings/adoptium.asc
 
 RUN echo "deb [signed-by=/etc/apt/keyrings/adoptium.asc] https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" >> /etc/apt/sources.list
 
 RUN export STAT_TMP=$(stat --format=%a /tmp) \
- && chmod 777 /tmp \
- && apt update \
- && apt -y install temurin-11-jdk \
- && chmod ${STAT_TMP} /tmp \
- && rm -rf /var/lib/apt/lists/*
+  && chmod 777 /tmp \
+  && apt-get update \
+  && apt-get -y install temurin-11-jdk \
+  && chmod ${STAT_TMP} /tmp \
+  && rm -rf /var/lib/apt/lists/*
+
+USER 1001
 
 # Runtime environment variables.
 
