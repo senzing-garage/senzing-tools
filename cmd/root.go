@@ -103,6 +103,7 @@ func Execute() {
 
 // Used in construction of cobra.Command
 func PreRun(cobraCommand *cobra.Command, args []string) {
+	_ = args
 	cobraCommand.SetVersionTemplate(`{{printf "%s: %s - version %s\n" .Name .Short .Version}}`)
 }
 
