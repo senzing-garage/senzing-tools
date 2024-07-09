@@ -45,6 +45,14 @@ func Test_PreRun(test *testing.T) {
 	PreRun(RootCmd, args)
 }
 
+// Must be run near last.
+func Test_Execute_SenzingToolsCommand(test *testing.T) {
+	_ = test
+	test.Setenv("SENZING_TOOLS_COMMAND", "explain --help")
+	os.Args = []string{"command-name"}
+	Execute()
+}
+
 // ----------------------------------------------------------------------------
 // Test private functions
 // ----------------------------------------------------------------------------
