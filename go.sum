@@ -155,8 +155,8 @@ github.com/senzing-garage/check-self v0.2.1 h1:fk3S37GxdBB0ygU+TMXeQ3T75icpsOSdY
 github.com/senzing-garage/check-self v0.2.1/go.mod h1:iZyEoY4QSu4cEFhug/OqY5udiQiFNeQMEu07dL3JZuI=
 github.com/senzing-garage/demo-entity-search v0.1.2 h1:Rswk48ifgdmixfHes2cd2YBZkXBx24mbxBM6IanMRVg=
 github.com/senzing-garage/demo-entity-search v0.1.2/go.mod h1:8WfEMi/lLhEndK0NonAqNsbUIVJVEKa38QrMhq6d8wQ=
-github.com/senzing-garage/demo-quickstart v0.1.1-0.20240709180408-fba8e81e49e2 h1:+yUpkduq/dk325u2ZBluU5onFlVWCD5rJk6jmTtARsI=
-github.com/senzing-garage/demo-quickstart v0.1.1-0.20240709180408-fba8e81e49e2/go.mod h1:6JGVjTpeouSqbakSC2pUt/HNFO4LTa1CVdzYureFlzg=
+github.com/senzing-garage/demo-quickstart v0.1.1 h1:kuGWk3Eqgr30QF9g+vzESI7rHKB5KigoB+ko/PYXVxA=
+github.com/senzing-garage/demo-quickstart v0.1.1/go.mod h1:6JGVjTpeouSqbakSC2pUt/HNFO4LTa1CVdzYureFlzg=
 github.com/senzing-garage/explain v0.2.2 h1:W9gRlTBbmbYX4kim+iWQzAa9aXE+LaUIkxiNyUA7M2I=
 github.com/senzing-garage/explain v0.2.2/go.mod h1:3Vq8Vg7JtF9xLhoQqaQ3QnHM49tPeFNuvOnKu67Pq2c=
 github.com/senzing-garage/go-cmdhelping v0.2.2 h1:2DE6uapQuoHodlOu6dFEspo8RNwhEkMZrb9azo+6uiw=

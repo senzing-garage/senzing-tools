@@ -7,7 +7,7 @@ toolchain go1.22.0
 require (
 	github.com/senzing-garage/check-self v0.2.1
 	github.com/senzing-garage/demo-entity-search v0.1.2
-	github.com/senzing-garage/demo-quickstart v0.1.1-0.20240709180408-fba8e81e49e2
+	github.com/senzing-garage/demo-quickstart v0.1.1
 	github.com/senzing-garage/explain v0.2.2
 	github.com/senzing-garage/go-cmdhelping v0.2.2
 	github.com/senzing-garage/init-database v0.6.1
