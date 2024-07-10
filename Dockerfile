@@ -55,6 +55,8 @@ LABEL Name="senzing/senzing-tools" \
   Maintainer="support@senzing.com" \
   Version="0.6.3"
 
+USER root
+
 # Copy local files from the Git repository.
 
 COPY ./rootfs /
