@@ -1,6 +1,7 @@
 run:
   modules-download-mode: readonly
   show-stats: true
+  timeout: 10m
 
 output:
   print-linter-name: false
