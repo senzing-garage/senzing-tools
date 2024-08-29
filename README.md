@@ -195,7 +195,7 @@ See individual commands for parameters:
 [golangci-lint.yaml]: https://github.com/senzing-garage/senzing-tools/actions/workflows/golangci-lint.yaml
 [hub.senzing.com/senzing-tools]: https://hub.senzing.com/senzing-tools
 [init-database]: https://github.com/senzing-garage/init-database#parameters
-[latest release]: https://github.com/senzing-garage/senzing-tools/releases/tag/latest
+[latest release]: https://github.com/senzing-garage/senzing-tools/releases/latest
 [License Badge]: https://img.shields.io/badge/License-Apache2-brightgreen.svg
 [License]: https://github.com/senzing-garage/senzing-tools/blob/main/LICENSE
 [load]: https://github.com/senzing-garage/load
