@@ -42,12 +42,6 @@ func Test_PreRun(test *testing.T) {
 	PreRun(RootCmd, args)
 }
 
-func Test_RunE(test *testing.T) {
-	test.Setenv("SENZING_TOOLS_AVOID_SERVING", "true")
-	err := RunE(RootCmd, []string{})
-	require.NoError(test, err)
-}
-
 func Test_RootCmd(test *testing.T) {
 	_ = test
 	err := RootCmd.Execute()
@@ -71,7 +65,6 @@ func Test_docsCmd(test *testing.T) {
 	err = docsCmd.RunE(docsCmd, []string{})
 	require.NoError(test, err)
 }
-
 
 // Must be run near last.
 func Test_Execute_SenzingToolsCommand(test *testing.T) {

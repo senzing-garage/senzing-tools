@@ -1,4 +1,4 @@
 /*
-Module template-go...
+Module senzing-tools is the commandline tool.
 */
 package main

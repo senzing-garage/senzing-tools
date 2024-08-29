@@ -31,20 +31,18 @@ the recommendation is not to use it yet.
 
 Senzing's `senzing-tools` has the following tools/commands:
 
-1. [init-database](https://github.com/senzing-garage/init-database) - Used to create a Senzing schema and configuration in PostgreSQL, MySQL, MsSQL and SQLite databases.
-1. [observer](https://github.com/senzing-garage/observe) - Aggregates Observer messages
-1. [serve-grpc](https://github.com/senzing-garage/serve-grpc) - A gRPC server of the Senzing API
-1. [serve-http](https://github.com/senzing-garage/serve-http) - An HTTP server for Senzing Tools
+1. [init-database] - Used to create a Senzing schema and configuration in PostgreSQL, MySQL, MsSQL and SQLite databases.
+1. [observer] - Aggregates Observer messages
+1. [serve-grpc] - A gRPC server of the Senzing API
+1. [serve-http] - An HTTP server for Senzing Tools
 
 ### Install
 
-1. Visit [Releases](https://github.com/senzing-garage/senzing-tools/releases) page.
+1. Visit [Releases] page.
 1. For the desired versioned release, in the "Assets" section,
    download the appropriate installation package.
-    1. Use `.deb` file for Debian, Ubuntu and
-       [others](https://en.wikipedia.org/wiki/List_of_Linux_distributions#Debian-based)
-    1. Use `.rpm` file for Red Hat, CentOS, openSuse and
-       [others](https://en.wikipedia.org/wiki/List_of_Linux_distributions#RPM-based).
+    1. Use `.deb` file for Debian, Ubuntu and [other deb].
+    1. Use `.rpm` file for Red Hat, CentOS, openSuse and [other rpm].
 
 1. :pencil2: Example installation for `.deb` file:
 
@@ -84,8 +82,7 @@ Simple examples.
 Each command has it's own list of supported command line options.
 Documentation for the command line options:
 
-1. Online documentation, see
-   [hub.senzing.com/senzing-tools](https://hub.senzing.com/senzing-tools)
+1. Online documentation, see [hub.senzing.com/senzing-tools].
 
 1. Runtime documentation, run:
 
@@ -160,8 +157,8 @@ This usage shows how to initialze a database with a Docker container.
 
 See individual commands for parameters:
 
-1. [init-database](https://github.com/senzing-garage/init-database#parameters)
-1. [serve-grpc](https://github.com/senzing-garage/serve-grpc#parameters)
+1. [init-database]
+1. [serve-grpc]
 
 ## References
 
@@ -171,28 +168,31 @@ See individual commands for parameters:
 - [Examples]
 
 [Command reference]: docs/senzing-tools.md
-[API documentation]: https://pkg.go.dev/github.com/senzing-garage/template-go
 [Development]: docs/development.md
-[DockerHub]: https://hub.docker.com/r/senzing/template-go
 [Errors]: docs/errors.md
 [Examples]: docs/examples.md
-[Go Package library]: https://pkg.go.dev
-[Go Reference Badge]: https://pkg.go.dev/badge/github.com/senzing-garage/template-go.svg
-[Go Report Card Badge]: https://goreportcard.com/badge/github.com/senzing-garage/template-go
-[Go Report Card]: https://goreportcard.com/report/github.com/senzing-garage/template-go
-[go-test-darwin.yaml Badge]: https://github.com/senzing-garage/template-go/actions/workflows/go-test-darwin.yaml/badge.svg
-[go-test-darwin.yaml]: https://github.com/senzing-garage/template-go/actions/workflows/go-test-darwin.yaml
-[go-test-linux.yaml Badge]: https://github.com/senzing-garage/template-go/actions/workflows/go-test-linux.yaml/badge.svg
-[go-test-linux.yaml]: https://github.com/senzing-garage/template-go/actions/workflows/go-test-linux.yaml
-[go-test-windows.yaml Badge]: https://github.com/senzing-garage/template-go/actions/workflows/go-test-windows.yaml/badge.svg
-[go-test-windows.yaml]: https://github.com/senzing-garage/template-go/actions/workflows/go-test-windows.yaml
-[golangci-lint.yaml Badge]: https://github.com/senzing-garage/template-go/actions/workflows/golangci-lint.yaml/badge.svg
-[golangci-lint.yaml]: https://github.com/senzing-garage/template-go/actions/workflows/golangci-lint.yaml
+[Go Reference Badge]: https://pkg.go.dev/badge/github.com/senzing-garage/senzing-tools.svg
+[Go Report Card Badge]: https://goreportcard.com/badge/github.com/senzing-garage/senzing-tools
+[Go Report Card]: https://goreportcard.com/report/github.com/senzing-garage/senzing-tools
+[go-test-darwin.yaml Badge]: https://github.com/senzing-garage/senzing-tools/actions/workflows/go-test-darwin.yaml/badge.svg
+[go-test-darwin.yaml]: https://github.com/senzing-garage/senzing-tools/actions/workflows/go-test-darwin.yaml
+[go-test-linux.yaml Badge]: https://github.com/senzing-garage/senzing-tools/actions/workflows/go-test-linux.yaml/badge.svg
+[go-test-linux.yaml]: https://github.com/senzing-garage/senzing-tools/actions/workflows/go-test-linux.yaml
+[go-test-windows.yaml Badge]: https://github.com/senzing-garage/senzing-tools/actions/workflows/go-test-windows.yaml/badge.svg
+[go-test-windows.yaml]: https://github.com/senzing-garage/senzing-tools/actions/workflows/go-test-windows.yaml
+[golangci-lint.yaml Badge]: https://github.com/senzing-garage/senzing-tools/actions/workflows/golangci-lint.yaml/badge.svg
+[golangci-lint.yaml]: https://github.com/senzing-garage/senzing-tools/actions/workflows/golangci-lint.yaml
+[hub.senzing.com/senzing-tools]: https://hub.senzing.com/senzing-tools
+[init-database]: https://github.com/senzing-garage/init-database#parameters
 [License Badge]: https://img.shields.io/badge/License-Apache2-brightgreen.svg
-[License]: https://github.com/senzing-garage/template-go/blob/main/LICENSE
-[main.go]: main.go
-[Package reference]: https://pkg.go.dev/github.com/senzing-garage/template-go
+[License]: https://github.com/senzing-garage/senzing-tools/blob/main/LICENSE
+[observer]: https://github.com/senzing-garage/observe
+[other deb]: https://en.wikipedia.org/wiki/List_of_Linux_distributions#Debian-based
+[other rpm]: https://en.wikipedia.org/wiki/List_of_Linux_distributions#RPM-based
+[Package reference]: https://pkg.go.dev/github.com/senzing-garage/senzing-tools
+[Releases]: https://github.com/senzing-garage/senzing-tools/releases
 [Senzing Garage]: https://github.com/senzing-garage
 [Senzing Quick Start guides]: https://docs.senzing.com/quickstart/
 [Senzing]: https://senzing.com/
-
+[serve-grpc]: https://github.com/senzing-garage/serve-grpc#parameters
+[serve-http]: https://github.com/senzing-garage/serve-http

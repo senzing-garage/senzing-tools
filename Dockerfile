@@ -18,8 +18,8 @@ FROM ${IMAGE_FINAL} AS senzingapi_runtime
 FROM ${IMAGE_BUILDER} AS builder
 ENV REFRESHED_AT=2024-07-01
 LABEL Name="senzing/go-builder" \
-      Maintainer="support@senzing.com" \
-      Version="0.1.0"
+  Maintainer="support@senzing.com" \
+  Version="0.1.0"
 
 # Run as "root" for system installation.
 
@@ -47,7 +47,7 @@ RUN make build
 # Copy binaries to /output.
 
 RUN mkdir -p /output \
- && cp -R ${GOPATH}/src/senzing-tools/target/*  /output/
+  && cp -R ${GOPATH}/src/senzing-tools/target/*  /output/
 
 # -----------------------------------------------------------------------------
 # Stage: final
@@ -55,9 +55,9 @@ RUN mkdir -p /output \
 
 FROM ${IMAGE_FINAL} AS final
 ENV REFRESHED_AT=2024-07-01
-LABEL Name="senzing/template-go" \
-      Maintainer="support@senzing.com" \
-      Version="0.0.1"
+LABEL Name="senzing/senzing-tools" \
+  Maintainer="support@senzing.com" \
+  Version="0.0.1"
 HEALTHCHECK CMD ["/app/healthcheck.sh"]
 USER root
 
