@@ -31,14 +31,21 @@ the recommendation is not to use it yet.
 
 Senzing's `senzing-tools` has the following tools/commands:
 
+1. [check-self] - Check the Senzing environment.
+1. [demo-entity-search] - Demonstrate Entity Search.
+1. [demo-quickstart] - Quickstart.
+1. [explain] - Explain messages.
 1. [init-database] - Used to create a Senzing schema and configuration in PostgreSQL, MySQL, MsSQL and SQLite databases.
-1. [observer] - Aggregates Observer messages
-1. [serve-grpc] - A gRPC server of the Senzing API
-1. [serve-http] - An HTTP server for Senzing Tools
+1. [load] - Load Senzing datastore.
+1. [move] - Move data from place to place.
+1. [observer] - Aggregates Observer messages.
+1. [serve-grpc] - A gRPC server of the Senzing API.
+1. [serve-http] - An HTTP server for Senzing Tools.
+1. [validate] - Validate JSON for ingestion into Senzing datastore.
 
 ### Install
 
-1. Visit [Releases] page.
+1. Visit [latest release] page.
 1. For the desired versioned release, in the "Assets" section,
    download the appropriate installation package.
     1. Use `.deb` file for Debian, Ubuntu and [other deb].
@@ -167,10 +174,14 @@ See individual commands for parameters:
 - [Errors]
 - [Examples]
 
+[check-self]: https://github.com/senzing-garage/check-self
 [Command reference]: docs/senzing-tools.md
+[demo-entity-search]: https://github.com/senzing-garage/demo-entity-search
+[demo-quickstart]: https://github.com/senzing-garage/demo-quickstart
 [Development]: docs/development.md
 [Errors]: docs/errors.md
 [Examples]: docs/examples.md
+[explain]: https://github.com/senzing-garage/explain
 [Go Reference Badge]: https://pkg.go.dev/badge/github.com/senzing-garage/senzing-tools.svg
 [Go Report Card Badge]: https://goreportcard.com/badge/github.com/senzing-garage/senzing-tools
 [Go Report Card]: https://goreportcard.com/report/github.com/senzing-garage/senzing-tools
@@ -184,15 +195,18 @@ See individual commands for parameters:
 [golangci-lint.yaml]: https://github.com/senzing-garage/senzing-tools/actions/workflows/golangci-lint.yaml
 [hub.senzing.com/senzing-tools]: https://hub.senzing.com/senzing-tools
 [init-database]: https://github.com/senzing-garage/init-database#parameters
+[latest release]: https://github.com/senzing-garage/senzing-tools/releases/tag/latest
 [License Badge]: https://img.shields.io/badge/License-Apache2-brightgreen.svg
 [License]: https://github.com/senzing-garage/senzing-tools/blob/main/LICENSE
+[load]: https://github.com/senzing-garage/load
+[move]: https://github.com/senzing-garage/move
 [observer]: https://github.com/senzing-garage/observe
 [other deb]: https://en.wikipedia.org/wiki/List_of_Linux_distributions#Debian-based
 [other rpm]: https://en.wikipedia.org/wiki/List_of_Linux_distributions#RPM-based
 [Package reference]: https://pkg.go.dev/github.com/senzing-garage/senzing-tools
-[Releases]: https://github.com/senzing-garage/senzing-tools/releases
 [Senzing Garage]: https://github.com/senzing-garage
 [Senzing Quick Start guides]: https://docs.senzing.com/quickstart/
 [Senzing]: https://senzing.com/
 [serve-grpc]: https://github.com/senzing-garage/serve-grpc#parameters
 [serve-http]: https://github.com/senzing-garage/serve-http
+[validate]: https://github.com/senzing-garage/validate
