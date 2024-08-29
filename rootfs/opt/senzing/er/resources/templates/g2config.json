@@ -9,18 +9,6 @@
                 "FELEM_CODE": null,
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
-                "INTERNAL": "No"
-            },
-            {
-                "ATTR_ID": 1002,
-                "ATTR_CODE": "ROUTE_CODE",
-                "ATTR_CLASS": "OBSERVATION",
-                "FTYPE_CODE": null,
-                "FELEM_CODE": null,
-                "FELEM_REQ": "No",
-                "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -31,29 +19,6 @@
                 "FELEM_CODE": null,
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
-                "INTERNAL": "No"
-            },
-            {
-                "ATTR_ID": 1004,
-                "ATTR_CODE": "ENTITY_TYPE",
-                "ATTR_CLASS": "OBSERVATION",
-                "FTYPE_CODE": null,
-                "FELEM_CODE": null,
-                "FELEM_REQ": "Yes",
-                "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
-                "INTERNAL": "No"
-            },
-            {
-                "ATTR_ID": 1006,
-                "ATTR_CODE": "LOAD_ID",
-                "ATTR_CLASS": "OBSERVATION",
-                "FTYPE_CODE": null,
-                "FELEM_CODE": null,
-                "FELEM_REQ": "Yes",
-                "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -64,7 +29,6 @@
                 "FELEM_CODE": null,
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -75,7 +39,6 @@
                 "FELEM_CODE": "USAGE_TYPE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -86,7 +49,6 @@
                 "FELEM_CODE": "FULL_NAME",
                 "FELEM_REQ": "Any",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -97,7 +59,6 @@
                 "FELEM_CODE": "ORG_NAME",
                 "FELEM_REQ": "Any",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -108,7 +69,6 @@
                 "FELEM_CODE": "SUR_NAME",
                 "FELEM_REQ": "Any",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -119,7 +79,6 @@
                 "FELEM_CODE": "GIVEN_NAME",
                 "FELEM_REQ": "Any",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -130,7 +89,6 @@
                 "FELEM_CODE": "MIDDLE_NAME",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -141,7 +99,6 @@
                 "FELEM_CODE": "NAME_PREFIX",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -152,7 +109,6 @@
                 "FELEM_CODE": "NAME_SUFFIX",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -163,7 +119,6 @@
                 "FELEM_CODE": "NAME_GEN",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -174,19 +129,7 @@
                 "FELEM_CODE": "GENDER",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
-            },
-            {
-                "ATTR_ID": 1220,
-                "ATTR_CODE": "DOB_PREHASHED",
-                "ATTR_CLASS": "ATTRIBUTE",
-                "FTYPE_CODE": "DOB",
-                "FELEM_CODE": "<PREHASHED>",
-                "FELEM_REQ": "No",
-                "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
-                "INTERNAL": "Yes"
             },
             {
                 "ATTR_ID": 1221,
@@ -196,7 +139,6 @@
                 "FELEM_CODE": "DATE",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -207,7 +149,6 @@
                 "FELEM_CODE": "DATE_YEAR",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -218,7 +159,6 @@
                 "FELEM_CODE": "DATE_MONTH",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -229,7 +169,6 @@
                 "FELEM_CODE": "DATE_DAY",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -240,18 +179,6 @@
                 "FELEM_CODE": "DATE_HASH",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
-                "INTERNAL": "Yes"
-            },
-            {
-                "ATTR_ID": 1230,
-                "ATTR_CODE": "NATIONALITY_PREHASHED",
-                "ATTR_CLASS": "ATTRIBUTE",
-                "FTYPE_CODE": "NATIONALITY",
-                "FELEM_CODE": "<PREHASHED>",
-                "FELEM_REQ": "No",
-                "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -262,19 +189,7 @@
                 "FELEM_CODE": "COUNTRY",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
-            },
-            {
-                "ATTR_ID": 1240,
-                "ATTR_CODE": "CITIZENSHIP_PREHASHED",
-                "ATTR_CLASS": "ATTRIBUTE",
-                "FTYPE_CODE": "CITIZENSHIP",
-                "FELEM_CODE": "<PREHASHED>",
-                "FELEM_REQ": "No",
-                "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
-                "INTERNAL": "Yes"
             },
             {
                 "ATTR_ID": 1241,
@@ -284,52 +199,7 @@
                 "FELEM_CODE": "COUNTRY",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
-            },
-            {
-                "ATTR_ID": 1250,
-                "ATTR_CODE": "PHYSICAL_PREHASHED",
-                "ATTR_CLASS": "ATTRIBUTE",
-                "FTYPE_CODE": "PHYSICAL_ATTRIBUTE",
-                "FELEM_CODE": "<PREHASHED>",
-                "FELEM_REQ": "No",
-                "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
-                "INTERNAL": "Yes"
-            },
-            {
-                "ATTR_ID": 1251,
-                "ATTR_CODE": "PHYSICAL_TYPE",
-                "ATTR_CLASS": "ATTRIBUTE",
-                "FTYPE_CODE": "PHYSICAL_ATTRIBUTE",
-                "FELEM_CODE": "TYPE",
-                "FELEM_REQ": "Desired",
-                "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
-                "INTERNAL": "No"
-            },
-            {
-                "ATTR_ID": 1252,
-                "ATTR_CODE": "PHYSICAL_VALUE",
-                "ATTR_CLASS": "ATTRIBUTE",
-                "FTYPE_CODE": "PHYSICAL_ATTRIBUTE",
-                "FELEM_CODE": "VALUE",
-                "FELEM_REQ": "Yes",
-                "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
-                "INTERNAL": "No"
-            },
-            {
-                "ATTR_ID": 1260,
-                "ATTR_CODE": "DOD_PREHASHED",
-                "ATTR_CLASS": "ATTRIBUTE",
-                "FTYPE_CODE": "DOD",
-                "FELEM_CODE": "<PREHASHED>",
-                "FELEM_REQ": "No",
-                "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
-                "INTERNAL": "Yes"
             },
             {
                 "ATTR_ID": 1261,
@@ -339,7 +209,6 @@
                 "FELEM_CODE": "DATE",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -350,7 +219,6 @@
                 "FELEM_CODE": "DATE_YEAR",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -361,7 +229,6 @@
                 "FELEM_CODE": "DATE_MONTH",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -372,7 +239,6 @@
                 "FELEM_CODE": "DATE_DAY",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -383,18 +249,6 @@
                 "FELEM_CODE": "DATE_HASH",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
-                "INTERNAL": "Yes"
-            },
-            {
-                "ATTR_ID": 1310,
-                "ATTR_CODE": "ACCOUNT_PREHASHED",
-                "ATTR_CLASS": "IDENTIFIER",
-                "FTYPE_CODE": "ACCT_NUM",
-                "FELEM_CODE": "<PREHASHED>",
-                "FELEM_REQ": "No",
-                "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -405,7 +259,6 @@
                 "FELEM_CODE": "ACCT_NUM",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -416,19 +269,7 @@
                 "FELEM_CODE": "ACCT_DOMAIN",
                 "FELEM_REQ": "Desired",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
-            },
-            {
-                "ATTR_ID": 1320,
-                "ATTR_CODE": "PASSPORT_PREHASHED",
-                "ATTR_CLASS": "IDENTIFIER",
-                "FTYPE_CODE": "PASSPORT",
-                "FELEM_CODE": "<PREHASHED>",
-                "FELEM_REQ": "No",
-                "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
-                "INTERNAL": "Yes"
             },
             {
                 "ATTR_ID": 1321,
@@ -438,7 +279,6 @@
                 "FELEM_CODE": "ID_NUM",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -449,7 +289,6 @@
                 "FELEM_CODE": "COUNTRY",
                 "FELEM_REQ": "Desired",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -460,7 +299,6 @@
                 "FELEM_CODE": "ISSUE_DATE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -471,7 +309,6 @@
                 "FELEM_CODE": "EXPIRE_DATE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -482,18 +319,6 @@
                 "FELEM_CODE": "ID_NUM_STD",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
-                "INTERNAL": "Yes"
-            },
-            {
-                "ATTR_ID": 1330,
-                "ATTR_CODE": "DRLIC_PREHASHED",
-                "ATTR_CLASS": "IDENTIFIER",
-                "FTYPE_CODE": "DRLIC",
-                "FELEM_CODE": "<PREHASHED>",
-                "FELEM_REQ": "No",
-                "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -504,7 +329,6 @@
                 "FELEM_CODE": "ID_NUM",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -515,7 +339,6 @@
                 "FELEM_CODE": "STATE",
                 "FELEM_REQ": "Desired",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -526,7 +349,6 @@
                 "FELEM_CODE": "ISSUE_DATE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -537,7 +359,6 @@
                 "FELEM_CODE": "EXPIRE_DATE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -548,18 +369,6 @@
                 "FELEM_CODE": "ID_NUM_STD",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
-                "INTERNAL": "Yes"
-            },
-            {
-                "ATTR_ID": 1340,
-                "ATTR_CODE": "SSN_PREHASHED",
-                "ATTR_CLASS": "IDENTIFIER",
-                "FTYPE_CODE": "SSN",
-                "FELEM_CODE": "<PREHASHED>",
-                "FELEM_REQ": "No",
-                "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -570,7 +379,6 @@
                 "FELEM_CODE": "ID_NUM",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -581,19 +389,17 @@
                 "FELEM_CODE": "ID_NUM_STD",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
                 "ATTR_ID": 1350,
-                "ATTR_CODE": "NATIONAL_ID_PREHASHED",
+                "ATTR_CODE": "NATIONAL_ID_TYPE",
                 "ATTR_CLASS": "IDENTIFIER",
                 "FTYPE_CODE": "NATIONAL_ID",
-                "FELEM_CODE": "<PREHASHED>",
-                "FELEM_REQ": "No",
+                "FELEM_CODE": "ID_TYPE",
+                "FELEM_REQ": "Desired",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
-                "INTERNAL": "Yes"
+                "INTERNAL": "No"
             },
             {
                 "ATTR_ID": 1351,
@@ -603,7 +409,6 @@
                 "FELEM_CODE": "ID_NUM",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -614,7 +419,6 @@
                 "FELEM_CODE": "COUNTRY",
                 "FELEM_REQ": "Desired",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -625,7 +429,6 @@
                 "FELEM_CODE": "ISSUE_DATE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -636,7 +439,6 @@
                 "FELEM_CODE": "EXPIRE_DATE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -647,19 +449,17 @@
                 "FELEM_CODE": "ID_NUM_STD",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
-                "ATTR_ID": 1360,
-                "ATTR_CODE": "TAX_ID_PREHASHED",
+                "ATTR_ID": 1356,
+                "ATTR_CODE": "NATIONAL_ID_TYPE",
                 "ATTR_CLASS": "IDENTIFIER",
-                "FTYPE_CODE": "TAX_ID",
-                "FELEM_CODE": "<PREHASHED>",
-                "FELEM_REQ": "No",
+                "FTYPE_CODE": "NATIONAL_ID",
+                "FELEM_CODE": "ID_TYPE",
+                "FELEM_REQ": "Desired",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
-                "INTERNAL": "Yes"
+                "INTERNAL": "No"
             },
             {
                 "ATTR_ID": 1361,
@@ -669,7 +469,6 @@
                 "FELEM_CODE": "ID_NUM",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -680,7 +479,6 @@
                 "FELEM_CODE": "COUNTRY",
                 "FELEM_REQ": "Desired",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -691,7 +489,6 @@
                 "FELEM_CODE": "ISSUE_DATE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -702,7 +499,6 @@
                 "FELEM_CODE": "EXPIRE_DATE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -713,18 +509,6 @@
                 "FELEM_CODE": "ID_NUM_STD",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
-                "INTERNAL": "Yes"
-            },
-            {
-                "ATTR_ID": 1370,
-                "ATTR_CODE": "OTHER_ID_PREHASHED",
-                "ATTR_CLASS": "IDENTIFIER",
-                "FTYPE_CODE": "OTHER_ID",
-                "FELEM_CODE": "<PREHASHED>",
-                "FELEM_REQ": "No",
-                "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -735,7 +519,6 @@
                 "FELEM_CODE": "ID_TYPE",
                 "FELEM_REQ": "Desired",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -746,7 +529,6 @@
                 "FELEM_CODE": "ID_NUM",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -757,7 +539,6 @@
                 "FELEM_CODE": "COUNTRY",
                 "FELEM_REQ": "Desired",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -768,7 +549,6 @@
                 "FELEM_CODE": "ISSUE_DATE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -779,7 +559,6 @@
                 "FELEM_CODE": "EXPIRE_DATE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -790,18 +569,6 @@
                 "FELEM_CODE": "ID_NUM_STD",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
-                "INTERNAL": "Yes"
-            },
-            {
-                "ATTR_ID": 1380,
-                "ATTR_CODE": "TRUSTED_ID_PREHASHED",
-                "ATTR_CLASS": "IDENTIFIER",
-                "FTYPE_CODE": "TRUSTED_ID",
-                "FELEM_CODE": "<PREHASHED>",
-                "FELEM_REQ": "No",
-                "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -812,7 +579,6 @@
                 "FELEM_CODE": "ID_TYPE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -823,19 +589,7 @@
                 "FELEM_CODE": "ID_NUM",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
-            },
-            {
-                "ATTR_ID": 1500,
-                "ATTR_CODE": "WEBSITE_PREHASHED",
-                "ATTR_CLASS": "IDENTIFIER",
-                "FTYPE_CODE": "WEBSITE",
-                "FELEM_CODE": "<PREHASHED>",
-                "FELEM_REQ": "No",
-                "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
-                "INTERNAL": "Yes"
             },
             {
                 "ATTR_ID": 1501,
@@ -845,19 +599,7 @@
                 "FELEM_CODE": "ADDR",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
-            },
-            {
-                "ATTR_ID": 1510,
-                "ATTR_CODE": "EMAIL_PREHASHED",
-                "ATTR_CLASS": "IDENTIFIER",
-                "FTYPE_CODE": "EMAIL",
-                "FELEM_CODE": "<PREHASHED>",
-                "FELEM_REQ": "No",
-                "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
-                "INTERNAL": "Yes"
             },
             {
                 "ATTR_ID": 1511,
@@ -867,7 +609,6 @@
                 "FELEM_CODE": "ADDR",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -878,7 +619,6 @@
                 "FELEM_CODE": "USAGE_TYPE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -889,7 +629,6 @@
                 "FELEM_CODE": "USED_FROM_DT",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -900,19 +639,7 @@
                 "FELEM_CODE": "USED_THRU_DT",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
-            },
-            {
-                "ATTR_ID": 1520,
-                "ATTR_CODE": "SOCIAL_PREHASHED",
-                "ATTR_CLASS": "IDENTIFIER",
-                "FTYPE_CODE": "LOGIN_ID",
-                "FELEM_CODE": "<PREHASHED>",
-                "FELEM_REQ": "No",
-                "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
-                "INTERNAL": "Yes"
             },
             {
                 "ATTR_ID": 1521,
@@ -922,7 +649,6 @@
                 "FELEM_CODE": "LOGIN_DOMAIN",
                 "FELEM_REQ": "Desired",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -933,7 +659,6 @@
                 "FELEM_CODE": "LOGIN_ID",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -944,7 +669,6 @@
                 "FELEM_CODE": "USED_FROM_DT",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -955,19 +679,7 @@
                 "FELEM_CODE": "USED_THRU_DT",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
-            },
-            {
-                "ATTR_ID": 1600,
-                "ATTR_CODE": "ADDRESS_PREHASHED",
-                "ATTR_CLASS": "ADDRESS",
-                "FTYPE_CODE": "ADDRESS",
-                "FELEM_CODE": "<PREHASHED>",
-                "FELEM_REQ": "No",
-                "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
-                "INTERNAL": "Yes"
             },
             {
                 "ATTR_ID": 1601,
@@ -977,7 +689,6 @@
                 "FELEM_CODE": "ADDR_FULL",
                 "FELEM_REQ": "Any",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -988,7 +699,6 @@
                 "FELEM_CODE": "ADDR1",
                 "FELEM_REQ": "Any",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -999,7 +709,6 @@
                 "FELEM_CODE": "ADDR2",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1010,7 +719,6 @@
                 "FELEM_CODE": "ADDR3",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1021,7 +729,6 @@
                 "FELEM_CODE": "ADDR4",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1032,7 +739,6 @@
                 "FELEM_CODE": "ADDR5",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1043,7 +749,6 @@
                 "FELEM_CODE": "ADDR6",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1054,7 +759,6 @@
                 "FELEM_CODE": "CITY",
                 "FELEM_REQ": "Any",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1065,7 +769,6 @@
                 "FELEM_CODE": "STATE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1076,7 +779,6 @@
                 "FELEM_CODE": "POSTAL_CODE",
                 "FELEM_REQ": "Any",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1087,7 +789,6 @@
                 "FELEM_CODE": "COUNTRY",
                 "FELEM_REQ": "Any",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1098,7 +799,6 @@
                 "FELEM_CODE": "STR_NUM",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -1109,7 +809,6 @@
                 "FELEM_CODE": "STR_NAME",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -1120,7 +819,6 @@
                 "FELEM_CODE": "UNIT_TYPE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -1131,7 +829,6 @@
                 "FELEM_CODE": "UNIT_NUM",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -1142,7 +839,6 @@
                 "FELEM_CODE": "STR_NAME_METAPHONE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -1153,7 +849,6 @@
                 "FELEM_CODE": "CITY_METAPHONE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -1164,7 +859,6 @@
                 "FELEM_CODE": "STR_NAME_STD",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -1175,7 +869,6 @@
                 "FELEM_CODE": "CITY_STD",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -1186,7 +879,6 @@
                 "FELEM_CODE": "POSTAL_5",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -1197,7 +889,6 @@
                 "FELEM_CODE": "SCRIPT",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -1208,7 +899,6 @@
                 "FELEM_CODE": "LIBPOSTAL_PARSE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -1219,7 +909,6 @@
                 "FELEM_CODE": "USAGE_TYPE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -1230,7 +919,6 @@
                 "FELEM_CODE": "USED_FROM_DT",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -1241,30 +929,7 @@
                 "FELEM_CODE": "USED_THRU_DT",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
-            },
-            {
-                "ATTR_ID": 1626,
-                "ATTR_CODE": "ADDR_PLACEKEY",
-                "ATTR_CLASS": "ADDRESS",
-                "FTYPE_CODE": "ADDRESS",
-                "FELEM_CODE": "PLACEKEY",
-                "FELEM_REQ": "No",
-                "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
-                "INTERNAL": "No"
-            },
-            {
-                "ATTR_ID": 1700,
-                "ATTR_CODE": "PHONE_PREHASHED",
-                "ATTR_CLASS": "PHONE",
-                "FTYPE_CODE": "PHONE",
-                "FELEM_CODE": "<PREHASHED>",
-                "FELEM_REQ": "No",
-                "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
-                "INTERNAL": "Yes"
             },
             {
                 "ATTR_ID": 1701,
@@ -1274,7 +939,6 @@
                 "FELEM_CODE": "PHONE_AREA_CODE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1285,7 +949,6 @@
                 "FELEM_CODE": "PHONE_NUM",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1296,7 +959,6 @@
                 "FELEM_CODE": "PHONE_EXT",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1307,7 +969,6 @@
                 "FELEM_CODE": "PHONE_LAST_10",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -1318,7 +979,6 @@
                 "FELEM_CODE": "PHONE_LAST_5",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -1329,7 +989,6 @@
                 "FELEM_CODE": "USAGE_TYPE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -1340,7 +999,6 @@
                 "FELEM_CODE": "USED_FROM_DT",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -1351,7 +1009,6 @@
                 "FELEM_CODE": "USED_THRU_DT",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -1362,7 +1019,6 @@
                 "FELEM_CODE": "REL_TYPE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -1373,7 +1029,6 @@
                 "FELEM_CODE": "USAGE_TYPE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -1384,7 +1039,6 @@
                 "FELEM_CODE": "REL_KEY",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -1395,7 +1049,6 @@
                 "FELEM_CODE": "USED_FROM_DT",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -1406,7 +1059,6 @@
                 "FELEM_CODE": "USED_THRU_DT",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -1417,7 +1069,6 @@
                 "FELEM_CODE": "LATLONG",
                 "FELEM_REQ": "Any",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -1428,7 +1079,6 @@
                 "FELEM_CODE": "LATITUDE",
                 "FELEM_REQ": "Any",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -1439,7 +1089,6 @@
                 "FELEM_CODE": "LONGITUDE",
                 "FELEM_REQ": "Any",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
             },
             {
@@ -1450,19 +1099,7 @@
                 "FELEM_CODE": "GEO_PRECISION",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
                 "INTERNAL": "No"
-            },
-            {
-                "ATTR_ID": 2000,
-                "ATTR_CODE": "GROUP_ASSOCIATION_PREHASHED",
-                "ATTR_CLASS": "ATTRIBUTE",
-                "FTYPE_CODE": "GROUP_ASSOCIATION",
-                "FELEM_CODE": "<PREHASHED>",
-                "FELEM_REQ": "No",
-                "DEFAULT_VALUE": null,
-                "ADVANCED": "Yes",
-                "INTERNAL": "Yes"
             },
             {
                 "ATTR_ID": 2001,
@@ -1472,7 +1109,6 @@
                 "FELEM_CODE": "TYPE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": "(org)",
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1483,7 +1119,6 @@
                 "FELEM_CODE": "ORG_NAME",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1494,7 +1129,6 @@
                 "FELEM_CODE": "ID_NUM",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1505,7 +1139,6 @@
                 "FELEM_CODE": "STATE",
                 "FELEM_REQ": "Desired",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1516,7 +1149,6 @@
                 "FELEM_CODE": "ID_NUM",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1527,7 +1159,6 @@
                 "FELEM_CODE": "TYPE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": "EMPLOYER",
-                "ADVANCED": "Yes",
                 "INTERNAL": "Yes"
             },
             {
@@ -1538,7 +1169,6 @@
                 "FELEM_CODE": "ORG_NAME",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1549,7 +1179,6 @@
                 "FELEM_CODE": "LOGIN_ID",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": "None",
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1560,7 +1189,6 @@
                 "FELEM_CODE": "LOGIN_ID",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": "None",
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1571,7 +1199,6 @@
                 "FELEM_CODE": "LOGIN_ID",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": "None",
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1582,7 +1209,6 @@
                 "FELEM_CODE": "LOGIN_ID",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": "None",
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1593,7 +1219,6 @@
                 "FELEM_CODE": "LOGIN_ID",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": "None",
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1604,7 +1229,6 @@
                 "FELEM_CODE": "LOGIN_ID",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": "None",
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1615,7 +1239,6 @@
                 "FELEM_CODE": "LOGIN_ID",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": "None",
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1626,7 +1249,6 @@
                 "FELEM_CODE": "LOGIN_ID",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": "None",
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1637,7 +1259,6 @@
                 "FELEM_CODE": "LOGIN_ID",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": "None",
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1648,7 +1269,6 @@
                 "FELEM_CODE": "LOGIN_ID",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": "None",
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1659,7 +1279,6 @@
                 "FELEM_CODE": "LOGIN_ID",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": "None",
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1670,7 +1289,6 @@
                 "FELEM_CODE": "LOGIN_ID",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": "None",
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1681,7 +1299,6 @@
                 "FELEM_CODE": "TYPE",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1692,7 +1309,6 @@
                 "FELEM_CODE": "PLACE",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1703,7 +1319,6 @@
                 "FELEM_CODE": "DATE",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1714,7 +1329,6 @@
                 "FELEM_CODE": "COUNTRY",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1725,7 +1339,6 @@
                 "FELEM_CODE": "ID_TYPE",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1736,7 +1349,6 @@
                 "FELEM_CODE": "ID_NUM",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1747,7 +1359,6 @@
                 "FELEM_CODE": "ID_NUM",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1758,7 +1369,6 @@
                 "FELEM_CODE": "ID_NUM",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1769,7 +1379,6 @@
                 "FELEM_CODE": "ID_NUM",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1780,7 +1389,6 @@
                 "FELEM_CODE": "COUNTRY",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1791,7 +1399,6 @@
                 "FELEM_CODE": "ID_NUM",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1802,7 +1409,6 @@
                 "FELEM_CODE": "KEY_TYPE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1813,7 +1419,6 @@
                 "FELEM_CODE": "KEY_VALUE",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1824,7 +1429,6 @@
                 "FELEM_CODE": "KEY_TYPE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1835,7 +1439,6 @@
                 "FELEM_CODE": "KEY_VALUE",
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
                 "INTERNAL": "No"
             },
             {
@@ -1846,7 +1449,16 @@
                 "FELEM_CODE": "USAGE_TYPE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
-                "ADVANCED": "No",
+                "INTERNAL": "No"
+            },
+            {
+                "ATTR_ID": 2814,
+                "ATTR_CODE": "PLACEKEY",
+                "ATTR_CLASS": "PLACEKEY",
+                "FTYPE_CODE": "PLACEKEY",
+                "FELEM_CODE": "PLACEKEY",
+                "FELEM_REQ": "No",
+                "DEFAULT_VALUE": null,
                 "INTERNAL": "No"
             }
         ],
@@ -2194,6 +1806,12 @@
                 "EXEC_ORDER": 2
             },
             {
+                "CFCALL_ID": 12,
+                "FTYPE_ID": 12,
+                "FELEM_ID": 38,
+                "EXEC_ORDER": 3
+            },
+            {
                 "CFCALL_ID": 13,
                 "FTYPE_ID": 13,
                 "FELEM_ID": 56,
@@ -2522,290 +2140,254 @@
                 "FTYPE_ID": 87,
                 "FELEM_ID": 37,
                 "EXEC_ORDER": 1
+            },
+            {
+                "CFCALL_ID": 66,
+                "FTYPE_ID": 93,
+                "FELEM_ID": 124,
+                "EXEC_ORDER": 1
             }
         ],
         "CFG_CFCALL": [
             {
                 "CFCALL_ID": 1,
                 "FTYPE_ID": 1,
-                "CFUNC_ID": 2,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 2
             },
             {
                 "CFCALL_ID": 2,
                 "FTYPE_ID": 2,
-                "CFUNC_ID": 5,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 5
             },
             {
                 "CFCALL_ID": 3,
                 "FTYPE_ID": 3,
-                "CFUNC_ID": 5,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 5
             },
             {
                 "CFCALL_ID": 4,
                 "FTYPE_ID": 4,
-                "CFUNC_ID": 11,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 11
             },
             {
                 "CFCALL_ID": 5,
                 "FTYPE_ID": 5,
-                "CFUNC_ID": 4,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 4
             },
             {
                 "CFCALL_ID": 6,
                 "FTYPE_ID": 6,
-                "CFUNC_ID": 7,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 7
             },
             {
                 "CFCALL_ID": 7,
                 "FTYPE_ID": 7,
-                "CFUNC_ID": 8,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 8
             },
             {
                 "CFCALL_ID": 9,
                 "FTYPE_ID": 9,
-                "CFUNC_ID": 9,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 9
             },
             {
                 "CFCALL_ID": 10,
                 "FTYPE_ID": 10,
-                "CFUNC_ID": 9,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 9
             },
             {
                 "CFCALL_ID": 12,
                 "FTYPE_ID": 12,
-                "CFUNC_ID": 9,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 9
             },
             {
                 "CFCALL_ID": 13,
                 "FTYPE_ID": 13,
-                "CFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 3
             },
             {
                 "CFCALL_ID": 14,
                 "FTYPE_ID": 14,
-                "CFUNC_ID": 13,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 13
             },
             {
                 "CFCALL_ID": 15,
                 "FTYPE_ID": 15,
-                "CFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 3
             },
             {
                 "CFCALL_ID": 16,
                 "FTYPE_ID": 16,
-                "CFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 3
             },
             {
                 "CFCALL_ID": 18,
                 "FTYPE_ID": 36,
-                "CFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 3
             },
             {
                 "CFCALL_ID": 19,
                 "FTYPE_ID": 37,
-                "CFUNC_ID": 9,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 9
             },
             {
                 "CFCALL_ID": 34,
                 "FTYPE_ID": 11,
-                "CFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 9
             },
             {
                 "CFCALL_ID": 35,
                 "FTYPE_ID": 52,
-                "CFUNC_ID": 9,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 9
             },
             {
                 "CFCALL_ID": 36,
                 "FTYPE_ID": 53,
-                "CFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 3
             },
             {
                 "CFCALL_ID": 37,
                 "FTYPE_ID": 54,
-                "CFUNC_ID": 1,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 1
             },
             {
                 "CFCALL_ID": 38,
                 "FTYPE_ID": 55,
-                "CFUNC_ID": 1,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 1
             },
             {
                 "CFCALL_ID": 39,
                 "FTYPE_ID": 56,
-                "CFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 3
             },
             {
                 "CFCALL_ID": 40,
                 "FTYPE_ID": 24,
-                "CFUNC_ID": 10,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 10
             },
             {
                 "CFCALL_ID": 41,
                 "FTYPE_ID": 57,
-                "CFUNC_ID": 12,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 12
             },
             {
                 "CFCALL_ID": 42,
                 "FTYPE_ID": 59,
-                "CFUNC_ID": 12,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 12
             },
             {
                 "CFCALL_ID": 43,
                 "FTYPE_ID": 60,
-                "CFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 3
             },
             {
                 "CFCALL_ID": 44,
                 "FTYPE_ID": 61,
-                "CFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 3
             },
             {
                 "CFCALL_ID": 45,
                 "FTYPE_ID": 62,
-                "CFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 3
             },
             {
                 "CFCALL_ID": 46,
                 "FTYPE_ID": 63,
-                "CFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 3
             },
             {
                 "CFCALL_ID": 47,
                 "FTYPE_ID": 64,
-                "CFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 3
             },
             {
                 "CFCALL_ID": 48,
                 "FTYPE_ID": 65,
-                "CFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 3
             },
             {
                 "CFCALL_ID": 49,
                 "FTYPE_ID": 66,
-                "CFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 3
             },
             {
                 "CFCALL_ID": 50,
                 "FTYPE_ID": 67,
-                "CFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 3
             },
             {
                 "CFCALL_ID": 51,
                 "FTYPE_ID": 68,
-                "CFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 3
             },
             {
                 "CFCALL_ID": 52,
                 "FTYPE_ID": 69,
-                "CFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 3
             },
             {
                 "CFCALL_ID": 53,
                 "FTYPE_ID": 70,
-                "CFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 3
             },
             {
                 "CFCALL_ID": 54,
                 "FTYPE_ID": 71,
-                "CFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 3
             },
             {
                 "CFCALL_ID": 55,
                 "FTYPE_ID": 72,
-                "CFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 3
             },
             {
                 "CFCALL_ID": 57,
                 "FTYPE_ID": 74,
-                "CFUNC_ID": 1,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 1
             },
             {
                 "CFCALL_ID": 58,
                 "FTYPE_ID": 75,
-                "CFUNC_ID": 5,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 5
             },
             {
                 "CFCALL_ID": 59,
                 "FTYPE_ID": 76,
-                "CFUNC_ID": 1,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 1
             },
             {
                 "CFCALL_ID": 60,
                 "FTYPE_ID": 77,
-                "CFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 3
             },
             {
                 "CFCALL_ID": 61,
                 "FTYPE_ID": 78,
-                "CFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 3
             },
             {
                 "CFCALL_ID": 62,
                 "FTYPE_ID": 79,
-                "CFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 3
             },
             {
                 "CFCALL_ID": 63,
                 "FTYPE_ID": 80,
-                "CFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 3
             },
             {
                 "CFCALL_ID": 64,
                 "FTYPE_ID": 86,
-                "CFUNC_ID": 1,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 1
             },
             {
                 "CFCALL_ID": 65,
                 "FTYPE_ID": 87,
-                "CFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "CFUNC_ID": 3
+            },
+            {
+                "CFCALL_ID": 66,
+                "FTYPE_ID": 93,
+                "CFUNC_ID": 14
             }
         ],
         "CFG_CFRTN": [
@@ -2899,7 +2481,7 @@
                 "FTYPE_ID": 0,
                 "CFUNC_RTNVAL": "FULL_SCORE",
                 "EXEC_ORDER": 1,
-                "SAME_SCORE": 100,
+                "SAME_SCORE": 98,
                 "CLOSE_SCORE": 90,
                 "LIKELY_SCORE": 80,
                 "PLAUSIBLE_SCORE": 70,
@@ -3005,37 +2587,49 @@
                 "CFRTN_ID": 19,
                 "CFUNC_ID": 14,
                 "FTYPE_ID": 0,
-                "CFUNC_RTNVAL": "BT_FN",
+                "CFUNC_RTNVAL": "FULL_SCORE",
                 "EXEC_ORDER": 1,
-                "SAME_SCORE": 89,
-                "CLOSE_SCORE": 79,
-                "LIKELY_SCORE": 72,
-                "PLAUSIBLE_SCORE": 70,
-                "UN_LIKELY_SCORE": 60
-            },
-            {
-                "CFRTN_ID": 22,
-                "CFUNC_ID": 14,
-                "FTYPE_ID": 0,
-                "CFUNC_RTNVAL": "BT_ON",
-                "EXEC_ORDER": 2,
-                "SAME_SCORE": 99,
-                "CLOSE_SCORE": 90,
-                "LIKELY_SCORE": 80,
-                "PLAUSIBLE_SCORE": 70,
-                "UN_LIKELY_SCORE": 60
-            },
-            {
-                "CFRTN_ID": 23,
-                "CFUNC_ID": 14,
-                "FTYPE_ID": 0,
-                "CFUNC_RTNVAL": "GENERATION_MATCH",
-                "EXEC_ORDER": 3,
                 "SAME_SCORE": 100,
                 "CLOSE_SCORE": 90,
                 "LIKELY_SCORE": 80,
                 "PLAUSIBLE_SCORE": 70,
                 "UN_LIKELY_SCORE": 60
+            },
+            {
+                "CFRTN_ID": 24,
+                "CFUNC_ID": 9,
+                "FTYPE_ID": 12,
+                "CFUNC_RTNVAL": "FULL_SCORE",
+                "EXEC_ORDER": 1,
+                "SAME_SCORE": 100,
+                "CLOSE_SCORE": 95,
+                "LIKELY_SCORE": 95,
+                "PLAUSIBLE_SCORE": 95,
+                "UN_LIKELY_SCORE": 95
+            },
+            {
+                "CFRTN_ID": 25,
+                "CFUNC_ID": 9,
+                "FTYPE_ID": 52,
+                "CFUNC_RTNVAL": "FULL_SCORE",
+                "EXEC_ORDER": 1,
+                "SAME_SCORE": 100,
+                "CLOSE_SCORE": 95,
+                "LIKELY_SCORE": 95,
+                "PLAUSIBLE_SCORE": 95,
+                "UN_LIKELY_SCORE": 95
+            },
+            {
+                "CFRTN_ID": 26,
+                "CFUNC_ID": 9,
+                "FTYPE_ID": 11,
+                "CFUNC_RTNVAL": "FULL_SCORE",
+                "EXEC_ORDER": 1,
+                "SAME_SCORE": 100,
+                "CLOSE_SCORE": 95,
+                "LIKELY_SCORE": 95,
+                "PLAUSIBLE_SCORE": 95,
+                "UN_LIKELY_SCORE": 95
             }
         ],
         "CFG_CFUNC": [
@@ -3043,144 +2637,105 @@
                 "CFUNC_ID": 1,
                 "CFUNC_CODE": "STR_COMP",
                 "CFUNC_DESC": "String comparison",
-                "FUNC_LIB": "INT_LIB",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2StringComp",
                 "ANON_SUPPORT": "Yes",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "CFUNC_ID": 2,
                 "CFUNC_CODE": "GNR_COMP",
                 "CFUNC_DESC": "GNR name comparison",
-                "FUNC_LIB": "INT_LIB",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2GNRNameComp",
                 "ANON_SUPPORT": "Yes",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "CFUNC_ID": 3,
                 "CFUNC_CODE": "EXACT_COMP",
                 "CFUNC_DESC": "Exact match comp",
-                "FUNC_LIB": "INT_LIB",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2ExactMatchComp",
                 "ANON_SUPPORT": "Yes",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "CFUNC_ID": 4,
                 "CFUNC_CODE": "ADDR_COMP",
                 "CFUNC_DESC": "Address comparison",
-                "FUNC_LIB": "INT_LIB",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2AddressComp",
                 "ANON_SUPPORT": "Yes",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "CFUNC_ID": 5,
                 "CFUNC_CODE": "DOB_COMP",
                 "CFUNC_DESC": "DOB comparison",
-                "FUNC_LIB": "INT_LIB",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2DateComp",
                 "ANON_SUPPORT": "Yes",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "CFUNC_ID": 7,
                 "CFUNC_CODE": "PHONE_COMP",
                 "CFUNC_DESC": "Phone comparison",
-                "FUNC_LIB": "INT_LIB",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2PhoneComp",
                 "ANON_SUPPORT": "Yes",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "CFUNC_ID": 8,
                 "CFUNC_CODE": "SSN_COMP",
                 "CFUNC_DESC": "SSN comp",
-                "FUNC_LIB": "INT_LIB",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2SSNComp",
                 "ANON_SUPPORT": "Yes",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "CFUNC_ID": 9,
                 "CFUNC_CODE": "ID_COMP",
                 "CFUNC_DESC": "ID Comparison",
-                "FUNC_LIB": "INT_LIB",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2DLComp",
                 "ANON_SUPPORT": "Yes",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "CFUNC_ID": 10,
                 "CFUNC_CODE": "GEOLOC_COMP",
                 "CFUNC_DESC": "GEOLOC Comparison",
-                "FUNC_LIB": "INT_LIB",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2GEOLOCComp",
                 "ANON_SUPPORT": "Yes",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "CFUNC_ID": 11,
                 "CFUNC_CODE": "EXACT_DOMAIN_COMP",
                 "CFUNC_DESC": "Exact domain match comp",
-                "FUNC_LIB": "INT_LIB",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2ExactDomainMatchComp",
                 "ANON_SUPPORT": "Yes",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "CFUNC_ID": 12,
                 "CFUNC_CODE": "GROUP_ASSOCIATION_COMP",
                 "CFUNC_DESC": "Group Association comparison",
-                "FUNC_LIB": "INT_LIB",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2GroupAssociationComp",
                 "ANON_SUPPORT": "Yes",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "CFUNC_ID": 13,
                 "CFUNC_CODE": "EMAIL_COMP",
                 "CFUNC_DESC": "Email comp",
-                "FUNC_LIB": "INT_LIB",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2EmailComp",
                 "ANON_SUPPORT": "Yes",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "CFUNC_ID": 14,
-                "CFUNC_CODE": "BT_NAME_COMP",
-                "CFUNC_DESC": "BasisTech name comparison",
-                "FUNC_LIB": "INT_LIB",
-                "FUNC_VER": "1",
-                "CONNECT_STR": "g2CompJavaScoreSet",
+                "CFUNC_CODE": "PLACEKEY_COMP",
+                "CFUNC_DESC": "Placekey comp",
+                "CONNECT_STR": "g2ExactMatchComp",
                 "ANON_SUPPORT": "Yes",
-                "LANGUAGE": "JAVA",
-                "JAVA_CLASS_NAME": "com.senzing.g2.plugins.scoring.RosetteNameScorer"
+                "LANGUAGE": null
             }
         ],
         "CFG_DFBOM": [
@@ -3759,194 +3314,78 @@
                 "FTYPE_ID": 37,
                 "FELEM_ID": 69,
                 "EXEC_ORDER": 3
-            },
-            {
-                "DFCALL_ID": 52,
-                "FTYPE_ID": 52,
-                "FELEM_ID": 37,
-                "EXEC_ORDER": 1
-            },
-            {
-                "DFCALL_ID": 52,
-                "FTYPE_ID": 52,
-                "FELEM_ID": 28,
-                "EXEC_ORDER": 2
-            },
-            {
-                "DFCALL_ID": 52,
-                "FTYPE_ID": 52,
-                "FELEM_ID": 38,
-                "EXEC_ORDER": 3
-            },
-            {
-                "DFCALL_ID": 52,
-                "FTYPE_ID": 52,
-                "FELEM_ID": 69,
-                "EXEC_ORDER": 4
-            },
-            {
-                "DFCALL_ID": 52,
-                "FTYPE_ID": 52,
-                "FELEM_ID": 97,
-                "EXEC_ORDER": 5
-            },
-            {
-                "DFCALL_ID": 52,
-                "FTYPE_ID": 52,
-                "FELEM_ID": 98,
-                "EXEC_ORDER": 6
-            },
-            {
-                "DFCALL_ID": 52,
-                "FTYPE_ID": 52,
-                "FELEM_ID": 117,
-                "EXEC_ORDER": 7
-            },
-            {
-                "DFCALL_ID": 53,
-                "FTYPE_ID": 53,
-                "FELEM_ID": 37,
-                "EXEC_ORDER": 1
-            },
-            {
-                "DFCALL_ID": 53,
-                "FTYPE_ID": 53,
-                "FELEM_ID": 38,
-                "EXEC_ORDER": 2
-            },
-            {
-                "DFCALL_ID": 56,
-                "FTYPE_ID": 56,
-                "FELEM_ID": 18,
-                "EXEC_ORDER": 1
-            },
-            {
-                "DFCALL_ID": 56,
-                "FTYPE_ID": 56,
-                "FELEM_ID": 99,
-                "EXEC_ORDER": 2
-            },
-            {
-                "DFCALL_ID": 57,
-                "FTYPE_ID": 57,
-                "FELEM_ID": 18,
-                "EXEC_ORDER": 1
-            },
-            {
-                "DFCALL_ID": 57,
-                "FTYPE_ID": 57,
-                "FELEM_ID": 3,
-                "EXEC_ORDER": 2
             }
         ],
         "CFG_DFCALL": [
             {
                 "DFCALL_ID": 1,
                 "FTYPE_ID": 1,
-                "DFUNC_ID": 5,
-                "EXEC_ORDER": 1
+                "DFUNC_ID": 5
             },
             {
                 "DFCALL_ID": 2,
                 "FTYPE_ID": 2,
-                "DFUNC_ID": 4,
-                "EXEC_ORDER": 1
+                "DFUNC_ID": 4
             },
             {
                 "DFCALL_ID": 3,
                 "FTYPE_ID": 3,
-                "DFUNC_ID": 4,
-                "EXEC_ORDER": 1
+                "DFUNC_ID": 4
             },
             {
                 "DFCALL_ID": 5,
                 "FTYPE_ID": 5,
-                "DFUNC_ID": 6,
-                "EXEC_ORDER": 1
+                "DFUNC_ID": 6
             },
             {
                 "DFCALL_ID": 6,
                 "FTYPE_ID": 6,
-                "DFUNC_ID": 1,
-                "EXEC_ORDER": 1
+                "DFUNC_ID": 1
             },
             {
                 "DFCALL_ID": 9,
                 "FTYPE_ID": 9,
-                "DFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "DFUNC_ID": 3
             },
             {
                 "DFCALL_ID": 10,
                 "FTYPE_ID": 10,
-                "DFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "DFUNC_ID": 3
             },
             {
                 "DFCALL_ID": 11,
                 "FTYPE_ID": 11,
-                "DFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "DFUNC_ID": 3
             },
             {
                 "DFCALL_ID": 12,
                 "FTYPE_ID": 12,
-                "DFUNC_ID": 3,
-                "EXEC_ORDER": 1
+                "DFUNC_ID": 3
             },
             {
                 "DFCALL_ID": 13,
                 "FTYPE_ID": 13,
-                "DFUNC_ID": 1,
-                "EXEC_ORDER": 1
+                "DFUNC_ID": 1
             },
             {
                 "DFCALL_ID": 16,
                 "FTYPE_ID": 16,
-                "DFUNC_ID": 1,
-                "EXEC_ORDER": 1
+                "DFUNC_ID": 1
             },
             {
                 "DFCALL_ID": 24,
                 "FTYPE_ID": 24,
-                "DFUNC_ID": 1,
-                "EXEC_ORDER": 1
+                "DFUNC_ID": 1
             },
             {
                 "DFCALL_ID": 36,
                 "FTYPE_ID": 36,
-                "DFUNC_ID": 1,
-                "EXEC_ORDER": 1
+                "DFUNC_ID": 1
             },
             {
                 "DFCALL_ID": 37,
                 "FTYPE_ID": 37,
-                "DFUNC_ID": 1,
-                "EXEC_ORDER": 1
-            },
-            {
-                "DFCALL_ID": 52,
-                "FTYPE_ID": 52,
-                "DFUNC_ID": 3,
-                "EXEC_ORDER": 1
-            },
-            {
-                "DFCALL_ID": 53,
-                "FTYPE_ID": 53,
-                "DFUNC_ID": 3,
-                "EXEC_ORDER": 1
-            },
-            {
-                "DFCALL_ID": 56,
-                "FTYPE_ID": 56,
-                "DFUNC_ID": 1,
-                "EXEC_ORDER": 1
-            },
-            {
-                "DFCALL_ID": 57,
-                "FTYPE_ID": 57,
-                "DFUNC_ID": 1,
-                "EXEC_ORDER": 1
+                "DFUNC_ID": 1
             }
         ],
         "CFG_DFUNC": [
@@ -3954,67 +3393,49 @@
                 "DFUNC_ID": 1,
                 "DFUNC_CODE": "FELEM_STRICT_SUBSET",
                 "DFUNC_DESC": "Strict subset of felems",
-                "FUNC_LIB": "g2func_lib",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2StrictSubsetFelems",
                 "ANON_SUPPORT": "Yes",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "DFUNC_ID": 2,
                 "DFUNC_CODE": "TOKEN_STRICT_SUBSET",
                 "DFUNC_DESC": "Strict subset of tokens",
-                "FUNC_LIB": "g2func_lib",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2StrictSubsetTokens",
                 "ANON_SUPPORT": "Yes",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "DFUNC_ID": 3,
                 "DFUNC_CODE": "FELEM_NORM_STRICT_SUBSET",
                 "DFUNC_DESC": "Strict subset of normalized felems",
-                "FUNC_LIB": "g2func_lib",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2StrictSubsetNormalizedFelems",
                 "ANON_SUPPORT": "Yes",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "DFUNC_ID": 4,
                 "DFUNC_CODE": "PARTIAL_DATES",
                 "DFUNC_DESC": "Partial dates",
-                "FUNC_LIB": "g2func_lib",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2PartialDates",
                 "ANON_SUPPORT": "Yes",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "DFUNC_ID": 5,
                 "DFUNC_CODE": "PARTIAL_NAMES",
                 "DFUNC_DESC": "Partial names",
-                "FUNC_LIB": "g2func_lib",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2PartialNames",
                 "ANON_SUPPORT": "Yes",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "DFUNC_ID": 6,
                 "DFUNC_CODE": "PARTIAL_ADDRESSES",
                 "DFUNC_DESC": "Partial addresses",
-                "FUNC_LIB": "g2func_lib",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2PartialAddresses",
                 "ANON_SUPPORT": "Yes",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             }
         ],
         "CFG_DSRC": [
@@ -4022,282 +3443,16 @@
                 "DSRC_ID": 1,
                 "DSRC_CODE": "TEST",
                 "DSRC_DESC": "Test",
-                "DSRC_RELY": 1,
-                "RETENTION_LEVEL": "Remember",
-                "CONVERSATIONAL": "No"
+                "RETENTION_LEVEL": "Remember"
             },
             {
                 "DSRC_ID": 2,
                 "DSRC_CODE": "SEARCH",
                 "DSRC_DESC": "Search",
-                "DSRC_RELY": 1,
-                "RETENTION_LEVEL": "Forget",
-                "CONVERSATIONAL": "Yes"
+                "RETENTION_LEVEL": "Forget"
             }
         ],
         "CFG_DSRC_INTEREST": [],
-        "CFG_EBOM": [
-            {
-                "ETYPE_ID": 1,
-                "EXEC_ORDER": 1,
-                "FTYPE_ID": 16,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 1,
-                "EXEC_ORDER": 4,
-                "FTYPE_ID": 1,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 1,
-                "EXEC_ORDER": 5,
-                "FTYPE_ID": 2,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 1,
-                "EXEC_ORDER": 6,
-                "FTYPE_ID": 3,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 1,
-                "EXEC_ORDER": 7,
-                "FTYPE_ID": 4,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 1,
-                "EXEC_ORDER": 8,
-                "FTYPE_ID": 55,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 1,
-                "EXEC_ORDER": 9,
-                "FTYPE_ID": 54,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 1,
-                "EXEC_ORDER": 10,
-                "FTYPE_ID": 7,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 1,
-                "EXEC_ORDER": 12,
-                "FTYPE_ID": 9,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 1,
-                "EXEC_ORDER": 13,
-                "FTYPE_ID": 10,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 1,
-                "EXEC_ORDER": 14,
-                "FTYPE_ID": 12,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 1,
-                "EXEC_ORDER": 15,
-                "FTYPE_ID": 11,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 1,
-                "EXEC_ORDER": 16,
-                "FTYPE_ID": 52,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 1,
-                "EXEC_ORDER": 17,
-                "FTYPE_ID": 5,
-                "UTYPE_CODE": "PRIMARY"
-            },
-            {
-                "ETYPE_ID": 1,
-                "EXEC_ORDER": 18,
-                "FTYPE_ID": 5,
-                "UTYPE_CODE": "SECONDARY"
-            },
-            {
-                "ETYPE_ID": 1,
-                "EXEC_ORDER": 19,
-                "FTYPE_ID": 6,
-                "UTYPE_CODE": "PRIMARY"
-            },
-            {
-                "ETYPE_ID": 1,
-                "EXEC_ORDER": 20,
-                "FTYPE_ID": 6,
-                "UTYPE_CODE": "SECONDARY"
-            },
-            {
-                "ETYPE_ID": 1,
-                "EXEC_ORDER": 21,
-                "FTYPE_ID": 14,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 1,
-                "EXEC_ORDER": 22,
-                "FTYPE_ID": 15,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 1,
-                "EXEC_ORDER": 23,
-                "FTYPE_ID": 23,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 1,
-                "EXEC_ORDER": 24,
-                "FTYPE_ID": 53,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 3,
-                "EXEC_ORDER": 1,
-                "FTYPE_ID": 16,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 3,
-                "EXEC_ORDER": 4,
-                "FTYPE_ID": 1,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 3,
-                "EXEC_ORDER": 5,
-                "FTYPE_ID": 2,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 3,
-                "EXEC_ORDER": 6,
-                "FTYPE_ID": 3,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 3,
-                "EXEC_ORDER": 7,
-                "FTYPE_ID": 4,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 3,
-                "EXEC_ORDER": 8,
-                "FTYPE_ID": 55,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 3,
-                "EXEC_ORDER": 9,
-                "FTYPE_ID": 54,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 3,
-                "EXEC_ORDER": 10,
-                "FTYPE_ID": 7,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 3,
-                "EXEC_ORDER": 12,
-                "FTYPE_ID": 9,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 3,
-                "EXEC_ORDER": 13,
-                "FTYPE_ID": 10,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 3,
-                "EXEC_ORDER": 14,
-                "FTYPE_ID": 12,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 3,
-                "EXEC_ORDER": 15,
-                "FTYPE_ID": 11,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 3,
-                "EXEC_ORDER": 16,
-                "FTYPE_ID": 52,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 3,
-                "EXEC_ORDER": 17,
-                "FTYPE_ID": 5,
-                "UTYPE_CODE": "PRIMARY"
-            },
-            {
-                "ETYPE_ID": 3,
-                "EXEC_ORDER": 18,
-                "FTYPE_ID": 5,
-                "UTYPE_CODE": "SECONDARY"
-            },
-            {
-                "ETYPE_ID": 3,
-                "EXEC_ORDER": 19,
-                "FTYPE_ID": 6,
-                "UTYPE_CODE": "PRIMARY"
-            },
-            {
-                "ETYPE_ID": 3,
-                "EXEC_ORDER": 20,
-                "FTYPE_ID": 6,
-                "UTYPE_CODE": "SECONDARY"
-            },
-            {
-                "ETYPE_ID": 3,
-                "EXEC_ORDER": 21,
-                "FTYPE_ID": 14,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 3,
-                "EXEC_ORDER": 22,
-                "FTYPE_ID": 15,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 3,
-                "EXEC_ORDER": 23,
-                "FTYPE_ID": 23,
-                "UTYPE_CODE": null
-            },
-            {
-                "ETYPE_ID": 3,
-                "EXEC_ORDER": 24,
-                "FTYPE_ID": 53,
-                "UTYPE_CODE": null
-            }
-        ],
-        "CFG_ECLASS": [
-            {
-                "ECLASS_ID": 1,
-                "ECLASS_CODE": "ACTOR",
-                "ECLASS_DESC": "Actor",
-                "RESOLVE": "Yes"
-            }
-        ],
         "CFG_EFBOM": [
             {
                 "EFCALL_ID": 1,
@@ -4409,76 +3564,6 @@
                 "FTYPE_ID": 1,
                 "FELEM_ID": 79,
                 "EXEC_ORDER": 11,
-                "FELEM_REQ": "No"
-            },
-            {
-                "EFCALL_ID": 7,
-                "FTYPE_ID": -1,
-                "FELEM_ID": 71,
-                "EXEC_ORDER": 12,
-                "FELEM_REQ": "No"
-            },
-            {
-                "EFCALL_ID": 7,
-                "FTYPE_ID": 5,
-                "FELEM_ID": 74,
-                "EXEC_ORDER": 14,
-                "FELEM_REQ": "No"
-            },
-            {
-                "EFCALL_ID": 7,
-                "FTYPE_ID": 7,
-                "FELEM_ID": 39,
-                "EXEC_ORDER": 15,
-                "FELEM_REQ": "No"
-            },
-            {
-                "EFCALL_ID": 7,
-                "FTYPE_ID": 6,
-                "FELEM_ID": 61,
-                "EXEC_ORDER": 16,
-                "FELEM_REQ": "No"
-            },
-            {
-                "EFCALL_ID": 7,
-                "FTYPE_ID": 77,
-                "FELEM_ID": 37,
-                "EXEC_ORDER": 17,
-                "FELEM_REQ": "No"
-            },
-            {
-                "EFCALL_ID": 7,
-                "FTYPE_ID": 86,
-                "FELEM_ID": 117,
-                "EXEC_ORDER": 18,
-                "FELEM_REQ": "No"
-            },
-            {
-                "EFCALL_ID": 7,
-                "FTYPE_ID": 57,
-                "FELEM_ID": 3,
-                "EXEC_ORDER": 19,
-                "FELEM_REQ": "No"
-            },
-            {
-                "EFCALL_ID": 7,
-                "FTYPE_ID": -1,
-                "FELEM_ID": 112,
-                "EXEC_ORDER": 20,
-                "FELEM_REQ": "No"
-            },
-            {
-                "EFCALL_ID": 7,
-                "FTYPE_ID": -1,
-                "FELEM_ID": 113,
-                "EXEC_ORDER": 21,
-                "FELEM_REQ": "No"
-            },
-            {
-                "EFCALL_ID": 7,
-                "FTYPE_ID": 5,
-                "FELEM_ID": 73,
-                "EXEC_ORDER": 22,
                 "FELEM_REQ": "No"
             },
             {
@@ -4683,6 +3768,545 @@
                 "FELEM_ID": 121,
                 "EXEC_ORDER": 1,
                 "FELEM_REQ": "Yes"
+            },
+            {
+                "EFCALL_ID": 92,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 3,
+                "EXEC_ORDER": 1,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 92,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 4,
+                "EXEC_ORDER": 2,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 92,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 5,
+                "EXEC_ORDER": 3,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 92,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 6,
+                "EXEC_ORDER": 4,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 92,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 2,
+                "EXEC_ORDER": 5,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 92,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 10,
+                "EXEC_ORDER": 6,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 92,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 11,
+                "EXEC_ORDER": 7,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 92,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 12,
+                "EXEC_ORDER": 8,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 92,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 77,
+                "EXEC_ORDER": 9,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 92,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 78,
+                "EXEC_ORDER": 10,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 92,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 79,
+                "EXEC_ORDER": 11,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 92,
+                "FTYPE_ID": 19,
+                "FELEM_ID": 36,
+                "EXEC_ORDER": 12,
+                "FELEM_REQ": "Yes"
+            },
+            {
+                "EFCALL_ID": 94,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 3,
+                "EXEC_ORDER": 1,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 94,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 4,
+                "EXEC_ORDER": 2,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 94,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 5,
+                "EXEC_ORDER": 3,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 94,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 6,
+                "EXEC_ORDER": 4,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 94,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 2,
+                "EXEC_ORDER": 5,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 94,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 10,
+                "EXEC_ORDER": 6,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 94,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 11,
+                "EXEC_ORDER": 7,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 94,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 12,
+                "EXEC_ORDER": 8,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 94,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 77,
+                "EXEC_ORDER": 9,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 94,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 78,
+                "EXEC_ORDER": 10,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 94,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 79,
+                "EXEC_ORDER": 11,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 94,
+                "FTYPE_ID": -1,
+                "FELEM_ID": 71,
+                "EXEC_ORDER": 12,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 94,
+                "FTYPE_ID": -1,
+                "FELEM_ID": 112,
+                "EXEC_ORDER": 13,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 94,
+                "FTYPE_ID": -1,
+                "FELEM_ID": 113,
+                "EXEC_ORDER": 14,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 95,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 3,
+                "EXEC_ORDER": 1,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 95,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 4,
+                "EXEC_ORDER": 2,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 95,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 5,
+                "EXEC_ORDER": 3,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 95,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 6,
+                "EXEC_ORDER": 4,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 95,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 2,
+                "EXEC_ORDER": 5,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 95,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 10,
+                "EXEC_ORDER": 6,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 95,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 11,
+                "EXEC_ORDER": 7,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 95,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 12,
+                "EXEC_ORDER": 8,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 95,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 77,
+                "EXEC_ORDER": 9,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 95,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 78,
+                "EXEC_ORDER": 10,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 95,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 79,
+                "EXEC_ORDER": 11,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 95,
+                "FTYPE_ID": 7,
+                "FELEM_ID": 39,
+                "EXEC_ORDER": 12,
+                "FELEM_REQ": "Yes"
+            },
+            {
+                "EFCALL_ID": 96,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 3,
+                "EXEC_ORDER": 1,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 96,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 4,
+                "EXEC_ORDER": 2,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 96,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 5,
+                "EXEC_ORDER": 3,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 96,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 6,
+                "EXEC_ORDER": 4,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 96,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 2,
+                "EXEC_ORDER": 5,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 96,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 10,
+                "EXEC_ORDER": 6,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 96,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 11,
+                "EXEC_ORDER": 7,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 96,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 12,
+                "EXEC_ORDER": 8,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 96,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 77,
+                "EXEC_ORDER": 9,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 96,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 78,
+                "EXEC_ORDER": 10,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 96,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 79,
+                "EXEC_ORDER": 11,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 96,
+                "FTYPE_ID": 5,
+                "FELEM_ID": 73,
+                "EXEC_ORDER": 12,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 96,
+                "FTYPE_ID": 5,
+                "FELEM_ID": 74,
+                "EXEC_ORDER": 13,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 96,
+                "FTYPE_ID": 86,
+                "FELEM_ID": 117,
+                "EXEC_ORDER": 14,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 97,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 3,
+                "EXEC_ORDER": 1,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 97,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 4,
+                "EXEC_ORDER": 2,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 97,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 5,
+                "EXEC_ORDER": 3,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 97,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 6,
+                "EXEC_ORDER": 4,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 97,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 2,
+                "EXEC_ORDER": 5,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 97,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 10,
+                "EXEC_ORDER": 6,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 97,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 11,
+                "EXEC_ORDER": 7,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 97,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 12,
+                "EXEC_ORDER": 8,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 97,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 77,
+                "EXEC_ORDER": 9,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 97,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 78,
+                "EXEC_ORDER": 10,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 97,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 79,
+                "EXEC_ORDER": 11,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 97,
+                "FTYPE_ID": 77,
+                "FELEM_ID": 37,
+                "EXEC_ORDER": 12,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 97,
+                "FTYPE_ID": 57,
+                "FELEM_ID": 3,
+                "EXEC_ORDER": 13,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 98,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 3,
+                "EXEC_ORDER": 1,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 98,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 4,
+                "EXEC_ORDER": 2,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 98,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 5,
+                "EXEC_ORDER": 3,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 98,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 6,
+                "EXEC_ORDER": 4,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 98,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 2,
+                "EXEC_ORDER": 5,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 98,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 10,
+                "EXEC_ORDER": 6,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 98,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 11,
+                "EXEC_ORDER": 7,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 98,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 12,
+                "EXEC_ORDER": 8,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 98,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 77,
+                "EXEC_ORDER": 9,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 98,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 78,
+                "EXEC_ORDER": 10,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 98,
+                "FTYPE_ID": 1,
+                "FELEM_ID": 79,
+                "EXEC_ORDER": 11,
+                "FELEM_REQ": "No"
+            },
+            {
+                "EFCALL_ID": 98,
+                "FTYPE_ID": 6,
+                "FELEM_ID": 61,
+                "EXEC_ORDER": 12,
+                "FELEM_REQ": "No"
             }
         ],
         "CFG_EFCALL": [
@@ -4865,6 +4489,60 @@
                 "EXEC_ORDER": 1,
                 "EFEAT_FTYPE_ID": 88,
                 "IS_VIRTUAL": "No"
+            },
+            {
+                "EFCALL_ID": 92,
+                "FTYPE_ID": 1,
+                "FELEM_ID": -1,
+                "EFUNC_ID": 2,
+                "EXEC_ORDER": 92,
+                "EFEAT_FTYPE_ID": 92,
+                "IS_VIRTUAL": "No"
+            },
+            {
+                "EFCALL_ID": 94,
+                "FTYPE_ID": 1,
+                "FELEM_ID": -1,
+                "EFUNC_ID": 2,
+                "EXEC_ORDER": 94,
+                "EFEAT_FTYPE_ID": 94,
+                "IS_VIRTUAL": "No"
+            },
+            {
+                "EFCALL_ID": 95,
+                "FTYPE_ID": 1,
+                "FELEM_ID": -1,
+                "EFUNC_ID": 2,
+                "EXEC_ORDER": 95,
+                "EFEAT_FTYPE_ID": 95,
+                "IS_VIRTUAL": "No"
+            },
+            {
+                "EFCALL_ID": 96,
+                "FTYPE_ID": 1,
+                "FELEM_ID": -1,
+                "EFUNC_ID": 2,
+                "EXEC_ORDER": 96,
+                "EFEAT_FTYPE_ID": 96,
+                "IS_VIRTUAL": "No"
+            },
+            {
+                "EFCALL_ID": 97,
+                "FTYPE_ID": 1,
+                "FELEM_ID": -1,
+                "EFUNC_ID": 2,
+                "EXEC_ORDER": 97,
+                "EFEAT_FTYPE_ID": 97,
+                "IS_VIRTUAL": "No"
+            },
+            {
+                "EFCALL_ID": 98,
+                "FTYPE_ID": 1,
+                "FELEM_ID": -1,
+                "EFUNC_ID": 2,
+                "EXEC_ORDER": 98,
+                "EFEAT_FTYPE_ID": 98,
+                "IS_VIRTUAL": "No"
             }
         ],
         "CFG_EFUNC": [
@@ -4872,115 +4550,87 @@
                 "EFUNC_ID": 1,
                 "EFUNC_CODE": "EXPRESS_BOM",
                 "EFUNC_DESC": "General BOM Hasher",
-                "FUNC_LIB": "g2func_lib",
-                "FUNC_VER": "2",
                 "CONNECT_STR": "g2GenericHasher",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "EFUNC_ID": 2,
                 "EFUNC_CODE": "NAME_HASHER",
                 "EFUNC_DESC": "Name expression",
-                "FUNC_LIB": "g2func_lib",
-                "FUNC_VER": "2",
                 "CONNECT_STR": "g2NameHasher",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "EFUNC_ID": 3,
                 "EFUNC_CODE": "ADDR_HASHER",
                 "EFUNC_DESC": "Address expression",
-                "FUNC_LIB": "g2func_lib",
-                "FUNC_VER": "2",
                 "CONNECT_STR": "g2AddressHasher",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "EFUNC_ID": 4,
                 "EFUNC_CODE": "PHONE_HASHER",
                 "EFUNC_DESC": "Phone Hasher",
-                "FUNC_LIB": "g2func_lib",
-                "FUNC_VER": "2",
                 "CONNECT_STR": "g2PhoneHasher",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "EFUNC_ID": 5,
                 "EFUNC_CODE": "EXPRESS_ID",
                 "EFUNC_DESC": "General ID Hasher",
-                "FUNC_LIB": "g2funclib",
-                "FUNC_VER": "2",
                 "CONNECT_STR": "g2IDHasher",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "EFUNC_ID": 6,
                 "EFUNC_CODE": "STB_HASHER",
                 "EFUNC_DESC": "General STB Hasher",
-                "FUNC_LIB": "g2funclib",
-                "FUNC_VER": "2",
                 "CONNECT_STR": "g2STBHasher",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "EFUNC_ID": 7,
                 "EFUNC_CODE": "FEAT_BUILDER",
                 "EFUNC_DESC": "FeatureBuilder",
-                "FUNC_LIB": "g2funclib",
-                "FUNC_VER": "2",
                 "CONNECT_STR": "g2FeatBuilder",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             }
         ],
         "CFG_ERFRAG": [
             {
-                "ERFRAG_ID": 10,
-                "ERFRAG_CODE": "TRUSTED_ID",
-                "ERFRAG_DESC": "TRUSTED_ID",
-                "ERFRAG_SOURCE": "./SCORES/TRUSTED_ID[./FULL_SCORE=100]",
-                "ERFRAG_DEPENDS": null
-            },
-            {
                 "ERFRAG_ID": 11,
                 "ERFRAG_CODE": "SAME_NAME",
                 "ERFRAG_DESC": "SAME_NAME",
-                "ERFRAG_SOURCE": "./FRAGMENT[./GNR_SAME_NAME>0 or ./BT_SAME_NAME>0]",
-                "ERFRAG_DEPENDS": "301,311"
+                "ERFRAG_SOURCE": "./FRAGMENT[./GNR_SAME_NAME>0]",
+                "ERFRAG_DEPENDS": "301"
             },
             {
                 "ERFRAG_ID": 12,
                 "ERFRAG_CODE": "CLOSE_NAME",
                 "ERFRAG_DESC": "CLOSE_NAME",
-                "ERFRAG_SOURCE": "./FRAGMENT[./GNR_CLOSE_NAME>0 or ./BT_CLOSE_NAME>0]",
-                "ERFRAG_DEPENDS": "302,312"
+                "ERFRAG_SOURCE": "./FRAGMENT[./GNR_CLOSE_NAME>0]",
+                "ERFRAG_DEPENDS": "302"
             },
             {
                 "ERFRAG_ID": 13,
                 "ERFRAG_CODE": "LIKELY_NAME",
                 "ERFRAG_DESC": "LIKELY_NAME",
-                "ERFRAG_SOURCE": "./FRAGMENT[./GNR_LIKELY_NAME>0 or ./BT_LIKELY_NAME>0]",
-                "ERFRAG_DEPENDS": "303,313"
+                "ERFRAG_SOURCE": "./FRAGMENT[./GNR_LIKELY_NAME>0]",
+                "ERFRAG_DEPENDS": "303"
             },
             {
                 "ERFRAG_ID": 14,
                 "ERFRAG_CODE": "PART_NAME",
                 "ERFRAG_DESC": "PART_NAME",
-                "ERFRAG_SOURCE": "./FRAGMENT[./GNR_PART_NAME>0 or ./BT_PART_NAME>0]",
-                "ERFRAG_DEPENDS": "304,314"
+                "ERFRAG_SOURCE": "./FRAGMENT[./GNR_PART_NAME>0]",
+                "ERFRAG_DEPENDS": "304"
             },
             {
                 "ERFRAG_ID": 15,
                 "ERFRAG_CODE": "SUR_NAME",
                 "ERFRAG_DESC": "SUR_NAME",
-                "ERFRAG_SOURCE": "./FRAGMENT[./GNR_SUR_NAME>0 or ./BT_SUR_NAME>0]",
-                "ERFRAG_DEPENDS": "305,315"
+                "ERFRAG_SOURCE": "./FRAGMENT[./GNR_SUR_NAME>0]",
+                "ERFRAG_DEPENDS": "305"
             },
             {
                 "ERFRAG_ID": 16,
@@ -5000,8 +4650,8 @@
                 "ERFRAG_ID": 18,
                 "ERFRAG_CODE": "ORG_NAME",
                 "ERFRAG_DESC": "ORG_NAME",
-                "ERFRAG_SOURCE": "./FRAGMENT[./GNR_ORG_NAME>0 or ./BT_ORG_NAME>0]",
-                "ERFRAG_DEPENDS": "306,316"
+                "ERFRAG_SOURCE": "./FRAGMENT[./GNR_ORG_NAME>0]",
+                "ERFRAG_DEPENDS": "306"
             },
             {
                 "ERFRAG_ID": 19,
@@ -5613,48 +5263,6 @@
                 "ERFRAG_DEPENDS": null
             },
             {
-                "ERFRAG_ID": 311,
-                "ERFRAG_CODE": "BT_SAME_NAME",
-                "ERFRAG_DESC": "BT_SAME_NAME",
-                "ERFRAG_SOURCE": "./SCORES/NAME[./BT_FN>=89]",
-                "ERFRAG_DEPENDS": null
-            },
-            {
-                "ERFRAG_ID": 312,
-                "ERFRAG_CODE": "BT_CLOSE_NAME",
-                "ERFRAG_DESC": "BT_CLOSE_NAME",
-                "ERFRAG_SOURCE": "./SCORES/NAME[./BT_ON>=85 or ./BT_FN>=79]",
-                "ERFRAG_DEPENDS": null
-            },
-            {
-                "ERFRAG_ID": 313,
-                "ERFRAG_CODE": "BT_LIKELY_NAME",
-                "ERFRAG_DESC": "BT_LIKELY_NAME",
-                "ERFRAG_SOURCE": "./SCORES/NAME[./BT_ON>=80 or ./BT_FN>=72]",
-                "ERFRAG_DEPENDS": null
-            },
-            {
-                "ERFRAG_ID": 314,
-                "ERFRAG_CODE": "BT_PART_NAME",
-                "ERFRAG_DESC": "BT_PART_NAME",
-                "ERFRAG_SOURCE": "./SCORES/NAME[./BT_FN>=75]",
-                "ERFRAG_DEPENDS": null
-            },
-            {
-                "ERFRAG_ID": 315,
-                "ERFRAG_CODE": "BT_SUR_NAME",
-                "ERFRAG_DESC": "BT_SUR_NAME",
-                "ERFRAG_SOURCE": "false()",
-                "ERFRAG_DEPENDS": null
-            },
-            {
-                "ERFRAG_ID": 316,
-                "ERFRAG_CODE": "BT_ORG_NAME",
-                "ERFRAG_DESC": "BT_ORG_NAME",
-                "ERFRAG_SOURCE": "./SCORES/NAME[./BT_ON>=85]",
-                "ERFRAG_DEPENDS": null
-            },
-            {
                 "ERFRAG_ID": 999,
                 "ERFRAG_CODE": "DISABLE",
                 "ERFRAG_DESC": "DISABLE",
@@ -5666,10 +5274,8 @@
             {
                 "ERRULE_ID": 100,
                 "ERRULE_CODE": "SAME_A1",
-                "ERRULE_DESC": "SAME_A1",
                 "RESOLVE": "Yes",
                 "RELATE": "No",
-                "REF_SCORE": 10,
                 "RTYPE_ID": 1,
                 "QUAL_ERFRAG_CODE": "SAME_A1",
                 "DISQ_ERFRAG_CODE": null,
@@ -5678,10 +5284,8 @@
             {
                 "ERRULE_ID": 108,
                 "ERRULE_CODE": "SF1_SNAME_CFF_CSTAB",
-                "ERRULE_DESC": "SAME_F1+SAME_NAME+CLOSE_FF+CLOSE_STAB+NODEXCL",
                 "RESOLVE": "Yes",
                 "RELATE": "No",
-                "REF_SCORE": 10,
                 "RTYPE_ID": 1,
                 "QUAL_ERFRAG_CODE": "SF1_SNAME_CFF_CSTAB",
                 "DISQ_ERFRAG_CODE": "DIFF_EXCL",
@@ -5690,10 +5294,8 @@
             {
                 "ERRULE_ID": 110,
                 "ERRULE_CODE": "SF1_PNAME_CFF_CSTAB",
-                "ERRULE_DESC": "SAME_F1+PART_NAME+CLOSE_FF+CLOSE_STAB",
                 "RESOLVE": "Yes",
                 "RELATE": "No",
-                "REF_SCORE": 10,
                 "RTYPE_ID": 1,
                 "QUAL_ERFRAG_CODE": "SF1_PNAME_CFF_CSTAB",
                 "DISQ_ERFRAG_CODE": "DIFF_EXCL",
@@ -5702,10 +5304,8 @@
             {
                 "ERRULE_ID": 111,
                 "ERRULE_CODE": "SF1_SNAME_CFF_CSTAB_DEXCL",
-                "ERRULE_DESC": "SAME_F1+SAME_NAME+CLOSE_FF+CLOSE_STAB+DIFF_EXCL",
                 "RESOLVE": "Yes",
                 "RELATE": "No",
-                "REF_SCORE": 10,
                 "RTYPE_ID": 1,
                 "QUAL_ERFRAG_CODE": "SF1_SNAME_CFF_CSTAB",
                 "DISQ_ERFRAG_CODE": "DIFF_GEN_A1ES",
@@ -5714,10 +5314,8 @@
             {
                 "ERRULE_ID": 112,
                 "ERRULE_CODE": "SF1_PNAME_CFF_OLD",
-                "ERRULE_DESC": "SAME_F1+PART_NAME+CLOSE_FF+OLD",
                 "RESOLVE": "Yes",
                 "RELATE": "No",
-                "REF_SCORE": 9,
                 "RTYPE_ID": 1,
                 "QUAL_ERFRAG_CODE": "DISABLE",
                 "DISQ_ERFRAG_CODE": "",
@@ -5726,10 +5324,8 @@
             {
                 "ERRULE_ID": 120,
                 "ERRULE_CODE": "SF1_PNAME_CSTAB",
-                "ERRULE_DESC": "SAME_F1+PART_NAME+CLOSE_STAB",
                 "RESOLVE": "Yes",
                 "RELATE": "No",
-                "REF_SCORE": 9,
                 "RTYPE_ID": 1,
                 "QUAL_ERFRAG_CODE": "SF1_PNAME_CSTAB",
                 "DISQ_ERFRAG_CODE": "DIFF_EXCL",
@@ -5738,10 +5334,8 @@
             {
                 "ERRULE_ID": 122,
                 "ERRULE_CODE": "SF1_PNAME_CFF",
-                "ERRULE_DESC": "SAME_F1+PART_NAME+CLOSE_FF",
                 "RESOLVE": "Yes",
                 "RELATE": "No",
-                "REF_SCORE": 9,
                 "RTYPE_ID": 1,
                 "QUAL_ERFRAG_CODE": "SF1_PNAME_CFF",
                 "DISQ_ERFRAG_CODE": "DIFF_EXCL",
@@ -5750,10 +5344,8 @@
             {
                 "ERRULE_ID": 130,
                 "ERRULE_CODE": "SF1_CNAME",
-                "ERRULE_DESC": "SAME_F1+CLOSE_NAME",
                 "RESOLVE": "Yes",
                 "RELATE": "No",
-                "REF_SCORE": 8,
                 "RTYPE_ID": 1,
                 "QUAL_ERFRAG_CODE": "SF1_CNAME",
                 "DISQ_ERFRAG_CODE": "DIFF_EXCL",
@@ -5762,10 +5354,8 @@
             {
                 "ERRULE_ID": 131,
                 "ERRULE_CODE": "CF1_PNAME_CFF_CSTAB",
-                "ERRULE_DESC": "CLOSE_F1+PART_NAME+CLOSE_FF+CLOSE_STAB",
                 "RESOLVE": "Yes",
                 "RELATE": "No",
-                "REF_SCORE": 8,
                 "RTYPE_ID": 1,
                 "QUAL_ERFRAG_CODE": "CF1_PNAME_CFF_CSTAB",
                 "DISQ_ERFRAG_CODE": "DIFF_EXCL",
@@ -5774,10 +5364,8 @@
             {
                 "ERRULE_ID": 132,
                 "ERRULE_CODE": "CF1_CNAME_CSTAB",
-                "ERRULE_DESC": "CLOSE_F1+CLOSE_NAME+CLOSE_STAB",
                 "RESOLVE": "Yes",
                 "RELATE": "No",
-                "REF_SCORE": 8,
                 "RTYPE_ID": 1,
                 "QUAL_ERFRAG_CODE": "CF1_CNAME_CSTAB",
                 "DISQ_ERFRAG_CODE": "DIFF_EXCL",
@@ -5786,10 +5374,8 @@
             {
                 "ERRULE_ID": 133,
                 "ERRULE_CODE": "CF1_PNAME_MSTAB",
-                "ERRULE_DESC": "CLOSE_F1+PART_NAME+MULT_STAB",
                 "RESOLVE": "Yes",
                 "RELATE": "No",
-                "REF_SCORE": 8,
                 "RTYPE_ID": 1,
                 "QUAL_ERFRAG_CODE": "CF1_PNAME_MSTAB",
                 "DISQ_ERFRAG_CODE": "DIFF_EXCL",
@@ -5798,10 +5384,8 @@
             {
                 "ERRULE_ID": 140,
                 "ERRULE_CODE": "MSTAB_LNAME_SF1",
-                "ERRULE_DESC": "MULT_STAB+LIKELY_NAME+SAME_F1",
                 "RESOLVE": "Yes",
                 "RELATE": "No",
-                "REF_SCORE": 9,
                 "RTYPE_ID": 1,
                 "QUAL_ERFRAG_CODE": "MSTAB_LNAME_SF1",
                 "DISQ_ERFRAG_CODE": "DIFF_GEN_A1ES",
@@ -5810,10 +5394,8 @@
             {
                 "ERRULE_ID": 141,
                 "ERRULE_CODE": "MSTAB_CNAME",
-                "ERRULE_DESC": "MULT_STAB+CLOSE_NAME",
                 "RESOLVE": "Yes",
                 "RELATE": "No",
-                "REF_SCORE": 8,
                 "RTYPE_ID": 1,
                 "QUAL_ERFRAG_CODE": "MSTAB_CNAME",
                 "DISQ_ERFRAG_CODE": "DIFF_EXCL",
@@ -5822,10 +5404,8 @@
             {
                 "ERRULE_ID": 150,
                 "ERRULE_CODE": "MFF_LNAME_SF1",
-                "ERRULE_DESC": "MULT_FF+LIKELY_NAME+SAME_F1",
                 "RESOLVE": "Yes",
                 "RELATE": "No",
-                "REF_SCORE": 9,
                 "RTYPE_ID": 1,
                 "QUAL_ERFRAG_CODE": "MFF_LNAME_SF1",
                 "DISQ_ERFRAG_CODE": "DIFF_EXCL",
@@ -5834,10 +5414,8 @@
             {
                 "ERRULE_ID": 151,
                 "ERRULE_CODE": "MFF_LNAME_CEXCL",
-                "ERRULE_DESC": "MULT_FF+LIKELY_NAME+CLOSE_EXCL",
                 "RESOLVE": "Yes",
                 "RELATE": "No",
-                "REF_SCORE": 9,
                 "RTYPE_ID": 1,
                 "QUAL_ERFRAG_CODE": "MFF_LNAME_CEXCL",
                 "DISQ_ERFRAG_CODE": "DIFF_EXCL",
@@ -5846,10 +5424,8 @@
             {
                 "ERRULE_ID": 152,
                 "ERRULE_CODE": "MFF_CNAME",
-                "ERRULE_DESC": "MULT_FF+CLOSE_NAME",
                 "RESOLVE": "Yes",
                 "RELATE": "No",
-                "REF_SCORE": 8,
                 "RTYPE_ID": 1,
                 "QUAL_ERFRAG_CODE": "MFF_CNAME",
                 "DISQ_ERFRAG_CODE": "DIFF_EXCL",
@@ -5858,10 +5434,8 @@
             {
                 "ERRULE_ID": 160,
                 "ERRULE_CODE": "CNAME_CFF_CEXCL",
-                "ERRULE_DESC": "CLOSE_NAME+CLOSE_FF+CLOSE_EXCL",
                 "RESOLVE": "Yes",
                 "RELATE": "No",
-                "REF_SCORE": 8,
                 "RTYPE_ID": 1,
                 "QUAL_ERFRAG_CODE": "CNAME_CFF_CEXCL",
                 "DISQ_ERFRAG_CODE": "DIFF_EXCL",
@@ -5870,10 +5444,8 @@
             {
                 "ERRULE_ID": 162,
                 "ERRULE_CODE": "CNAME_CFF",
-                "ERRULE_DESC": "CLOSE_NAME+CLOSE_FF",
                 "RESOLVE": "Yes",
                 "RELATE": "No",
-                "REF_SCORE": 6,
                 "RTYPE_ID": 1,
                 "QUAL_ERFRAG_CODE": "CNAME_CFF",
                 "DISQ_ERFRAG_CODE": "DIFF_EXCL",
@@ -5882,10 +5454,8 @@
             {
                 "ERRULE_ID": 163,
                 "ERRULE_CODE": "SF1E_SFF_MSTAB",
-                "ERRULE_DESC": "SAME_F1E+SAME_FF+MULT_STAB",
                 "RESOLVE": "Yes",
                 "RELATE": "No",
-                "REF_SCORE": 6,
                 "RTYPE_ID": 1,
                 "QUAL_ERFRAG_CODE": "SF1E_SFF_MSTAB",
                 "DISQ_ERFRAG_CODE": "DIFF_EXCL",
@@ -5894,10 +5464,8 @@
             {
                 "ERRULE_ID": 164,
                 "ERRULE_CODE": "CNAME_CFF_DEXCL",
-                "ERRULE_DESC": "CLOSE_NAME+CLOSE_FF+DIFF_EXCL",
                 "RESOLVE": "No",
                 "RELATE": "Yes",
-                "REF_SCORE": 5,
                 "RTYPE_ID": 2,
                 "QUAL_ERFRAG_CODE": "CNAME_CFF_DEXCL",
                 "DISQ_ERFRAG_CODE": null,
@@ -5906,10 +5474,8 @@
             {
                 "ERRULE_ID": 165,
                 "ERRULE_CODE": "CNAME_LFFE",
-                "ERRULE_DESC": "CLOSE_NAME+LIKELY_FFE",
                 "RESOLVE": "No",
                 "RELATE": "Yes",
-                "REF_SCORE": 6,
                 "RTYPE_ID": 2,
                 "QUAL_ERFRAG_CODE": "CNAME_LFFE",
                 "DISQ_ERFRAG_CODE": null,
@@ -5918,10 +5484,8 @@
             {
                 "ERRULE_ID": 170,
                 "ERRULE_CODE": "SF1_NCONF",
-                "ERRULE_DESC": "SAME_F1+NO_CONF",
                 "RESOLVE": "Yes",
                 "RELATE": "No",
-                "REF_SCORE": 6,
                 "RTYPE_ID": 1,
                 "QUAL_ERFRAG_CODE": "SAME_F1",
                 "DISQ_ERFRAG_CODE": "NAME_CONFL",
@@ -5930,10 +5494,8 @@
             {
                 "ERRULE_ID": 172,
                 "ERRULE_CODE": "CNAME_SF1E",
-                "ERRULE_DESC": "CLOSE_NAME+SAME_F1E",
                 "RESOLVE": "No",
                 "RELATE": "Yes",
-                "REF_SCORE": 6,
                 "RTYPE_ID": 2,
                 "QUAL_ERFRAG_CODE": "SF1E_CNAME",
                 "DISQ_ERFRAG_CODE": null,
@@ -5942,10 +5504,8 @@
             {
                 "ERRULE_ID": 174,
                 "ERRULE_CODE": "CNAME_SF1",
-                "ERRULE_DESC": "CLOSE_NAME+SAME_F1",
                 "RESOLVE": "No",
                 "RELATE": "Yes",
-                "REF_SCORE": 6,
                 "RTYPE_ID": 2,
                 "QUAL_ERFRAG_CODE": "SF1_CNAME",
                 "DISQ_ERFRAG_CODE": null,
@@ -5954,10 +5514,8 @@
             {
                 "ERRULE_ID": 175,
                 "ERRULE_CODE": "SF1E",
-                "ERRULE_DESC": "SAME_F1E",
                 "RESOLVE": "No",
                 "RELATE": "Yes",
-                "REF_SCORE": 6,
                 "RTYPE_ID": 2,
                 "QUAL_ERFRAG_CODE": "SAME_F1E",
                 "DISQ_ERFRAG_CODE": null,
@@ -5966,10 +5524,8 @@
             {
                 "ERRULE_ID": 176,
                 "ERRULE_CODE": "SF1_OLD",
-                "ERRULE_DESC": "SAME_F1_OLD",
                 "RESOLVE": "No",
                 "RELATE": "No",
-                "REF_SCORE": 6,
                 "RTYPE_ID": 2,
                 "QUAL_ERFRAG_CODE": "DISABLE",
                 "DISQ_ERFRAG_CODE": null,
@@ -5978,10 +5534,8 @@
             {
                 "ERRULE_ID": 180,
                 "ERRULE_CODE": "SNAME_SSTAB",
-                "ERRULE_DESC": "SAME_NAME+SAME_STAB",
                 "RESOLVE": "Yes",
                 "RELATE": "No",
-                "REF_SCORE": 6,
                 "RTYPE_ID": 1,
                 "QUAL_ERFRAG_CODE": "SNAME_SSTAB",
                 "DISQ_ERFRAG_CODE": "DIFF_EXCL",
@@ -5990,10 +5544,8 @@
             {
                 "ERRULE_ID": 183,
                 "ERRULE_CODE": "LNAME_CFF_LSTAB",
-                "ERRULE_DESC": "LIKELY_NAME+CLOSE_FF+LIKELY_STAB",
                 "RESOLVE": "No",
                 "RELATE": "Yes",
-                "REF_SCORE": 6,
                 "RTYPE_ID": 2,
                 "QUAL_ERFRAG_CODE": "LNAME_CFF_LSTAB",
                 "DISQ_ERFRAG_CODE": null,
@@ -6002,10 +5554,8 @@
             {
                 "ERRULE_ID": 185,
                 "ERRULE_CODE": "CNAME_CSTAB",
-                "ERRULE_DESC": "CLOSE_NAME+CLOSE_STAB",
                 "RESOLVE": "No",
                 "RELATE": "Yes",
-                "REF_SCORE": 6,
                 "RTYPE_ID": 2,
                 "QUAL_ERFRAG_CODE": "CNAME_CSTAB",
                 "DISQ_ERFRAG_CODE": null,
@@ -6014,10 +5564,8 @@
             {
                 "ERRULE_ID": 190,
                 "ERRULE_CODE": "CNAME_CF1",
-                "ERRULE_DESC": "CLOSE_NAME+CLOSE_F1",
                 "RESOLVE": "No",
                 "RELATE": "Yes",
-                "REF_SCORE": 4,
                 "RTYPE_ID": 2,
                 "QUAL_ERFRAG_CODE": "CF1_CNAME",
                 "DISQ_ERFRAG_CODE": null,
@@ -6026,10 +5574,8 @@
             {
                 "ERRULE_ID": 195,
                 "ERRULE_CODE": "SF1",
-                "ERRULE_DESC": "SAME_F1",
                 "RESOLVE": "No",
                 "RELATE": "Yes",
-                "REF_SCORE": 6,
                 "RTYPE_ID": 3,
                 "QUAL_ERFRAG_CODE": "SAME_F1",
                 "DISQ_ERFRAG_CODE": null,
@@ -6038,10 +5584,8 @@
             {
                 "ERRULE_ID": 197,
                 "ERRULE_CODE": "CF1",
-                "ERRULE_DESC": "CLOSE_F1",
                 "RESOLVE": "No",
                 "RELATE": "Yes",
-                "REF_SCORE": 4,
                 "RTYPE_ID": 3,
                 "QUAL_ERFRAG_CODE": "CLOSE_F1",
                 "DISQ_ERFRAG_CODE": null,
@@ -6050,10 +5594,8 @@
             {
                 "ERRULE_ID": 199,
                 "ERRULE_CODE": "CFF_SURNAME",
-                "ERRULE_DESC": "CLOSE_FF+SURNAME",
                 "RESOLVE": "No",
                 "RELATE": "Yes",
-                "REF_SCORE": 4,
                 "RTYPE_ID": 3,
                 "QUAL_ERFRAG_CODE": "CFF_SURNAME",
                 "DISQ_ERFRAG_CODE": null,
@@ -6062,10 +5604,8 @@
             {
                 "ERRULE_ID": 200,
                 "ERRULE_CODE": "MFF",
-                "ERRULE_DESC": "MULT_FF",
                 "RESOLVE": "No",
                 "RELATE": "Yes",
-                "REF_SCORE": 4,
                 "RTYPE_ID": 3,
                 "QUAL_ERFRAG_CODE": "MULT_FF",
                 "DISQ_ERFRAG_CODE": null,
@@ -6074,22 +5614,28 @@
             {
                 "ERRULE_ID": 202,
                 "ERRULE_CODE": "SFF",
-                "ERRULE_DESC": "SAME_FF",
                 "RESOLVE": "No",
                 "RELATE": "Yes",
-                "REF_SCORE": 3,
                 "RTYPE_ID": 3,
                 "QUAL_ERFRAG_CODE": "SAME_FF",
                 "DISQ_ERFRAG_CODE": null,
                 "ERRULE_TIER": null
             },
             {
-                "ERRULE_ID": 204,
-                "ERRULE_CODE": "CFF",
-                "ERRULE_DESC": "CLOSE_FF",
+                "ERRULE_ID": 203,
+                "ERRULE_CODE": "SNAME",
                 "RESOLVE": "No",
                 "RELATE": "Yes",
-                "REF_SCORE": 2,
+                "RTYPE_ID": 2,
+                "QUAL_ERFRAG_CODE": "SAME_NAME",
+                "DISQ_ERFRAG_CODE": "DIFF_EXCL",
+                "ERRULE_TIER": null
+            },
+            {
+                "ERRULE_ID": 204,
+                "ERRULE_CODE": "CFF",
+                "RESOLVE": "No",
+                "RELATE": "Yes",
                 "RTYPE_ID": 3,
                 "QUAL_ERFRAG_CODE": "CLOSE_FF",
                 "DISQ_ERFRAG_CODE": null,
@@ -6098,28 +5644,12 @@
             {
                 "ERRULE_ID": 206,
                 "ERRULE_CODE": "CNAME",
-                "ERRULE_DESC": "CLOSE_NAME",
                 "RESOLVE": "No",
                 "RELATE": "Yes",
-                "REF_SCORE": 1,
                 "RTYPE_ID": 2,
                 "QUAL_ERFRAG_CODE": "CLOSE_NAME",
                 "DISQ_ERFRAG_CODE": "DIFF_EXCL",
                 "ERRULE_TIER": null
-            }
-        ],
-        "CFG_ETYPE": [
-            {
-                "ETYPE_ID": 1,
-                "ETYPE_CODE": "TEST",
-                "ETYPE_DESC": "Test",
-                "ECLASS_ID": 1
-            },
-            {
-                "ETYPE_ID": 3,
-                "ETYPE_CODE": "GENERIC",
-                "ETYPE_DESC": "Generic entity",
-                "ECLASS_ID": 1
             }
         ],
         "CFG_FBOM": [
@@ -7039,7 +6569,7 @@
                 "FTYPE_ID": 24,
                 "FELEM_ID": 51,
                 "EXEC_ORDER": 1,
-                "DISPLAY_LEVEL": 1,
+                "DISPLAY_LEVEL": 2,
                 "DISPLAY_DELIM": null,
                 "DERIVED": "No"
             },
@@ -7047,7 +6577,7 @@
                 "FTYPE_ID": 24,
                 "FELEM_ID": 52,
                 "EXEC_ORDER": 2,
-                "DISPLAY_LEVEL": 1,
+                "DISPLAY_LEVEL": 2,
                 "DISPLAY_DELIM": null,
                 "DERIVED": "No"
             },
@@ -7055,7 +6585,7 @@
                 "FTYPE_ID": 24,
                 "FELEM_ID": 53,
                 "EXEC_ORDER": 3,
-                "DISPLAY_LEVEL": 1,
+                "DISPLAY_LEVEL": 0,
                 "DISPLAY_DELIM": null,
                 "DERIVED": "No"
             },
@@ -7063,7 +6593,7 @@
                 "FTYPE_ID": 24,
                 "FELEM_ID": 75,
                 "EXEC_ORDER": 4,
-                "DISPLAY_LEVEL": 1,
+                "DISPLAY_LEVEL": 0,
                 "DISPLAY_DELIM": null,
                 "DERIVED": "No"
             },
@@ -7071,7 +6601,7 @@
                 "FTYPE_ID": 24,
                 "FELEM_ID": 76,
                 "EXEC_ORDER": 5,
-                "DISPLAY_LEVEL": 1,
+                "DISPLAY_LEVEL": 0,
                 "DISPLAY_DELIM": null,
                 "DERIVED": "No"
             },
@@ -7770,12 +7300,67 @@
                 "DISPLAY_LEVEL": 1,
                 "DISPLAY_DELIM": null,
                 "DERIVED": "No"
+            },
+            {
+                "FTYPE_ID": 92,
+                "FELEM_ID": 36,
+                "EXEC_ORDER": 1,
+                "DISPLAY_LEVEL": 1,
+                "DISPLAY_DELIM": null,
+                "DERIVED": "No"
+            },
+            {
+                "FTYPE_ID": 93,
+                "FELEM_ID": 124,
+                "EXEC_ORDER": 1,
+                "DISPLAY_LEVEL": 1,
+                "DISPLAY_DELIM": null,
+                "DERIVED": "No"
+            },
+            {
+                "FTYPE_ID": 94,
+                "FELEM_ID": 36,
+                "EXEC_ORDER": 1,
+                "DISPLAY_LEVEL": 1,
+                "DISPLAY_DELIM": null,
+                "DERIVED": "No"
+            },
+            {
+                "FTYPE_ID": 95,
+                "FELEM_ID": 36,
+                "EXEC_ORDER": 1,
+                "DISPLAY_LEVEL": 1,
+                "DISPLAY_DELIM": null,
+                "DERIVED": "No"
+            },
+            {
+                "FTYPE_ID": 96,
+                "FELEM_ID": 36,
+                "EXEC_ORDER": 1,
+                "DISPLAY_LEVEL": 1,
+                "DISPLAY_DELIM": null,
+                "DERIVED": "No"
+            },
+            {
+                "FTYPE_ID": 97,
+                "FELEM_ID": 36,
+                "EXEC_ORDER": 1,
+                "DISPLAY_LEVEL": 1,
+                "DISPLAY_DELIM": null,
+                "DERIVED": "No"
+            },
+            {
+                "FTYPE_ID": 98,
+                "FELEM_ID": 36,
+                "EXEC_ORDER": 1,
+                "DISPLAY_LEVEL": 1,
+                "DISPLAY_DELIM": null,
+                "DERIVED": "No"
             }
         ],
         "CFG_FBOVR": [
             {
                 "FTYPE_ID": 5,
-                "ECLASS_ID": 0,
                 "UTYPE_CODE": "BUSINESS",
                 "FTYPE_FREQ": "FF",
                 "FTYPE_EXCL": "Yes",
@@ -7783,10 +7368,16 @@
             },
             {
                 "FTYPE_ID": 6,
-                "ECLASS_ID": 0,
                 "UTYPE_CODE": "MOBILE",
                 "FTYPE_FREQ": "F1",
                 "FTYPE_EXCL": "No",
+                "FTYPE_STAB": "No"
+            },
+            {
+                "FTYPE_ID": 24,
+                "UTYPE_CODE": "BUSINESS",
+                "FTYPE_FREQ": "FF",
+                "FTYPE_EXCL": "Yes",
                 "FTYPE_STAB": "No"
             }
         ],
@@ -7857,798 +7448,684 @@
                 "FELEM_ID": 2,
                 "FELEM_CODE": "FULL_NAME",
                 "FELEM_DESC": "Full name",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 3,
                 "FELEM_CODE": "ORG_NAME",
                 "FELEM_DESC": "Organization name",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 4,
                 "FELEM_CODE": "SUR_NAME",
                 "FELEM_DESC": "Surname",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 5,
                 "FELEM_CODE": "GIVEN_NAME",
                 "FELEM_DESC": "Given name",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 6,
                 "FELEM_CODE": "MIDDLE_NAME",
                 "FELEM_DESC": "Middle name",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 7,
                 "FELEM_CODE": "NAME_PREFIX",
                 "FELEM_DESC": "Name prefix",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 8,
                 "FELEM_CODE": "NAME_SUFFIX",
                 "FELEM_DESC": "Name suffix",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 9,
                 "FELEM_CODE": "NAME_GEN",
                 "FELEM_DESC": "Name generation",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 10,
                 "FELEM_CODE": "CULTURE",
                 "FELEM_DESC": "Name culture",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 11,
                 "FELEM_CODE": "SCRIPT",
                 "FELEM_DESC": "Script type",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 12,
                 "FELEM_CODE": "CATEGORY",
                 "FELEM_DESC": "Name category",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 13,
                 "FELEM_CODE": "GENDER",
                 "FELEM_DESC": "Gender",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 14,
                 "FELEM_CODE": "MAKE",
                 "FELEM_DESC": "Make",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 15,
                 "FELEM_CODE": "MODEL",
                 "FELEM_DESC": "Model",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 16,
                 "FELEM_CODE": "COLOR",
                 "FELEM_DESC": "Color",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 17,
                 "FELEM_CODE": "YEAR",
                 "FELEM_DESC": "Year",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 18,
                 "FELEM_CODE": "TYPE",
                 "FELEM_DESC": "Type",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 19,
                 "FELEM_CODE": "OS",
                 "FELEM_DESC": "Operating system",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 22,
                 "FELEM_CODE": "ADDR1",
                 "FELEM_DESC": "Addr line 1",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 23,
                 "FELEM_CODE": "ADDR2",
                 "FELEM_DESC": "Addr line 2",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 24,
                 "FELEM_CODE": "ADDR3",
                 "FELEM_DESC": "Addr line 3",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 25,
                 "FELEM_CODE": "CITY",
                 "FELEM_DESC": "City",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 26,
                 "FELEM_CODE": "STATE",
                 "FELEM_DESC": "State",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 27,
                 "FELEM_CODE": "POSTAL_CODE",
                 "FELEM_DESC": "Postal code",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 28,
                 "FELEM_CODE": "COUNTRY",
                 "FELEM_DESC": "Country",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 29,
                 "FELEM_CODE": "STR_NUM",
                 "FELEM_DESC": "Street number",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 30,
                 "FELEM_CODE": "STR_NAME",
                 "FELEM_DESC": "Street name",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 31,
                 "FELEM_CODE": "UNIT_TYPE",
                 "FELEM_DESC": "Unit type",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 32,
                 "FELEM_CODE": "UNIT_NUM",
                 "FELEM_DESC": "Unit number",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 33,
                 "FELEM_CODE": "PHONE_NUM",
                 "FELEM_DESC": "Phone number",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 34,
                 "FELEM_CODE": "PHONE_EXT",
                 "FELEM_DESC": "Phone extension",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 35,
                 "FELEM_CODE": "ADDR",
                 "FELEM_DESC": "Address",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 36,
                 "FELEM_CODE": "EXPRESSION",
                 "FELEM_DESC": "Expression",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 37,
                 "FELEM_CODE": "ID_NUM",
                 "FELEM_DESC": "ID Number",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 38,
                 "FELEM_CODE": "ID_TYPE",
                 "FELEM_DESC": "ID type",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 39,
                 "FELEM_CODE": "ID_LAST4",
                 "FELEM_DESC": "Last4 ID num",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 40,
                 "FELEM_CODE": "ACCT_NUM",
                 "FELEM_DESC": "Account number",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 41,
                 "FELEM_CODE": "DSRC_CODE",
                 "FELEM_DESC": "Data source code",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 42,
                 "FELEM_CODE": "ACCT_TYPE",
                 "FELEM_DESC": "Account type",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 43,
                 "FELEM_CODE": "DATE",
                 "FELEM_DESC": "Date",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "date"
             },
             {
                 "FELEM_ID": 44,
                 "FELEM_CODE": "YESNO_FLAG",
                 "FELEM_DESC": "Yes/No flag",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 45,
                 "FELEM_CODE": "CALL_SIGN",
                 "FELEM_DESC": "Call sign",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 46,
                 "FELEM_CODE": "CODE",
                 "FELEM_DESC": "Code",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 47,
                 "FELEM_CODE": "PORT",
                 "FELEM_DESC": "Port",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 48,
                 "FELEM_CODE": "LENGTH",
                 "FELEM_DESC": "Length",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 49,
                 "FELEM_CODE": "BEAM",
                 "FELEM_DESC": "Beam",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 50,
                 "FELEM_CODE": "TONNAGE",
                 "FELEM_DESC": "Tonnage",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "number"
             },
             {
                 "FELEM_ID": 51,
                 "FELEM_CODE": "LATITUDE",
                 "FELEM_DESC": "Latitude",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "number"
             },
             {
                 "FELEM_ID": 52,
                 "FELEM_CODE": "LONGITUDE",
                 "FELEM_DESC": "Longitude",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "number"
             },
             {
                 "FELEM_ID": 53,
                 "FELEM_CODE": "TIME",
                 "FELEM_DESC": "Time",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "datetime"
             },
             {
                 "FELEM_ID": 54,
                 "FELEM_CODE": "REL_KEY",
                 "FELEM_DESC": "Relationship key",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 55,
                 "FELEM_CODE": "REL_TYPE",
                 "FELEM_DESC": "Relationship type",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 56,
                 "FELEM_CODE": "LOGIN_ID",
                 "FELEM_DESC": "Login ID",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 57,
                 "FELEM_CODE": "LOGIN_DOMAIN",
                 "FELEM_DESC": "Login domain",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 58,
                 "FELEM_CODE": "ACCT_DOMAIN",
                 "FELEM_DESC": "Account domain",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 59,
                 "FELEM_CODE": "AMOUNT",
                 "FELEM_DESC": "Amount",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "number"
             },
             {
                 "FELEM_ID": 60,
                 "FELEM_CODE": "PHONE_LAST_10",
                 "FELEM_DESC": "Phone Last10",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 61,
                 "FELEM_CODE": "PHONE_LAST_5",
                 "FELEM_DESC": "Phone Last5",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 62,
                 "FELEM_CODE": "DATE_YEAR",
                 "FELEM_DESC": "Date Year",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 63,
                 "FELEM_CODE": "DATE_MONTH",
                 "FELEM_DESC": "Date Month",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 64,
                 "FELEM_CODE": "DATE_DAY",
                 "FELEM_DESC": "Date Day",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 65,
                 "FELEM_CODE": "STR_NAME_METAPHONE",
                 "FELEM_DESC": "Metaphone Street Name",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 66,
                 "FELEM_CODE": "CITY_METAPHONE",
                 "FELEM_DESC": "Metaphone City Name",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 69,
                 "FELEM_CODE": "ID_NUM_STD",
                 "FELEM_DESC": "Standardized ID number",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 71,
                 "FELEM_CODE": "DATE_HASH",
                 "FELEM_DESC": "Date Hash",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 72,
                 "FELEM_CODE": "STR_NAME_STD",
                 "FELEM_DESC": "Standardized Street Name Metaphone",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 73,
                 "FELEM_CODE": "CITY_STD",
                 "FELEM_DESC": "Standardized City Metaphone",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 74,
                 "FELEM_CODE": "POSTAL_5",
                 "FELEM_DESC": "Postal Code (first 5 digits)",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 75,
                 "FELEM_CODE": "GEO_PRECISION",
                 "FELEM_DESC": "In Meters",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "number"
             },
             {
                 "FELEM_ID": 76,
                 "FELEM_CODE": "TIME_PRECISION",
                 "FELEM_DESC": "Timebox Precision",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "number"
             },
             {
                 "FELEM_ID": 77,
                 "FELEM_CODE": "ALL_NM",
                 "FELEM_DESC": "All for NAME_KEY",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 78,
                 "FELEM_CODE": "ALL_META",
                 "FELEM_DESC": "Meta for NAME_KEY",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 79,
                 "FELEM_CODE": "NM_PAIR",
                 "FELEM_DESC": "Pairs for NAME_KEY",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 81,
                 "FELEM_CODE": "ORIG_GN",
                 "FELEM_DESC": "Original (standardised) Given Name",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 83,
                 "FELEM_CODE": "META_GN",
                 "FELEM_DESC": "Metaphoned Given Name",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 84,
                 "FELEM_CODE": "ORIG_SN",
                 "FELEM_DESC": "Original (standardised) Surname",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 86,
                 "FELEM_CODE": "META_SN",
                 "FELEM_DESC": "Metaphoned Surname",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 87,
                 "FELEM_CODE": "ORIG_ON",
                 "FELEM_DESC": "Original Organisation Name",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 89,
                 "FELEM_CODE": "META_ON",
                 "FELEM_DESC": "Metaphoned Organisation Name",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 91,
                 "FELEM_CODE": "STD_PRE",
                 "FELEM_DESC": "Standardized Name Prefixes",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 92,
                 "FELEM_CODE": "STD_SUF",
                 "FELEM_DESC": "Standardized Name Suffixes",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 93,
                 "FELEM_CODE": "STD_GEN",
                 "FELEM_DESC": "Standardized Name Generation",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 94,
                 "FELEM_CODE": "ORIG_FN",
                 "FELEM_DESC": "Original (standardised) Full Name",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 96,
                 "FELEM_CODE": "META_FN",
                 "FELEM_DESC": "Metaphoned Full Name",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 97,
                 "FELEM_CODE": "ISSUE_DATE",
                 "FELEM_DESC": "Issue date",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "date"
             },
             {
                 "FELEM_ID": 98,
                 "FELEM_CODE": "EXPIRE_DATE",
                 "FELEM_DESC": "Expiration date",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "date"
             },
             {
                 "FELEM_ID": 99,
                 "FELEM_CODE": "VALUE",
                 "FELEM_DESC": "Value",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 100,
                 "FELEM_CODE": "ADDR_FULL",
                 "FELEM_DESC": "Full address string",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 101,
                 "FELEM_CODE": "ADDR4",
                 "FELEM_DESC": "Address line 4",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 102,
                 "FELEM_CODE": "ADDR5",
                 "FELEM_DESC": "Address line 5",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 103,
                 "FELEM_CODE": "ADDR6",
                 "FELEM_DESC": "Address line 6",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 104,
                 "FELEM_CODE": "LATLONG",
                 "FELEM_DESC": "Latitude,Longitude as decimal numbers",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 105,
                 "FELEM_CODE": "STB6",
                 "FELEM_DESC": "STB 6 byte",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 106,
                 "FELEM_CODE": "STB7",
                 "FELEM_DESC": "STB 7 byte",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 107,
                 "FELEM_CODE": "STB8",
                 "FELEM_DESC": "STB 8 byte",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 108,
                 "FELEM_CODE": "LIBPOSTAL_PARSE",
                 "FELEM_DESC": "LibPostal address parse",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "json"
             },
             {
                 "FELEM_ID": 109,
                 "FELEM_CODE": "PHONE_AREA_CODE",
                 "FELEM_DESC": "Phone area code",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 110,
                 "FELEM_CODE": "AMBIGUOUS_FTYPE_ID",
                 "FELEM_DESC": "Feature Type ID",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "number"
             },
             {
                 "FELEM_ID": 111,
                 "FELEM_CODE": "AMBIGUOUS_TIER",
                 "FELEM_DESC": "Ambiguous Tier",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "number"
             },
             {
                 "FELEM_ID": 112,
                 "FELEM_CODE": "MMYY_HASH",
                 "FELEM_DESC": "Month and Year Hash",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 113,
                 "FELEM_CODE": "MMDD_HASH",
                 "FELEM_DESC": "Month and Day Hash",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 114,
                 "FELEM_CODE": "AMBIGUOUS_SUPRESSED_LIBFEAT",
                 "FELEM_DESC": "Ambiguous Suppressed Library Feature ID",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "number"
             },
             {
                 "FELEM_ID": 115,
                 "FELEM_CODE": "AMBIGUOUS_TYPE",
                 "FELEM_DESC": "Ambiguous Type",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "number"
             },
             {
                 "FELEM_ID": 116,
                 "FELEM_CODE": "PLACE",
                 "FELEM_DESC": "Place",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 117,
                 "FELEM_CODE": "COUNTRY_CODE",
                 "FELEM_DESC": "Country Code",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 118,
                 "FELEM_CODE": "TOKENIZED_NM",
                 "FELEM_DESC": "Tokenized Name",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 119,
                 "FELEM_CODE": "USER_NAME",
                 "FELEM_DESC": "User name",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 120,
                 "FELEM_CODE": "DOMAIN_NAME",
                 "FELEM_DESC": "Domain name",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 121,
                 "FELEM_CODE": "ADDR_STD",
                 "FELEM_DESC": "Standardized address",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 122,
                 "FELEM_CODE": "KEY_TYPE",
                 "FELEM_DESC": "Key type",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 123,
                 "FELEM_CODE": "KEY_VALUE",
                 "FELEM_DESC": "Key value",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 124,
                 "FELEM_CODE": "PLACEKEY",
                 "FELEM_DESC": "Safegraph Placekey",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "string"
             },
             {
                 "FELEM_ID": 125,
                 "FELEM_CODE": "SUPRESSED_RELATIONSHIP_FTYPE_ID",
                 "FELEM_DESC": "Suppressed relationship feature type ID",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "number"
             },
             {
                 "FELEM_ID": 126,
                 "FELEM_CODE": "SUPRESSED_RELATIONSHIP_CONNECTING_FTYPE_ID",
                 "FELEM_DESC": "Suppressed relationship connecting feature type ID",
-                "TOKENIZE": "No",
                 "DATA_TYPE": "number"
             }
         ],
@@ -8664,7 +8141,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "No",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 2,
@@ -8681,7 +8157,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 2,
@@ -8698,7 +8173,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 2,
@@ -8715,7 +8189,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "No",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -8732,7 +8205,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "No",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 4,
@@ -8747,9 +8219,8 @@
                 "FTYPE_EXCL": "No",
                 "FTYPE_STAB": "No",
                 "PERSIST_HISTORY": "Yes",
-                "USED_FOR_CAND": "Yes",
+                "USED_FOR_CAND": "No",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -8766,7 +8237,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -8783,7 +8253,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -8800,7 +8269,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 2,
@@ -8817,7 +8285,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 2,
@@ -8834,7 +8301,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 2,
@@ -8851,7 +8317,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -8866,9 +8331,8 @@
                 "FTYPE_EXCL": "No",
                 "FTYPE_STAB": "No",
                 "PERSIST_HISTORY": "Yes",
-                "USED_FOR_CAND": "Yes",
+                "USED_FOR_CAND": "No",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 2,
@@ -8885,7 +8349,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -8902,7 +8365,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -8919,7 +8381,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "Yes",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -8936,7 +8397,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "Yes",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -8953,7 +8413,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "Yes",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -8970,7 +8429,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "Yes",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -8987,7 +8445,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "Yes",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9004,7 +8461,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "No",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 11,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9016,16 +8472,15 @@
                 "FTYPE_DESC": "Geo location",
                 "FCLASS_ID": 11,
                 "FTYPE_FREQ": "FF",
-                "FTYPE_EXCL": "Yes",
+                "FTYPE_EXCL": "No",
                 "FTYPE_STAB": "No",
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
-                "SHOW_IN_MATCH_KEY": "Confirm"
+                "SHOW_IN_MATCH_KEY": "Yes"
             },
             {
                 "FTYPE_ID": 26,
@@ -9038,7 +8493,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9055,7 +8509,6 @@
                 "PERSIST_HISTORY": "No",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9071,8 +8524,7 @@
                 "FTYPE_STAB": "No",
                 "PERSIST_HISTORY": "No",
                 "USED_FOR_CAND": "No",
-                "DERIVED": "Yes",
-                "DERIVATION": null,
+                "DERIVED": "No",
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9089,7 +8541,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9106,7 +8557,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9123,7 +8573,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 2,
@@ -9140,7 +8589,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9157,7 +8605,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "No",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 2,
@@ -9174,7 +8621,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "No",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 2,
@@ -9191,7 +8637,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9208,7 +8653,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "No",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9224,8 +8668,7 @@
                 "FTYPE_STAB": "No",
                 "PERSIST_HISTORY": "No",
                 "USED_FOR_CAND": "No",
-                "DERIVED": "Yes",
-                "DERIVATION": null,
+                "DERIVED": "No",
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9242,7 +8685,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9259,7 +8701,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9276,7 +8717,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9293,7 +8733,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9310,7 +8749,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9327,7 +8765,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9344,7 +8781,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9361,7 +8797,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9378,7 +8813,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9395,7 +8829,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9412,7 +8845,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9429,7 +8861,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9446,7 +8877,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9463,7 +8893,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "No",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9480,7 +8909,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "No",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9497,7 +8925,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 2,
@@ -9514,7 +8941,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "No",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9531,7 +8957,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9548,7 +8973,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 2,
@@ -9565,7 +8989,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 2,
@@ -9582,7 +9005,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 2,
@@ -9599,7 +9021,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "No",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9616,7 +9037,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 2,
@@ -9633,7 +9053,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
                 "DERIVED": "Yes",
-                "DERIVATION": null,
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9650,7 +9069,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "No",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 11,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9667,7 +9085,6 @@
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "No",
                 "DERIVED": "No",
-                "DERIVATION": null,
                 "RTYPE_ID": 11,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9683,8 +9100,119 @@
                 "FTYPE_STAB": "No",
                 "PERSIST_HISTORY": "No",
                 "USED_FOR_CAND": "No",
+                "DERIVED": "No",
+                "RTYPE_ID": 0,
+                "ANONYMIZE": "No",
+                "VERSION": 1,
+                "SHOW_IN_MATCH_KEY": "No"
+            },
+            {
+                "FTYPE_ID": 92,
+                "FTYPE_CODE": "NAMEADDR_KEY",
+                "FTYPE_DESC": "Name-Address key",
+                "FCLASS_ID": 10,
+                "FTYPE_FREQ": "FF",
+                "FTYPE_EXCL": "No",
+                "FTYPE_STAB": "No",
+                "PERSIST_HISTORY": "Yes",
+                "USED_FOR_CAND": "Yes",
                 "DERIVED": "Yes",
-                "DERIVATION": null,
+                "RTYPE_ID": 0,
+                "ANONYMIZE": "No",
+                "VERSION": 1,
+                "SHOW_IN_MATCH_KEY": "No"
+            },
+            {
+                "FTYPE_ID": 93,
+                "FTYPE_CODE": "PLACEKEY",
+                "FTYPE_DESC": "Placekey",
+                "FCLASS_ID": 10,
+                "FTYPE_FREQ": "F1",
+                "FTYPE_EXCL": "Yes",
+                "FTYPE_STAB": "No",
+                "PERSIST_HISTORY": "Yes",
+                "USED_FOR_CAND": "Yes",
+                "DERIVED": "Yes",
+                "RTYPE_ID": 0,
+                "ANONYMIZE": "No",
+                "VERSION": 1,
+                "SHOW_IN_MATCH_KEY": "Yes"
+            },
+            {
+                "FTYPE_ID": 94,
+                "FTYPE_CODE": "NAMEDATE_KEY",
+                "FTYPE_DESC": "Name-Date key",
+                "FCLASS_ID": 10,
+                "FTYPE_FREQ": "FF",
+                "FTYPE_EXCL": "No",
+                "FTYPE_STAB": "No",
+                "PERSIST_HISTORY": "Yes",
+                "USED_FOR_CAND": "Yes",
+                "DERIVED": "Yes",
+                "RTYPE_ID": 0,
+                "ANONYMIZE": "No",
+                "VERSION": 1,
+                "SHOW_IN_MATCH_KEY": "No"
+            },
+            {
+                "FTYPE_ID": 95,
+                "FTYPE_CODE": "NAMEID_KEY",
+                "FTYPE_DESC": "Name-ID key",
+                "FCLASS_ID": 10,
+                "FTYPE_FREQ": "FF",
+                "FTYPE_EXCL": "No",
+                "FTYPE_STAB": "No",
+                "PERSIST_HISTORY": "Yes",
+                "USED_FOR_CAND": "Yes",
+                "DERIVED": "Yes",
+                "RTYPE_ID": 0,
+                "ANONYMIZE": "No",
+                "VERSION": 1,
+                "SHOW_IN_MATCH_KEY": "No"
+            },
+            {
+                "FTYPE_ID": 96,
+                "FTYPE_CODE": "NAMEREGION_KEY",
+                "FTYPE_DESC": "Name-Region key",
+                "FCLASS_ID": 10,
+                "FTYPE_FREQ": "FF",
+                "FTYPE_EXCL": "No",
+                "FTYPE_STAB": "No",
+                "PERSIST_HISTORY": "Yes",
+                "USED_FOR_CAND": "Yes",
+                "DERIVED": "Yes",
+                "RTYPE_ID": 0,
+                "ANONYMIZE": "No",
+                "VERSION": 1,
+                "SHOW_IN_MATCH_KEY": "No"
+            },
+            {
+                "FTYPE_ID": 97,
+                "FTYPE_CODE": "NAMEGROUP_KEY",
+                "FTYPE_DESC": "Name-Group key",
+                "FCLASS_ID": 10,
+                "FTYPE_FREQ": "FF",
+                "FTYPE_EXCL": "No",
+                "FTYPE_STAB": "No",
+                "PERSIST_HISTORY": "Yes",
+                "USED_FOR_CAND": "Yes",
+                "DERIVED": "Yes",
+                "RTYPE_ID": 0,
+                "ANONYMIZE": "No",
+                "VERSION": 1,
+                "SHOW_IN_MATCH_KEY": "No"
+            },
+            {
+                "FTYPE_ID": 98,
+                "FTYPE_CODE": "NAMEPHONE_KEY",
+                "FTYPE_DESC": "Name-Phone key",
+                "FCLASS_ID": 10,
+                "FTYPE_FREQ": "FF",
+                "FTYPE_EXCL": "No",
+                "FTYPE_STAB": "No",
+                "PERSIST_HISTORY": "Yes",
+                "USED_FOR_CAND": "Yes",
+                "DERIVED": "Yes",
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
                 "VERSION": 1,
@@ -9698,7 +9226,7 @@
                 "FTYPE_ID": 0,
                 "CANDIDATE_CAP": 10,
                 "SCORING_CAP": -1,
-                "SEND_TO_REDO": "No"
+                "SEND_TO_REDO": "Yes"
             },
             {
                 "GPLAN_ID": 1,
@@ -9730,6 +9258,14 @@
                 "FTYPE_ID": 0,
                 "CANDIDATE_CAP": 10,
                 "SCORING_CAP": 30,
+                "SEND_TO_REDO": "Yes"
+            },
+            {
+                "GPLAN_ID": 1,
+                "BEHAVIOR": "FF",
+                "FTYPE_ID": 5,
+                "CANDIDATE_CAP": 10,
+                "SCORING_CAP": 500,
                 "SEND_TO_REDO": "Yes"
             },
             {
@@ -9911,21 +9447,8 @@
                 "GPLAN_ID": 2,
                 "GPLAN_CODE": "SEARCH",
                 "GPLAN_DESC": "Standard Search"
-            },
-            {
-                "GPLAN_ID": 3,
-                "GPLAN_CODE": "SEARCH-EXHAUSTIVE",
-                "GPLAN_DESC": "Exhaustive Search"
             }
         ],
-        "CFG_LENS": [
-            {
-                "LENS_ID": 1,
-                "LENS_CODE": "DEFAULT",
-                "LENS_DESC": "Default lens"
-            }
-        ],
-        "CFG_LENSRL": [],
         "CFG_RCLASS": [
             {
                 "RCLASS_ID": 1,
@@ -9946,7 +9469,6 @@
                 "RTYPE_CODE": "RESOLVED",
                 "RTYPE_DESC": "Resolved",
                 "RCLASS_ID": 1,
-                "REL_STRENGTH": 10,
                 "BREAK_RES": "No"
             },
             {
@@ -9954,7 +9476,6 @@
                 "RTYPE_CODE": "POSSIBLY_SAME",
                 "RTYPE_DESC": "Possibly same",
                 "RCLASS_ID": 1,
-                "REL_STRENGTH": 8,
                 "BREAK_RES": "No"
             },
             {
@@ -9962,7 +9483,6 @@
                 "RTYPE_CODE": "POSSIBLY_RELATED",
                 "RTYPE_DESC": "Possibly related",
                 "RCLASS_ID": 1,
-                "REL_STRENGTH": 5,
                 "BREAK_RES": "No"
             },
             {
@@ -9970,7 +9490,6 @@
                 "RTYPE_CODE": "NAME_ONLY",
                 "RTYPE_DESC": "Name only match",
                 "RCLASS_ID": 1,
-                "REL_STRENGTH": 2,
                 "BREAK_RES": "No"
             },
             {
@@ -9978,7 +9497,6 @@
                 "RTYPE_CODE": "DISCLOSED",
                 "RTYPE_DESC": "Disclosed",
                 "RCLASS_ID": 2,
-                "REL_STRENGTH": 10,
                 "BREAK_RES": "No"
             }
         ],
@@ -10136,134 +9654,100 @@
                 "SFUNC_ID": 1,
                 "SFUNC_CODE": "PARSE_NAME",
                 "SFUNC_DESC": "Parse name",
-                "FUNC_LIB": "g2func_lib",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2ParseName",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "SFUNC_ID": 2,
                 "SFUNC_CODE": "PARSE_DOB",
                 "SFUNC_DESC": "Parse DOB",
-                "FUNC_LIB": "g2func_lib",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2ParseDOB",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "SFUNC_ID": 4,
                 "SFUNC_CODE": "FORMAT_SSN",
                 "SFUNC_DESC": "Parse SSN",
-                "FUNC_LIB": "g2func_lib",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2FormatSSN",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "SFUNC_ID": 6,
                 "SFUNC_CODE": "PARSE_ID",
                 "SFUNC_DESC": "Parse ID numbers",
-                "FUNC_LIB": "g2func_lib",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2ParseID",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "SFUNC_ID": 7,
                 "SFUNC_CODE": "PARSE_ADDR",
                 "SFUNC_DESC": "Parse address",
-                "FUNC_LIB": "g2func_lib",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2ConfigParseAddr",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "SFUNC_ID": 8,
                 "SFUNC_CODE": "PARSE_PHONE",
                 "SFUNC_DESC": "Parse phone",
-                "FUNC_LIB": "g2func_lib",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2ParsePhone",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "SFUNC_ID": 9,
                 "SFUNC_CODE": "STANDARDIZE_STB",
                 "SFUNC_DESC": "Standardize STB",
-                "FUNC_LIB": "g2func_lib",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "SpaceTimeBoxStandardizer",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "SFUNC_ID": 10,
                 "SFUNC_CODE": "STANDARDIZE_GEOLOC",
                 "SFUNC_DESC": "Standardize Geolocation",
-                "FUNC_LIB": "g2func_lib",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2ParseGEOLOC",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "SFUNC_ID": 11,
                 "SFUNC_CODE": "STANDARDIZE_COUNTRY",
                 "SFUNC_DESC": "Standardize Country",
-                "FUNC_LIB": "g2func_lib",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2StdCountry",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "SFUNC_ID": 12,
                 "SFUNC_CODE": "TOKENIZE_NAME",
                 "SFUNC_DESC": "Tokenize name",
-                "FUNC_LIB": "g2func_lib",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2StdTokenizeName",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             },
             {
                 "SFUNC_ID": 13,
                 "SFUNC_CODE": "PARSE_EMAIL",
                 "SFUNC_DESC": "Parse email",
-                "FUNC_LIB": "g2func_lib",
-                "FUNC_VER": "1",
                 "CONNECT_STR": "g2ParseEmail",
-                "LANGUAGE": null,
-                "JAVA_CLASS_NAME": null
+                "LANGUAGE": null
             }
         ],
         "SYS_OOM": [
             {
                 "OOM_TYPE": "RF",
                 "OOM_LEVEL": "SYSDEFAULT",
-                "LENS_ID": 0,
                 "FTYPE_ID": 0,
-                "LIB_FEAT_ID": 0,
-                "FELEM_ID": 0,
-                "LIB_FELEM_ID": 0,
                 "THRESH1_CNT": 100,
                 "THRESH1_OOM": 10,
                 "NEXT_THRESH": 1000
             }
         ],
+        "SETTINGS": {
+            "METAPHONE_VERSION": 3
+        },
         "CONFIG_BASE_VERSION": {
-            "VERSION": "3.5.0",
-            "BUILD_VERSION": "3.5.0.23041",
-            "BUILD_DATE": "2023-02-09",
-            "BUILD_NUMBER": "23041",
+            "VERSION": "4.0.0",
+            "BUILD_VERSION": "4.0.0.24237",
+            "BUILD_DATE": "2024-08-24",
+            "BUILD_NUMBER": "2024_08_24__08_53",
             "COMPATIBILITY_VERSION": {
-                "CONFIG_VERSION": "10"
+                "CONFIG_VERSION": "11"
             }
         }
     }
