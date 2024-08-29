@@ -9,7 +9,27 @@ permissions:
   contents: read
 
 jobs:
-  docker-push-containers-to-dockerhub:
+  docker-push-containers-to-dockerhub-amd:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: get repo name
+        id: repo-basename
+        run: |
+          echo "repo=$(basename ${{ github.repository }})" >> "$GITHUB_OUTPUT"
+        shell: bash
+
+      - name: Build docker image and push to DockerHub
+        uses: senzing-factory/github-action-docker-buildx-build@v1
+        with:
+          build-options: "--push"
+          image-repository: senzing/${{ steps.repo-basename.outputs.repo }}
+          image-tag: ${{ github.ref_name }}
+          password: ${{ secrets.DOCKERHUB_ACCESS_TOKEN }}
+          platforms: "linux/amd64"
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+
+  docker-push-containers-to-dockerhub-arm:
     runs-on: ubuntu-latest
 
     steps:
@@ -26,4 +46,5 @@ jobs:
           image-repository: senzing/${{ steps.repo-basename.outputs.repo }}
           image-tag: ${{ github.ref_name }}
           password: ${{ secrets.DOCKERHUB_ACCESS_TOKEN }}
+          platforms: "linux/arm64"
           username: ${{ secrets.DOCKERHUB_USERNAME }}
