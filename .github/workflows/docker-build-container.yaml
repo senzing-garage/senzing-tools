@@ -1,4 +1,4 @@
-name: docker build container
+name: Docker build container
 
 on:
   pull_request:
@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 jobs:
-  docker-build-container-amd:
+  docker-build-container:
     runs-on: ubuntu-latest
 
     steps:
