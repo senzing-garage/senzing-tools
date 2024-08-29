@@ -2,24 +2,28 @@
 # Stages
 # -----------------------------------------------------------------------------
 
-ARG IMAGE_GO_BUILDER=golang:1.22.3-bullseye@sha256:e72f9a1d29fbd6e1603df5a780e8f407caebef4dbb9f07536fc72f1c368298aa
+ARG IMAGE_BUILDER=golang:1.22.3-bullseye
 ARG IMAGE_FINAL=senzing/senzingapi-runtime-staging:latest
 
 # -----------------------------------------------------------------------------
 # Stage: senzingapi_runtime
 # -----------------------------------------------------------------------------
 
-FROM ${IMAGE_FINAL} as senzingapi_runtime
+FROM ${IMAGE_FINAL} AS senzingapi_runtime
 
 # -----------------------------------------------------------------------------
-# Stage: go_builder
+# Stage: builder
 # -----------------------------------------------------------------------------
 
-FROM ${IMAGE_GO_BUILDER} as go_builder
-ENV REFRESHED_AT=2024-03-18
-LABEL Name="senzing/senzing-tools-builder" \
+FROM ${IMAGE_BUILDER} AS builder
+ENV REFRESHED_AT=2024-07-01
+LABEL Name="senzing/go-builder" \
   Maintainer="support@senzing.com" \
-  Version="0.6.3"
+  Version="0.1.0"
+
+# Run as "root" for system installation.
+
+USER root
 
 # Copy local files from the Git repository.
 
@@ -28,12 +32,12 @@ COPY . ${GOPATH}/src/senzing-tools
 
 # Copy files from prior stage.
 
-COPY --from=senzingapi_runtime  "/opt/senzing/g2/lib/"   "/opt/senzing/g2/lib/"
-COPY --from=senzingapi_runtime  "/opt/senzing/g2/sdk/c/" "/opt/senzing/g2/sdk/c/"
+COPY --from=senzingapi_runtime  "/opt/senzing/er/lib/"   "/opt/senzing/er/lib/"
+COPY --from=senzingapi_runtime  "/opt/senzing/er/sdk/c/" "/opt/senzing/er/sdk/c/"
 
 # Set path to Senzing libs.
 
-ENV LD_LIBRARY_PATH=/opt/senzing/g2/lib/
+ENV LD_LIBRARY_PATH=/opt/senzing/er/lib/
 
 # Build go program.
 
@@ -49,23 +53,22 @@ RUN mkdir -p /output \
 # Stage: final
 # -----------------------------------------------------------------------------
 
-FROM ${IMAGE_FINAL} as final
-ENV REFRESHED_AT=2024-03-18
+FROM ${IMAGE_FINAL} AS final
+ENV REFRESHED_AT=2024-07-01
 LABEL Name="senzing/senzing-tools" \
   Maintainer="support@senzing.com" \
-  Version="0.6.3"
-
+  Version="0.0.1"
+HEALTHCHECK CMD ["/app/healthcheck.sh"]
 USER root
 
-# Copy local files from the Git repository.
+
+# Copy files from repository.
 
 COPY ./rootfs /
 
-HEALTHCHECK CMD ["/healthcheck.sh"]
-
 # Copy files from prior stage.
 
-COPY --from=go_builder "/output/linux/senzing-tools" "/app/senzing-tools"
+COPY --from=builder "/output/linux/senzing-tools" "/app/senzing-tools"
 
 # Copy files from other docker images.
 
@@ -103,7 +106,7 @@ USER 1001
 
 # Runtime environment variables.
 
-ENV LD_LIBRARY_PATH=/opt/senzing/g2/lib/
+ENV LD_LIBRARY_PATH=/opt/senzing/er/lib/
 ENV SENZING_API_SERVER_ALLOWED_ORIGINS='*'
 ENV SENZING_API_SERVER_BIND_ADDR='all'
 ENV SENZING_API_SERVER_ENABLE_ADMIN='true'
@@ -111,7 +114,7 @@ ENV SENZING_API_SERVER_PORT='8250'
 ENV SENZING_API_SERVER_SKIP_ENGINE_PRIMING='true'
 ENV SENZING_API_SERVER_SKIP_STARTUP_PERF='true'
 ENV SENZING_DATA_MART_SQLITE_DATABASE_FILE=/tmp/datamart
-ENV SENZING_ENGINE_CONFIGURATION_JSON='{"PIPELINE": {"CONFIGPATH": "/etc/opt/senzing", "LICENSESTRINGBASE64": "", "RESOURCEPATH": "/opt/senzing/g2/resources", "SUPPORTPATH": "/opt/senzing/data"}, "SQL": {"CONNECTION": "sqlite3://na:na@/tmp/sqlite/G2C.db"}}'
+ENV SENZING_ENGINE_CONFIGURATION_JSON='{"PIPELINE": {"CONFIGPATH": "/etc/opt/senzing", "LICENSESTRINGBASE64": "", "RESOURCEPATH": "/opt/senzing/er/resources", "SUPPORTPATH": "/opt/senzing/data"}, "SQL": {"CONNECTION": "sqlite3://na:na@/tmp/sqlite/G2C.db"}}'
 
 # Runtime execution.
 

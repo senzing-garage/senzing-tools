@@ -26,47 +26,16 @@ For more information, visit https://github.com/senzing-garage/senzing-tools
 )
 
 // ----------------------------------------------------------------------------
-// Private functions
+// Command
 // ----------------------------------------------------------------------------
 
-// Since init() is always invoked, define persistent command line parameters
-// that apply to all senzing-tool subcommands.
-func init() {
-	cobra.OnInitialize(initConfig)
-	RootCmd.PersistentFlags().String(option.Configuration.Arg, option.Configuration.Default.(string), fmt.Sprintf(option.Configuration.Help, option.Configuration.Envar))
-}
-
-// initConfig reads in config file and ENV variables if set.
-func initConfig() {
-	viper.AutomaticEnv()
-
-	configuration := RootCmd.Flags().Lookup(option.Configuration.Arg).Value.String()
-	if configuration != "" { // Use configuration file specified as a command line option.
-		viper.SetConfigFile(configuration)
-	} else { // Search for a configuration file.
-
-		// Determine home directory.
-
-		home, err := os.UserHomeDir()
-		cobra.CheckErr(err)
-
-		// Specify configuration file name.
-
-		viper.SetConfigName("senzing-tools")
-		viper.SetConfigType("yaml")
-
-		// Define search path order.
-
-		viper.AddConfigPath(home + "/.senzing-tools")
-		viper.AddConfigPath(home)
-		viper.AddConfigPath("/etc/senzing-tools")
-	}
-
-	// If a config file is found, read it in.
-
-	if err := viper.ReadInConfig(); err == nil {
-		fmt.Fprintf(os.Stderr, "Applying configuration file: %s\n", viper.ConfigFileUsed())
-	}
+// RootCmd represents the command.
+var RootCmd = &cobra.Command{
+	Use:     Use,
+	Short:   Short,
+	Long:    Long,
+	PreRun:  PreRun,
+	Version: Version(),
 }
 
 // ----------------------------------------------------------------------------
@@ -113,14 +82,45 @@ func Version() string {
 }
 
 // ----------------------------------------------------------------------------
-// Command
+// Private functions
 // ----------------------------------------------------------------------------
 
-// RootCmd represents the command.
-var RootCmd = &cobra.Command{
-	Use:     Use,
-	Short:   Short,
-	Long:    Long,
-	PreRun:  PreRun,
-	Version: Version(),
+// Since init() is always invoked, define persistent command line parameters
+// that apply to all senzing-tool subcommands.
+func init() {
+	cobra.OnInitialize(initConfig)
+	RootCmd.PersistentFlags().String(option.Configuration.Arg, option.Configuration.Default.(string), fmt.Sprintf(option.Configuration.Help, option.Configuration.Envar))
+}
+
+// initConfig reads in config file and ENV variables if set.
+func initConfig() {
+	viper.AutomaticEnv()
+
+	configuration := RootCmd.Flags().Lookup(option.Configuration.Arg).Value.String()
+	if configuration != "" { // Use configuration file specified as a command line option.
+		viper.SetConfigFile(configuration)
+	} else { // Search for a configuration file.
+
+		// Determine home directory.
+
+		home, err := os.UserHomeDir()
+		cobra.CheckErr(err)
+
+		// Specify configuration file name.
+
+		viper.SetConfigName("senzing-tools")
+		viper.SetConfigType("yaml")
+
+		// Define search path order.
+
+		viper.AddConfigPath(home + "/.senzing-tools")
+		viper.AddConfigPath(home)
+		viper.AddConfigPath("/etc/senzing-tools")
+	}
+
+	// If a config file is found, read it in.
+
+	if err := viper.ReadInConfig(); err == nil {
+		fmt.Fprintf(os.Stderr, "Applying configuration file: %s\n", viper.ConfigFileUsed())
+	}
 }

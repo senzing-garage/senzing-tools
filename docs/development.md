@@ -1,20 +1,31 @@
 # senzing-tools development
 
-## Install Go
+The following instructions are useful during development.
 
-1. See Go's [Download and install](https://go.dev/doc/install)
+**Note:** This has been tested on Linux and Darwin/macOS.
+It has not been tested on Windows.
+
+## Prerequisites for development
+
+:thinking: The following tasks need to be complete before proceeding.
+These are "one-time tasks" which may already have been completed.
+
+1. The following software programs need to be installed:
+    1. [git]
+    1. [make]
+    1. [docker]
+    1. [go]
 
 ## Install Senzing C library
 
 Since the Senzing library is a prerequisite, it must be installed first.
 
 1. Verify Senzing C shared objects, configuration, and SDK header files are installed.
-    1. `/opt/senzing/g2/lib`
-    1. `/opt/senzing/g2/sdk/c`
+    1. `/opt/senzing/er/lib`
+    1. `/opt/senzing/er/sdk/c`
     1. `/etc/opt/senzing`
 
-1. If not installed, see
-   [How to Install Senzing for Go Development](https://github.com/senzing-garage/knowledge-base/blob/main/HOWTO/install-senzing-for-go-development.md).
+1. If not installed, see [How to Install Senzing for Go Development].
 
 ## Install Git repository
 
@@ -28,8 +39,39 @@ Since the Senzing library is a prerequisite, it must be installed first.
 
     ```
 
-1. Using the environment variables values just set, follow steps in
-   [clone-repository](https://github.com/senzing-garage/knowledge-base/blob/main/HOWTO/clone-repository.md) to install the Git repository.
+1. Using the environment variables values just set, follow
+   steps in [clone-repository] to install the Git repository.
+
+## Dependencies
+
+1. A one-time command to install dependencies needed for `make` targets.
+   Example:
+
+    ```console
+    cd ${GIT_REPOSITORY_DIR}
+    make dependencies-for-development
+
+    ```
+
+1. Install dependencies needed for [Go] code.
+   Example:
+
+    ```console
+    cd ${GIT_REPOSITORY_DIR}
+    make dependencies
+
+    ```
+
+## Lint
+
+1. Run linting.
+   Example:
+
+    ```console
+    cd ${GIT_REPOSITORY_DIR}
+    make lint
+
+    ```
 
 ## Build
 
@@ -38,11 +80,11 @@ Since the Senzing library is a prerequisite, it must be installed first.
 
     ```console
     cd ${GIT_REPOSITORY_DIR}
-    make build
+    make clean build
 
     ```
 
-1. The binaries will be found in ${GIT_REPOSITORY_DIR}/target.
+1. The binaries will be found in the `${GIT_REPOSITORY_DIR}/target` directory.
    Example:
 
     ```console
@@ -50,13 +92,15 @@ Since the Senzing library is a prerequisite, it must be installed first.
 
     ```
 
-1. Run the binary.
+## Run
+
+1. Run program.
    Examples:
 
-    1. linux
+    1. Linux
 
         ```console
-        export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
+        export LD_LIBRARY_PATH=/opt/senzing/er/lib/
         ${GIT_REPOSITORY_DIR}/target/linux-amd64/senzing-tools
 
         ```
@@ -64,12 +108,12 @@ Since the Senzing library is a prerequisite, it must be installed first.
     1. macOS
 
         ```console
-        export DYLD_LIBRARY_PATH=/opt/senzing/g2/lib/:/opt/senzing/g2/lib/macos
+        export DYLD_LIBRARY_PATH=/opt/senzing/er/lib/:/opt/senzing/er/lib/macos
         ${GIT_REPOSITORY_DIR}/target/darwin-amd64/senzing-tools
 
         ```
 
-    1. windows
+    1. Windows
 
         ```console
         ${GIT_REPOSITORY_DIR}/target/windows-amd64/senzing-tools
@@ -87,33 +131,60 @@ Since the Senzing library is a prerequisite, it must be installed first.
 
 ## Test
 
+1. Run tests.
+   Example:
+
+    ```console
+    cd ${GIT_REPOSITORY_DIR}
+    make clean setup test
+
+    ```
+
+## Coverage
+
+Create a code coverage map.
+
 1. Run Go tests.
    Example:
 
     ```console
     cd ${GIT_REPOSITORY_DIR}
-    make test
+    make clean setup coverage
 
     ```
+
+   A web-browser will show the results of the coverage.
+   The goal is to have over 80% coverage.
+   Anything less needs to be reflected in [testcoverage.yaml].
 
 ## Documentation
 
-1. Start `godoc` documentation server.
+1. View documentation.
    Example:
 
     ```console
-     cd ${GIT_REPOSITORY_DIR}
-     godoc
+    cd ${GIT_REPOSITORY_DIR}
+    make clean documentation
 
     ```
 
-1. Visit [localhost:6060](http://localhost:6060)
+1. If a web page doesn't appear, visit [localhost:6060].
 1. Senzing documentation will be in the "Third party" section.
-   `github.com` > `senzing` > `senzing-tools`
+   `github.com` > `senzing-garage` > `senzing-tools`
 
 1. When a versioned release is published with a `v0.0.0` format tag,
-the reference can be found by clicking on the following badge at the top of the README.md page:
-[![Go Reference](https://pkg.go.dev/badge/github.com/senzing-garage/senzing-tools.svg)](https://pkg.go.dev/github.com/senzing-garage/senzing-tools)
+the reference can be found by clicking on the following badge at the top of the README.md page.
+Example:
+
+    [![Go Reference Badge]][Go Reference]
+
+1. To stop the `godoc` server, run
+
+    ```console
+    cd ${GIT_REPOSITORY_DIR}
+    make clean
+
+    ```
 
 ## Docker
 
@@ -130,9 +201,24 @@ the reference can be found by clicking on the following badge at the top of the 
    Example:
 
     ```console
-    docker run \
-      --rm \
-      senzing/senzing-tools
+    docker run --rm senzing/senzing-tools
+
+    ```
+
+1. **Optional:** Test using `docker-compose`.
+   Example:
+
+    ```console
+    cd ${GIT_REPOSITORY_DIR}
+    make docker-test
+
+    ```
+
+   To bring the `docker-compose` formation, run
+
+    ```console
+    cd ${GIT_REPOSITORY_DIR}
+    make clean
 
     ```
 
@@ -168,7 +254,6 @@ the reference can be found by clicking on the following badge at the top of the 
     ```
 
 1. :pencil2: Install `senzing-tools`.
-   The `senzing-tools-...` filename will need modification.
    Example:
 
     ```console
@@ -189,7 +274,7 @@ the reference can be found by clicking on the following badge at the top of the 
    Example:
 
     ```console
-    export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
+    export LD_LIBRARY_PATH=/opt/senzing/er/lib/
     senzing-tools init-database
 
     ```
@@ -202,50 +287,7 @@ the reference can be found by clicking on the following badge at the top of the 
 
     ```
 
-### Test RPM package on Centos
 
-1. Determine if `senzing-tools` is installed.
-   Example:
-
-    ```console
-    yum list installed | grep senzing-tools
-
-    ```
-
-1. :pencil2: Install `senzing-tools`.
-   The `senzing-tools-...` filename will need modification.
-   Example:
-
-    ```console
-    cd ${GIT_REPOSITORY_DIR}/target
-    sudo yum install ./senzing-tools-0.0.0.rpm
-
-    ```
-
-1. :pencil2: Identify database.
-   Example:
-
-    ```console
-    export SENZING_TOOLS_DATABASE_URL=sqlite3://na:na@/tmp/sqlite/G2C.db
-
-    ```
-
-1. Run command.
-   Example:
-
-    ```console
-    export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
-    senzing-tools init-database
-
-    ```
-
-1. Remove `senzing-tools` from system.
-   Example:
-
-    ```console
-    sudo yum remove senzing-tools
-
-    ```
 
 ## Make documents
 
@@ -267,7 +309,20 @@ Make documents visible at
    Example:
 
     ```console
-    export LD_LIBRARY_PATH=/opt/senzing/g2/lib/
+    export LD_LIBRARY_PATH=/opt/senzing/er/lib/
     senzing-tools docs --dir ${GIT_REPOSITORY_DIR}/docs
 
     ```
+
+## References
+
+[clone-repository]: https://github.com/senzing-garage/knowledge-base/blob/main/HOWTO/clone-repository.md
+[docker]: https://github.com/senzing-garage/knowledge-base/blob/main/WHATIS/docker.md
+[git]: https://github.com/senzing-garage/knowledge-base/blob/main/WHATIS/git.md
+[Go Reference Badge]: https://pkg.go.dev/badge/github.com/senzing-garage/template-go.svg
+[Go Reference]: https://pkg.go.dev/github.com/senzing-garage/template-go
+[go]: https://github.com/senzing-garage/knowledge-base/blob/main/WHATIS/go.md
+[How to Install Senzing for Go Development]: https://github.com/senzing-garage/knowledge-base/blob/main/HOWTO/install-senzing-for-go-development.md
+[localhost:6060]: http://localhost:6060/pkg/github.com/senzing-garage/template-go/
+[make]: https://github.com/senzing-garage/knowledge-base/blob/main/WHATIS/make.md
+[testcoverage.yaml]: ../.github/coverage/testcoverage.yaml    

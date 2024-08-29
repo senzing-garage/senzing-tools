@@ -1,4 +1,4 @@
-name: docker push containers to dockerhub
+name: Docker push containers to dockerhub
 
 on:
   push:
@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: get repo name
+      - name: Get repository name
         id: repo-basename
         run: |
           echo "repo=$(basename ${{ github.repository }})" >> "$GITHUB_OUTPUT"
