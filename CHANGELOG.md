@@ -2,13 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-[markdownlint](https://dlaa.me/markdownlint/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog], [markdownlint],
+and this project adheres to [Semantic Versioning].
 
 ## [Unreleased]
 
 -
+
+## [0.8.1] - 2024-09-13
+
+### Changed in 0.8.1
+
+- Update dependencies
 
 ## [0.8.0] - 2024-08-29
 
@@ -327,3 +332,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial functionality
 - Commands: `init-database`, `serve-grpc`
+
+[Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
+[markdownlint]: https://dlaa.me/markdownlint/
+[Semantic Versioning]: https://semver.org/spec/v2.0.0.html

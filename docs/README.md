@@ -2,4 +2,6 @@
 
 ## Commands
 
-1. [senzing-tools](senzing-tools.md) - Collection of tools for working with the Senzing API.
+1. [senzing-tools] - Collection of tools for working with the Senzing API.
+
+[senzing-tools]: senzing-tools.md
