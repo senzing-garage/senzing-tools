@@ -14,7 +14,7 @@ require (
 	github.com/senzing-garage/load v0.2.1
 	github.com/senzing-garage/move v0.3.1
 	github.com/senzing-garage/observe v0.3.1
-	github.com/senzing-garage/serve-grpc v0.8.2
+	github.com/senzing-garage/serve-grpc v0.8.3
 	github.com/senzing-garage/serve-http v0.3.1
 	github.com/senzing-garage/validate v0.2.1
 	github.com/spf13/cobra v1.8.1
@@ -40,7 +40,7 @@ require (
 	github.com/aws/smithy-go v1.20.4 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
-	github.com/cpuguy83/go-md2man/v2 v2.0.4 // indirect
+	github.com/cpuguy83/go-md2man/v2 v2.0.5 // indirect
 	github.com/creack/pty v1.1.23 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/dlclark/regexp2 v1.11.4 // indirect
@@ -98,12 +98,12 @@ require (
 	github.com/senzing-garage/go-rest-api-service v0.10.1 // indirect
 	github.com/senzing-garage/go-rest-api-service-legacy v0.1.1 // indirect
 	github.com/senzing-garage/go-sdk-abstract-factory v0.9.2 // indirect
-	github.com/senzing-garage/sz-sdk-go v0.14.1 // indirect
-	github.com/senzing-garage/sz-sdk-go-core v0.8.2 // indirect
+	github.com/senzing-garage/sz-sdk-go v0.14.2 // indirect
+	github.com/senzing-garage/sz-sdk-go-core v0.8.3 // indirect
 	github.com/senzing-garage/sz-sdk-go-grpc v0.8.2 // indirect
 	github.com/senzing-garage/sz-sdk-go-mock v0.8.1 // indirect
 	github.com/senzing-garage/sz-sdk-json-type-definition v0.2.7 // indirect
-	github.com/senzing-garage/sz-sdk-proto v0.7.7 // indirect
+	github.com/senzing-garage/sz-sdk-proto v0.7.8 // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/sourcegraph/conc v0.3.0 // indirect
 	github.com/spf13/afero v1.11.0 // indirect
@@ -121,8 +121,8 @@ require (
 	golang.org/x/sync v0.8.0 // indirect
 	golang.org/x/sys v0.25.0 // indirect
 	golang.org/x/text v0.18.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20240903143218-8af14fe29dc1 // indirect
-	google.golang.org/grpc v1.66.2 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20240930140551-af27646dc61f // indirect
+	google.golang.org/grpc v1.67.1 // indirect
 	google.golang.org/protobuf v1.34.2 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
