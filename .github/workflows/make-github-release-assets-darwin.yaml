@@ -14,7 +14,7 @@ jobs:
     runs-on: macos-latest
     strategy:
       matrix:
-        senzingapi-version: ["staging"]
+        senzingapi-version: ["staging-v4"]
 
     steps:
       - name: checkout repository
