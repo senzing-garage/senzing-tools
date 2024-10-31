@@ -10,7 +10,7 @@ require (
 	github.com/senzing-garage/demo-quickstart v0.3.1
 	github.com/senzing-garage/explain v0.3.1
 	github.com/senzing-garage/go-cmdhelping v0.3.1
-	github.com/senzing-garage/init-database v0.7.2-0.20241031131130-3a1d947a160a
+	github.com/senzing-garage/init-database v0.7.2
 	github.com/senzing-garage/load v0.2.2
 	github.com/senzing-garage/move v0.3.2
 	github.com/senzing-garage/observe v0.3.1
