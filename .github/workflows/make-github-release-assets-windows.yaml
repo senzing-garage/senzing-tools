@@ -14,7 +14,7 @@ jobs:
     runs-on: windows-latest
     strategy:
       matrix:
-        senzingapi-version: ["staging-v4"]
+        senzingsdk-version: ["staging-v4"]
 
     steps:
       - name: checkout repository
@@ -22,10 +22,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: install Senzing API
-        uses: senzing-factory/github-action-install-senzing-api@v4
+      - name: install Senzing SDK
+        uses: senzing-factory/github-action-install-senzing-sdk@v1
         with:
-          senzingapi-version: ${{ matrix.senzingapi-version }}
+          senzingsdk-version: ${{ matrix.senzingsdk-version }}
 
       - name: make executable file
         run: go build -o senzing-tools.exe
