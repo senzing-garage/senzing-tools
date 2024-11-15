@@ -1,7 +1,6 @@
 module github.com/senzing-garage/senzing-tools
 
 go 1.22.4
-
 toolchain go1.23.1
 
 require (
@@ -10,7 +9,7 @@ require (
 	github.com/senzing-garage/demo-quickstart v0.3.1
 	github.com/senzing-garage/explain v0.3.1
 	github.com/senzing-garage/go-cmdhelping v0.3.1
-	github.com/senzing-garage/init-database v0.7.2
+	github.com/senzing-garage/init-database v0.7.3
 	github.com/senzing-garage/load v0.2.2
 	github.com/senzing-garage/move v0.3.2
 	github.com/senzing-garage/observe v0.3.1
@@ -56,7 +55,7 @@ require (
 	github.com/go-logr/logr v1.4.2 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-sql-driver/mysql v1.8.1 // indirect
-	github.com/godror/godror v0.44.8 // indirect
+	github.com/godror/godror v0.45.1 // indirect
 	github.com/godror/knownpb v0.2.0 // indirect
 	github.com/golang-sql/civil v0.0.0-20220223132316-b832511892a9 // indirect
 	github.com/golang-sql/sqlexp v0.1.0 // indirect
@@ -88,9 +87,9 @@ require (
 	github.com/sagikazarmark/locafero v0.6.0 // indirect
 	github.com/sagikazarmark/slog-shim v0.1.0 // indirect
 	github.com/segmentio/asm v1.2.0 // indirect
-	github.com/senzing-garage/go-databasing v0.5.3 // indirect
+	github.com/senzing-garage/go-databasing v0.5.4 // indirect
 	github.com/senzing-garage/go-grpcing v0.2.1 // indirect
-	github.com/senzing-garage/go-helpers v0.6.1 // indirect
+	github.com/senzing-garage/go-helpers v0.6.3 // indirect
 	github.com/senzing-garage/go-logging v1.5.1 // indirect
 	github.com/senzing-garage/go-messaging v1.5.2 // indirect
 	github.com/senzing-garage/go-observing v0.3.3 // indirect
@@ -99,7 +98,7 @@ require (
 	github.com/senzing-garage/go-rest-api-service-legacy v0.1.1 // indirect
 	github.com/senzing-garage/go-sdk-abstract-factory v0.9.3 // indirect
 	github.com/senzing-garage/sz-sdk-go v0.14.3 // indirect
-	github.com/senzing-garage/sz-sdk-go-core v0.8.4 // indirect
+	github.com/senzing-garage/sz-sdk-go-core v0.8.5 // indirect
 	github.com/senzing-garage/sz-sdk-go-grpc v0.8.4 // indirect
 	github.com/senzing-garage/sz-sdk-go-mock v0.8.3 // indirect
 	github.com/senzing-garage/sz-sdk-json-type-definition v0.2.7 // indirect
@@ -115,15 +114,15 @@ require (
 	go.opentelemetry.io/otel/trace v1.31.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.0 // indirect
-	golang.org/x/crypto v0.28.0 // indirect
-	golang.org/x/exp v0.0.0-20241009180824-f66d83c29e7c // indirect
-	golang.org/x/net v0.30.0 // indirect
-	golang.org/x/sync v0.8.0 // indirect
-	golang.org/x/sys v0.26.0 // indirect
-	golang.org/x/text v0.19.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20241021214115-324edc3d5d38 // indirect
-	google.golang.org/grpc v1.67.1 // indirect
-	google.golang.org/protobuf v1.35.1 // indirect
+	golang.org/x/crypto v0.29.0 // indirect
+	golang.org/x/exp v0.0.0-20241108190413-2d47ceb2692f // indirect
+	golang.org/x/net v0.31.0 // indirect
+	golang.org/x/sync v0.9.0 // indirect
+	golang.org/x/sys v0.27.0 // indirect
+	golang.org/x/text v0.20.0 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20241113202542-65e8d215514f // indirect
+	google.golang.org/grpc v1.68.0 // indirect
+	google.golang.org/protobuf v1.35.2 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
