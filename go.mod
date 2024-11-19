@@ -14,7 +14,7 @@ require (
 	github.com/senzing-garage/load v0.2.2
 	github.com/senzing-garage/move v0.3.2
 	github.com/senzing-garage/observe v0.3.1
-	github.com/senzing-garage/serve-grpc v0.8.6
+	github.com/senzing-garage/serve-grpc v0.8.7
 	github.com/senzing-garage/serve-http v0.3.2
 	github.com/senzing-garage/validate v0.2.1
 	github.com/spf13/cobra v1.8.1
