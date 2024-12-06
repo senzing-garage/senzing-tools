@@ -2,14 +2,14 @@
 # Stages
 # -----------------------------------------------------------------------------
 
-ARG IMAGE_BUILDER=golang:1.23.2-bullseye
-ARG IMAGE_FINAL=senzing/senzingapi-runtime-beta:latest
+ARG IMAGE_BUILDER=golang:1.23.4-bullseye
+ARG IMAGE_FINAL=senzing/senzingsdk-runtime-beta:latest
 
 # -----------------------------------------------------------------------------
-# Stage: senzingapi_runtime
+# Stage: senzingsdk_runtime
 # -----------------------------------------------------------------------------
 
-FROM ${IMAGE_FINAL} AS senzingapi_runtime
+FROM ${IMAGE_FINAL} AS senzingsdk_runtime
 
 # -----------------------------------------------------------------------------
 # Stage: builder
@@ -32,8 +32,8 @@ COPY . ${GOPATH}/src/senzing-tools
 
 # Copy files from prior stage.
 
-COPY --from=senzingapi_runtime  "/opt/senzing/er/lib/"   "/opt/senzing/er/lib/"
-COPY --from=senzingapi_runtime  "/opt/senzing/er/sdk/c/" "/opt/senzing/er/sdk/c/"
+COPY --from=senzingsdk_runtime  "/opt/senzing/er/lib/"   "/opt/senzing/er/lib/"
+COPY --from=senzingsdk_runtime  "/opt/senzing/er/sdk/c/" "/opt/senzing/er/sdk/c/"
 
 # Set path to Senzing libs.
 
@@ -68,7 +68,7 @@ COPY ./rootfs /
 
 # Copy files from prior stage.
 
-COPY --from=builder "/output/linux/senzing-tools" "/app/senzing-tools"
+COPY --from=builder /output/linux/senzing-tools /app/senzing-tools
 
 # Copy files from other docker images.
 

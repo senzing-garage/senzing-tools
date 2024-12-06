@@ -44,7 +44,7 @@ and this project adheres to [Semantic Versioning].
 ### Changed in 0.6.4
 
 - Update dependencies
-  - github.com/senzing-garage/demo-quickstart v0.0.3
+  - github.com/senzing-garage/playground v0.0.3
 
 ## [0.6.3] - 2024-01-30
 
@@ -53,7 +53,7 @@ and this project adheres to [Semantic Versioning].
 - Update dependencies
   - github.com/senzing-garage/check-self v0.1.1
   - github.com/senzing-garage/demo-entity-search v0.1.1
-  - github.com/senzing-garage/demo-quickstart v0.0.2
+  - github.com/senzing-garage/playground v0.0.2
   - github.com/senzing-garage/init-database v0.5.1
   - github.com/senzing-garage/load v0.1.1
   - github.com/senzing-garage/move v0.1.1
@@ -71,13 +71,13 @@ and this project adheres to [Semantic Versioning].
 
 ### Added in 0.6.1
 
-- Add `demo-quickstart` command
+- Add `playground` command
 
 ### Changed in 0.6.1
 
 - Update dependencies
   - github.com/senzing-garage/demo-entity-search v0.1.0
-  - github.com/senzing-garage/demo-quickstart v0.0.1
+  - github.com/senzing-garage/playground v0.0.1
   - github.com/senzing-garage/serve-grpc v0.6.0
 
 ## [0.6.0] - 2024-01-04
