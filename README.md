@@ -33,7 +33,7 @@ Senzing's `senzing-tools` has the following tools/commands:
 
 1. [check-self] - Check the Senzing environment.
 1. [demo-entity-search] - Demonstrate Entity Search.
-1. [demo-quickstart] - Quickstart.
+1. [playground] - Quickstart.
 1. [explain] - Explain messages.
 1. [init-database] - Used to create a Senzing schema and configuration in PostgreSQL, MySQL, MsSQL and SQLite databases.
 1. [load] - Load Senzing datastore.
@@ -177,7 +177,7 @@ See individual commands for parameters:
 [check-self]: https://github.com/senzing-garage/check-self
 [Command reference]: docs/senzing-tools.md
 [demo-entity-search]: https://github.com/senzing-garage/demo-entity-search
-[demo-quickstart]: https://github.com/senzing-garage/demo-quickstart
+[playground]: https://github.com/senzing-garage/playground
 [Development]: docs/development.md
 [Errors]: docs/errors.md
 [Examples]: docs/examples.md

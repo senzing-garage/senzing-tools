@@ -23,7 +23,7 @@ For more information, visit https://github.com/senzing-garage/senzing-tools
 * [senzing-tools check-self](senzing-tools_check-self.md)	 - Check the environment in which senzing-tool runs
 * [senzing-tools completion](senzing-tools_completion.md)	 - Generate bash completion for the command
 * [senzing-tools demo-entity-search](senzing-tools_demo-entity-search.md)	 - demo-entity-search short description
-* [senzing-tools demo-quickstart](senzing-tools_demo-quickstart.md)	 - HTTP/gRPC server supporting various services
+* [senzing-tools playground](senzing-tools_playground.md)	 - HTTP/gRPC server supporting various services
 * [senzing-tools docs](senzing-tools_docs.md)	 - Generate documentation for the command
 * [senzing-tools explain](senzing-tools_explain.md)	 - provide an explanation
 * [senzing-tools init-database](senzing-tools_init-database.md)	 - Initialize a database with the Senzing schema and configuration
