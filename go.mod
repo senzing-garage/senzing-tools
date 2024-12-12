@@ -9,12 +9,12 @@ require (
 	github.com/senzing-garage/demo-entity-search v0.2.2
 	github.com/senzing-garage/explain v0.3.1
 	github.com/senzing-garage/go-cmdhelping v0.3.1
-	github.com/senzing-garage/init-database v0.7.3
+	github.com/senzing-garage/init-database v0.7.4
 	github.com/senzing-garage/load v0.2.2
 	github.com/senzing-garage/move v0.3.2
 	github.com/senzing-garage/observe v0.3.1
 	github.com/senzing-garage/playground v0.4.6
-	github.com/senzing-garage/serve-grpc v0.8.7
+	github.com/senzing-garage/serve-grpc v0.8.8
 	github.com/senzing-garage/serve-http v0.3.2
 	github.com/senzing-garage/validate v0.2.1
 	github.com/spf13/cobra v1.8.1
@@ -66,7 +66,7 @@ require (
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/klauspost/compress v1.17.11 // indirect
 	github.com/lib/pq v1.10.9 // indirect
-	github.com/magiconair/properties v1.8.7 // indirect
+	github.com/magiconair/properties v1.8.9 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mattn/go-sqlite3 v1.14.24 // indirect
@@ -98,10 +98,10 @@ require (
 	github.com/senzing-garage/go-rest-api-service v0.10.2 // indirect
 	github.com/senzing-garage/go-rest-api-service-legacy v0.1.1 // indirect
 	github.com/senzing-garage/go-sdk-abstract-factory v0.9.3 // indirect
-	github.com/senzing-garage/sz-sdk-go v0.14.3 // indirect
-	github.com/senzing-garage/sz-sdk-go-core v0.8.5 // indirect
-	github.com/senzing-garage/sz-sdk-go-grpc v0.8.4 // indirect
-	github.com/senzing-garage/sz-sdk-go-mock v0.8.3 // indirect
+	github.com/senzing-garage/sz-sdk-go v0.14.4 // indirect
+	github.com/senzing-garage/sz-sdk-go-core v0.8.6 // indirect
+	github.com/senzing-garage/sz-sdk-go-grpc v0.8.5 // indirect
+	github.com/senzing-garage/sz-sdk-go-mock v0.8.4 // indirect
 	github.com/senzing-garage/sz-sdk-json-type-definition v0.2.7 // indirect
 	github.com/senzing-garage/sz-sdk-proto v0.7.10 // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
@@ -116,12 +116,12 @@ require (
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.0 // indirect
 	golang.org/x/crypto v0.31.0 // indirect
-	golang.org/x/exp v0.0.0-20241204233417-43b7b7cde48d // indirect
+	golang.org/x/exp v0.0.0-20241210194714-1829a127f884 // indirect
 	golang.org/x/net v0.32.0 // indirect
 	golang.org/x/sync v0.10.0 // indirect
 	golang.org/x/sys v0.28.0 // indirect
 	golang.org/x/text v0.21.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20241206012308-a4fef0638583 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20241209162323-e6fa225c2576 // indirect
 	google.golang.org/grpc v1.68.1 // indirect
 	google.golang.org/protobuf v1.35.2 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
