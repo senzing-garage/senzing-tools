@@ -11,13 +11,12 @@ permissions:
 
 jobs:
   go-test-linux:
-    name: "Go test with Senzing: ${{ matrix.senzingsdk-version }}; OS: ${{ matrix.os }}; Go: ${{ matrix.go }}"
+    name: "Go test with Senzing: OS: ${{ matrix.os }}; Go: ${{ matrix.go }}"
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         go: ["1.21"]
         os: [ubuntu-latest]
-        senzingsdk-version: [staging-v4]
 
     steps:
       - name: Checkout repository
@@ -38,7 +37,8 @@ jobs:
       - name: Install Senzing SDK
         uses: senzing-factory/github-action-install-senzing-sdk@v1
         with:
-          senzingsdk-version: ${{ matrix.senzingsdk-version }}
+          senzingsdk-repository-package: ${{ secrets.SENZING_APT_BETA_STAGING_REPOSITORY_PACKAGE }}
+          senzingsdk-repository-path: ${{ secrets.SENZING_APT_BETA_STAGING_REPOSITORY_URL }}
 
       - run: mkdir /tmp/sqlite
 
