@@ -26,9 +26,9 @@ jobs:
         run: brew install create-dmg
 
       - name: install Senzing SDK
-        uses: senzing-factory/github-action-install-senzing-sdk@v1
+        uses: senzing-factory/github-action-install-senzing-sdk@v2
         with:
-          senzingsdk-version: ${{ matrix.senzingsdk-version }}
+          senzingsdk-repository-path: ${{ secrets.SENZING_OSX_BETA_REPOSITORY }}
 
       - name: make executable file
         run: make darwin/amd64
