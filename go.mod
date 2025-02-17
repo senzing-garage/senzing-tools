@@ -17,7 +17,7 @@ require (
 	github.com/senzing-garage/serve-grpc v0.8.12
 	github.com/senzing-garage/serve-http v0.3.2
 	github.com/senzing-garage/validate v0.2.1
-	github.com/spf13/cobra v1.8.1
+	github.com/spf13/cobra v1.9.1
 	github.com/spf13/viper v1.19.0
 	github.com/stretchr/testify v1.10.0
 )
