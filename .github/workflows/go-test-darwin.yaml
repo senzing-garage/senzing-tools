@@ -4,8 +4,6 @@ on: [pull_request, workflow_dispatch]
 
 env:
   CGO_LDFLAGS: "-Wl,-no_warn_duplicate_libraries"
-  DYLD_LIBRARY_PATH: /opt/senzing/er/lib:/opt/senzing/er/lib/macos
-  LD_LIBRARY_PATH: /opt/senzing/er/lib:/opt/senzing/er/lib/macos
   SENZING_TOOLS_DATABASE_URL: sqlite3://na:na@nowhere/tmp/sqlite/G2C.db
 
 permissions:
@@ -47,7 +45,11 @@ jobs:
       - run: touch /tmp/sqlite/G2C.db
 
       - name: Run go test
-        run: go test -exec /Users/runner/work/senzing-tools/senzing-tools/bin/macos_exec_dyld.sh  -json -v -p 1 -coverprofile=./cover.out -covermode=atomic -coverpkg=./... ./...  2>&1 | tee /tmp/gotest.log | gotestfmt
+        run: |
+          # shellcheck disable=SC2034
+          DYLD_LIBRARY_PATH="$HOME"/senzing/er/lib:"$HOME"/senzing/er/lib/macos
+          LD_LIBRARY_PATH="$HOME"/senzing/er/lib:"$HOME"/senzing/er/lib/macos
+          go test -exec /Users/runner/work/senzing-tools/senzing-tools/bin/macos_exec_dyld.sh  -json -v -p 1 -coverprofile=./cover.out -covermode=atomic -coverpkg=./... ./...  2>&1 | tee /tmp/gotest.log | gotestfmt
 
       - name: Store coverage file
         uses: actions/upload-artifact@v4
