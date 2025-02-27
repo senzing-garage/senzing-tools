@@ -55,7 +55,9 @@ jobs:
         run: sudo mkdir -p "${SENZING_PATH}/etc" && sudo cp testdata/senzing-license/g2.lic "${SENZING_PATH}/er/etc/g2.lic"
 
       - name: Create empty database file
-        run: touch /tmp/sqlite/G2C.db
+        run: |
+          mkdir /tmp/sqlite
+          touch /tmp/sqlite/G2C.db
 
       - name: Run go test
         run: go test -exec "${GITHUB_WORKSPACE}/bin/macos_exec_dyld.sh" -json -v -p 1 -coverprofile=./cover.out -covermode=atomic -coverpkg=./... ./...  2>&1 | tee /tmp/gotest.log | gotestfmt
