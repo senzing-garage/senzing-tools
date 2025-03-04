@@ -49,7 +49,7 @@ jobs:
       - name: Run go test
         run: |
           export SENZING_PATH="/opt/senzing"
-          export LD_LIBRARY_PATH="${SENZING_PATH}/er/lib:${SENZING_PATH}/er/lib/macos"
+          export LD_LIBRARY_PATH="${SENZING_PATH}/er/lib"
           go test -json -v -p 1 -coverprofile=./cover.out -covermode=atomic -coverpkg=./... ./...  2>&1 | tee /tmp/gotest.log | gotestfmt
 
       - name: Store coverage file
