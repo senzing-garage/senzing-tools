@@ -14,11 +14,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Delete huge unnecessary tools folder
+      - name: Clear space for docker build
         run: |
-          df -h
           rm -rf /opt/hostedtoolcache
-          df -h
 
       - name: Get repository name
         id: repo-basename
