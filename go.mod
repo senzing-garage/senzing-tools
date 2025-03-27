@@ -18,7 +18,7 @@ require (
 	github.com/senzing-garage/serve-http v0.3.3
 	github.com/senzing-garage/validate v0.2.1
 	github.com/spf13/cobra v1.9.1
-	github.com/spf13/viper v1.20.0
+	github.com/spf13/viper v1.20.1
 	github.com/stretchr/testify v1.10.0
 )
 
