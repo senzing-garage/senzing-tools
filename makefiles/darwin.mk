@@ -8,16 +8,12 @@ SENZING_DIR ?= /opt/senzing/er
 SENZING_TOOLS_SENZING_DIRECTORY ?= $(SENZING_DIR)
 LD_LIBRARY_PATH ?= $(SENZING_TOOLS_SENZING_DIRECTORY)/lib:$(SENZING_TOOLS_SENZING_DIRECTORY)/lib/macos
 DYLD_LIBRARY_PATH := $(LD_LIBRARY_PATH)
-SENZING_TOOLS_DATABASE_URL ?= sqlite3://na:na@nowhere/tmp/sqlite/G2C.db
 PATH := $(MAKEFILE_DIRECTORY)/bin:/$(HOME)/go/bin:$(PATH)
+SENZING_TOOLS_DATABASE_URL ?= sqlite3://na:na@nowhere/tmp/sqlite/G2C.db
 
 # -----------------------------------------------------------------------------
 # OS specific targets
 # -----------------------------------------------------------------------------
-
-.PHONY: build-osarch-specific
-build-osarch-specific: darwin/amd64
-
 
 .PHONY: clean-osarch-specific
 clean-osarch-specific:
@@ -45,14 +41,6 @@ coverage-osarch-specific:
 .PHONY: dependencies-for-development-osarch-specific
 dependencies-for-development-osarch-specific:
 	@curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(shell go env GOPATH)/bin latest
-
-
-.PHONY: docker-build-osarch-specific
-docker-build-osarch-specific:
-	@docker build \
-		--tag $(DOCKER_IMAGE_NAME) \
-		--tag $(DOCKER_IMAGE_NAME):$(BUILD_VERSION) \
-		.
 
 
 .PHONY: documentation-osarch-specific
