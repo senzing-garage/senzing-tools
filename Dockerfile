@@ -61,6 +61,7 @@ LABEL Name="senzing/senzing-tools" \
 HEALTHCHECK CMD ["/app/healthcheck.sh"]
 USER root
 
+
 # Install packages via apt-get.
 
 # Copy files from repository.
@@ -79,8 +80,8 @@ COPY --from=senzing/senzing-poc-server:3.5.1     "/app/senzing-poc-server.jar" "
 
 RUN export STAT_TMP=$(stat --format=%a /tmp) \
  && chmod 777 /tmp \
- && apt-get update \
- && apt-get -y install \
+ && apt-get update -qqq \
+ && apt-get -yqqq install \
       gnupg2 \
       jq \
       libodbc1 \
@@ -92,14 +93,14 @@ RUN export STAT_TMP=$(stat --format=%a /tmp) \
 # Install Java-11.
 
 RUN mkdir -p /etc/apt/keyrings \
- && wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public > /etc/apt/keyrings/adoptium.asc
+  && wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public > /etc/apt/keyrings/adoptium.asc
 
 RUN echo "deb [signed-by=/etc/apt/keyrings/adoptium.asc] https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" >> /etc/apt/sources.list
 
 RUN export STAT_TMP=$(stat --format=%a /tmp) \
  && chmod 777 /tmp \
- && apt-get update \
- && apt-get -y install temurin-11-jdk \
+ && apt-get update -qqq \
+ && apt-get -yqqq install temurin-11-jdk \
  && chmod ${STAT_TMP} /tmp \
  && rm -rf /var/lib/apt/lists/*
 

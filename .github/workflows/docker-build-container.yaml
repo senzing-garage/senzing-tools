@@ -32,6 +32,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Clear space for docker build
+        run: |
+          rm -rf /opt/hostedtoolcache
+
       - name: Get repository name
         id: repo-basename
         run: |
@@ -42,6 +46,6 @@ jobs:
         uses: senzing-factory/github-action-docker-buildx-build@v2
         with:
           image-repository: senzing/${{ steps.repo-basename.outputs.repo }}
+          image-tag: ${{ github.ref_name }}
           password: ${{ secrets.DOCKERHUB_ACCESS_TOKEN }}
-          platforms: "linux/arm64"
           username: ${{ secrets.DOCKERHUB_USERNAME }}
