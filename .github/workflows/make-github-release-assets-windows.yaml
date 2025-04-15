@@ -11,6 +11,8 @@ permissions:
 jobs:
   make-github-release-assets-windows:
     name: publish binaries - windows
+    outputs:
+      status: ${{ job.status }}
     runs-on: windows-latest
     strategy:
       matrix:
@@ -38,3 +40,12 @@ jobs:
           file_glob: true
           tag: ${{ github.ref }}
           overwrite: true
+
+  slack-notification:
+    needs: [make-github-release-assets-windows]
+    if: ${{ always() && contains(fromJSON('["failure", "cancelled"]'), needs.make-github-release-assets-windows.outputs.status ) }}
+    secrets:
+      SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+    uses: senzing-factory/build-resources/.github/workflows/build-failure-slack-notification.yaml@v2
+    with:
+      job-status: ${{ needs.make-github-release-assets-windows.outputs.status }}
