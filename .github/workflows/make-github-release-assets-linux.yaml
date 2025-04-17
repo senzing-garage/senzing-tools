@@ -11,6 +11,8 @@ permissions:
 jobs:
   make-github-release-assets-linux:
     name: publish binaries - linux
+    outputs:
+      status: ${{ job.status }}
     runs-on: ubuntu-latest
 
     steps:
@@ -30,3 +32,12 @@ jobs:
           file_glob: true
           tag: ${{ github.ref }}
           overwrite: true
+
+  slack-notification:
+    needs: [make-github-release-assets-linux]
+    if: ${{ always() && contains(fromJSON('["failure", "cancelled"]'), needs.make-github-release-assets-linux.outputs.status ) }}
+    secrets:
+      SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+    uses: senzing-factory/build-resources/.github/workflows/build-failure-slack-notification.yaml@v2
+    with:
+      job-status: ${{ needs.make-github-release-assets-linux.outputs.status }}
