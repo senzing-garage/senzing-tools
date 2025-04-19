@@ -3,17 +3,17 @@ module github.com/senzing-garage/senzing-tools
 go 1.24
 
 require (
-	github.com/senzing-garage/check-self v0.3.5-0.20250327155245-5f4ad6b2b757
-	github.com/senzing-garage/demo-entity-search v0.2.3
+	github.com/senzing-garage/check-self v0.3.5
+	github.com/senzing-garage/demo-entity-search v0.2.4
 	github.com/senzing-garage/explain v0.3.1
 	github.com/senzing-garage/go-cmdhelping v0.3.3
-	github.com/senzing-garage/init-database v0.7.10
-	github.com/senzing-garage/load v0.2.4
+	github.com/senzing-garage/init-database v0.7.11
+	github.com/senzing-garage/load v0.2.5
 	github.com/senzing-garage/move v0.3.2
 	github.com/senzing-garage/observe v0.3.1
-	github.com/senzing-garage/playground v0.4.8
-	github.com/senzing-garage/serve-grpc v0.9.6
-	github.com/senzing-garage/serve-http v0.3.4-0.20250417171724-9e2f77b9cc15
+	github.com/senzing-garage/playground v0.4.10
+	github.com/senzing-garage/serve-grpc v0.9.7
+	github.com/senzing-garage/serve-http v0.3.4
 	github.com/senzing-garage/validate v0.2.1
 	github.com/spf13/cobra v1.9.1
 	github.com/spf13/viper v1.20.1
@@ -68,7 +68,7 @@ require (
 	github.com/mattn/go-sqlite3 v1.14.28 // indirect
 	github.com/microsoft/go-mssqldb v1.8.0 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
-	github.com/ogen-go/ogen v1.10.1 // indirect
+	github.com/ogen-go/ogen v1.12.0 // indirect
 	github.com/pelletier/go-toml/v2 v2.2.4 // indirect
 	github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c // indirect
 	github.com/planetscale/vtprotobuf v0.6.1-0.20250313105119-ba97887b0a25 // indirect
@@ -89,11 +89,11 @@ require (
 	github.com/senzing-garage/go-messaging v1.5.2 // indirect
 	github.com/senzing-garage/go-observing v0.3.3 // indirect
 	github.com/senzing-garage/go-queueing v0.4.2 // indirect
-	github.com/senzing-garage/go-rest-api-service v0.10.5-0.20250417150243-211a131def49 // indirect
+	github.com/senzing-garage/go-rest-api-service v0.10.5 // indirect
 	github.com/senzing-garage/go-rest-api-service-legacy v0.1.1 // indirect
-	github.com/senzing-garage/go-sdk-abstract-factory v0.9.7 // indirect
+	github.com/senzing-garage/go-sdk-abstract-factory v0.9.8 // indirect
 	github.com/senzing-garage/sz-sdk-go v0.15.1 // indirect
-	github.com/senzing-garage/sz-sdk-go-core v0.9.2 // indirect
+	github.com/senzing-garage/sz-sdk-go-core v0.9.3 // indirect
 	github.com/senzing-garage/sz-sdk-go-grpc v0.9.4 // indirect
 	github.com/senzing-garage/sz-sdk-go-mock v0.8.6 // indirect
 	github.com/senzing-garage/sz-sdk-json-type-definition v0.2.7 // indirect
