@@ -5,8 +5,8 @@ go 1.24
 require (
 	github.com/senzing-garage/check-self v0.3.5
 	github.com/senzing-garage/demo-entity-search v0.2.4
-	github.com/senzing-garage/explain v0.3.1
-	github.com/senzing-garage/go-cmdhelping v0.3.3
+	github.com/senzing-garage/explain v0.3.2
+	github.com/senzing-garage/go-cmdhelping v0.3.4
 	github.com/senzing-garage/init-database v0.7.11
 	github.com/senzing-garage/load v0.2.5
 	github.com/senzing-garage/move v0.3.2
@@ -38,7 +38,7 @@ require (
 	github.com/aws/smithy-go v1.22.3 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
-	github.com/cpuguy83/go-md2man/v2 v2.0.6 // indirect
+	github.com/cpuguy83/go-md2man/v2 v2.0.7 // indirect
 	github.com/creack/pty v1.1.24 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/dlclark/regexp2 v1.11.5 // indirect
@@ -84,9 +84,9 @@ require (
 	github.com/segmentio/asm v1.2.0 // indirect
 	github.com/senzing-garage/go-databasing v0.5.6 // indirect
 	github.com/senzing-garage/go-grpcing v0.2.1 // indirect
-	github.com/senzing-garage/go-helpers v0.6.10 // indirect
+	github.com/senzing-garage/go-helpers v0.6.11 // indirect
 	github.com/senzing-garage/go-logging v1.5.1 // indirect
-	github.com/senzing-garage/go-messaging v1.5.2 // indirect
+	github.com/senzing-garage/go-messaging v1.5.3 // indirect
 	github.com/senzing-garage/go-observing v0.3.3 // indirect
 	github.com/senzing-garage/go-queueing v0.4.2 // indirect
 	github.com/senzing-garage/go-rest-api-service v0.10.5 // indirect
