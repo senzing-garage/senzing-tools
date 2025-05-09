@@ -12,7 +12,7 @@ require (
 	github.com/senzing-garage/move v0.3.2
 	github.com/senzing-garage/observe v0.3.2
 	github.com/senzing-garage/playground v0.4.10
-	github.com/senzing-garage/serve-grpc v0.9.9
+	github.com/senzing-garage/serve-grpc v0.9.10
 	github.com/senzing-garage/serve-http v0.3.4
 	github.com/senzing-garage/validate v0.2.2
 	github.com/spf13/cobra v1.9.1
