@@ -9,7 +9,7 @@ require (
 	github.com/senzing-garage/go-cmdhelping v0.3.4
 	github.com/senzing-garage/init-database v0.7.11
 	github.com/senzing-garage/load v0.2.5
-	github.com/senzing-garage/move v0.3.2
+	github.com/senzing-garage/move v0.3.3
 	github.com/senzing-garage/observe v0.3.2
 	github.com/senzing-garage/playground v0.4.10
 	github.com/senzing-garage/serve-grpc v0.9.10
@@ -92,11 +92,11 @@ require (
 	github.com/senzing-garage/go-logging v1.5.2 // indirect
 	github.com/senzing-garage/go-messaging v1.5.3 // indirect
 	github.com/senzing-garage/go-observing v0.3.4 // indirect
-	github.com/senzing-garage/go-queueing v0.4.2 // indirect
+	github.com/senzing-garage/go-queueing v0.4.3 // indirect
 	github.com/senzing-garage/go-rest-api-service v0.10.5 // indirect
 	github.com/senzing-garage/go-rest-api-service-legacy v0.1.1 // indirect
 	github.com/senzing-garage/go-sdk-abstract-factory v0.9.8 // indirect
-	github.com/senzing-garage/sz-sdk-go v0.15.2 // indirect
+	github.com/senzing-garage/sz-sdk-go v0.15.3 // indirect
 	github.com/senzing-garage/sz-sdk-go-core v0.9.4 // indirect
 	github.com/senzing-garage/sz-sdk-go-grpc v0.9.5 // indirect
 	github.com/senzing-garage/sz-sdk-go-mock v0.8.6 // indirect
