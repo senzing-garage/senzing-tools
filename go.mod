@@ -13,7 +13,7 @@ require (
 	github.com/senzing-garage/observe v0.3.2
 	github.com/senzing-garage/playground v0.4.10
 	github.com/senzing-garage/serve-grpc v0.9.10
-	github.com/senzing-garage/serve-http v0.3.4
+	github.com/senzing-garage/serve-http v0.3.5
 	github.com/senzing-garage/validate v0.2.2
 	github.com/spf13/cobra v1.9.1
 	github.com/spf13/viper v1.20.1
@@ -79,7 +79,7 @@ require (
 	github.com/prometheus/client_golang v1.22.0 // indirect
 	github.com/prometheus/client_model v0.6.2 // indirect
 	github.com/prometheus/common v0.63.0 // indirect
-	github.com/prometheus/procfs v0.16.0 // indirect
+	github.com/prometheus/procfs v0.16.1 // indirect
 	github.com/rabbitmq/amqp091-go v1.10.0 // indirect
 	github.com/roncewind/go-util v0.0.5 // indirect
 	github.com/rs/cors v1.11.1 // indirect
@@ -87,7 +87,7 @@ require (
 	github.com/sagikazarmark/locafero v0.9.0 // indirect
 	github.com/segmentio/asm v1.2.0 // indirect
 	github.com/senzing-garage/go-databasing v0.5.7 // indirect
-	github.com/senzing-garage/go-grpcing v0.2.1 // indirect
+	github.com/senzing-garage/go-grpcing v0.2.2 // indirect
 	github.com/senzing-garage/go-helpers v0.6.11 // indirect
 	github.com/senzing-garage/go-logging v1.5.2 // indirect
 	github.com/senzing-garage/go-messaging v1.5.3 // indirect
