@@ -4,7 +4,7 @@ go 1.24
 
 require (
 	github.com/senzing-garage/check-self v0.3.6
-	github.com/senzing-garage/demo-entity-search v0.2.4
+	github.com/senzing-garage/demo-entity-search v0.2.5
 	github.com/senzing-garage/explain v0.3.2
 	github.com/senzing-garage/go-cmdhelping v0.3.4
 	github.com/senzing-garage/init-database v0.7.11
@@ -93,7 +93,7 @@ require (
 	github.com/senzing-garage/go-messaging v1.5.3 // indirect
 	github.com/senzing-garage/go-observing v0.3.4 // indirect
 	github.com/senzing-garage/go-queueing v0.4.3 // indirect
-	github.com/senzing-garage/go-rest-api-service v0.10.5 // indirect
+	github.com/senzing-garage/go-rest-api-service v0.10.6 // indirect
 	github.com/senzing-garage/go-rest-api-service-legacy v0.1.1 // indirect
 	github.com/senzing-garage/go-sdk-abstract-factory v0.9.9 // indirect
 	github.com/senzing-garage/sz-sdk-go v0.15.3 // indirect
@@ -121,7 +121,7 @@ require (
 	golang.org/x/sys v0.33.0 // indirect
 	golang.org/x/text v0.25.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250512202823-5a2f75b736a9 // indirect
-	google.golang.org/grpc v1.72.0 // indirect
+	google.golang.org/grpc v1.72.1 // indirect
 	google.golang.org/protobuf v1.36.6 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
