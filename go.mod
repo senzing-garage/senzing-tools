@@ -7,7 +7,7 @@ require (
 	github.com/senzing-garage/demo-entity-search v0.2.5
 	github.com/senzing-garage/explain v0.3.2
 	github.com/senzing-garage/go-cmdhelping v0.3.4
-	github.com/senzing-garage/init-database v0.7.11
+	github.com/senzing-garage/init-database v0.7.12
 	github.com/senzing-garage/load v0.2.6
 	github.com/senzing-garage/move v0.3.3
 	github.com/senzing-garage/observe v0.3.2
