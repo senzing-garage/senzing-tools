@@ -29,6 +29,10 @@ jobs:
         with:
           senzingsdk-repository-path: ${{ secrets.SENZING_WIN_BETA_REPOSITORY }}
 
+      - name: Add to "Path" environment variable
+        run: |
+          Add-Content "$env:GITHUB_PATH" "$Env:USERPROFILE\Senzing\er\lib"
+
       - name: make executable file
         run: go build -o senzing-tools.exe
 
