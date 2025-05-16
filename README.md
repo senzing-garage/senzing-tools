@@ -122,7 +122,7 @@ So see a specific list, visit the appropriate command.
     1. [init-database](https://github.com/senzing-garage/init-database#using-docker)
     1. [serve-grpc](https://github.com/senzing-garage/serve-grpc#using-docker)
 
-This usage shows how to initialze a database with a Docker container.
+This usage shows how to initialize a database with a Docker container.
 
 1. :pencil2: A `senzing/senzing-tools init-database`example:
 
@@ -151,7 +151,7 @@ This usage shows how to initialze a database with a Docker container.
         ```
 
     1. Run `senzing/senzing-tools`.
-       **Note:** `SENZING_TOOLS_ENGINE_CONFIGURATION_JSON` superceeds use of `SENZING_TOOLS_DATABASE_URL`.
+       **Note:** `SENZING_TOOLS_ENGINE_CONFIGURATION_JSON` supercedes use of `SENZING_TOOLS_DATABASE_URL`.
        Example:
 
         ```console
