@@ -45,19 +45,24 @@ var RootCmd = &cobra.Command{
 // Execute adds all child commands to the root command and sets flags appropriately.
 // This is called by main.main(). It only needs to happen once to the RootCmd.
 func Execute() {
-
 	// Handle choice of command set by environment variable.
-
 	command, isSet := os.LookupEnv("SENZING_TOOLS_COMMAND")
 	if isSet {
 		if (len(os.Args) == 1) || (strings.HasPrefix(os.Args[1], "-")) {
 			newArgs := strings.Split(command, " ")
+
 			for index, arg := range os.Args {
 				if index > 0 {
 					newArgs = append(newArgs, arg)
 				}
 			}
-			fmt.Fprintf(os.Stderr, "Using SENZING_TOOLS_COMMAND value of '%s' resulting in command: 'senzing-tools %s'\n", command, strings.Join(newArgs, " "))
+
+			fmt.Fprintf(
+				os.Stderr,
+				"Using SENZING_TOOLS_COMMAND value of '%s' resulting in command: 'senzing-tools %s'\n",
+				command,
+				strings.Join(newArgs, " "),
+			)
 			RootCmd.SetArgs(newArgs)
 		}
 	}
@@ -70,13 +75,14 @@ func Execute() {
 	}
 }
 
-// Used in construction of cobra.Command
+// Used in construction of cobra.Command.
 func PreRun(cobraCommand *cobra.Command, args []string) {
 	_ = args
+
 	cobraCommand.SetVersionTemplate(`{{printf "%s: %s - version %s\n" .Name .Short .Version}}`)
 }
 
-// Used in construction of cobra.Command
+// Used in construction of cobra.Command.
 func Version() string {
 	return cmdhelper.Version(githubVersion, githubIteration)
 }
@@ -89,7 +95,19 @@ func Version() string {
 // that apply to all senzing-tool subcommands.
 func init() {
 	cobra.OnInitialize(initConfig)
-	RootCmd.PersistentFlags().String(option.Configuration.Arg, option.Configuration.Default.(string), fmt.Sprintf(option.Configuration.Help, option.Configuration.Envar))
+
+	configurationDefault := ""
+	typedConfigurationDefault, isOK := option.Configuration.Default.(string)
+
+	if isOK {
+		configurationDefault = typedConfigurationDefault
+	}
+
+	RootCmd.PersistentFlags().
+		String(
+			option.Configuration.Arg,
+			configurationDefault,
+			fmt.Sprintf(option.Configuration.Help, option.Configuration.Envar))
 }
 
 // initConfig reads in config file and ENV variables if set.
@@ -100,9 +118,7 @@ func initConfig() {
 	if configuration != "" { // Use configuration file specified as a command line option.
 		viper.SetConfigFile(configuration)
 	} else { // Search for a configuration file.
-
 		// Determine home directory.
-
 		home, err := os.UserHomeDir()
 		cobra.CheckErr(err)
 
