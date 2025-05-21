@@ -6,7 +6,7 @@ require (
 	github.com/senzing-garage/check-self v0.3.6
 	github.com/senzing-garage/demo-entity-search v0.2.5
 	github.com/senzing-garage/explain v0.3.2
-	github.com/senzing-garage/go-cmdhelping v0.3.4
+	github.com/senzing-garage/go-cmdhelping v0.3.5
 	github.com/senzing-garage/init-database v0.7.12
 	github.com/senzing-garage/load v0.2.6
 	github.com/senzing-garage/move v0.3.3
@@ -88,7 +88,7 @@ require (
 	github.com/segmentio/asm v1.2.0 // indirect
 	github.com/senzing-garage/go-databasing v0.5.7 // indirect
 	github.com/senzing-garage/go-grpcing v0.2.2 // indirect
-	github.com/senzing-garage/go-helpers v0.6.11 // indirect
+	github.com/senzing-garage/go-helpers v0.6.12 // indirect
 	github.com/senzing-garage/go-logging v1.5.2 // indirect
 	github.com/senzing-garage/go-messaging v1.5.3 // indirect
 	github.com/senzing-garage/go-observing v0.3.4 // indirect
