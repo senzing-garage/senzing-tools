@@ -436,8 +436,8 @@ github.com/senzing-garage/go-grpcing v0.2.2 h1:oLR+jpfmslFB9kYULJv5pFtQXLScxQ9Gq
 github.com/senzing-garage/go-grpcing v0.2.2/go.mod h1:jxV2+HpudDd8TQOw6maRyUy0u8Qv7j0zW+aD8oZB7ck=
 github.com/senzing-garage/go-helpers v0.6.12 h1:RnoDm2pnVMMGslDbJxtgZpGpuSR5dK+T7BZYoXjRaeM=
 github.com/senzing-garage/go-helpers v0.6.12/go.mod h1:/gceFlOcg8+0ujQH/CzLjqVAsXtR9xRJgMWDlpSqHGY=
-github.com/senzing-garage/go-logging v1.5.2 h1:9Rhsvxu6jLHfCLIoDxSMXX0sf/w0TY/L7i7fFfSdP64=
-github.com/senzing-garage/go-logging v1.5.2/go.mod h1:+QsFSi/qKmCC3YAyuXcRbQlBpvpmhTWLWVH2Miap1Fw=
+github.com/senzing-garage/go-logging v1.5.3 h1:RYF5hHL4fAUzOFMQwwotT5/I0YD3ItDF589wKtw73X4=
+github.com/senzing-garage/go-logging v1.5.3/go.mod h1:AAZvO6ectkKzD1ZbUl24X1TOd3riCQLYaMKgBnuiZF0=
 github.com/senzing-garage/go-messaging v1.5.3 h1:bH+LtEgNJj/PRbg1VMK9/Gk457CdfdcjMiubxffbTog=
 github.com/senzing-garage/go-messaging v1.5.3/go.mod h1:7qvSNAVyWcSIcsnDAm8obCxHItljN295O3fX4bOgfp0=
 github.com/senzing-garage/go-observing v0.3.5 h1:DDb8MzycnbTv4Gu9BVO1Whjmbq51CMdlmzUKYn//bCM=
@@ -476,8 +476,8 @@ github.com/senzing-garage/sz-sdk-json-type-definition v0.2.8 h1:1newdU9TVFUMOzOX
 github.com/senzing-garage/sz-sdk-json-type-definition v0.2.8/go.mod h1:A5VwAeayGVsxrsqn6FqhFrfBS4hyYaZsKRzofOB/1Vk=
 github.com/senzing-garage/sz-sdk-proto v0.8.3 h1:tXnEA8LEcTvx7+kfS5CrC2UhT/tywqerog807zQvNVc=
 github.com/senzing-garage/sz-sdk-proto v0.8.3/go.mod h1:142ssyFXWOp6PUjMWUZX2l9HFjVPWFggTR4jqE0a0ro=
-github.com/senzing-garage/validate v0.2.2 h1:n4FLwjQCXlFbZvZyzuldocKbcIalnbY6MN0Rx0coBcc=
-github.com/senzing-garage/validate v0.2.2/go.mod h1:AiTZWoDYy7ux4TPgRHI5LutgF8Xh+fKk0kUlI3JMOes=
+github.com/senzing-garage/validate v0.2.3 h1:EZvPqp39BQxb89l4gGx/G4mKAR7XDct/B6Q2kSrerjc=
+github.com/senzing-garage/validate v0.2.3/go.mod h1:yfXHbZTti596FxBH0zB/fo6XNtm/2Ik1tyrT+3yHKCU=
 github.com/shurcooL/sanitized_anchor_name v1.0.0/go.mod h1:1NzhyTcUVG4SuEtjjoZeVRXNmyL/1OwPU0+IJeTBvfc=
 github.com/sirupsen/logrus v1.2.0/go.mod h1:LxeOpSwHxABJmUn/MG1IvRgCAasNZTLOkJPxbbu5VWo=
 github.com/sirupsen/logrus v1.4.2/go.mod h1:tLMulIdttU9McNUspp0xgXVQah82FyeX6MwdIuYE2rE=

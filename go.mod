@@ -14,7 +14,7 @@ require (
 	github.com/senzing-garage/playground v0.4.10
 	github.com/senzing-garage/serve-grpc v0.9.10
 	github.com/senzing-garage/serve-http v0.3.5
-	github.com/senzing-garage/validate v0.2.2
+	github.com/senzing-garage/validate v0.2.3
 	github.com/spf13/cobra v1.9.1
 	github.com/spf13/viper v1.20.1
 	github.com/stretchr/testify v1.10.0
@@ -89,7 +89,7 @@ require (
 	github.com/senzing-garage/go-databasing v0.5.7 // indirect
 	github.com/senzing-garage/go-grpcing v0.2.2 // indirect
 	github.com/senzing-garage/go-helpers v0.6.12 // indirect
-	github.com/senzing-garage/go-logging v1.5.2 // indirect
+	github.com/senzing-garage/go-logging v1.5.3 // indirect
 	github.com/senzing-garage/go-messaging v1.5.3 // indirect
 	github.com/senzing-garage/go-observing v0.3.5 // indirect
 	github.com/senzing-garage/go-queueing v0.4.3 // indirect
