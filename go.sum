@@ -426,8 +426,8 @@ github.com/senzing-garage/check-self v0.3.6 h1:ifOXKQU2jiabQeJVjJSPn3nCyxqVUS2qw
 github.com/senzing-garage/check-self v0.3.6/go.mod h1:RDwfraMRZZavwUR7Taa3dnAJUrVaYcpKBNT12olggY0=
 github.com/senzing-garage/demo-entity-search v0.2.5 h1:xXQSXCCgmkxSlxpuCBKSRzqg/a3jtMp3I3drH38Y7c0=
 github.com/senzing-garage/demo-entity-search v0.2.5/go.mod h1:Xn4VhtOZtw+wsbfCmT0q0yRJnx2/05BdB/G6MtXsW6o=
-github.com/senzing-garage/explain v0.3.2 h1:bTrOCMgLuYwBvXQQY0S6W+La9rcgNZLhkR31rGa/1gY=
-github.com/senzing-garage/explain v0.3.2/go.mod h1:E95Azhg7672Ds3QR7fKlQ2q/QUt6BHDE3F/vIK2DcrE=
+github.com/senzing-garage/explain v0.3.3 h1:jdCUiIMd+VRjnBOa1su097aaZL3uobEFTjj2DLIBCGs=
+github.com/senzing-garage/explain v0.3.3/go.mod h1:uycbB3LgcfIxsK6r9hbtRKZQDvhT0rCzhy46f8RdBq0=
 github.com/senzing-garage/go-cmdhelping v0.3.5 h1:knSHGGeZXalIOvz2TW4TNqC0HluZjAvv9ELZVqMwwWk=
 github.com/senzing-garage/go-cmdhelping v0.3.5/go.mod h1:n0TdEBOca7NMMVZEECKdsiopHHNk9Il2Bsc4ITFsHAA=
 github.com/senzing-garage/go-databasing v0.5.7 h1:/qbjGoTMYI5olGYbfN/uwVW0xRRUyJ20n8uCYVaTdoM=
