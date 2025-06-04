@@ -9,7 +9,7 @@ require (
 	github.com/senzing-garage/go-cmdhelping v0.3.5
 	github.com/senzing-garage/init-database v0.7.12
 	github.com/senzing-garage/load v0.2.7
-	github.com/senzing-garage/move v0.3.3
+	github.com/senzing-garage/move v0.3.4
 	github.com/senzing-garage/observe v0.3.3
 	github.com/senzing-garage/playground v0.4.10
 	github.com/senzing-garage/serve-grpc v0.9.11

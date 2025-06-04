@@ -454,8 +454,8 @@ github.com/senzing-garage/init-database v0.7.12 h1:z+2F9DpOmm4w2KUvaSwK4xFtaY9ML
 github.com/senzing-garage/init-database v0.7.12/go.mod h1:jvwWcJgl6kagBMe55er4tVAXpyS+uxPtv2kchqE1x5k=
 github.com/senzing-garage/load v0.2.7 h1:BVWBSTJgwZ6dys20eLrYKvjoVXPljRa2XgzJxfIpE8U=
 github.com/senzing-garage/load v0.2.7/go.mod h1:/rsv4FXJWSZ1pw8z63sJTcO7Y3VaXxWJb5cFHBJlge0=
-github.com/senzing-garage/move v0.3.3 h1:KEvGdMBHy2U4Yi3jJYrMkH+oQOVdjSCTnS+1pH/xEyE=
-github.com/senzing-garage/move v0.3.3/go.mod h1:53zOF9oNIIEC2PuOHuieJQcy+jecuGdb2GrvKgOId60=
+github.com/senzing-garage/move v0.3.4 h1:K8UupTrrdATEuUD9q1OAH7QuqMfOcchjcaQD6qkOdPs=
+github.com/senzing-garage/move v0.3.4/go.mod h1:xwVO3z6hhsS+Neoe4LxRLo888uerEuDaH7OCyY6VI68=
 github.com/senzing-garage/observe v0.3.3 h1:4ewcRKaPKlxUjkvJyzSDZWsDXEGM6l4H647XYwMPcqQ=
 github.com/senzing-garage/observe v0.3.3/go.mod h1:4hS2U6h9DvihNd7ImtPpKvR2w2mBof4l0muVfVJM6/g=
 github.com/senzing-garage/playground v0.4.10 h1:u6i58vgUfZGjXzdinG2VjTbDqGbRrsFs8Z3lP9blZ+0=
