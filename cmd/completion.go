@@ -3,10 +3,10 @@
 package cmd
 
 import (
-	"fmt"
 	"io"
 	"os"
 
+	"github.com/senzing-garage/go-helpers/wraperror"
 	"github.com/spf13/cobra"
 )
 
@@ -34,7 +34,7 @@ func init() {
 
 func completionAction(out io.Writer) error {
 	if err := RootCmd.GenBashCompletion(out); err != nil {
-		return fmt.Errorf("completionAction: %w", err)
+		return wraperror.Errorf(err, "completionAction")
 	}
 
 	return nil
