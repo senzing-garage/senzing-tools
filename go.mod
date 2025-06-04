@@ -8,7 +8,7 @@ require (
 	github.com/senzing-garage/explain v0.3.3
 	github.com/senzing-garage/go-cmdhelping v0.3.5
 	github.com/senzing-garage/init-database v0.7.12
-	github.com/senzing-garage/load v0.2.6
+	github.com/senzing-garage/load v0.2.7
 	github.com/senzing-garage/move v0.3.3
 	github.com/senzing-garage/observe v0.3.3
 	github.com/senzing-garage/playground v0.4.10
@@ -92,13 +92,13 @@ require (
 	github.com/senzing-garage/go-logging v1.5.3 // indirect
 	github.com/senzing-garage/go-messaging v1.5.3 // indirect
 	github.com/senzing-garage/go-observing v0.3.5 // indirect
-	github.com/senzing-garage/go-queueing v0.4.3 // indirect
+	github.com/senzing-garage/go-queueing v0.4.4 // indirect
 	github.com/senzing-garage/go-rest-api-service v0.10.6 // indirect
 	github.com/senzing-garage/go-rest-api-service-legacy v0.1.1 // indirect
-	github.com/senzing-garage/go-sdk-abstract-factory v0.9.9 // indirect
+	github.com/senzing-garage/go-sdk-abstract-factory v0.9.10 // indirect
 	github.com/senzing-garage/sz-sdk-go v0.15.4 // indirect
 	github.com/senzing-garage/sz-sdk-go-core v0.9.6 // indirect
-	github.com/senzing-garage/sz-sdk-go-grpc v0.9.5 // indirect
+	github.com/senzing-garage/sz-sdk-go-grpc v0.9.6 // indirect
 	github.com/senzing-garage/sz-sdk-go-mock v0.8.8 // indirect
 	github.com/senzing-garage/sz-sdk-json-type-definition v0.2.8 // indirect
 	github.com/senzing-garage/sz-sdk-proto v0.8.3 // indirect
@@ -120,7 +120,7 @@ require (
 	golang.org/x/sync v0.14.0 // indirect
 	golang.org/x/sys v0.33.0 // indirect
 	golang.org/x/text v0.25.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20250528174236-200df99c418a // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20250603155806-513f23925822 // indirect
 	google.golang.org/grpc v1.72.2 // indirect
 	google.golang.org/protobuf v1.36.6 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
