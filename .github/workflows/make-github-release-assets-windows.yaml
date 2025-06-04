@@ -32,6 +32,9 @@ jobs:
       - name: Add to "Path" environment variable
         run: |
           Add-Content "$env:GITHUB_PATH" "$Env:USERPROFILE\Senzing\er\lib"
+          Add-Content "$Env:SENZING_PATH" "$Env:USERPROFILE\Senzing"
+          Add-Content "$Env:CGO_CFLAGS" "-g -I$Env:SENZING_PATH\er\sdk\c"
+          Add-Content "$Env:CGO_LDFLAGS" "-L$Env:SENZING_PATH\er\lib -lSz"
 
       - name: make executable file
         run: go build -o senzing-tools.exe
