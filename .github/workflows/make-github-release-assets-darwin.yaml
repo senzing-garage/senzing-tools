@@ -1,9 +1,11 @@
 name: make github release assets darwin
 
-on:
-  push:
-    tags:
-      - "[0-9]+.[0-9]+.[0-9]+"
+# on:
+#   push:
+#     tags:
+#       - "[0-9]+.[0-9]+.[0-9]+"
+
+on: push
 
 permissions:
   contents: write
@@ -22,8 +24,6 @@ jobs:
     steps:
       - name: checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup go ${{ matrix.go }}
         uses: actions/setup-go@v5
@@ -50,14 +50,8 @@ jobs:
           } >> "$GITHUB_ENV"
 
       - name: make executable file
-        run: make darwin/amd64
-
-      - name: adjust create-dmg
         run: |
-          sed -e "s|ln -s /Applications|ln -s /usr/local/bin|" /usr/local/bin/create-dmg > /usr/local/bin/create-dmg-new
-          mv /usr/local/bin/create-dmg /usr/local/bin/create-dmg-backup
-          mv /usr/local/bin/create-dmg-new /usr/local/bin/create-dmg
-          chmod +x /usr/local/bin/create-dmg
+          go build -o "target/darwin-amd64/senzing-tools"
 
       - name: make a .dmg file
         run: |
