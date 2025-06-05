@@ -16,30 +16,33 @@ jobs:
     runs-on: windows-latest
     strategy:
       matrix:
+        go: ["1.24"]
         senzingsdk-version: ["staging-v4"]
 
     steps:
       - name: checkout repository
         uses: actions/checkout@v4
+
+      - name: Setup go ${{ matrix.go }}
+        uses: actions/setup-go@v5
         with:
-          fetch-depth: 0
+          go-version: ${{ matrix.go }}
 
       - name: install Senzing SDK
         uses: senzing-factory/github-action-install-senzing-sdk@v3
         with:
           senzingsdk-repository-path: ${{ secrets.SENZING_WIN_BETA_REPOSITORY }}
 
-      - name: Set environment variables
+      - name: Add to "Path" environment variable
         run: |
           Add-Content "$env:GITHUB_PATH" "$Env:USERPROFILE\Senzing\er\lib"
-          {
-            echo "$Env:SENZING_PATH=$Env:USERPROFILE\Senzing"
-            echo $Env:CGO_CFLAGS="-g -I$Env:SENZING_PATH\er\sdk\c"
-            echo $Env:CGO_LDFLAGS="-L$Env:SENZING_PATH\er\lib -lSz"
-          } >> "$GITHUB_ENV"
 
-      - name: make executable file
-        run: go build -o senzing-tools.exe
+      - name: Build executable
+        run: |
+          $Env:SENZING_PATH = "$Env:USERPROFILE\Senzing"
+          $Env:CGO_CFLAGS = "-g -I$Env:SENZING_PATH\er\sdk\c"
+          $Env:CGO_LDFLAGS = "-L$Env:SENZING_PATH\er\lib -lSz"
+          go build -o senzing-tools.exe
 
       - name: upload versioned packages to release assets
         uses: svenstaro/upload-release-action@v2
