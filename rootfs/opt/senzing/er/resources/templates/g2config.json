@@ -29,7 +29,7 @@
                 "FELEM_CODE": null,
                 "FELEM_REQ": "Yes",
                 "DEFAULT_VALUE": null,
-                "INTERNAL": "No"
+                "INTERNAL": "Yes"
             },
             {
                 "ATTR_ID": 1101,
@@ -452,16 +452,6 @@
                 "INTERNAL": "Yes"
             },
             {
-                "ATTR_ID": 1356,
-                "ATTR_CODE": "NATIONAL_ID_TYPE",
-                "ATTR_CLASS": "IDENTIFIER",
-                "FTYPE_CODE": "NATIONAL_ID",
-                "FELEM_CODE": "ID_TYPE",
-                "FELEM_REQ": "Desired",
-                "DEFAULT_VALUE": null,
-                "INTERNAL": "No"
-            },
-            {
                 "ATTR_ID": 1361,
                 "ATTR_CODE": "TAX_ID_NUMBER",
                 "ATTR_CLASS": "IDENTIFIER",
@@ -832,26 +822,6 @@
                 "INTERNAL": "Yes"
             },
             {
-                "ATTR_ID": 1616,
-                "ATTR_CODE": "ADDR_STR_NAME_METAPHONE",
-                "ATTR_CLASS": "ADDRESS",
-                "FTYPE_CODE": "ADDRESS",
-                "FELEM_CODE": "STR_NAME_METAPHONE",
-                "FELEM_REQ": "No",
-                "DEFAULT_VALUE": null,
-                "INTERNAL": "Yes"
-            },
-            {
-                "ATTR_ID": 1617,
-                "ATTR_CODE": "ADDR_CITY_METAPHONE",
-                "ATTR_CLASS": "ADDRESS",
-                "FTYPE_CODE": "ADDRESS",
-                "FELEM_CODE": "CITY_METAPHONE",
-                "FELEM_REQ": "No",
-                "DEFAULT_VALUE": null,
-                "INTERNAL": "Yes"
-            },
-            {
                 "ATTR_ID": 1618,
                 "ATTR_CODE": "ADDR_STR_NAME_STD",
                 "ATTR_CLASS": "ADDRESS",
@@ -877,26 +847,6 @@
                 "ATTR_CLASS": "ADDRESS",
                 "FTYPE_CODE": "ADDRESS",
                 "FELEM_CODE": "POSTAL_5",
-                "FELEM_REQ": "No",
-                "DEFAULT_VALUE": null,
-                "INTERNAL": "Yes"
-            },
-            {
-                "ATTR_ID": 1621,
-                "ATTR_CODE": "ADDR_SCRIPT",
-                "ATTR_CLASS": "ADDRESS",
-                "FTYPE_CODE": "ADDRESS",
-                "FELEM_CODE": "SCRIPT",
-                "FELEM_REQ": "No",
-                "DEFAULT_VALUE": null,
-                "INTERNAL": "Yes"
-            },
-            {
-                "ATTR_ID": 1622,
-                "ATTR_CODE": "ADDR_LIBPOSTAL_PARSE",
-                "ATTR_CLASS": "ADDRESS",
-                "FTYPE_CODE": "ADDRESS",
-                "FELEM_CODE": "LIBPOSTAL_PARSE",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
                 "INTERNAL": "Yes"
@@ -1454,12 +1404,32 @@
             {
                 "ATTR_ID": 2814,
                 "ATTR_CODE": "PLACEKEY",
-                "ATTR_CLASS": "PLACEKEY",
+                "ATTR_CLASS": "IDENTIFIER",
                 "FTYPE_CODE": "PLACEKEY",
                 "FELEM_CODE": "PLACEKEY",
                 "FELEM_REQ": "No",
                 "DEFAULT_VALUE": null,
                 "INTERNAL": "No"
+            },
+            {
+                "ATTR_ID": 2815,
+                "ATTR_CODE": "SEMANTIC_EMBEDDING",
+                "ATTR_CLASS": "IDENTIFIER",
+                "FTYPE_CODE": "SEMANTIC_VALUE",
+                "FELEM_CODE": "EMBEDDING",
+                "FELEM_REQ": "No",
+                "DEFAULT_VALUE": null,
+                "INTERNAL": "No"
+            },
+            {
+                "ATTR_ID": 2816,
+                "ATTR_CODE": "SEMANTIC_ALGORITHM",
+                "ATTR_CLASS": "IDENTIFIER",
+                "FTYPE_CODE": "SEMANTIC_VALUE",
+                "FELEM_CODE": "ALGORITHM",
+                "FELEM_REQ": "No",
+                "DEFAULT_VALUE": null,
+                "INTERNAL": "Yes"
             }
         ],
         "CFG_CFBOM": [
@@ -1732,12 +1702,6 @@
                 "FTYPE_ID": 5,
                 "FELEM_ID": 72,
                 "EXEC_ORDER": 14
-            },
-            {
-                "CFCALL_ID": 5,
-                "FTYPE_ID": 5,
-                "FELEM_ID": 124,
-                "EXEC_ORDER": 15
             },
             {
                 "CFCALL_ID": 6,
@@ -2146,6 +2110,18 @@
                 "FTYPE_ID": 93,
                 "FELEM_ID": 124,
                 "EXEC_ORDER": 1
+            },
+            {
+                "CFCALL_ID": 67,
+                "FTYPE_ID": 99,
+                "FELEM_ID": 127,
+                "EXEC_ORDER": 1
+            },
+            {
+                "CFCALL_ID": 67,
+                "FTYPE_ID": 99,
+                "FELEM_ID": 128,
+                "EXEC_ORDER": 2
             }
         ],
         "CFG_CFCALL": [
@@ -2242,7 +2218,7 @@
             {
                 "CFCALL_ID": 36,
                 "FTYPE_ID": 53,
-                "CFUNC_ID": 3
+                "CFUNC_ID": 9
             },
             {
                 "CFCALL_ID": 37,
@@ -2388,6 +2364,11 @@
                 "CFCALL_ID": 66,
                 "FTYPE_ID": 93,
                 "CFUNC_ID": 14
+            },
+            {
+                "CFCALL_ID": 67,
+                "FTYPE_ID": 99,
+                "CFUNC_ID": 15
             }
         ],
         "CFG_CFRTN": [
@@ -2630,6 +2611,30 @@
                 "LIKELY_SCORE": 95,
                 "PLAUSIBLE_SCORE": 95,
                 "UN_LIKELY_SCORE": 95
+            },
+            {
+                "CFRTN_ID": 27,
+                "CFUNC_ID": 9,
+                "FTYPE_ID": 53,
+                "CFUNC_RTNVAL": "FULL_SCORE",
+                "EXEC_ORDER": 1,
+                "SAME_SCORE": 100,
+                "CLOSE_SCORE": 100,
+                "LIKELY_SCORE": 100,
+                "PLAUSIBLE_SCORE": 100,
+                "UN_LIKELY_SCORE": 100
+            },
+            {
+                "CFRTN_ID": 28,
+                "CFUNC_ID": 15,
+                "FTYPE_ID": 0,
+                "CFUNC_RTNVAL": "FULL_SCORE",
+                "EXEC_ORDER": 1,
+                "SAME_SCORE": 98,
+                "CLOSE_SCORE": 90,
+                "LIKELY_SCORE": 80,
+                "PLAUSIBLE_SCORE": 70,
+                "UN_LIKELY_SCORE": 60
             }
         ],
         "CFG_CFUNC": [
@@ -2733,7 +2738,15 @@
                 "CFUNC_ID": 14,
                 "CFUNC_CODE": "PLACEKEY_COMP",
                 "CFUNC_DESC": "Placekey comp",
-                "CONNECT_STR": "g2ExactMatchComp",
+                "CONNECT_STR": "g2PlacekeyComp",
+                "ANON_SUPPORT": "Yes",
+                "LANGUAGE": null
+            },
+            {
+                "CFUNC_ID": 15,
+                "CFUNC_CODE": "SEMANTIC_SIMILARITY_COMP",
+                "CFUNC_DESC": "Semantic Similarity comp",
+                "CONNECT_STR": "g2SemanticSimilarityComp",
                 "ANON_SUPPORT": "Yes",
                 "LANGUAGE": null
             }
@@ -3026,12 +3039,6 @@
                 "FTYPE_ID": 5,
                 "FELEM_ID": 117,
                 "EXEC_ORDER": 16
-            },
-            {
-                "DFCALL_ID": 5,
-                "FTYPE_ID": 5,
-                "FELEM_ID": 124,
-                "EXEC_ORDER": 17
             },
             {
                 "DFCALL_ID": 6,
@@ -3854,6 +3861,13 @@
                 "FELEM_REQ": "Yes"
             },
             {
+                "EFCALL_ID": 93,
+                "FTYPE_ID": 93,
+                "FELEM_ID": 124,
+                "EXEC_ORDER": 1,
+                "FELEM_REQ": "Yes"
+            },
+            {
                 "EFCALL_ID": 94,
                 "FTYPE_ID": 1,
                 "FELEM_ID": 3,
@@ -4500,6 +4514,15 @@
                 "IS_VIRTUAL": "No"
             },
             {
+                "EFCALL_ID": 93,
+                "FTYPE_ID": 93,
+                "FELEM_ID": -1,
+                "EFUNC_ID": 8,
+                "EXEC_ORDER": 1,
+                "EFEAT_FTYPE_ID": 19,
+                "IS_VIRTUAL": "No"
+            },
+            {
                 "EFCALL_ID": 94,
                 "FTYPE_ID": 1,
                 "FELEM_ID": -1,
@@ -4593,6 +4616,13 @@
                 "EFUNC_CODE": "FEAT_BUILDER",
                 "EFUNC_DESC": "FeatureBuilder",
                 "CONNECT_STR": "g2FeatBuilder",
+                "LANGUAGE": null
+            },
+            {
+                "EFUNC_ID": 8,
+                "EFUNC_CODE": "PLACEKEY_EFEAT",
+                "EFUNC_DESC": "Plackey EFeat Creater",
+                "CONNECT_STR": "g2PlacekeyECreator",
                 "LANGUAGE": null
             }
         ],
@@ -6103,22 +6133,6 @@
             },
             {
                 "FTYPE_ID": 5,
-                "FELEM_ID": 65,
-                "EXEC_ORDER": 16,
-                "DISPLAY_LEVEL": 0,
-                "DISPLAY_DELIM": null,
-                "DERIVED": "Yes"
-            },
-            {
-                "FTYPE_ID": 5,
-                "FELEM_ID": 66,
-                "EXEC_ORDER": 17,
-                "DISPLAY_LEVEL": 0,
-                "DISPLAY_DELIM": null,
-                "DERIVED": "Yes"
-            },
-            {
-                "FTYPE_ID": 5,
                 "FELEM_ID": 72,
                 "EXEC_ORDER": 18,
                 "DISPLAY_LEVEL": 0,
@@ -6161,14 +6175,6 @@
                 "FTYPE_ID": 5,
                 "FELEM_ID": 117,
                 "EXEC_ORDER": 23,
-                "DISPLAY_LEVEL": 0,
-                "DISPLAY_DELIM": null,
-                "DERIVED": "No"
-            },
-            {
-                "FTYPE_ID": 5,
-                "FELEM_ID": 124,
-                "EXEC_ORDER": 24,
                 "DISPLAY_LEVEL": 0,
                 "DISPLAY_DELIM": null,
                 "DERIVED": "No"
@@ -6662,6 +6668,14 @@
                 "DERIVED": "No"
             },
             {
+                "FTYPE_ID": 29,
+                "FELEM_ID": 99,
+                "EXEC_ORDER": 1,
+                "DISPLAY_LEVEL": 1,
+                "DISPLAY_DELIM": null,
+                "DERIVED": "No"
+            },
+            {
                 "FTYPE_ID": 36,
                 "FELEM_ID": 37,
                 "EXEC_ORDER": 1,
@@ -6772,6 +6786,14 @@
                 "DISPLAY_LEVEL": 1,
                 "DISPLAY_DELIM": null,
                 "DERIVED": "No"
+            },
+            {
+                "FTYPE_ID": 53,
+                "FELEM_ID": 69,
+                "EXEC_ORDER": 3,
+                "DISPLAY_LEVEL": 0,
+                "DISPLAY_DELIM": null,
+                "DERIVED": "Yes"
             },
             {
                 "FTYPE_ID": 54,
@@ -7356,6 +7378,22 @@
                 "DISPLAY_LEVEL": 1,
                 "DISPLAY_DELIM": null,
                 "DERIVED": "No"
+            },
+            {
+                "FTYPE_ID": 99,
+                "FELEM_ID": 127,
+                "EXEC_ORDER": 1,
+                "DISPLAY_LEVEL": 1,
+                "DISPLAY_DELIM": null,
+                "DERIVED": "No"
+            },
+            {
+                "FTYPE_ID": 99,
+                "FELEM_ID": 128,
+                "EXEC_ORDER": 2,
+                "DISPLAY_LEVEL": 1,
+                "DISPLAY_DELIM": null,
+                "DERIVED": "No"
             }
         ],
         "CFG_FBOVR": [
@@ -7377,6 +7415,13 @@
                 "FTYPE_ID": 24,
                 "UTYPE_CODE": "BUSINESS",
                 "FTYPE_FREQ": "FF",
+                "FTYPE_EXCL": "Yes",
+                "FTYPE_STAB": "No"
+            },
+            {
+                "FTYPE_ID": 93,
+                "UTYPE_CODE": "BUSINESS",
+                "FTYPE_FREQ": "F1",
                 "FTYPE_EXCL": "Yes",
                 "FTYPE_STAB": "No"
             }
@@ -7811,18 +7856,6 @@
                 "DATA_TYPE": "string"
             },
             {
-                "FELEM_ID": 65,
-                "FELEM_CODE": "STR_NAME_METAPHONE",
-                "FELEM_DESC": "Metaphone Street Name",
-                "DATA_TYPE": "string"
-            },
-            {
-                "FELEM_ID": 66,
-                "FELEM_CODE": "CITY_METAPHONE",
-                "FELEM_DESC": "Metaphone City Name",
-                "DATA_TYPE": "string"
-            },
-            {
                 "FELEM_ID": 69,
                 "FELEM_CODE": "ID_NUM_STD",
                 "FELEM_DESC": "Standardized ID number",
@@ -8127,6 +8160,18 @@
                 "FELEM_CODE": "SUPRESSED_RELATIONSHIP_CONNECTING_FTYPE_ID",
                 "FELEM_DESC": "Suppressed relationship connecting feature type ID",
                 "DATA_TYPE": "number"
+            },
+            {
+                "FELEM_ID": 127,
+                "FELEM_CODE": "EMBEDDING",
+                "FELEM_DESC": "Embeddings",
+                "DATA_TYPE": "embedding"
+            },
+            {
+                "FELEM_ID": 128,
+                "FELEM_CODE": "ALGORITHM",
+                "FELEM_DESC": "Algorithm",
+                "DATA_TYPE": "string"
             }
         ],
         "CFG_FTYPE": [
@@ -8335,7 +8380,7 @@
                 "DERIVED": "No",
                 "RTYPE_ID": 0,
                 "ANONYMIZE": "No",
-                "VERSION": 2,
+                "VERSION": 3,
                 "SHOW_IN_MATCH_KEY": "Yes"
             },
             {
@@ -8518,6 +8563,22 @@
                 "FTYPE_ID": 28,
                 "FTYPE_CODE": "CONFUSED_ENTITY",
                 "FTYPE_DESC": "Confused entity",
+                "FCLASS_ID": 9,
+                "FTYPE_FREQ": "FM",
+                "FTYPE_EXCL": "No",
+                "FTYPE_STAB": "No",
+                "PERSIST_HISTORY": "No",
+                "USED_FOR_CAND": "No",
+                "DERIVED": "No",
+                "RTYPE_ID": 0,
+                "ANONYMIZE": "No",
+                "VERSION": 1,
+                "SHOW_IN_MATCH_KEY": "No"
+            },
+            {
+                "FTYPE_ID": 29,
+                "FTYPE_CODE": "ORPHANED_ENTITY",
+                "FTYPE_DESC": "Orphaned entity",
                 "FCLASS_ID": 9,
                 "FTYPE_FREQ": "FM",
                 "FTYPE_EXCL": "No",
@@ -9127,8 +9188,8 @@
                 "FTYPE_CODE": "PLACEKEY",
                 "FTYPE_DESC": "Placekey",
                 "FCLASS_ID": 10,
-                "FTYPE_FREQ": "F1",
-                "FTYPE_EXCL": "Yes",
+                "FTYPE_FREQ": "FF",
+                "FTYPE_EXCL": "No",
                 "FTYPE_STAB": "No",
                 "PERSIST_HISTORY": "Yes",
                 "USED_FOR_CAND": "Yes",
@@ -9217,6 +9278,22 @@
                 "ANONYMIZE": "No",
                 "VERSION": 1,
                 "SHOW_IN_MATCH_KEY": "No"
+            },
+            {
+                "FTYPE_ID": 99,
+                "FTYPE_CODE": "SEMANTIC_VALUE",
+                "FTYPE_DESC": "Semantic value",
+                "FCLASS_ID": 7,
+                "FTYPE_FREQ": "FF",
+                "FTYPE_EXCL": "No",
+                "FTYPE_STAB": "No",
+                "PERSIST_HISTORY": "Yes",
+                "USED_FOR_CAND": "No",
+                "DERIVED": "No",
+                "RTYPE_ID": 0,
+                "ANONYMIZE": "No",
+                "VERSION": 1,
+                "SHOW_IN_MATCH_KEY": "Yes"
             }
         ],
         "CFG_GENERIC_THRESHOLD": [
@@ -9693,13 +9770,6 @@
                 "LANGUAGE": null
             },
             {
-                "SFUNC_ID": 9,
-                "SFUNC_CODE": "STANDARDIZE_STB",
-                "SFUNC_DESC": "Standardize STB",
-                "CONNECT_STR": "SpaceTimeBoxStandardizer",
-                "LANGUAGE": null
-            },
-            {
                 "SFUNC_ID": 10,
                 "SFUNC_CODE": "STANDARDIZE_GEOLOC",
                 "SFUNC_DESC": "Standardize Geolocation",
@@ -9743,9 +9813,9 @@
         },
         "CONFIG_BASE_VERSION": {
             "VERSION": "4.0.0",
-            "BUILD_VERSION": "4.0.0.24237",
-            "BUILD_DATE": "2024-08-24",
-            "BUILD_NUMBER": "2024_08_24__08_53",
+            "BUILD_VERSION": "4.0.0.25160",
+            "BUILD_DATE": "2025-06-09",
+            "BUILD_NUMBER": "25160",
             "COMPATIBILITY_VERSION": {
                 "CONFIG_VERSION": "11"
             }
