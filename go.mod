@@ -6,7 +6,7 @@ require (
 	github.com/senzing-garage/check-self v0.3.6
 	github.com/senzing-garage/demo-entity-search v0.2.6
 	github.com/senzing-garage/explain v0.3.3
-	github.com/senzing-garage/go-cmdhelping v0.3.5
+	github.com/senzing-garage/go-cmdhelping v0.3.6
 	github.com/senzing-garage/go-helpers v0.6.13
 	github.com/senzing-garage/init-database v0.7.13
 	github.com/senzing-garage/load v0.2.7
