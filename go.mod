@@ -8,12 +8,12 @@ require (
 	github.com/senzing-garage/explain v0.3.3
 	github.com/senzing-garage/go-cmdhelping v0.3.6
 	github.com/senzing-garage/go-helpers v0.6.13
-	github.com/senzing-garage/init-database v0.7.13
+	github.com/senzing-garage/init-database v0.7.14-0.20250612172026-ed6abc047e15
 	github.com/senzing-garage/load v0.2.7
 	github.com/senzing-garage/move v0.3.4
 	github.com/senzing-garage/observe v0.3.3
 	github.com/senzing-garage/playground v0.4.12
-	github.com/senzing-garage/serve-grpc v0.9.12
+	github.com/senzing-garage/serve-grpc v0.9.13-0.20250612181104-ce287a44bc4c
 	github.com/senzing-garage/serve-http v0.3.6
 	github.com/senzing-garage/validate v0.2.3
 	github.com/spf13/cobra v1.9.1

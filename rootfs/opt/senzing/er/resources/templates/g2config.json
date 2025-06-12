@@ -9813,9 +9813,9 @@
         },
         "CONFIG_BASE_VERSION": {
             "VERSION": "4.0.0",
-            "BUILD_VERSION": "4.0.0.25160",
-            "BUILD_DATE": "2025-06-09",
-            "BUILD_NUMBER": "25160",
+            "BUILD_VERSION": "4.0.0.25161",
+            "BUILD_DATE": "2025-06-10",
+            "BUILD_NUMBER": "25161",
             "COMPATIBILITY_VERSION": {
                 "CONFIG_VERSION": "11"
             }
