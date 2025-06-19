@@ -1,9 +1,9 @@
 module github.com/senzing-garage/senzing-tools
 
-go 1.24
+go 1.24.4
 
 require (
-	github.com/senzing-garage/check-self v0.3.6
+	github.com/senzing-garage/check-self v0.3.7
 	github.com/senzing-garage/demo-entity-search v0.2.6
 	github.com/senzing-garage/explain v0.3.3
 	github.com/senzing-garage/go-cmdhelping v0.3.6
@@ -58,7 +58,7 @@ require (
 	github.com/go-logr/logr v1.4.3 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-sql-driver/mysql v1.9.3 // indirect
-	github.com/go-viper/mapstructure/v2 v2.2.1 // indirect
+	github.com/go-viper/mapstructure/v2 v2.3.0 // indirect
 	github.com/godror/godror v0.48.3 // indirect
 	github.com/godror/knownpb v0.3.0 // indirect
 	github.com/golang-sql/civil v0.0.0-20220223132316-b832511892a9 // indirect
@@ -95,13 +95,13 @@ require (
 	github.com/senzing-garage/go-queueing v0.4.4 // indirect
 	github.com/senzing-garage/go-rest-api-service v0.10.7 // indirect
 	github.com/senzing-garage/go-rest-api-service-legacy v0.1.1 // indirect
-	github.com/senzing-garage/go-sdk-abstract-factory v0.9.10 // indirect
-	github.com/senzing-garage/sz-sdk-go v0.15.5 // indirect
-	github.com/senzing-garage/sz-sdk-go-core v0.9.6 // indirect
-	github.com/senzing-garage/sz-sdk-go-grpc v0.9.6 // indirect
-	github.com/senzing-garage/sz-sdk-go-mock v0.8.8 // indirect
-	github.com/senzing-garage/sz-sdk-json-type-definition v0.2.8 // indirect
-	github.com/senzing-garage/sz-sdk-proto v0.8.4 // indirect
+	github.com/senzing-garage/go-sdk-abstract-factory v0.9.11 // indirect
+	github.com/senzing-garage/sz-sdk-go v0.15.6 // indirect
+	github.com/senzing-garage/sz-sdk-go-core v0.9.7 // indirect
+	github.com/senzing-garage/sz-sdk-go-grpc v0.9.7 // indirect
+	github.com/senzing-garage/sz-sdk-go-mock v0.8.9 // indirect
+	github.com/senzing-garage/sz-sdk-json-type-definition v0.2.9 // indirect
+	github.com/senzing-garage/sz-sdk-proto v0.8.5 // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/sourcegraph/conc v0.3.0 // indirect
 	github.com/spf13/afero v1.14.0 // indirect
