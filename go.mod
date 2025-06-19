@@ -1,6 +1,6 @@
 module github.com/senzing-garage/senzing-tools
 
-go 1.24
+go 1.24.4
 
 require (
 	github.com/senzing-garage/check-self v0.3.6
@@ -9,7 +9,7 @@ require (
 	github.com/senzing-garage/go-cmdhelping v0.3.6
 	github.com/senzing-garage/go-helpers v0.6.13
 	github.com/senzing-garage/init-database v0.7.14
-	github.com/senzing-garage/load v0.2.7
+	github.com/senzing-garage/load v0.2.8
 	github.com/senzing-garage/move v0.3.4
 	github.com/senzing-garage/observe v0.3.3
 	github.com/senzing-garage/playground v0.4.12
@@ -24,20 +24,20 @@ require (
 require (
 	filippo.io/edwards25519 v1.1.0 // indirect
 	github.com/VictoriaMetrics/easyproto v0.1.4 // indirect
-	github.com/aws/aws-sdk-go-v2 v1.36.4 // indirect
-	github.com/aws/aws-sdk-go-v2/config v1.29.16 // indirect
-	github.com/aws/aws-sdk-go-v2/credentials v1.17.69 // indirect
-	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.16.31 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/configsources v1.3.35 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.6.35 // indirect
+	github.com/aws/aws-sdk-go-v2 v1.36.5 // indirect
+	github.com/aws/aws-sdk-go-v2/config v1.29.17 // indirect
+	github.com/aws/aws-sdk-go-v2/credentials v1.17.70 // indirect
+	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.16.32 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/configsources v1.3.36 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.6.36 // indirect
 	github.com/aws/aws-sdk-go-v2/internal/ini v1.8.3 // indirect
-	github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.12.3 // indirect
-	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.12.16 // indirect
-	github.com/aws/aws-sdk-go-v2/service/sqs v1.38.7 // indirect
-	github.com/aws/aws-sdk-go-v2/service/sso v1.25.4 // indirect
-	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.30.2 // indirect
-	github.com/aws/aws-sdk-go-v2/service/sts v1.33.21 // indirect
-	github.com/aws/smithy-go v1.22.3 // indirect
+	github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.12.4 // indirect
+	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.12.17 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sqs v1.38.8 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sso v1.25.5 // indirect
+	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.30.3 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sts v1.34.0 // indirect
+	github.com/aws/smithy-go v1.22.4 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cenkalti/backoff/v4 v4.3.0 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
@@ -58,7 +58,7 @@ require (
 	github.com/go-logr/logr v1.4.3 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-sql-driver/mysql v1.9.3 // indirect
-	github.com/go-viper/mapstructure/v2 v2.2.1 // indirect
+	github.com/go-viper/mapstructure/v2 v2.3.0 // indirect
 	github.com/godror/godror v0.48.3 // indirect
 	github.com/godror/knownpb v0.3.0 // indirect
 	github.com/golang-sql/civil v0.0.0-20220223132316-b832511892a9 // indirect
@@ -95,13 +95,13 @@ require (
 	github.com/senzing-garage/go-queueing v0.4.4 // indirect
 	github.com/senzing-garage/go-rest-api-service v0.10.7 // indirect
 	github.com/senzing-garage/go-rest-api-service-legacy v0.1.1 // indirect
-	github.com/senzing-garage/go-sdk-abstract-factory v0.9.10 // indirect
-	github.com/senzing-garage/sz-sdk-go v0.15.5 // indirect
-	github.com/senzing-garage/sz-sdk-go-core v0.9.6 // indirect
-	github.com/senzing-garage/sz-sdk-go-grpc v0.9.6 // indirect
-	github.com/senzing-garage/sz-sdk-go-mock v0.8.8 // indirect
-	github.com/senzing-garage/sz-sdk-json-type-definition v0.2.8 // indirect
-	github.com/senzing-garage/sz-sdk-proto v0.8.4 // indirect
+	github.com/senzing-garage/go-sdk-abstract-factory v0.9.11 // indirect
+	github.com/senzing-garage/sz-sdk-go v0.15.6 // indirect
+	github.com/senzing-garage/sz-sdk-go-core v0.9.7 // indirect
+	github.com/senzing-garage/sz-sdk-go-grpc v0.9.7 // indirect
+	github.com/senzing-garage/sz-sdk-go-mock v0.8.9 // indirect
+	github.com/senzing-garage/sz-sdk-json-type-definition v0.2.9 // indirect
+	github.com/senzing-garage/sz-sdk-proto v0.8.5 // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/sourcegraph/conc v0.3.0 // indirect
 	github.com/spf13/afero v1.14.0 // indirect
