@@ -14,10 +14,18 @@ jobs:
     outputs:
       status: ${{ job.status }}
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        go: ["1.24"]
 
     steps:
       - name: checkout repository
         uses: actions/checkout@v4
+
+      - name: Setup go ${{ matrix.go }}
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ matrix.go }}
 
       - name: DockerHub login
         uses: docker/login-action@v3
