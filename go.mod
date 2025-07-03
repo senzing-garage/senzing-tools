@@ -8,12 +8,12 @@ require (
 	github.com/senzing-garage/explain v0.3.3
 	github.com/senzing-garage/go-cmdhelping v0.3.6
 	github.com/senzing-garage/go-helpers v0.6.13
-	github.com/senzing-garage/init-database v0.7.15
+	github.com/senzing-garage/init-database v0.7.16
 	github.com/senzing-garage/load v0.2.8
 	github.com/senzing-garage/move v0.3.4
 	github.com/senzing-garage/observe v0.3.3
 	github.com/senzing-garage/playground v0.4.13
-	github.com/senzing-garage/serve-grpc v0.9.15
+	github.com/senzing-garage/serve-grpc v0.9.16
 	github.com/senzing-garage/serve-http v0.3.6
 	github.com/senzing-garage/validate v0.2.3
 	github.com/spf13/cobra v1.9.1
@@ -59,7 +59,7 @@ require (
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-sql-driver/mysql v1.9.3 // indirect
 	github.com/go-viper/mapstructure/v2 v2.3.0 // indirect
-	github.com/godror/godror v0.48.3 // indirect
+	github.com/godror/godror v0.49.0 // indirect
 	github.com/godror/knownpb v0.3.0 // indirect
 	github.com/golang-sql/civil v0.0.0-20220223132316-b832511892a9 // indirect
 	github.com/golang-sql/sqlexp v0.1.0 // indirect
@@ -71,7 +71,7 @@ require (
 	github.com/mattn/go-colorable v0.1.14 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mattn/go-sqlite3 v1.14.28 // indirect
-	github.com/microsoft/go-mssqldb v1.8.2 // indirect
+	github.com/microsoft/go-mssqldb v1.9.2 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/ogen-go/ogen v1.14.0 // indirect
 	github.com/pelletier/go-toml/v2 v2.2.4 // indirect
@@ -91,17 +91,17 @@ require (
 	github.com/senzing-garage/go-grpcing v0.2.2 // indirect
 	github.com/senzing-garage/go-logging v1.5.3 // indirect
 	github.com/senzing-garage/go-messaging v1.5.3 // indirect
-	github.com/senzing-garage/go-observing v0.3.5 // indirect
+	github.com/senzing-garage/go-observing v0.3.6 // indirect
 	github.com/senzing-garage/go-queueing v0.4.4 // indirect
 	github.com/senzing-garage/go-rest-api-service v0.10.8 // indirect
 	github.com/senzing-garage/go-rest-api-service-legacy v0.1.1 // indirect
-	github.com/senzing-garage/go-sdk-abstract-factory v0.9.11 // indirect
-	github.com/senzing-garage/sz-sdk-go v0.15.6 // indirect
-	github.com/senzing-garage/sz-sdk-go-core v0.9.7 // indirect
-	github.com/senzing-garage/sz-sdk-go-grpc v0.9.7 // indirect
-	github.com/senzing-garage/sz-sdk-go-mock v0.8.9 // indirect
-	github.com/senzing-garage/sz-sdk-json-type-definition v0.2.9 // indirect
-	github.com/senzing-garage/sz-sdk-proto v0.8.5 // indirect
+	github.com/senzing-garage/go-sdk-abstract-factory v0.9.12 // indirect
+	github.com/senzing-garage/sz-sdk-go v0.15.7 // indirect
+	github.com/senzing-garage/sz-sdk-go-core v0.9.8 // indirect
+	github.com/senzing-garage/sz-sdk-go-grpc v0.9.8 // indirect
+	github.com/senzing-garage/sz-sdk-go-mock v0.8.10 // indirect
+	github.com/senzing-garage/sz-sdk-json-type-definition v0.2.10 // indirect
+	github.com/senzing-garage/sz-sdk-proto v0.8.7 // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/sourcegraph/conc v0.3.0 // indirect
 	github.com/spf13/afero v1.14.0 // indirect
@@ -115,7 +115,7 @@ require (
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.0 // indirect
 	golang.org/x/crypto v0.39.0 // indirect
-	golang.org/x/exp v0.0.0-20250606033433-dcc06ee1d476 // indirect
+	golang.org/x/exp v0.0.0-20250620022241-b7579e27df2b // indirect
 	golang.org/x/net v0.41.0 // indirect
 	golang.org/x/sync v0.15.0 // indirect
 	golang.org/x/sys v0.33.0 // indirect
