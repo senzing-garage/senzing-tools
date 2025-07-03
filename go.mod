@@ -3,18 +3,18 @@ module github.com/senzing-garage/senzing-tools
 go 1.24.4
 
 require (
-	github.com/senzing-garage/check-self v0.3.7
-	github.com/senzing-garage/demo-entity-search v0.2.6
+	github.com/senzing-garage/check-self v0.3.8
+	github.com/senzing-garage/demo-entity-search v0.2.8
 	github.com/senzing-garage/explain v0.3.3
 	github.com/senzing-garage/go-cmdhelping v0.3.6
 	github.com/senzing-garage/go-helpers v0.6.13
 	github.com/senzing-garage/init-database v0.7.16
 	github.com/senzing-garage/load v0.2.8
-	github.com/senzing-garage/move v0.3.4
+	github.com/senzing-garage/move v0.3.5
 	github.com/senzing-garage/observe v0.3.3
-	github.com/senzing-garage/playground v0.4.13
+	github.com/senzing-garage/playground v0.4.14
 	github.com/senzing-garage/serve-grpc v0.9.16
-	github.com/senzing-garage/serve-http v0.3.6
+	github.com/senzing-garage/serve-http v0.3.7
 	github.com/senzing-garage/validate v0.2.3
 	github.com/spf13/cobra v1.9.1
 	github.com/spf13/viper v1.20.1
@@ -79,8 +79,8 @@ require (
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
 	github.com/prometheus/client_golang v1.22.0 // indirect
 	github.com/prometheus/client_model v0.6.2 // indirect
-	github.com/prometheus/common v0.64.0 // indirect
-	github.com/prometheus/procfs v0.16.1 // indirect
+	github.com/prometheus/common v0.65.0 // indirect
+	github.com/prometheus/procfs v0.17.0 // indirect
 	github.com/rabbitmq/amqp091-go v1.10.0 // indirect
 	github.com/roncewind/go-util v0.0.5 // indirect
 	github.com/rs/cors v1.11.1 // indirect
@@ -92,8 +92,8 @@ require (
 	github.com/senzing-garage/go-logging v1.5.3 // indirect
 	github.com/senzing-garage/go-messaging v1.5.3 // indirect
 	github.com/senzing-garage/go-observing v0.3.6 // indirect
-	github.com/senzing-garage/go-queueing v0.4.4 // indirect
-	github.com/senzing-garage/go-rest-api-service v0.10.8 // indirect
+	github.com/senzing-garage/go-queueing v0.4.5 // indirect
+	github.com/senzing-garage/go-rest-api-service v0.10.9 // indirect
 	github.com/senzing-garage/go-rest-api-service-legacy v0.1.1 // indirect
 	github.com/senzing-garage/go-sdk-abstract-factory v0.9.12 // indirect
 	github.com/senzing-garage/sz-sdk-go v0.15.7 // indirect
@@ -109,9 +109,9 @@ require (
 	github.com/spf13/pflag v1.0.6 // indirect
 	github.com/subosito/gotenv v1.6.0 // indirect
 	go.opentelemetry.io/auto/sdk v1.1.0 // indirect
-	go.opentelemetry.io/otel v1.36.0 // indirect
-	go.opentelemetry.io/otel/metric v1.36.0 // indirect
-	go.opentelemetry.io/otel/trace v1.36.0 // indirect
+	go.opentelemetry.io/otel v1.37.0 // indirect
+	go.opentelemetry.io/otel/metric v1.37.0 // indirect
+	go.opentelemetry.io/otel/trace v1.37.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.0 // indirect
 	golang.org/x/crypto v0.39.0 // indirect
