@@ -3,8 +3,8 @@ module github.com/senzing-garage/senzing-tools
 go 1.24.4
 
 require (
-	github.com/senzing-garage/check-self v0.3.9
-	github.com/senzing-garage/demo-entity-search v0.2.9
+	github.com/senzing-garage/check-self v0.3.10
+	github.com/senzing-garage/demo-entity-search v0.2.10
 	github.com/senzing-garage/explain v0.3.3
 	github.com/senzing-garage/go-cmdhelping v0.3.6
 	github.com/senzing-garage/go-helpers v0.6.13
@@ -12,9 +12,9 @@ require (
 	github.com/senzing-garage/load v0.2.10
 	github.com/senzing-garage/move v0.3.5
 	github.com/senzing-garage/observe v0.3.3
-	github.com/senzing-garage/playground v0.4.15
+	github.com/senzing-garage/playground v0.4.16
 	github.com/senzing-garage/serve-grpc v0.9.19
-	github.com/senzing-garage/serve-http v0.3.8
+	github.com/senzing-garage/serve-http v0.3.9
 	github.com/senzing-garage/validate v0.2.3
 	github.com/spf13/cobra v1.9.1
 	github.com/spf13/viper v1.20.1
@@ -24,19 +24,19 @@ require (
 require (
 	filippo.io/edwards25519 v1.1.0 // indirect
 	github.com/VictoriaMetrics/easyproto v0.1.4 // indirect
-	github.com/aws/aws-sdk-go-v2 v1.36.5 // indirect
-	github.com/aws/aws-sdk-go-v2/config v1.29.17 // indirect
-	github.com/aws/aws-sdk-go-v2/credentials v1.17.70 // indirect
-	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.16.32 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/configsources v1.3.36 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.6.36 // indirect
+	github.com/aws/aws-sdk-go-v2 v1.36.6 // indirect
+	github.com/aws/aws-sdk-go-v2/config v1.29.18 // indirect
+	github.com/aws/aws-sdk-go-v2/credentials v1.17.71 // indirect
+	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.16.33 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/configsources v1.3.37 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.6.37 // indirect
 	github.com/aws/aws-sdk-go-v2/internal/ini v1.8.3 // indirect
 	github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.12.4 // indirect
-	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.12.17 // indirect
-	github.com/aws/aws-sdk-go-v2/service/sqs v1.38.8 // indirect
-	github.com/aws/aws-sdk-go-v2/service/sso v1.25.5 // indirect
-	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.30.3 // indirect
-	github.com/aws/aws-sdk-go-v2/service/sts v1.34.0 // indirect
+	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.12.18 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sqs v1.38.9 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sso v1.25.6 // indirect
+	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.30.4 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sts v1.34.1 // indirect
 	github.com/aws/smithy-go v1.22.4 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cenkalti/backoff/v4 v4.3.0 // indirect
@@ -93,7 +93,7 @@ require (
 	github.com/senzing-garage/go-messaging v1.5.3 // indirect
 	github.com/senzing-garage/go-observing v0.3.6 // indirect
 	github.com/senzing-garage/go-queueing v0.4.6 // indirect
-	github.com/senzing-garage/go-rest-api-service v0.10.10 // indirect
+	github.com/senzing-garage/go-rest-api-service v0.10.11 // indirect
 	github.com/senzing-garage/go-rest-api-service-legacy v0.1.1 // indirect
 	github.com/senzing-garage/go-sdk-abstract-factory v0.9.15 // indirect
 	github.com/senzing-garage/sz-sdk-go v0.15.9 // indirect
@@ -120,7 +120,7 @@ require (
 	golang.org/x/sync v0.16.0 // indirect
 	golang.org/x/sys v0.34.0 // indirect
 	golang.org/x/text v0.27.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20250715232539-7130f93afb79 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20250721164621-a45f3dfb1074 // indirect
 	google.golang.org/grpc v1.73.0 // indirect
 	google.golang.org/protobuf v1.36.6 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
