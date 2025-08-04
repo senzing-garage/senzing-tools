@@ -460,8 +460,8 @@ github.com/senzing-garage/observe v0.3.3 h1:4ewcRKaPKlxUjkvJyzSDZWsDXEGM6l4H647X
 github.com/senzing-garage/observe v0.3.3/go.mod h1:4hS2U6h9DvihNd7ImtPpKvR2w2mBof4l0muVfVJM6/g=
 github.com/senzing-garage/playground v0.4.16 h1:TLahV9ovcybUHS1JzSh8+2s++URRqwu2vffniuSjDqQ=
 github.com/senzing-garage/playground v0.4.16/go.mod h1:yuNWgHVFRTaOSlSx30Vr+1GWQbo16LCVMhm1BkKNKSE=
-github.com/senzing-garage/serve-grpc v0.9.19 h1:TZ45eCbbG/qLh2BBJDui8Lu8F+kD9piL0yK1otvIgoY=
-github.com/senzing-garage/serve-grpc v0.9.19/go.mod h1:dIR+uU8Y//es6er7iLoHXvAf3czgpYYtfgVw32VOJ40=
+github.com/senzing-garage/serve-grpc v0.9.20 h1:W4EVJCaVPaEF/hwGaKhxiHkut7MloT/dVV8NHtWvUWM=
+github.com/senzing-garage/serve-grpc v0.9.20/go.mod h1:zNhEy4KzkNLeknPNvoztBS5JJaLG8gmWI/UuqWxRr/8=
 github.com/senzing-garage/serve-http v0.3.9 h1:FAkqxCFHO59aroAx/+oeSoMGMf4C/C8anW3WZIcczhA=
 github.com/senzing-garage/serve-http v0.3.9/go.mod h1:YxRCr+9PfHrx40DuwVzeTovTeHTcrWTZqDRN2EkABu8=
 github.com/senzing-garage/sz-sdk-go v0.15.9 h1:q/oPOWSqNAZQIE1uxfgfjcF1FA/Pnpa2v9wswn1jOcs=
@@ -698,8 +698,8 @@ google.golang.org/grpc v1.26.0/go.mod h1:qbnxyOmOxrQa7FizSgH+ReBfzJrCY1pSN7KXBS8
 google.golang.org/grpc v1.27.0/go.mod h1:qbnxyOmOxrQa7FizSgH+ReBfzJrCY1pSN7KXBS8abTk=
 google.golang.org/grpc v1.29.1/go.mod h1:itym6AZVZYACWQqET3MqgPpjcuV5QH3BxFS3IjizoKk=
 google.golang.org/grpc v1.32.0/go.mod h1:N36X2cJ7JwdamYAgDz+s+rVMFjt3numwzf/HckM8pak=
-google.golang.org/grpc v1.73.0 h1:VIWSmpI2MegBtTuFt5/JWy2oXxtjJ/e89Z70ImfD2ok=
-google.golang.org/grpc v1.73.0/go.mod h1:50sbHOUqWoCQGI8V2HQLJM0B+LMlIUjNSZmow7EVBQc=
+google.golang.org/grpc v1.74.2 h1:WoosgB65DlWVC9FqI82dGsZhWFNBSLjQ84bjROOpMu4=
+google.golang.org/grpc v1.74.2/go.mod h1:CtQ+BGjaAIXHs/5YS3i473GqwBBa1zGQNevxdeBEXrM=
 google.golang.org/protobuf v0.0.0-20200109180630-ec00e32a8dfd/go.mod h1:DFci5gLYBciE7Vtevhsrf46CRTquxDuWsQurQQe4oz8=
 google.golang.org/protobuf v0.0.0-20200221191635-4d8936d0db64/go.mod h1:kwYJMbMJ01Woi6D6+Kah6886xMZcty6N08ah7+eCXa0=
 google.golang.org/protobuf v0.0.0-20200228230310-ab0ca4ff8a60/go.mod h1:cfTl7dwQJ+fmap5saPgwCLgHXTUD7jkjRqWcaiX5VyM=

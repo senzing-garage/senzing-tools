@@ -13,7 +13,7 @@ require (
 	github.com/senzing-garage/move v0.3.5
 	github.com/senzing-garage/observe v0.3.3
 	github.com/senzing-garage/playground v0.4.16
-	github.com/senzing-garage/serve-grpc v0.9.19
+	github.com/senzing-garage/serve-grpc v0.9.20
 	github.com/senzing-garage/serve-http v0.3.9
 	github.com/senzing-garage/validate v0.2.3
 	github.com/spf13/cobra v1.9.1
@@ -121,7 +121,7 @@ require (
 	golang.org/x/sys v0.34.0 // indirect
 	golang.org/x/text v0.27.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250721164621-a45f3dfb1074 // indirect
-	google.golang.org/grpc v1.73.0 // indirect
+	google.golang.org/grpc v1.74.2 // indirect
 	google.golang.org/protobuf v1.36.6 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
