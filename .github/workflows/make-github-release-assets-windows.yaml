@@ -17,7 +17,7 @@ jobs:
     strategy:
       matrix:
         go: ["1.24"]
-        senzingsdk-version: ["staging-v4"]
+        senzingsdk-version: ["production-v4"]
 
     steps:
       - name: checkout repository
@@ -31,7 +31,7 @@ jobs:
       - name: install Senzing SDK
         uses: senzing-factory/github-action-install-senzing-sdk@v3
         with:
-          senzingsdk-repository-path: ${{ secrets.SENZING_WIN_BETA_REPOSITORY }}
+          senzingsdk-version: ${{ matrix.senzingsdk-version }}
 
       - name: Add to "Path" environment variable
         run: |
