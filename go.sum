@@ -460,8 +460,8 @@ github.com/senzing-garage/observe v0.3.3 h1:4ewcRKaPKlxUjkvJyzSDZWsDXEGM6l4H647X
 github.com/senzing-garage/observe v0.3.3/go.mod h1:4hS2U6h9DvihNd7ImtPpKvR2w2mBof4l0muVfVJM6/g=
 github.com/senzing-garage/playground v0.4.16 h1:TLahV9ovcybUHS1JzSh8+2s++URRqwu2vffniuSjDqQ=
 github.com/senzing-garage/playground v0.4.16/go.mod h1:yuNWgHVFRTaOSlSx30Vr+1GWQbo16LCVMhm1BkKNKSE=
-github.com/senzing-garage/serve-grpc v0.9.20 h1:W4EVJCaVPaEF/hwGaKhxiHkut7MloT/dVV8NHtWvUWM=
-github.com/senzing-garage/serve-grpc v0.9.20/go.mod h1:zNhEy4KzkNLeknPNvoztBS5JJaLG8gmWI/UuqWxRr/8=
+github.com/senzing-garage/serve-grpc v0.9.21 h1:vc5VJH9gt/bBIr6GTeBE4Pfsg9lGheFKw/jBWPzzSQQ=
+github.com/senzing-garage/serve-grpc v0.9.21/go.mod h1:8KVfem5sC/uBpV1khm7cDTUGvOlsZQPdWi+DgS8aoxM=
 github.com/senzing-garage/serve-http v0.3.9 h1:FAkqxCFHO59aroAx/+oeSoMGMf4C/C8anW3WZIcczhA=
 github.com/senzing-garage/serve-http v0.3.9/go.mod h1:YxRCr+9PfHrx40DuwVzeTovTeHTcrWTZqDRN2EkABu8=
 github.com/senzing-garage/sz-sdk-go v0.15.9 h1:q/oPOWSqNAZQIE1uxfgfjcF1FA/Pnpa2v9wswn1jOcs=
