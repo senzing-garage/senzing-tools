@@ -8,7 +8,7 @@ require (
 	github.com/senzing-garage/explain v0.3.3
 	github.com/senzing-garage/go-cmdhelping v0.3.7
 	github.com/senzing-garage/go-helpers v0.6.13
-	github.com/senzing-garage/init-database v0.7.19
+	github.com/senzing-garage/init-database v0.7.21
 	github.com/senzing-garage/load v0.2.10
 	github.com/senzing-garage/move v0.3.5
 	github.com/senzing-garage/observe v0.3.3
@@ -106,7 +106,7 @@ require (
 	github.com/sourcegraph/conc v0.3.1-0.20240121214520-5f936abd7ae8 // indirect
 	github.com/spf13/afero v1.14.0 // indirect
 	github.com/spf13/cast v1.9.2 // indirect
-	github.com/spf13/pflag v1.0.9 // indirect
+	github.com/spf13/pflag v1.0.10 // indirect
 	github.com/subosito/gotenv v1.6.0 // indirect
 	go.opentelemetry.io/auto/sdk v1.1.0 // indirect
 	go.opentelemetry.io/otel v1.37.0 // indirect
