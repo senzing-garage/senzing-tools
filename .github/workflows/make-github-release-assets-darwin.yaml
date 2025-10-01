@@ -30,6 +30,7 @@ jobs:
         uses: actions/setup-go@v6
         with:
           go-version: ${{ matrix.go }}
+          cache: false
 
       - name: install create-dmg
         run: brew install create-dmg

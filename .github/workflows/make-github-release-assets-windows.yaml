@@ -30,6 +30,7 @@ jobs:
         uses: actions/setup-go@v6
         with:
           go-version: ${{ matrix.go }}
+          cache: false
 
       - name: install Senzing SDK
         uses: senzing-factory/github-action-install-senzing-sdk@v3
