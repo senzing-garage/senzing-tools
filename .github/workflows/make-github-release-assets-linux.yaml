@@ -5,14 +5,15 @@ on:
     tags:
       - "[0-9]+.[0-9]+.[0-9]+"
 
-permissions:
-  contents: write
+permissions: {}
 
 jobs:
   make-github-release-assets-linux:
     name: publish binaries - linux
     outputs:
       status: ${{ job.status }}
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -21,6 +22,8 @@ jobs:
     steps:
       - name: checkout repository
         uses: actions/checkout@v5
+        with:
+          persist-credentials: false
 
       - name: Setup go ${{ matrix.go }}
         uses: actions/setup-go@v6
