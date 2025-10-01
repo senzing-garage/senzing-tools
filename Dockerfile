@@ -28,7 +28,7 @@ USER root
 # Install packages via apt-get.
 
 RUN apt-get update \
- && apt-get -y install \
+ && apt-get -y --no-install-recommends install \
       libsqlite3-dev \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
@@ -71,8 +71,8 @@ USER root
 
 # Install packages via apt-get.
 
-RUN apt-get update -qqq \
- && apt-get -yqqq install \
+RUN apt-get update \
+ && apt-get -y --no-install-recommends install \
       libsqlite3-dev \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
