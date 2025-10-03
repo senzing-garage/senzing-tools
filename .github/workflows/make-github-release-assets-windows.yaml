@@ -5,14 +5,15 @@ on:
     tags:
       - "[0-9]+.[0-9]+.[0-9]+"
 
-permissions:
-  contents: write
+permissions: {}
 
 jobs:
   make-github-release-assets-windows:
     name: publish binaries - windows
     outputs:
       status: ${{ job.status }}
+    permissions:
+      contents: write
     runs-on: windows-latest
     strategy:
       matrix:
@@ -22,11 +23,14 @@ jobs:
     steps:
       - name: checkout repository
         uses: actions/checkout@v5
+        with:
+          persist-credentials: false
 
       - name: Setup go ${{ matrix.go }}
         uses: actions/setup-go@v6
         with:
           go-version: ${{ matrix.go }}
+          cache: false
 
       - name: install Senzing SDK
         uses: senzing-factory/github-action-install-senzing-sdk@v3
@@ -58,6 +62,6 @@ jobs:
     if: ${{ always() && contains(fromJSON('["failure", "cancelled"]'), needs.make-github-release-assets-windows.outputs.status ) }}
     secrets:
       SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-    uses: senzing-factory/build-resources/.github/workflows/build-failure-slack-notification.yaml@v2
+    uses: senzing-factory/build-resources/.github/workflows/build-failure-slack-notification.yaml@v3
     with:
       job-status: ${{ needs.make-github-release-assets-windows.outputs.status }}

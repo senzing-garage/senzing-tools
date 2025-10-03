@@ -6,11 +6,12 @@ on:
       - main
   workflow_dispatch:
 
-permissions:
-  contents: read
+permissions: {}
 
 jobs:
   docker-push-containers-to-dockerhub-amd:
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
 
     steps:
@@ -29,6 +30,8 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
 
   docker-push-containers-to-dockerhub-arm:
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
 
     steps:
