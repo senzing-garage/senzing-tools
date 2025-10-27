@@ -3,7 +3,7 @@ module github.com/senzing-garage/senzing-tools
 go 1.24.4
 
 require (
-	github.com/senzing-garage/check-self v0.3.10
+	github.com/senzing-garage/check-self v0.3.11
 	github.com/senzing-garage/demo-entity-search v0.2.10
 	github.com/senzing-garage/explain v0.3.3
 	github.com/senzing-garage/go-cmdhelping v0.3.8
@@ -59,7 +59,7 @@ require (
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-sql-driver/mysql v1.9.3 // indirect
 	github.com/go-viper/mapstructure/v2 v2.4.0 // indirect
-	github.com/godror/godror v0.49.3 // indirect
+	github.com/godror/godror v0.49.4 // indirect
 	github.com/godror/knownpb v0.3.0 // indirect
 	github.com/golang-sql/civil v0.0.0-20220223132316-b832511892a9 // indirect
 	github.com/golang-sql/sqlexp v0.1.0 // indirect
@@ -95,12 +95,12 @@ require (
 	github.com/senzing-garage/go-queueing v0.4.6 // indirect
 	github.com/senzing-garage/go-rest-api-service v0.10.11 // indirect
 	github.com/senzing-garage/go-rest-api-service-legacy v0.1.1 // indirect
-	github.com/senzing-garage/go-sdk-abstract-factory v0.9.15 // indirect
-	github.com/senzing-garage/sz-sdk-go v0.15.9 // indirect
-	github.com/senzing-garage/sz-sdk-go-core v0.9.11 // indirect
-	github.com/senzing-garage/sz-sdk-go-grpc v0.9.10 // indirect
-	github.com/senzing-garage/sz-sdk-go-mock v0.8.12 // indirect
-	github.com/senzing-garage/sz-sdk-json-type-definition v0.2.10 // indirect
+	github.com/senzing-garage/go-sdk-abstract-factory v0.9.16 // indirect
+	github.com/senzing-garage/sz-sdk-go v0.15.11 // indirect
+	github.com/senzing-garage/sz-sdk-go-core v0.9.12 // indirect
+	github.com/senzing-garage/sz-sdk-go-grpc v0.9.11 // indirect
+	github.com/senzing-garage/sz-sdk-go-mock v0.8.13 // indirect
+	github.com/senzing-garage/sz-sdk-json-type-definition v0.2.18 // indirect
 	github.com/senzing-garage/sz-sdk-proto v0.8.8 // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/sourcegraph/conc v0.3.1-0.20240121214520-5f936abd7ae8 // indirect
@@ -116,12 +116,12 @@ require (
 	go.uber.org/zap v1.27.0 // indirect
 	go.yaml.in/yaml/v3 v3.0.4 // indirect
 	golang.org/x/crypto v0.43.0 // indirect
-	golang.org/x/exp v0.0.0-20251009144603-d2f985daa21b // indirect
+	golang.org/x/exp v0.0.0-20251023183803-a4bb9ffd2546 // indirect
 	golang.org/x/net v0.46.0 // indirect
 	golang.org/x/sync v0.17.0 // indirect
 	golang.org/x/sys v0.37.0 // indirect
 	golang.org/x/text v0.30.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20251007200510-49b9836ed3ff // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20251022142026-3a174f9686a8 // indirect
 	google.golang.org/grpc v1.76.0 // indirect
 	google.golang.org/protobuf v1.36.10 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
