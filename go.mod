@@ -8,7 +8,7 @@ require (
 	github.com/senzing-garage/explain v0.3.3
 	github.com/senzing-garage/go-cmdhelping v0.3.8
 	github.com/senzing-garage/go-helpers v0.6.13
-	github.com/senzing-garage/init-database v0.7.22
+	github.com/senzing-garage/init-database v0.8.0
 	github.com/senzing-garage/load v0.2.10
 	github.com/senzing-garage/move v0.3.6
 	github.com/senzing-garage/observe v0.3.3
@@ -59,7 +59,7 @@ require (
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-sql-driver/mysql v1.9.3 // indirect
 	github.com/go-viper/mapstructure/v2 v2.4.0 // indirect
-	github.com/godror/godror v0.49.4 // indirect
+	github.com/godror/godror v0.49.5 // indirect
 	github.com/godror/knownpb v0.3.0 // indirect
 	github.com/golang-sql/civil v0.0.0-20220223132316-b832511892a9 // indirect
 	github.com/golang-sql/sqlexp v0.1.0 // indirect
@@ -71,7 +71,7 @@ require (
 	github.com/mattn/go-colorable v0.1.14 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mattn/go-sqlite3 v1.14.32 // indirect
-	github.com/microsoft/go-mssqldb v1.9.3 // indirect
+	github.com/microsoft/go-mssqldb v1.9.4 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/ogen-go/ogen v1.16.0 // indirect
 	github.com/pelletier/go-toml/v2 v2.2.4 // indirect
@@ -124,7 +124,7 @@ require (
 	golang.org/x/sys v0.38.0 // indirect
 	golang.org/x/text v0.31.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20251111163417-95abcf5c77ba // indirect
-	google.golang.org/grpc v1.76.0 // indirect
+	google.golang.org/grpc v1.77.0 // indirect
 	google.golang.org/protobuf v1.36.10 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
