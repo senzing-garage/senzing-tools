@@ -8,7 +8,7 @@ require (
 	github.com/senzing-garage/explain v0.3.3
 	github.com/senzing-garage/go-cmdhelping v0.3.8
 	github.com/senzing-garage/go-helpers v0.6.13
-	github.com/senzing-garage/init-database v0.8.0
+	github.com/senzing-garage/init-database v0.8.1
 	github.com/senzing-garage/load v0.2.10
 	github.com/senzing-garage/move v0.3.6
 	github.com/senzing-garage/observe v0.3.3
