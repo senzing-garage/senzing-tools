@@ -9,6 +9,12 @@ This project adheres to [Semantic Versioning].
 
 -
 
+## [0.8.14] - 2026-01-09
+
+### Changed in 0.8.14
+
+- Update dependencies
+
 ## [0.8.13] - 2025-07-22
 
 ### Changed in 0.8.13
