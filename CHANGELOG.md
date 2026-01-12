@@ -402,7 +402,7 @@ This project adheres to [Semantic Versioning].
 
 ### Added to 0.1.1
 
-- Worked on GitHub actions.  No change to `senzing-tools` functionality.
+- Worked on GitHub actions. No change to `senzing-tools` functionality.
 
 ## [0.1.0] - 2023-03-09
 

@@ -106,13 +106,13 @@ Since the Senzing library is a prerequisite, it must be installed first.
 
    1. macOS
 
-       ```console
+      ```console
       export DYLD_LIBRARY_PATH=/opt/senzing/er/lib/:/opt/senzing/er/lib/macos
       ${GIT_REPOSITORY_DIR}/target/darwin-amd64/senzing-tools
 
       ```
 
-    1. Windows
+   1. Windows
 
       ```console
       ${GIT_REPOSITORY_DIR}/target/windows-amd64/senzing-tools
@@ -294,22 +294,22 @@ Make documents visible at
 1. Identify repository.
    Example:
 
-    ```console
-    export GIT_ACCOUNT=senzing-garage
-    export GIT_REPOSITORY=senzing-tools
-    export GIT_ACCOUNT_DIR=~/${GIT_ACCOUNT}.git
-    export GIT_REPOSITORY_DIR="${GIT_ACCOUNT_DIR}/${GIT_REPOSITORY}"
+   ```console
+   export GIT_ACCOUNT=senzing-garage
+   export GIT_REPOSITORY=senzing-tools
+   export GIT_ACCOUNT_DIR=~/${GIT_ACCOUNT}.git
+   export GIT_REPOSITORY_DIR="${GIT_ACCOUNT_DIR}/${GIT_REPOSITORY}"
 
-    ```
+   ```
 
 1. Make documents.
    Example:
 
-    ```console
-    export LD_LIBRARY_PATH=/opt/senzing/er/lib/
-    senzing-tools docs --dir ${GIT_REPOSITORY_DIR}/docs
+   ```console
+   export LD_LIBRARY_PATH=/opt/senzing/er/lib/
+   senzing-tools docs --dir ${GIT_REPOSITORY_DIR}/docs
 
-    ```
+   ```
 
 ## References
 

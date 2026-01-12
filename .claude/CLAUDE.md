@@ -4,7 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-`senzing-tools` is a Go CLI application that aggregates multiple Senzing tools as subcommands. It uses the Cobra/Viper framework for command-line interface handling. Each subcommand (check-self, demo-entity-search, explain, init-database, load, move, observe, playground, serve-grpc, serve-http, validate) is imported from a separate `senzing-garage` repository and registered via `init()` functions in `cmd/`.
+`senzing-tools` is a Go CLI application that aggregates multiple Senzing tools as subcommands.
+It uses the Cobra/Viper framework for command-line interface handling.
+Each subcommand (check-self, demo-entity-search, explain, init-database, load, move, observe, playground, serve-grpc, serve-http, validate) is imported from a separate `senzing-garage` repository and registered via `init()` functions in `cmd/`.
 
 ## Build Commands
 
@@ -76,8 +78,8 @@ go test ./cmd/...
 
 - **main.go**: Entry point, calls `cmd.Execute()`
 - **cmd/root.go**: Root Cobra command setup, configuration loading via Viper (searches `~/.senzing-tools/`, `~/`, `/etc/senzing-tools/` for `senzing-tools.yaml`)
-- **cmd/*.go**: Each file registers a subcommand from an external `senzing-garage` repository by calling `RootCmd.AddCommand()` in `init()`
-- **cmd/context_*.go**: Platform-specific build constraints (linux, darwin, windows)
+- **cmd/\*.go**: Each file registers a subcommand from an external `senzing-garage` repository by calling `RootCmd.AddCommand()` in `init()`
+- **cmd/context\_\*.go**: Platform-specific build constraints (linux, darwin, windows)
 - **helper/**: Utility functions (e.g., version string formatting)
 - **makefiles/**: Platform-specific Make includes (`linux_x86_64.mk`, `darwin_arm64.mk`, etc.)
 
