@@ -2,12 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog], [markdownlint],
-and this project adheres to [Semantic Versioning].
+The changelog format is based on [Keep a Changelog] and [CommonMark].
+This project adheres to [Semantic Versioning].
 
 ## [Unreleased]
 
 -
+
+## [0.8.14] - 2026-01-09
+
+### Changed in 0.8.14
+
+- Update dependencies
 
 ## [0.8.13] - 2025-07-22
 
@@ -396,7 +402,7 @@ and this project adheres to [Semantic Versioning].
 
 ### Added to 0.1.1
 
-- Worked on GitHub actions.  No change to `senzing-tools` functionality.
+- Worked on GitHub actions. No change to `senzing-tools` functionality.
 
 ## [0.1.0] - 2023-03-09
 
@@ -405,6 +411,6 @@ and this project adheres to [Semantic Versioning].
 - Initial functionality
 - Commands: `init-database`, `serve-grpc`
 
-[Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
-[markdownlint]: https://dlaa.me/markdownlint/
-[Semantic Versioning]: https://semver.org/spec/v2.0.0.html
+[CommonMark]: https://commonmark.org/
+[Keep a Changelog]: https://keepachangelog.com/
+[Semantic Versioning]: https://semver.org/

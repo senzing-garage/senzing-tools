@@ -1,7 +1,8 @@
 # senzing-tools
 
-## Commands
+Placeholder for [GitHub pages].
 
-1. [senzing-tools] - Collection of tools for working with the Senzing API.
+See [GitHub page].
 
-[senzing-tools]: senzing-tools.md
+[GitHub page]: https://garage.senzing.com/senzing-tools
+[GitHub pages]: https://pages.github.com/
