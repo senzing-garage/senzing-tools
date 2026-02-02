@@ -14,7 +14,7 @@ require (
 	github.com/senzing-garage/observe v0.3.4
 	github.com/senzing-garage/playground v0.4.16
 	github.com/senzing-garage/serve-grpc v0.9.24
-	github.com/senzing-garage/serve-http v0.3.10
+	github.com/senzing-garage/serve-http v0.3.11
 	github.com/senzing-garage/validate v0.2.4
 	github.com/spf13/cobra v1.10.2
 	github.com/spf13/viper v1.21.0
