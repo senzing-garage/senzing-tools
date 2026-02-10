@@ -13,7 +13,7 @@ require (
 	github.com/senzing-garage/move v0.3.7
 	github.com/senzing-garage/observe v0.3.4
 	github.com/senzing-garage/playground v0.4.16
-	github.com/senzing-garage/serve-grpc v0.9.24
+	github.com/senzing-garage/serve-grpc v0.9.25
 	github.com/senzing-garage/serve-http v0.3.11
 	github.com/senzing-garage/validate v0.2.4
 	github.com/spf13/cobra v1.10.2
@@ -59,7 +59,7 @@ require (
 	github.com/go-logr/logr v1.4.3 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-sql-driver/mysql v1.9.3 // indirect
-	github.com/go-viper/mapstructure/v2 v2.4.0 // indirect
+	github.com/go-viper/mapstructure/v2 v2.5.0 // indirect
 	github.com/godror/godror v0.50.0 // indirect
 	github.com/godror/knownpb v0.3.0 // indirect
 	github.com/golang-sql/civil v0.0.0-20220223132316-b832511892a9 // indirect
@@ -72,7 +72,7 @@ require (
 	github.com/mattn/go-colorable v0.1.14 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mattn/go-sqlite3 v1.14.33 // indirect
-	github.com/microsoft/go-mssqldb v1.9.5 // indirect
+	github.com/microsoft/go-mssqldb v1.9.6 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/ogen-go/ogen v1.18.0 // indirect
 	github.com/pelletier/go-toml/v2 v2.2.4 // indirect
@@ -97,7 +97,7 @@ require (
 	github.com/senzing-garage/go-rest-api-service v0.10.12 // indirect
 	github.com/senzing-garage/go-rest-api-service-legacy v0.1.2 // indirect
 	github.com/senzing-garage/go-sdk-abstract-factory v0.9.17 // indirect
-	github.com/senzing-garage/sz-sdk-go v0.15.11 // indirect
+	github.com/senzing-garage/sz-sdk-go v0.15.12 // indirect
 	github.com/senzing-garage/sz-sdk-go-core v0.9.13 // indirect
 	github.com/senzing-garage/sz-sdk-go-grpc v0.9.12 // indirect
 	github.com/senzing-garage/sz-sdk-go-mock v0.8.14 // indirect
@@ -118,13 +118,13 @@ require (
 	go.uber.org/zap v1.27.1 // indirect
 	go.yaml.in/yaml/v2 v2.4.3 // indirect
 	go.yaml.in/yaml/v3 v3.0.4 // indirect
-	golang.org/x/crypto v0.46.0 // indirect
-	golang.org/x/exp v0.0.0-20251219203646-944ab1f22d93 // indirect
-	golang.org/x/net v0.48.0 // indirect
+	golang.org/x/crypto v0.47.0 // indirect
+	golang.org/x/exp v0.0.0-20260112195511-716be5621a96 // indirect
+	golang.org/x/net v0.49.0 // indirect
 	golang.org/x/sync v0.19.0 // indirect
 	golang.org/x/sys v0.40.0 // indirect
 	golang.org/x/text v0.33.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20251222181119-0a764e51fe1b // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20260114163908-3f89685c29c3 // indirect
 	google.golang.org/grpc v1.78.0 // indirect
 	google.golang.org/protobuf v1.36.11 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
