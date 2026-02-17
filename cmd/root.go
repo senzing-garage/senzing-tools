@@ -57,7 +57,7 @@ func Execute() {
 				}
 			}
 
-			fmt.Fprintf(
+			fmt.Fprintf( //nolint:gosec // G705: Writing to stderr, not an HTTP response; no XSS risk.
 				os.Stderr,
 				"Using SENZING_TOOLS_COMMAND value of %q resulting in command: 'senzing-tools %s'\n",
 				command,
