@@ -54,7 +54,7 @@ export LD_LIBRARY_PATH=/opt/senzing/er/lib/
 ./target/linux-amd64/senzing-tools [command]
 
 # macOS
-export DYLD_LIBRARY_PATH=/opt/senzing/er/lib/:/opt/senzing/er/lib/macos
+export DYLD_LIBRARY_PATH=/opt/senzing/er/lib/:/opt/homebrew/lib
 ./target/darwin-amd64/senzing-tools [command]
 ```
 

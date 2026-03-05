@@ -107,7 +107,7 @@ Since the Senzing library is a prerequisite, it must be installed first.
    1. macOS
 
       ```console
-      export DYLD_LIBRARY_PATH=/opt/senzing/er/lib/:/opt/senzing/er/lib/macos
+      export DYLD_LIBRARY_PATH=/opt/senzing/er/lib/:/opt/homebrew/lib
       ${GIT_REPOSITORY_DIR}/target/darwin-amd64/senzing-tools
 
       ```
