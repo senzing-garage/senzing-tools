@@ -2,7 +2,7 @@
 # Stages
 # -----------------------------------------------------------------------------
 
-ARG IMAGE_BUILDER=golang:1.25.7-bookworm@sha256:564e366a28ad1d70f460a2b97d1d299a562f08707eb0ecb24b659e5bd6c108e1
+ARG IMAGE_BUILDER=golang:1.26.0-bookworm@sha256:2a0ba12e116687098780d3ce700f9ce3cb340783779646aafbabed748fa6677c
 ARG IMAGE_FINAL=senzing/senzingsdk-runtime:4.2.1@sha256:b3af3bace2ae835e1de6ac10637e0ab3a9cf26b8803d22d32f26b8da12a74bed
 
 # -----------------------------------------------------------------------------
@@ -16,7 +16,7 @@ FROM ${IMAGE_FINAL} AS senzingsdk_runtime
 # -----------------------------------------------------------------------------
 
 FROM ${IMAGE_BUILDER} AS builder
-ENV REFRESHED_AT=2026-03-05
+ENV REFRESHED_AT=2026-03-09
 LABEL Name="senzing/go-builder" \
       Maintainer="support@senzing.com" \
       Version="0.1.0"
@@ -62,7 +62,7 @@ RUN mkdir -p /output \
 # -----------------------------------------------------------------------------
 
 FROM ${IMAGE_FINAL} AS final
-ENV REFRESHED_AT=2026-03-05
+ENV REFRESHED_AT=2026-03-09
 LABEL Name="senzing/senzing-tools" \
       Maintainer="support@senzing.com" \
       Version="0.0.1"
