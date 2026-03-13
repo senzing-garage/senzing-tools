@@ -8,17 +8,24 @@ on:
 permissions: {}
 
 jobs:
+
+  sdk-versions:
+    runs-on: ubuntu-latest
+    outputs:
+      senzingsdk-versions: ${{ steps.cfg.outputs.senzingsdk-versions }}
+    steps:
+      - id: cfg
+        uses: senzing-factory/build-resources/sdk-versions@v4
   make-github-release-assets-darwin:
     name: publish binaries - darwin
-    outputs:
-      status: ${{ job.status }}
+    needs: sdk-versions
     permissions:
       contents: write
     runs-on: macos-latest
     strategy:
       matrix:
         go: ["1.26"]
-        senzingsdk-version: ["production-v4"]
+        senzingsdk-version: ${{ fromJSON(needs.sdk-versions.outputs.senzingsdk-versions) }}
 
     steps:
       - name: checkout repository
@@ -71,10 +78,10 @@ jobs:
 
   slack-notification:
     needs: [make-github-release-assets-darwin]
-    if: ${{ always() && contains(fromJSON('["failure", "cancelled"]'), needs.make-github-release-assets-darwin.outputs.status ) }}
+    if: ${{ always() && contains(fromJSON('["failure", "cancelled"]'), needs.make-github-release-assets-darwin.result ) }}
     secrets:
       SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
       SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
     uses: senzing-factory/build-resources/.github/workflows/build-failure-slack-notification.yaml@v4
     with:
-      job-status: ${{ needs.make-github-release-assets-darwin.outputs.status }}
+      job-status: ${{ needs.make-github-release-assets-darwin.result }}
